@@ -1,0 +1,41 @@
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: full1
+Logged in 
+
+Full standard Menu
+1)sell
+2)buy
+3)add credit
+4)logout
+Select Option: 1
+Sell
+Enter Game Name:  fullGame1
+Enter Price: 50
+Game Listed 
+
+Full standard Menu
+1)sell
+2)buy
+3)add credit
+4)logout
+Select Option: 2
+Buy
+Enter name of game to buy: fullgame1
+Game not listed, enter valid game or (-1) to exit: -1
+
+Full standard Menu
+1)sell
+2)buy
+3)add credit
+4)logout
+Select Option: 4
+Logout 
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2 
+System Exit

@@ -1,0 +1,30 @@
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: sell1
+Logged in. 
+
+Sell-Standard Menu 
+1)Sell
+2)add credit
+3)logout 
+Select Option:1
+Sell
+Enter Game Name:  sellgame8
+Enter Price: -500.65
+Invalid price entry. Enter valid price or (-1) to quit to menu: -1
+
+Full standard Menu
+1)sell
+2)buy
+3)add credit
+4)logout
+Select Option: 4
+Logout 
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2 
+System Exit.

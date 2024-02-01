@@ -1,0 +1,30 @@
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: full2
+Logged in.
+ 
+Full standard Menu 
+1)sell
+2)buy
+3) add credit
+4)logout
+Select option: 2
+buy
+Enter game name: Galo
+
+Error message: Incorrect game name
+Enter game name: -1
+Back to main menu
+Full standard Menu 
+1)sell
+2)buy
+3) add credit
+4)logout
+Select option: 4
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2

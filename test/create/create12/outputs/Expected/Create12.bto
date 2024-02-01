@@ -1,0 +1,56 @@
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+ 
+Enter Username: admin1
+ 
+Logged in.
+ 
+Admin Menu
+1) create
+2) delete
+3) sell
+4) buy
+5) add credit
+6) refund
+7) logout
+Select option: 1
+
+create 
+
+Account types
+1)Admin
+2)Full-Standard
+3)Buy-Standard
+4)Sell-Standard
+Select option: 4
+
+Enter new 
+username: sell1
+
+Error message username already exists try again 
+
+Enter new 
+username: -1
+
+Back to main menu
+ 
+Admin Menu
+1) create
+2) delete
+3) sell
+4) buy
+5) add credit
+6) refund
+7) logout
+Select option: 7
+
+logout
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+ 
+System Exit.

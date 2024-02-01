@@ -1,0 +1,26 @@
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: buy1
+Logged in.
+
+Buy- standard Menu 
+1)buy
+2) add credit
+3)logout 
+Select option: 1
+buy
+Enter game name: Fifa
+Error message: Game already owned.  
+Enter another game or enter -1 to go back to main menu: -1
+Buy- standard Menu 
+1)buy
+2) add credit
+3)logout 
+Select option: 3
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2

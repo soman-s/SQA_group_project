@@ -1,35 +1,35 @@
-PUBG_______________________admin2_________
-Halo_______________________full1__________
-Minecraft__________________admin2_________
-Fortnite___________________full1__________
-Uncharted__________________sell1__________
-Fifa_______________________buy1___________
-admingame1________________admin2_________
-admingame1________________full1__________
-admingame1________________buy1___________
-sellgame1_________________admin1_________
-sellgame1_________________full1__________
-sellgame1_________________buy1___________
-fullgame1_________________admin1_________
-fullgame1_________________buy1___________
-fullgame1_________________full2__________
-admingame2________________admin2_________
-admingame2________________full1__________
-admingame2________________buy1___________
-sellgame2_________________admin1_________
-sellgame2_________________full1__________
-sellgame2_________________buy1___________
-fullgame2_________________admin1_________
-fullgame2_________________buy1___________
-Fullgame2_________________full2__________
-admingame1________________admin1_________
-sellgame1_________________sell1__________
-fullgame1_________________full1__________
-admingame2________________admin1_________
-fullgame2_________________full1__________
-sellgame2_________________sell1__________
-admingame3________________admin1_________
-fullgame3_________________full1__________
-Sellgame3_________________sell1__________
-Dota______________________admin2_________
-END_______________________________________
+PUBG                       admin2         
+Halo                       full1          
+Minecraft                  admin2         
+Fortnite                   full1          
+Uncharted                  sell1          
+Fifa                       buy1           
+admingame1                admin2         
+admingame1                full1          
+admingame1                buy1           
+sellgame1                 admin1         
+sellgame1                 full1          
+sellgame1                 buy1           
+fullgame1                 admin1         
+fullgame1                 buy1           
+fullgame1                 full2          
+admingame2                admin2         
+admingame2                full1          
+admingame2                buy1           
+sellgame2                 admin1         
+sellgame2                 full1          
+sellgame2                 buy1           
+fullgame2                 admin1         
+fullgame2                 buy1           
+Fullgame2                 full2          
+admingame1                admin1         
+sellgame1                 sell1          
+fullgame1                 full1          
+admingame2                admin1         
+fullgame2                 full1          
+sellgame2                 sell1          
+admingame3                admin1         
+fullgame3                 full1          
+Sellgame3                 sell1          
+Dota                      admin2         
+END                                       

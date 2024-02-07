@@ -63,7 +63,7 @@ bool user_file_process::check_user_names(vector<string>& user_info,string& user_
 
   for (int i = 0; i < user_info.size(); ++i)
   {
-    current_user_info=convert_to_lower(user_info[i].substr(0,constants::MAX_USER_LENGTH));
+    current_user_info=convert_to_lower(user_info[i].substr(0,constants::MAX_USER_NAME_LENGTH));
 
     if (current_user_info==test_user_name)
     {
@@ -82,13 +82,13 @@ string user_file_process::get_user_type(vector<string>& user_info,string& user_n
   string test_user_name=convert_to_lower(user_name);
   for (int i = 0; i < user_info.size(); ++i)
   {
-    current_user_name=convert_to_lower(user_info[i].substr(0,constants::MAX_USER_LENGTH));
+    current_user_name=convert_to_lower(user_info[i].substr(0,constants::MAX_USER_NAME_LENGTH));
 
     if (current_user_name==test_user_name)
     {
       string user_type;
-
-      cout<< user_info[i]<<endl;
+      user_type=user_info[i].substr(constants::MAX_USER_NAME_LENGTH+1,2);
+      return user_type;
 
 
     }

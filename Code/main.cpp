@@ -34,6 +34,7 @@ int main()
     menus new_menu;
     user_file_process user_file;
     vector<string> all_users;
+    string current_user_type;
 
 
   while(menu_option!=constants::EXIT)
@@ -54,11 +55,14 @@ int main()
             else
             {
               cout<<"Invalid entry"<<endl;
+              menu_option="";
             }
         } catch (const std::invalid_argument&) {
             cerr << "Invalid argument. Please enter a valid integer." << endl;
+            menu_option="";
         } catch (const std::out_of_range&) {
             cerr << "Out of range. Please enter a smaller integer." << endl;
+            menu_option="";
         }
 
 
@@ -93,11 +97,14 @@ int main()
 
           if (user_file.check_user_names(all_users,user_name))
           {
+
             cout<<"LOGGED IN"<<endl;
 
+            current_user_type=user_file.get_user_type(all_users,user_name);
 
+            new_menu.display_user_menus(current_user_type);
+            cout<<new_menu.get_num_menu_options(current_user_type)<<endl;
 
-            // get prober
           }
 
 
@@ -131,8 +138,8 @@ int main()
 string pad_username(const string& input)
  {
     string pad_input = input;
-    if (pad_input.length() < constants::MAX_USER_LENGTH) {
-        pad_input +=string(constants::MAX_USER_LENGTH - pad_input.length(), ' '); // Append spaces
+    if (pad_input.length() < constants::MAX_USER_NAME_LENGTH) {
+        pad_input +=string(constants::MAX_USER_NAME_LENGTH - pad_input.length(), ' '); // Append spaces
     }
     return pad_input;
 }

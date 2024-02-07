@@ -25,13 +25,16 @@ public:
     static const std::string REFUND;
     static const std::string LIST_AVAILABLE_GAMES;
     static const std::string LIST_ALL_USERS;
+    static const std::string ADD_CREDIT;
     static const std::string LOGOUT;
 
     // file stuff
     static const std::string ALL_USER_FILE;
 
+
     // Constraints
-    static const int MAX_USER_LENGTH;
+    static const int MAX_USER_NAME_LENGTH;
+    static const int MAX_ACCOUNT_TYPE_LENGTH;
     static const std::string EXIT_OPTION;
 
 

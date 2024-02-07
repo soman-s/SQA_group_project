@@ -27,6 +27,7 @@ public:
     int get_num_home_options();
     string get_home_option(int index);
     int get_num_menu_options(string user_type);
+    string get_user_menu_option(string user_type ,int index);
 
 
 };

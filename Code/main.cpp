@@ -27,10 +27,9 @@ string pad_username(const string& input);
 
 int main()
 {
-    string user_input;
+
+
     string menu_option="";
-    int num_entry;
-    int home_input;
     menus new_menu;
     user_file_process user_file;
     vector<string> all_users;
@@ -39,6 +38,10 @@ int main()
 
   while(menu_option!=constants::EXIT)
     {
+      string user_menu_input;
+      string user_input;
+      int num_entry;
+
       new_menu.display_home_menu();
       cout<<"Enter an option:" ;
       cin>>user_input;
@@ -98,14 +101,42 @@ int main()
           if (user_file.check_user_names(all_users,user_name))
           {
 
-            cout<<"LOGGED IN"<<endl;
+            string user_menu_input;
+            int num_user_menu_input;
+            string user_menu_option="";
+            cout<<"Logged IN"<<endl;
 
-            current_user_type=user_file.get_user_type(all_users,user_name);
+            while(user_menu_option!= constants::LOGOUT)
+            {
+              current_user_type=user_file.get_user_type(all_users,user_name);
+              new_menu.display_user_menus(current_user_type);
 
-            new_menu.display_user_menus(current_user_type);
-            cout<<new_menu.get_num_menu_options(current_user_type)<<endl;
+              cout<<"Enter an option:" ;
+              cin>>user_menu_input;
 
-          }
+              try {
+                    num_user_menu_input =stoi(user_menu_input);
+                    if(num_user_menu_input>0 && num_user_menu_input<=new_menu.get_num_menu_options(current_user_type))
+                    {
+
+                      user_menu_option=new_menu.get_user_menu_option(current_user_type,num_user_menu_input-1);
+                      cout<<user_menu_option<<endl;
+
+                    }
+                    else
+                    {
+                      cout<<"Invalid entry"<<endl;
+                      user_menu_option="";
+                    }
+                } catch (const std::invalid_argument&) {
+                    cerr << "Invalid argument. Please enter a valid integer." << endl;
+                    user_menu_option="";
+                } catch (const std::out_of_range&) {
+                    cerr << "Out of range. Please enter a smaller integer." << endl;
+                    user_menu_option="";
+                }
+              }
+            }
 
 
 
@@ -116,9 +147,7 @@ int main()
 
         }
 
-
-
-      //Clear the input buffer
+        cout<<"LOGGED OUT"<<endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }

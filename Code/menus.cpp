@@ -101,3 +101,34 @@ int menus:: get_num_home_options()
 {
   return home_options.size();
 }
+
+string menus:: get_user_menu_option(string user_type ,int index)
+{
+  if (user_type==constants::ADMIN)
+  {
+
+    return admin_options[index];
+
+  }
+
+  else if (user_type==constants::FULL_STANDARD)
+  {
+    return full_options[index];
+
+  }
+
+  else if (user_type==constants::SELL_STANDARD)
+  {
+    return sell_options[index];
+
+  }
+
+  else
+  {
+    return buy_options[index];
+
+  }
+
+  return " option not found";
+
+}

@@ -1,0 +1,45 @@
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+
+Enter Username: admin1
+
+Logged in.
+
+Admin Menu
+1) create
+2) delete
+3) sell
+4) buy
+5) add credit
+6) refund
+7) logout
+Select option: 5
+
+Enter Username: TestUser
+
+Error: User ‘TestUser’ does not exist. Cannot add credit.
+
+Enter Username: -1
+
+Back to menu
+
+Admin Menu
+1) create
+2) delete
+3) sell
+4) buy
+5) add credit
+6) refund
+7) logout
+Select option: 7
+
+Logout
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+
+System Exit.

@@ -1,0 +1,36 @@
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+
+Enter Username: full1
+
+Logged in.
+
+Full-Standard Menu
+1)sell
+2)buy
+3) add credit
+4)logout
+Select option: 3
+
+Enter Credit Amount: -200.00
+
+Error: Cannot add a negative credit amount. Please enter a positive value.
+
+Full-Standard Menu
+1)sell
+2)buy
+3) add credit
+4)logout
+Select option: 4
+
+
+Logout
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+
+System Exit.

@@ -1,0 +1,37 @@
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+
+Enter Username: sell1
+
+Logged in.
+
+Sell-Standard Menu
+1)Sell 
+2) add credit
+3)logout 
+
+Select option: 2
+
+Enter Credit Amount: 1200.00
+
+Error: Cannot add more than $1000 in a single session.
+
+Enter Credit Amount: -1
+
+Sell-Standard Menu
+1)Sell 
+2) add credit
+3)logout 
+
+Select option: 3
+
+Logout
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+
+System Exit.

@@ -9,7 +9,7 @@
 
 // custom classes
 #include "menus.h"
-#include "file_process.h"
+#include "user_file_process.h"
 #include "constants.h"
 
 using namespace std;
@@ -32,7 +32,7 @@ int main()
     int num_entry;
     int home_input;
     menus new_menu;
-    file_process file_processor;
+    user_file_process user_file;
     vector<string> all_users;
 
 
@@ -72,9 +72,9 @@ int main()
           user_name=pad_username(user_name);
 
 
-          all_users=file_processor.get_all_users_info(constants::ALL_USER_FILE);
+          all_users=user_file.get_all_users_info(constants::ALL_USER_FILE);
 
-          while(!file_processor.check_user_names(all_users,user_name) && user_name!=constants::EXIT_OPTION)
+          while(!user_file.check_user_names(all_users,user_name) && user_name!=constants::EXIT_OPTION)
           {
               cout<<"Invalid Login"<<endl;
               cout<<"Enter valid username or -1 to exit:";
@@ -91,9 +91,13 @@ int main()
 
           }
 
-          if (file_processor.check_user_names(all_users,user_name))
+          if (user_file.check_user_names(all_users,user_name))
           {
             cout<<"LOGGED IN"<<endl;
+
+
+
+            // get prober
           }
 
 

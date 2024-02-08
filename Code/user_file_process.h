@@ -17,7 +17,7 @@ public:
   vector<string> get_all_users_info(string user_file);
   bool check_user_names(vector<string>& user_info,string& user_name);
   string get_user_type(vector<string>& user_info,string& user_name);
-  string convert_to_lower(const string& str);
+
 
 
 

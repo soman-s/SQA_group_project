@@ -19,10 +19,14 @@ const std::string constants::ADD_CREDIT = "Add Credit";
 const std::string constants::LOGOUT = "Logout";
 
 
+// file stuff
 const std::string constants::ALL_USER_FILE="files/current_users.etf";
+const std::string constants::AVAILABLE_GAMES="files/available_games.etf";
 
-
+// Constraints
 const int constants::MAX_USER_NAME_LENGTH=15;
+const int constants::MAX_GAME_NAME_LENGTH=25;
 const int constants::MAX_ACCOUNT_TYPE_LENGTH=2;
+const float constants::MAX_GAME_PRICE=999.99;
 
-const std::string constants::EXIT_OPTION="-1";
+const std::string constants::EXIT_MENU_OPTION="-1";

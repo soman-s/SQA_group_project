@@ -30,12 +30,16 @@ public:
 
     // file stuff
     static const std::string ALL_USER_FILE;
+    static const std::string AVAILABLE_GAMES;
 
 
     // Constraints
     static const int MAX_USER_NAME_LENGTH;
+    static const int MAX_GAME_NAME_LENGTH;
     static const int MAX_ACCOUNT_TYPE_LENGTH;
-    static const std::string EXIT_OPTION;
+    static const float MAX_GAME_PRICE;
+    static const std::string EXIT_MENU_OPTION;
+
 
 
 };

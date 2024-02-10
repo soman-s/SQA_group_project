@@ -19,6 +19,7 @@ class menus {
   vector<string> full_options = {"Sell","Buy","Add Credit","View Available Games","Logout"};
   vector<string> buy_options = {"Buy","Add Credit","View Available Games","Logout"};
   vector<string> sell_options = {"Sell","Add Credit","View Available Games","Logout"};
+  vector<string> create_options = {"Admin", "Full-Standard", "Buy-Standard", "Sell-Standard"};
 public:
 
     menus();
@@ -28,6 +29,7 @@ public:
     string get_home_option(int index);
     int get_num_menu_options(string user_type);
     string get_user_menu_option(string user_type ,int index);
+    void display_all_user_types();
 
 
 };

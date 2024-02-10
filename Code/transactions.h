@@ -21,8 +21,8 @@ class transactions {
 public:
   transactions();
   string process_sell(vector<string>& all_games, vector<string>& games_to_add,string current_user_name);
-
-
+  string process_create(vector<string>& all_users);
+  string process_delete(vector<string>& all_users, string current_user);
 
 
 

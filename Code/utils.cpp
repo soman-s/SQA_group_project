@@ -81,3 +81,24 @@ string utils:: pad_game_price(const float& input)
     return integral_part+'.'+decimal_part;
 
 }
+
+string utils:: pad_credit_amount(const long& input)
+{
+    
+    stringstream ss;
+    ss << fixed << setprecision(2) << input;
+    string price_str = ss.str();
+
+    size_t decimal_pos = price_str.find('.');
+    string integral_part = price_str.substr(0, decimal_pos);
+    string decimal_part = price_str.substr(decimal_pos + 1);
+
+    if(price_str.find('.') == std::string::npos){
+        integral_part = string(6 - integral_part.size(), '0') + integral_part;
+        return integral_part + ".00";
+    }
+
+    integral_part = string(6 - integral_part.size(), '0') + integral_part;
+
+    return integral_part+'.'+decimal_part;
+}

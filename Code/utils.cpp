@@ -82,9 +82,9 @@ string utils:: pad_game_price(const float& input)
 
 }
 
-string utils:: pad_credit_amount(const long& input)
+string utils:: pad_credit_amount(const float& input)
 {
-    
+
     stringstream ss;
     ss << fixed << setprecision(2) << input;
     string price_str = ss.str();

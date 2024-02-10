@@ -22,7 +22,7 @@ public:
   bool check_alpha_numeric_space(const string& input);
   string pad_game_name(const string& input);
   string pad_game_price(const float& input);
-  string pad_credit_amount(const long& input);
+  string pad_credit_amount(const float& input);
 };
 
 #endif

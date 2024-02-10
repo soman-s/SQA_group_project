@@ -102,7 +102,7 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
 
 
 string transactions::process_create(vector<string>& all_users){
-  
+
   unordered_map <string, string> user_type_codes = {{"1","AA"},{"2","FS"},{"3","BS"},{"4","SS"}};
 
   string new_account;
@@ -124,7 +124,7 @@ string transactions::process_create(vector<string>& all_users){
     try {
       if(stoi(new_account) >= 1 && stoi(new_account) <= 4 ){
         break;
-        
+
       }
 
       cout << "Please provide valid account type: ";
@@ -135,8 +135,8 @@ string transactions::process_create(vector<string>& all_users){
       cerr << "Invalid argument: " << e.what() << endl;
       cout << "Please provide valid account type: ";
       cin >> new_account;
-    } 
-    
+    }
+
   }
 
 
@@ -157,7 +157,7 @@ string transactions::process_create(vector<string>& all_users){
       cout << "Username length is too long please try again or -1 to exit" << endl;
       cout << "Enter valid Username: ";
     }
-  
+
     cin >> username;
 
     if (username == constants::EXIT_MENU_OPTION){
@@ -169,7 +169,7 @@ string transactions::process_create(vector<string>& all_users){
   username=utils().pad_username(username);
 
 
-  long credit_amount = 100.0;
+  float credit_amount=0.0;
   string text_credit_amount;
   bool valid_credit_amount = false;
 
@@ -178,19 +178,19 @@ string transactions::process_create(vector<string>& all_users){
 
 
   while(!valid_credit_amount){
-    
+
     try{
-      
-      credit_amount = stol(text_credit_amount);
+
+      credit_amount = stof(text_credit_amount);
       if(constants::MIN_CREDIT_AMOUNT <= credit_amount <= constants::MAX_CREDIT_AMOUNT){
         cout << "Succesfully created new user " << username << " with credit amount $" << credit_amount  << endl;
         text_credit_amount = utils().pad_credit_amount(credit_amount);
-        return username + "_" + user_type_codes[new_account] + "_" + text_credit_amount;    
+        return username + "_" + user_type_codes[new_account] + "_" + text_credit_amount;
       }
 
       cout << "Please enter a valid credit amount or -1 to go back to main menu: ";
       cin >> text_credit_amount;
-      credit_amount = stol(text_credit_amount);
+      credit_amount = stof(text_credit_amount);
     }
 
     catch (const std::invalid_argument& e) {
@@ -198,8 +198,8 @@ string transactions::process_create(vector<string>& all_users){
       cout<<"Please enter a valid credit amount -1 to go back to main menu: ";
       cin>>text_credit_amount;
 
-    } 
-    
+    }
+
   }
 
 
@@ -238,4 +238,30 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
   return user_to_remove;
 
+}
+
+void transactions::show_all_users(vector<string>& all_users)
+{
+  cout<<"All Users"<<endl;
+  cout << setw(14) << left << "User"
+         << setw(5) << left << "Type" << "Balance"
+         << endl;
+  for(const auto& user: all_users ){
+
+    cout<<user<< endl;
+
+  }
+}
+
+void transactions::show_all_game_info(vector<string>& all_games)
+{
+  cout<<"All Games Available"<<endl;
+  cout << setw(26) << left << "Game Name"
+         << setw(16) << left << "Seller" << "Price"
+         << endl;
+  for(const auto& game: all_games ){
+
+    cout<<game<< endl;
+
+  }
 }

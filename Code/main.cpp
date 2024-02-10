@@ -177,6 +177,15 @@ int main()
                           remove_user(user_to_remove, all_users);
                         }
                       }
+
+                      else if(user_menu_option == constants::LIST_ALL_USERS)
+                      {
+                        transactions().show_all_users(all_users);
+                      }
+                      else if(user_menu_option == constants::LIST_AVAILABLE_GAMES)
+                      {
+                        transactions().show_all_game_info(all_games);
+                      }
                     }
                     else
                     {

@@ -20,6 +20,7 @@
 // custom FUNCTIONS
 vector<string> update_games_to_add_vector(vector<string>& games_to_add_vec,string& new_game_to_sell);
 vector<string> update_games_list(vector<string>& current_games,vector<string>& new_games);
+vector<string> update_games_collection(vector<string>& games_collect, string& game_name,string& owner);
 void remove_user(string user, vector<string>& all_users);
 
 using namespace std;
@@ -34,16 +35,18 @@ int main()
 {
     vector<string> all_users;
     vector<string> all_games;
+    vector<string> all_games_collection;
     vector<string> games_to_add;
     string current_user_type;
 
     string menu_option="";
 
-    cout << "In here"<<endl;
+
 
 
     all_users=user_file_process().get_all_users_info(constants::ALL_USER_FILE);
     all_games=games_file_process().get_all_game_info(constants::AVAILABLE_GAMES);
+    all_games_collection=games_file_process().get_all_game_info(constants::GAMES_COLLECTION);
 
   while(menu_option!=constants::EXIT)
     {
@@ -140,14 +143,16 @@ int main()
 
                         if(new_game_to_sell!="-1")
                         {
+                          string game_name=new_game_to_sell.substr(0,constants::MAX_GAME_NAME_LENGTH);
 
                           games_to_add=update_games_to_add_vector(games_to_add,new_game_to_sell);
-                          // ALSO NEED TO UPDATE AVAIABLE GAMES LIST
+                          all_games_collection=update_games_collection(all_games_collection,game_name,current_user_name);
+                          // ADD THE LOGIC FOR THE DAILY TRANSACTION LOG VECTOR STUFF
 
                         }
 
 
-                      
+
                       } // end of sell menu
 
                       // create menu
@@ -164,7 +169,7 @@ int main()
                       }
 
                       else if(user_menu_option == constants::DELETE){
-                                               
+
                         string user_to_remove;
                         user_to_remove = transactions().process_delete(all_users,current_user_name);
 
@@ -244,7 +249,7 @@ void remove_user(string user_to_remove,  vector<string>& all_users) {
     }
   }
   for(const auto& user: all_users ){
-    
+
     cout << "user" <<  user << endl;
 
   }
@@ -252,3 +257,14 @@ void remove_user(string user_to_remove,  vector<string>& all_users) {
 
 // still need to add function for removing games that belong to a particlar user
 
+
+
+// update games_collection vector
+vector<string> update_games_collection(vector<string>& games_collect, string& game_name,string& owner )
+{
+  string new_entry;
+  new_entry= game_name+" "+owner;
+  games_collect.push_back(new_entry);
+
+  return games_collect;
+}

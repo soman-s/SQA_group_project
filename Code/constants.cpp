@@ -22,12 +22,13 @@ const std::string constants::LOGOUT = "Logout";
 // file stuff
 const std::string constants::ALL_USER_FILE="files/current_users.etf";
 const std::string constants::AVAILABLE_GAMES="files/available_games.etf";
+const std::string constants::GAMES_COLLECTION="files/game_collection.etf";
 
 // Constraints
 const int constants::MAX_USER_NAME_LENGTH=15;
 const int constants::MAX_GAME_NAME_LENGTH=25;
 const int constants::MAX_ACCOUNT_TYPE_LENGTH=2;
-const float constants::MAX_GAME_PRICE=999.99;
-const float constants::MAX_CREDIT_AMOUNT=999.99;
+const float constants::MAX_GAME_PRICE=99999.99;
+const float constants::MAX_CREDIT_AMOUNT=999999.99;
 const float constants::MIN_CREDIT_AMOUNT=0;
 const std::string constants::EXIT_MENU_OPTION="-1";

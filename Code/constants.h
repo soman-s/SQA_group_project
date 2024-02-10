@@ -31,6 +31,7 @@ public:
     // file stuff
     static const std::string ALL_USER_FILE;
     static const std::string AVAILABLE_GAMES;
+    static const std::string GAMES_COLLECTION;
 
 
     // Constraints

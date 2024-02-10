@@ -39,6 +39,8 @@ public:
     static const int MAX_ACCOUNT_TYPE_LENGTH;
     static const float MAX_GAME_PRICE;
     static const std::string EXIT_MENU_OPTION;
+    static const float MAX_CREDIT_AMOUNT;
+    static const float MIN_CREDIT_AMOUNT;
 
 
 

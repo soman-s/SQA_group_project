@@ -6,6 +6,7 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include <typeinfo>
 
 // custom classes
 #include "menus.h"
@@ -19,6 +20,7 @@
 // custom FUNCTIONS
 vector<string> update_games_to_add_vector(vector<string>& games_to_add_vec,string& new_game_to_sell);
 vector<string> update_games_list(vector<string>& current_games,vector<string>& new_games);
+void remove_user(string user, vector<string>& all_users);
 
 using namespace std;
 
@@ -36,6 +38,8 @@ int main()
     string current_user_type;
 
     string menu_option="";
+
+    cout << "In here"<<endl;
 
 
     all_users=user_file_process().get_all_users_info(constants::ALL_USER_FILE);
@@ -143,9 +147,31 @@ int main()
                         }
 
 
-                  } // end of sell menu
+                      
+                      } // end of sell menu
 
+                      // create menu
 
+                      else if(user_menu_option == constants::CREATE){
+
+                        string new_user;
+                        new_user = transactions().process_create(all_users);
+
+                        if(new_user!= constants::EXIT_MENU_OPTION){
+                          all_users.push_back(new_user);
+
+                        }
+                      }
+
+                      else if(user_menu_option == constants::DELETE){
+                                               
+                        string user_to_remove;
+                        user_to_remove = transactions().process_delete(all_users,current_user_name);
+
+                        if(user_to_remove!= constants::EXIT_MENU_OPTION){
+                          remove_user(user_to_remove, all_users);
+                        }
+                      }
                     }
                     else
                     {
@@ -198,12 +224,31 @@ vector<string> update_games_to_add_vector(vector<string>& games_to_add_vec, stri
       return games_to_add_vec;
   }
 
-  vector<string> update_games_list(vector<string>& current_games,vector<string>& new_games)
+vector<string> update_games_list(vector<string>& current_games,vector<string>& new_games)
+{
+  for(int i=0; i<new_games.size();i++)
   {
-    for(int i=0; i<new_games.size();i++)
-    {
 
-      current_games.push_back(new_games[i]);
-    }
-    return current_games;
+    current_games.push_back(new_games[i]);
   }
+  return current_games;
+}
+
+void remove_user(string user_to_remove,  vector<string>& all_users) {
+  for(int i=0;i<all_users.size(); i++){
+
+    string trimmed_user=utils().convert_to_lower(all_users[i].substr(0,user_to_remove.size()));
+    if(trimmed_user==user_to_remove){
+      cout << "user removed" << endl;
+      all_users.erase(all_users.begin() + i);
+    }
+  }
+  for(const auto& user: all_users ){
+    
+    cout << "user" <<  user << endl;
+
+  }
+}
+
+// still need to add function for removing games that belong to a particlar user
+

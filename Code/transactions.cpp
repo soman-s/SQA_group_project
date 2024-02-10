@@ -3,6 +3,7 @@
 #include <fstream>
 #include <algorithm>
 #include <cstring>
+#include <unordered_map>
 
 #include "menus.h"
 #include "user_file_process.h"
@@ -97,4 +98,144 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
 
 
     return "-1";
+}
+
+
+string transactions::process_create(vector<string>& all_users){
+  
+  unordered_map <string, string> user_type_codes = {{"1","AA"},{"2","FS"},{"3","BS"},{"4","SS"}};
+
+  string new_account;
+  cout << "Create" << endl;
+
+  cout << "Select type of account you want to create" << endl;
+
+  menus().display_all_user_types();
+
+  cout << "Enter account type: ";
+  cin >> new_account;
+
+  bool valid_account = false;
+
+  int num = stoi(new_account);
+
+  while(!valid_account){
+
+    try {
+      if(stoi(new_account) >= 1 && stoi(new_account) <= 4 ){
+        break;
+        
+      }
+
+      cout << "Please provide valid account type: ";
+      cin >> new_account;
+    }
+
+    catch (const std::invalid_argument& e) {
+      cerr << "Invalid argument: " << e.what() << endl;
+      cout << "Please provide valid account type: ";
+      cin >> new_account;
+    } 
+    
+  }
+
+
+  string username;
+  cout << "Enter Username: ";
+  cin >> username;
+
+  cout << username << endl;
+
+  while(user_file_process().check_user_names(all_users,username) || username.size() > constants::MAX_USER_NAME_LENGTH){
+
+    if(user_file_process().check_user_names(all_users,username)){
+      cout << "Username already exists please try again or -1 to exit" << endl;
+      cout << "Enter valid Username: ";
+    }
+
+    else{
+      cout << "Username length is too long please try again or -1 to exit" << endl;
+      cout << "Enter valid Username: ";
+    }
+  
+    cin >> username;
+
+    if (username == constants::EXIT_MENU_OPTION){
+      return constants::EXIT_MENU_OPTION;
+    }
+
+  }
+
+  username=utils().pad_username(username);
+
+
+  long credit_amount = 100.0;
+  string text_credit_amount;
+  bool valid_credit_amount = false;
+
+  cout << "Enter new credit amount: ";
+  cin >> text_credit_amount;
+
+
+  while(!valid_credit_amount){
+    
+    try{
+      
+      credit_amount = stol(text_credit_amount);
+      if(constants::MIN_CREDIT_AMOUNT <= credit_amount <= constants::MAX_CREDIT_AMOUNT){
+        cout << "Succesfully created new user " << username << " with credit amount $" << credit_amount  << endl;
+        text_credit_amount = utils().pad_credit_amount(credit_amount);
+        return username + "_" + user_type_codes[new_account] + "_" + text_credit_amount;    
+      }
+
+      cout << "Please enter a valid credit amount or -1 to go back to main menu: ";
+      cin >> text_credit_amount;
+      credit_amount = stol(text_credit_amount);
+    }
+
+    catch (const std::invalid_argument& e) {
+      cerr << "Invalid argument: " << e.what() << endl;
+      cout<<"Please enter a valid credit amount -1 to go back to main menu: ";
+      cin>>text_credit_amount;
+
+    } 
+    
+  }
+
+
+  return "-1";
+
+
+}
+
+string transactions:: process_delete(vector<string>& all_users, string current_user){
+
+  string user_to_remove;
+
+  cout << "Delete" << endl;
+
+  cout << "Enter username: ";
+
+  cin >> user_to_remove;
+
+  while(user_file_process().check_user_names(all_users,user_to_remove) && user_to_remove!=current_user){
+
+    if(user_to_remove == current_user){
+      cout << "user cannot remove itself please try again or -1 to exit: ";
+    }
+
+    else{
+      cout << "Username already exists please try again or -1 to exit: ";
+    }
+
+    cin >> user_to_remove;
+
+    if (user_to_remove == constants::EXIT_MENU_OPTION){
+      return constants::EXIT_MENU_OPTION;
+    }
+
+  }
+
+  return user_to_remove;
+
 }

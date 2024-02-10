@@ -28,5 +28,6 @@ const int constants::MAX_USER_NAME_LENGTH=15;
 const int constants::MAX_GAME_NAME_LENGTH=25;
 const int constants::MAX_ACCOUNT_TYPE_LENGTH=2;
 const float constants::MAX_GAME_PRICE=999.99;
-
+const float constants::MAX_CREDIT_AMOUNT=999.99;
+const float constants::MIN_CREDIT_AMOUNT=0;
 const std::string constants::EXIT_MENU_OPTION="-1";

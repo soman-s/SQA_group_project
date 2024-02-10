@@ -132,3 +132,11 @@ string menus:: get_user_menu_option(string user_type ,int index)
   return " option not found";
 
 }
+
+void menus:: display_all_user_types()
+{  
+  for(int i=0;i< create_options.size();i++){
+    cout << i + 1 << ")" << create_options[i] << endl;
+
+  }
+}

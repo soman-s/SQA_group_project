@@ -42,8 +42,6 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
     {
         new_game_name = "";
         cout << "Invalid Game Name or Game already Exists" << endl;
-
-
         cout << "Enter game name or -1 to exit:";
         getline(cin, new_game_name);
         if (new_game_name != constants::EXIT_MENU_OPTION)
@@ -76,14 +74,14 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
         else
         {
           cout<<"Invlaid Game Price"<<endl;
-          cout<<"Enter Game price or -1 to exit:";
-          cin>>text_new_game_price;
+          cout<<"Enter Game price or -1 to exit:"<<endl;
+
         }
 
     } catch (const std::invalid_argument& e) {
         cerr << "Invalid argument: " << e.what() << endl;
-        cout<<"Enter Game price or -1 to exit:";
-        cin>>text_new_game_price;
+        cout<<"Enter Game price or -1 to exit:"<<endl;
+
 
     } catch (const std::out_of_range& e) {
         cerr << "Out of range: " << e.what() << endl;
@@ -93,11 +91,11 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
   text_new_game_price=utils().pad_game_price(num_new_game_price);
   if (text_new_game_price!=constants::EXIT_MENU_OPTION&&new_game_name != constants::EXIT_MENU_OPTION)
   {
-    return new_game_name+" "+current_user_name+" "+ text_new_game_price;
+    return new_game_name+" "+current_user_name+" "+ text_new_game_price+"/r";
   }
 
 
-    return "-1";
+    return constants::FAIL_OPTION;
 }
 
 
@@ -265,3 +263,133 @@ void transactions::show_all_game_info(vector<string>& all_games)
 
   }
 }
+
+string transactions:: refund(vector<string>& all_users,vector<string>& all_games,vector<string>& game_collec)
+  {
+
+    utils utility;
+    cout<<"Refund"<<endl;
+    string refund_game_name;
+
+    cout<<"Enter Game name:";
+    cin.ignore();
+    getline(cin,refund_game_name);
+    refund_game_name=utility.pad_game_name(refund_game_name);
+
+    while (games_file_process().check_game_already_exists(all_games,refund_game_name)==false)
+    {
+      cout<<"Invalid game name or Game name doesn't exist"<<endl;
+      cout<<"Enter Game name or -1 to quit: ";
+      getline(cin,refund_game_name);
+
+      if (refund_game_name!=constants::EXIT_MENU_OPTION)
+      {
+
+        refund_game_name=utils().pad_game_name(refund_game_name);
+      }
+      else
+      {
+        return constants::FAIL_OPTION;
+      }
+    }
+
+    string seller_name;
+    cout<<"Enter seller name: ";
+    cin>>seller_name;
+    while(games_file_process().check_user_sells_game(all_games,refund_game_name,seller_name)==false)
+    {
+      cout<<"Invalid Seller name or Seller doesn't Sell Game"<<endl;
+      cout<<"Enter Seller name or -1 to quit: ";
+      cin>>seller_name;
+
+      if (seller_name==constants::EXIT_MENU_OPTION)
+      {
+        return constants::FAIL_OPTION;
+      }
+
+    }
+
+    string buyer_name;
+    cout<<"Enter buyer name: ";
+    cin>>buyer_name;
+    while((games_file_process().check_user_owns_game(game_collec,refund_game_name,buyer_name)==false) ||
+        utils().convert_to_lower(buyer_name)==utils().convert_to_lower(seller_name))
+    {
+      cout<<"Invalid Buyer name or Buyer doesn't Own Game"<<endl;
+      cout<<"Enter Buyer name or -1 to quit: ";
+      cin>>buyer_name;
+
+
+      if (buyer_name==constants::EXIT_MENU_OPTION)
+      {
+        return constants::FAIL_OPTION;
+      }
+
+    }
+
+    string text_refund_price;
+    float  num_refund_price=0.0;
+    bool val_price=false;
+
+    while(val_price==false && text_refund_price!=constants::EXIT_MENU_OPTION)
+    {
+      cout<<"Enter Refund Amount:";
+      cin>>text_refund_price;
+      if (text_refund_price==constants::EXIT_MENU_OPTION)
+      {
+        return constants::FAIL_OPTION;
+      }
+
+      try {
+          num_refund_price =stof(text_refund_price);
+
+          if(num_refund_price>0 && games_file_process().is_game_price(all_games,refund_game_name,num_refund_price))
+          {
+            val_price=true;
+          }
+          else
+          {
+            cout<<"Invlaid Refund Price or Refund price entered is not equal to game amount"<<endl;
+            cout<<"Enter Refund price or -1 to exit:"<<endl;
+
+          }
+
+      } catch (const std::invalid_argument& e) {
+          cerr << "Invalid argument: " << e.what() << endl;
+          cout<<"Enter Refund price or -1 to exit:"<<endl;
+
+
+      } catch (const std::out_of_range& e) {
+          cerr << "Out of range: " << e.what() << endl;
+      }
+    }
+
+    // proccessing the refund
+
+    float seller_credit_balance=user_file_process().get_user_balance(all_users,seller_name);
+    float buyer_credit_balance=user_file_process().get_user_balance(all_users,buyer_name);
+
+    cout<<"BALANCE BEFORE REFUND"<<endl;
+    cout<<"SELLER: "<<seller_credit_balance<<endl;
+    cout<<"BUYER: "<<buyer_credit_balance<<endl;
+
+    if ((seller_credit_balance-num_refund_price)<0)
+    {
+
+      return constants::FAIL_OPTION;
+
+    }
+
+    else
+    {
+
+      seller_credit_balance=seller_credit_balance-num_refund_price;
+      buyer_credit_balance=buyer_credit_balance+num_refund_price;
+      games_file_process().remove_game_from_user_collection(game_collec,refund_game_name,buyer_name);
+      user_file_process().update_user_balance(all_users,seller_name,seller_credit_balance);
+      user_file_process().update_user_balance(all_users,buyer_name,buyer_credit_balance);
+    }
+    return constants:: SUCESS_OPTION;
+
+
+  }

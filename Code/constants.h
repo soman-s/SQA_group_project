@@ -42,6 +42,8 @@ public:
     static const std::string EXIT_MENU_OPTION;
     static const float MAX_CREDIT_AMOUNT;
     static const float MIN_CREDIT_AMOUNT;
+    static const std::string FAIL_OPTION;
+    static const std::string SUCESS_OPTION;
 
 
 

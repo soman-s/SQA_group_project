@@ -32,3 +32,5 @@ const float constants::MAX_GAME_PRICE=99999.99;
 const float constants::MAX_CREDIT_AMOUNT=999999.99;
 const float constants::MIN_CREDIT_AMOUNT=0;
 const std::string constants::EXIT_MENU_OPTION="-1";
+const std::string constants:: FAIL_OPTION="-1";
+const std::string constants:: SUCESS_OPTION="1";

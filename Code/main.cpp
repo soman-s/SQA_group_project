@@ -186,6 +186,34 @@ int main()
                       {
                         transactions().show_all_game_info(all_games);
                       }
+
+                      else if(user_menu_option == constants::REFUND)
+                      {
+
+
+                        if(transactions().refund(all_users,all_games,all_games_collection)==constants::FAIL_OPTION)
+                        {
+                          cout<<"Cannot issue refund, seller will have negative balance"<<endl;
+                        }
+                        else
+                        {
+                          cout<<"Refund Succesfully"<<endl;
+                          // ADD LOGIC FOR UPDATE DAILY TRANSACTION LOG
+                        }
+
+
+
+                          // Updated vectors can be used here
+                          // cout << "Updated Users:" << endl;
+                          // for (const auto& user : all_users) {
+                          //     cout << user << endl;
+                          // }
+                          //
+                          // cout << "Updated Games:" << endl;
+                          // for (const auto& game : all_games) {
+                          //     cout << game << endl;
+                          // }
+                      }
                     }
                     else
                     {

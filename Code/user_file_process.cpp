@@ -88,3 +88,60 @@ string user_file_process::get_user_type(vector<string>& user_info,string& user_n
 
   return "";
 }
+
+float user_file_process::get_user_balance(vector<string>& user_info,string& user_name)
+{
+  string current_user_info;
+  string test_user= utils().convert_to_lower(user_name);
+  test_user=utils().pad_username(test_user);
+  for (int i=0; i<user_info.size();i++)
+  {
+
+    current_user_info=utils().convert_to_lower(user_info[i].substr(0,constants::MAX_USER_NAME_LENGTH));
+      if (current_user_info==test_user)
+    {
+      //cout<<"FOUIND"<<endl;
+
+      float num_credit_amount;
+      string credit_amount = user_info[i].substr(constants::MAX_USER_NAME_LENGTH + constants::MAX_ACCOUNT_TYPE_LENGTH + 2);
+      credit_amount=credit_amount.substr(0,credit_amount.length()-1);
+      num_credit_amount=stof(credit_amount);
+      return num_credit_amount;
+
+
+
+    }
+
+  }
+
+  return 0;
+}
+
+void user_file_process::update_user_balance(vector<string>& user_info,string& user_name, float&credit_amount)
+{
+  string current_user_info;
+  string test_user= utils().convert_to_lower(user_name);
+  test_user=utils().pad_username(test_user);
+  for (int i=0; i<user_info.size();i++)
+  {
+    //cout<<user_info[i].length()<<endl;
+    current_user_info=utils().convert_to_lower(user_info[i].substr(0,constants::MAX_USER_NAME_LENGTH));
+      if (current_user_info==test_user)
+    {
+      //cout<<"FOUIND"<<endl;
+      int starting_pos=constants::MAX_USER_NAME_LENGTH + constants::MAX_ACCOUNT_TYPE_LENGTH + 2;
+      int len= (user_info[i].length()+1)- starting_pos;
+      string new_credit_amount;
+      string replacement_credit;
+      new_credit_amount=utils().pad_credit_amount(credit_amount);
+      replacement_credit=new_credit_amount+"\r";
+
+      user_info[i].replace(starting_pos,len,replacement_credit);
+      //cout<<user_info[i].length()<<endl;
+
+    }
+
+  }
+
+
+}

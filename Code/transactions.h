@@ -25,7 +25,8 @@ public:
   string process_delete(vector<string>& all_users, string current_user);
   void show_all_users(vector<string>& all_users);
   void show_all_game_info(vector<string>& all_users);
-  
+  string refund(vector<string>& all_users,vector<string>& all_games,vector<string>& game_collec); 
+
 
 
 

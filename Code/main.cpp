@@ -145,8 +145,8 @@ int main()
                         {
                           string game_name=new_game_to_sell.substr(0,constants::MAX_GAME_NAME_LENGTH);
 
-                          games_to_add=update_games_to_add_vector(games_to_add,new_game_to_sell);
-                          all_games_collection=update_games_collection(all_games_collection,game_name,current_user_name);
+                          utils().update_games_to_add_vector(games_to_add,new_game_to_sell);
+                          utils().update_games_collection(all_games_collection,game_name,current_user_name);
                           // ADD THE LOGIC FOR THE DAILY TRANSACTION LOG VECTOR STUFF
 
                         }
@@ -174,7 +174,7 @@ int main()
                         user_to_remove = transactions().process_delete(all_users,current_user_name);
 
                         if(user_to_remove!= constants::EXIT_MENU_OPTION){
-                          remove_user(user_to_remove, all_users);
+                          utils().remove_user(user_to_remove, all_users);
                         }
                       }
 
@@ -233,7 +233,7 @@ int main()
               if (user_menu_option== constants::LOGOUT)
               {
                 cout<<"LOGGED OUT"<<endl;
-                all_games=update_games_list(all_games,games_to_add);
+                utils().update_games_list(all_games,games_to_add);
 
 
               }
@@ -256,52 +256,52 @@ int main()
 
   return 0;
   }
-vector<string> update_games_to_add_vector(vector<string>& games_to_add_vec, string& new_game_to_sell)
- {
-
-    games_to_add_vec.push_back(new_game_to_sell);
-
-
-
-      return games_to_add_vec;
-  }
-
-vector<string> update_games_list(vector<string>& current_games,vector<string>& new_games)
-{
-  for(int i=0; i<new_games.size();i++)
-  {
-
-    current_games.push_back(new_games[i]);
-  }
-  return current_games;
-}
-
-void remove_user(string user_to_remove,  vector<string>& all_users) {
-  for(int i=0;i<all_users.size(); i++){
-
-    string trimmed_user=utils().convert_to_lower(all_users[i].substr(0,user_to_remove.size()));
-    if(trimmed_user==user_to_remove){
-      cout << "user removed" << endl;
-      all_users.erase(all_users.begin() + i);
-    }
-  }
-  for(const auto& user: all_users ){
-
-    cout << "user" <<  user << endl;
-
-  }
-}
-
-// still need to add function for removing games that belong to a particlar user
-
-
-
-// update games_collection vector
-vector<string> update_games_collection(vector<string>& games_collect, string& game_name,string& owner )
-{
-  string new_entry;
-  new_entry= game_name+" "+owner;
-  games_collect.push_back(new_entry);
-
-  return games_collect;
-}
+// vector<string> update_games_to_add_vector(vector<string>& games_to_add_vec, string& new_game_to_sell)
+//  {
+//
+//     games_to_add_vec.push_back(new_game_to_sell);
+//
+//
+//
+//       return games_to_add_vec;
+//   }
+//
+// vector<string> update_games_list(vector<string>& current_games,vector<string>& new_games)
+// {
+//   for(int i=0; i<new_games.size();i++)
+//   {
+//
+//     current_games.push_back(new_games[i]);
+//   }
+//   return current_games;
+// }
+//
+// void remove_user(string user_to_remove,  vector<string>& all_users) {
+//   for(int i=0;i<all_users.size(); i++){
+//
+//     string trimmed_user=utils().convert_to_lower(all_users[i].substr(0,user_to_remove.size()));
+//     if(trimmed_user==user_to_remove){
+//       cout << "user removed" << endl;
+//       all_users.erase(all_users.begin() + i);
+//     }
+//   }
+//   for(const auto& user: all_users ){
+//
+//     cout << "user" <<  user << endl;
+//
+//   }
+// }
+//
+//
+//
+//
+//
+// // update games_collection vector
+// vector<string> update_games_collection(vector<string>& games_collect, string& game_name,string& owner )
+// {
+//   string new_entry;
+//   new_entry= game_name+" "+owner;
+//   games_collect.push_back(new_entry);
+//
+//   return games_collect;
+// }

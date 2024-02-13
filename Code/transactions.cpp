@@ -22,6 +22,7 @@ transactions::transactions()
 
 }
 
+// logic for sell transaction
 string transactions::process_sell(vector<string>& all_games,vector<string>& games_to_add, string current_user_name)
 {
 
@@ -98,7 +99,7 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
     return constants::FAIL_OPTION;
 }
 
-
+// logic for create transaction
 string transactions::process_create(vector<string>& all_users){
 
   unordered_map <string, string> user_type_codes = {{"1","AA"},{"2","FS"},{"3","BS"},{"4","SS"}};
@@ -206,6 +207,7 @@ string transactions::process_create(vector<string>& all_users){
 
 }
 
+// logic for delete transactions
 string transactions:: process_delete(vector<string>& all_users, string current_user){
 
   string user_to_remove;
@@ -238,6 +240,7 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
 }
 
+// logic for show all users transaction
 void transactions::show_all_users(vector<string>& all_users)
 {
   cout<<"All Users"<<endl;
@@ -251,6 +254,7 @@ void transactions::show_all_users(vector<string>& all_users)
   }
 }
 
+// logic for show all game info transaction
 void transactions::show_all_game_info(vector<string>& all_games)
 {
   cout<<"All Games Available"<<endl;
@@ -264,6 +268,7 @@ void transactions::show_all_game_info(vector<string>& all_games)
   }
 }
 
+// logic for refund transaction
 string transactions:: refund(vector<string>& all_users,vector<string>& all_games,vector<string>& game_collec)
   {
 

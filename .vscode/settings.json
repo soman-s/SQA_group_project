@@ -4,6 +4,11 @@
         "vector": "cpp",
         "xstring": "cpp",
         "iostream": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "list": "cpp",
+        "xhash": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp",
+        "xutility": "cpp"
     }
 }

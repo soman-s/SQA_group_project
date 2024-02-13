@@ -226,3 +226,14 @@ float games_file_process::get_game_price(vector<string>& all_games, string& game
   
   return stof(current_game_price);
 }
+
+
+// update games_collection vector
+vector<string> games_file_process::update_games_collection(vector<string>& games_collect, string& game_name,string& owner)
+{
+  string new_entry;
+  new_entry= game_name+" "+owner;
+  games_collect.push_back(new_entry);
+
+  return games_collect;
+}

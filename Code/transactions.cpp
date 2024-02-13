@@ -484,6 +484,22 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
       user_file_process().update_user_balance(all_users, buyer_name, buyer_credit_balance);
       user_file_process().update_user_balance(all_users, seller_name, seller_credit_balance);
 
+      // cout << "GAMES COLLECTION BEFORE BUY TRANSACTION" << endl;
+      // for (int i = 0; i < game_collec.size(); i++)
+      // {
+      //   cout << game_collec[i] << endl;
+      // }
+      // cout << endl;
+
+      games_file_process().update_games_collection(game_collec, game_name, buyer_name);
+
+      // cout << "GAMES COLLECTION AFTER BUY TRANSACTION" << endl;
+      // for (int i = 0; i < game_collec.size(); i++)
+      // {
+      //   cout << game_collec[i] << endl;
+      // }
+      // cout << endl;
+
       cout<< "BALANCE AFTER PURCHASE" << endl;
       cout<< "SELLER: " << seller_credit_balance << endl;
       cout<< "BUYER: " << buyer_credit_balance << endl;

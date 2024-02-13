@@ -31,7 +31,7 @@ bool games_file_process::check_valid_game_name(string& game_name)
   return false;
 }
 
-
+// reads in the game information from file and stores in to a vector used for processing
 vector<string> games_file_process::get_all_game_info(string game_file)
 {
   ifstream input_stream;
@@ -56,6 +56,7 @@ while(getline(input_stream, line))
   return all_game_info;
 }
 
+// check if new game name entered already exists
 bool games_file_process::check_game_already_exists(vector<string>& game_info,string& game_name)
 {
 
@@ -78,6 +79,7 @@ bool games_file_process::check_game_already_exists(vector<string>& game_info,str
   return false;
 }
 
+// checks if user already owns the game
 bool games_file_process:: check_user_owns_game(vector<string>& games_collection,string& game_name,string& buyer_name)
 {
 
@@ -109,6 +111,7 @@ bool games_file_process:: check_user_owns_game(vector<string>& games_collection,
 }
 
 
+// checks if seller actually sells the game name entered
 bool games_file_process:: check_user_sells_game(vector<string>& all_games,string& game_name,string& seller_name)
 {
 
@@ -140,7 +143,7 @@ bool games_file_process:: check_user_sells_game(vector<string>& all_games,string
 }
 
 
-
+// checks to see if the game price enetered is the same as the actual price of the game being sold
 bool games_file_process::is_game_price(vector<string>& all_games,string& game_name,float& game_price)
 {
 
@@ -176,6 +179,7 @@ bool games_file_process::is_game_price(vector<string>& all_games,string& game_na
   return false;
 }
 
+// removes removes enetry from games_colletion vector given game name and user name 
 void games_file_process::remove_game_from_user_collection(vector<string>& games_collection,string& game_name,string& user_name)
 {
   utils utility;

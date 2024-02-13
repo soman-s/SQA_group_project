@@ -22,6 +22,7 @@ transactions::transactions()
 
 }
 
+// logic for sell transaction
 string transactions::process_sell(vector<string>& all_games,vector<string>& games_to_add, string current_user_name)
 {
 
@@ -98,7 +99,7 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
     return constants::FAIL_OPTION;
 }
 
-
+// logic for create transaction
 string transactions::process_create(vector<string>& all_users){
 
   unordered_map <string, string> user_type_codes = {{"1","AA"},{"2","FS"},{"3","BS"},{"4","SS"}};
@@ -206,6 +207,7 @@ string transactions::process_create(vector<string>& all_users){
 
 }
 
+// logic for delete transactions
 string transactions:: process_delete(vector<string>& all_users, string current_user){
 
   string user_to_remove;
@@ -238,6 +240,7 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
 }
 
+// logic for show all users transaction
 void transactions::show_all_users(vector<string>& all_users)
 {
   cout<<"All Users"<<endl;
@@ -251,6 +254,7 @@ void transactions::show_all_users(vector<string>& all_users)
   }
 }
 
+// logic for show all game info transaction
 void transactions::show_all_game_info(vector<string>& all_games)
 {
   cout<<"All Games Available"<<endl;
@@ -264,6 +268,7 @@ void transactions::show_all_game_info(vector<string>& all_games)
   }
 }
 
+// logic for refund transaction
 string transactions:: refund(vector<string>& all_users,vector<string>& all_games,vector<string>& game_collec)
   {
 
@@ -369,9 +374,6 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
     float seller_credit_balance=user_file_process().get_user_balance(all_users,seller_name);
     float buyer_credit_balance=user_file_process().get_user_balance(all_users,buyer_name);
 
-    cout<<"BALANCE BEFORE REFUND"<<endl;
-    cout<<"SELLER: "<<seller_credit_balance<<endl;
-    cout<<"BUYER: "<<buyer_credit_balance<<endl;
 
     if ((seller_credit_balance-num_refund_price)<0)
     {
@@ -385,9 +387,13 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
 
       seller_credit_balance=seller_credit_balance-num_refund_price;
       buyer_credit_balance=buyer_credit_balance+num_refund_price;
-      games_file_process().remove_game_from_user_collection(game_collec,refund_game_name,buyer_name);
-      user_file_process().update_user_balance(all_users,seller_name,seller_credit_balance);
-      user_file_process().update_user_balance(all_users,buyer_name,buyer_credit_balance);
+
+      // DON'T UPDATE ANY BALANCES
+      // ONLY WRITE TO DAILY TRANSACTION FILE 
+
+      // games_file_process().remove_game_from_user_collection(game_collec,refund_game_name,buyer_name);
+      // user_file_process().update_user_balance(all_users,seller_name,seller_credit_balance);
+      // user_file_process().update_user_balance(all_users,buyer_name,buyer_credit_balance);
     }
     return constants:: SUCESS_OPTION;
 

@@ -13,7 +13,7 @@ menus::menus()
 
 }
 
-
+// displays the home menu, when the user first uses the system
 void menus:: display_home_menu()
 {
   vector<string> options;
@@ -24,6 +24,8 @@ void menus:: display_home_menu()
         cout << i + 1 << ")" << options[i] << endl;
     }
 }
+
+// displays the various types of menus depending on the user type
 void menus:: display_user_menus(string user_type)
 {
   vector<string> options;
@@ -61,6 +63,7 @@ void menus:: display_user_menus(string user_type)
 
 }
 
+// gets the total number of options given the user type
 int menus:: get_num_menu_options(string user_type)
 {
   if (user_type==constants::ADMIN)
@@ -92,16 +95,19 @@ int menus:: get_num_menu_options(string user_type)
 
 }
 
+// gets the menu options from home menu
 string menus:: get_home_option(int index)
 {
   return home_options[index];
 }
 
+// gets the number of options in home/landing menu
 int menus:: get_num_home_options()
 {
   return home_options.size();
 }
 
+// get the menu option given input
 string menus:: get_user_menu_option(string user_type ,int index)
 {
   if (user_type==constants::ADMIN)
@@ -133,8 +139,10 @@ string menus:: get_user_menu_option(string user_type ,int index)
 
 }
 
+
+// creates menus given the user type
 void menus:: display_all_user_types()
-{  
+{
   for(int i=0;i< create_options.size();i++){
     cout << i + 1 << ")" << create_options[i] << endl;
 

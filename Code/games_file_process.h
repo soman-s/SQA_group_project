@@ -21,6 +21,7 @@ public:
   bool check_user_sells_game(vector<string>& all_games,string& game_name,string& seller_name);
   bool is_game_price(vector<string>& all_games,string& game_name,float& game_price);
   void remove_game_from_user_collection(vector<string>& games_collection,string& game_name,string& user_name);
+  float get_game_price(vector<string>& all_games, string& game_name);
 
 
 

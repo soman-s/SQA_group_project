@@ -67,10 +67,38 @@ public:
      */
     string pad_credit_amount(const float& input);
 
-    void update_games_to_add_vector(vector<string>& games_to_add_vec,string& new_game_to_sell);
-    void update_games_list(vector<string>& current_games,vector<string>& new_games);
-    void update_games_collection(vector<string>& games_collect, string& game_name,string& owner);
-    void remove_user(string user, vector<string>& all_users);
+    /**
+ * @brief Updates the games to add vector with a new game to sell.
+ *
+ * @param games_to_add_vec The vector containing games to be added for sale.
+ * @param new_game_to_sell The name of the new game to be added for sale.
+ */
+void update_games_to_add_vector(vector<string>& games_to_add_vec, string& new_game_to_sell);
+
+/**
+ * @brief Updates the current games list with new games.
+ *
+ * @param current_games The vector containing the current list of games.
+ * @param new_games The vector containing new games to be added to the list.
+ */
+void update_games_list(vector<string>& current_games, vector<string>& new_games);
+
+/**
+ * @brief Updates the games collection with a new game and its owner.
+ *
+ * @param games_collect The vector containing the games collection.
+ * @param game_name The name of the new game to be added.
+ * @param owner The owner of the new game.
+ */
+void update_games_collection(vector<string>& games_collect, string& game_name, string& owner);
+
+/**
+ * @brief Removes a user from the list of all users.
+ *
+ * @param user The name of the user to be removed.
+ * @param all_users The vector containing information about all users.
+ */
+void remove_user(string user, vector<string>& all_users);
 };
 
 #endif

@@ -113,10 +113,14 @@ int main()
                             {
                                 string new_game_to_sell;
                                 new_game_to_sell = transactions().process_sell(all_games, games_to_add, current_user_name);
-                                if (new_game_to_sell != "-1") {
+                                if (new_game_to_sell !=constants::FAIL_OPTION)
+                                 {
                                     string game_name = new_game_to_sell.substr(0, constants::MAX_GAME_NAME_LENGTH);
-                                    utils().update_games_to_add_vector(games_to_add, new_game_to_sell);
-                                    utils().update_games_collection(all_games_collection, game_name, current_user_name);
+
+                                    // Don't update the vectors, only take in accounts read from file
+
+                                    //utils().update_games_to_add_vector(games_to_add, new_game_to_sell);
+                                    //utils().update_games_collection(all_games_collection, game_name, current_user_name);
                                 }
                             }
                             else if (user_menu_option == constants::CREATE)
@@ -145,9 +149,12 @@ int main()
                             } else if
                             (user_menu_option == constants::REFUND)
                              {
-                                if (transactions().refund(all_users, all_games, all_games_collection) == constants::FAIL_OPTION) {
+                                if (transactions().refund(all_users, all_games, all_games_collection) == constants::FAIL_OPTION)
+                                 {
                                     cout << "Cannot issue refund, seller will have negative balance" << endl;
-                                } else {
+                                }
+                                else
+                                 {
                                     cout << "Refund Successfully" << endl;
                                 }
                             }
@@ -170,8 +177,9 @@ int main()
                 } // end of user menu loop
 
                 // User logout process
+                // DO ALL THE WIRTING TO THE DAILY TRANSACTION FILES
                 cout << "LOGGED OUT" << endl;
-                utils().update_games_list(all_games, games_to_add);
+                //utils().update_games_list(all_games, games_to_add);
             } // end of successful login
         } // end of login option processing
 

@@ -374,9 +374,6 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
     float seller_credit_balance=user_file_process().get_user_balance(all_users,seller_name);
     float buyer_credit_balance=user_file_process().get_user_balance(all_users,buyer_name);
 
-    cout<<"BALANCE BEFORE REFUND"<<endl;
-    cout<<"SELLER: "<<seller_credit_balance<<endl;
-    cout<<"BUYER: "<<buyer_credit_balance<<endl;
 
     if ((seller_credit_balance-num_refund_price)<0)
     {
@@ -390,9 +387,13 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
 
       seller_credit_balance=seller_credit_balance-num_refund_price;
       buyer_credit_balance=buyer_credit_balance+num_refund_price;
-      games_file_process().remove_game_from_user_collection(game_collec,refund_game_name,buyer_name);
-      user_file_process().update_user_balance(all_users,seller_name,seller_credit_balance);
-      user_file_process().update_user_balance(all_users,buyer_name,buyer_credit_balance);
+
+      // DON'T UPDATE ANY BALANCES
+      // ONLY WRITE TO DAILY TRANSACTION FILE 
+
+      // games_file_process().remove_game_from_user_collection(game_collec,refund_game_name,buyer_name);
+      // user_file_process().update_user_balance(all_users,seller_name,seller_credit_balance);
+      // user_file_process().update_user_balance(all_users,buyer_name,buyer_credit_balance);
     }
     return constants:: SUCESS_OPTION;
 

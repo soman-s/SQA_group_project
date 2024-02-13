@@ -399,3 +399,118 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
 
 
   }
+
+
+string transactions::process_buy(string buyer_name, vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec)
+{
+    utils utility;
+
+    cout<<"Buy"<<endl;
+    string game_name;
+
+    cout<<"Enter Game name:";
+    cin.ignore();
+    getline(cin, game_name);
+    game_name = utility.pad_game_name(game_name);
+
+    // check if game exists
+    while (games_file_process().check_game_already_exists(all_games, game_name) == false)
+    {
+      cout << "Invalid game name or Game name doesn't exist" << endl;
+      cout << "Enter Game name or -1 to quit: ";
+      getline(cin, game_name);
+
+      if (game_name != constants::EXIT_MENU_OPTION)
+      {
+        game_name = utils().pad_game_name(game_name);
+      }
+      else
+      {
+        return constants::FAIL_OPTION;
+      }
+    }
+
+    // check if buyer already owns the requested game
+    while (games_file_process().check_user_owns_game(game_collec, game_name, buyer_name) == true)
+    {
+      cout << buyer_name << " already owns " << game_name <<endl;
+      cout << "Enter another game or enter -1 to quit: ";
+      getline(cin, game_name);
+
+      if (game_name != constants :: EXIT_MENU_OPTION)
+      {
+        game_name = utils().pad_game_name(game_name);
+      }
+      else
+      {
+        return constants::FAIL_OPTION;
+      }
+    }
+  
+  
+    string seller_name;
+    cout << "Enter seller name: ";
+    cin >> seller_name;
+
+    // check if seller sells the requested game
+    while(games_file_process().check_user_sells_game(all_games, game_name, seller_name) == false)
+    {
+      cout << "Invalid Seller name or Seller doesn't Sell Game"<<endl;
+      cout << "Enter Seller name or -1 to quit: ";
+      cin >> seller_name;
+
+      if (seller_name == constants :: EXIT_MENU_OPTION)
+      {
+        return constants::FAIL_OPTION;
+      }
+    }
+
+    // update buyer and seller balances
+    float seller_credit_balance=user_file_process().get_user_balance(all_users, seller_name);
+    float buyer_credit_balance=user_file_process().get_user_balance(all_users, buyer_name);
+
+    cout<< "BALANCE BEFORE PURCHASE" << endl;
+    cout<< "SELLER: " << seller_credit_balance << endl;
+    cout<< "BUYER: " << buyer_credit_balance << endl;
+    cout << endl;
+
+    float game_price = games_file_process().get_game_price(all_games, game_name);
+
+    if (game_price > buyer_credit_balance)
+    {
+      cout << "You do not have enough credits to buy this game. You will return to the previous menu." << endl;
+
+      return constants :: FAIL_OPTION;
+    }
+    else
+    {
+      buyer_credit_balance = buyer_credit_balance - game_price;
+      seller_credit_balance = seller_credit_balance + game_price;
+
+      user_file_process().update_user_balance(all_users, buyer_name, buyer_credit_balance);
+      user_file_process().update_user_balance(all_users, seller_name, seller_credit_balance);
+
+      // cout << "GAMES COLLECTION BEFORE BUY TRANSACTION" << endl;
+      // for (int i = 0; i < game_collec.size(); i++)
+      // {
+      //   cout << game_collec[i] << endl;
+      // }
+      // cout << endl;
+
+      games_file_process().update_games_collection(game_collec, game_name, buyer_name);
+
+      // cout << "GAMES COLLECTION AFTER BUY TRANSACTION" << endl;
+      // for (int i = 0; i < game_collec.size(); i++)
+      // {
+      //   cout << game_collec[i] << endl;
+      // }
+      // cout << endl;
+
+      cout<< "BALANCE AFTER PURCHASE" << endl;
+      cout<< "SELLER: " << seller_credit_balance << endl;
+      cout<< "BUYER: " << buyer_credit_balance << endl;
+      cout << endl;
+    }
+
+    return constants:: SUCESS_OPTION;
+}

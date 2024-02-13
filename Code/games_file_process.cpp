@@ -208,3 +208,36 @@ void games_file_process::remove_game_from_user_collection(vector<string>& games_
   }
 
 }
+
+
+float games_file_process::get_game_price(vector<string>& all_games, string& game_name)
+{
+  string current_game_name;
+  string current_game_price;
+
+  for (int i = 0; i < all_games.size(); i++)
+  {
+    current_game_name = all_games[i].substr(0, constants :: MAX_GAME_NAME_LENGTH);
+    current_game_name  = utility.convert_to_lower(current_game_name);
+
+    if (current_game_name == game_name)
+    {
+      current_game_price = all_games[i].substr((constants::MAX_GAME_NAME_LENGTH + constants::MAX_USER_NAME_LENGTH + 2), all_games[i].length());
+      current_game_price = current_game_price.substr(0, current_game_price.length() - 1);
+      break;
+    }
+  }
+  
+  return stof(current_game_price);
+}
+
+
+// update games_collection vector
+vector<string> games_file_process::update_games_collection(vector<string>& games_collect, string& game_name,string& owner)
+{
+  string new_entry;
+  new_entry= game_name+" "+owner;
+  games_collect.push_back(new_entry);
+
+  return games_collect;
+}

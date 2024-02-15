@@ -82,8 +82,23 @@ public:
     void remove_game_from_user_collection(vector<string>& games_collection, string& game_name, string& user_name);
 
 
+    /**
+    * @brief Retrieves price of a specific game from the available games
+
+    * @param all_games 
+    * @param game_name 
+    */
     float get_game_price(vector<string>& all_games, string& game_name);
     
+
+    /**
+    * @brief adds new game and owner to the game collection 
+
+    * @param games_collect Vector containing the game collection.
+    * @param game_name The name of the game to add.
+    * @param owner username of game owner.
+    * @return  A vector containing the updated games collection.
+    */
     vector<string> update_games_collection(vector<string>& games_collect, string& game_name,string& owner);
 };
 

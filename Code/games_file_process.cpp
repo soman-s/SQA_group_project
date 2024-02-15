@@ -209,7 +209,7 @@ void games_file_process::remove_game_from_user_collection(vector<string>& games_
 
 }
 
-
+// retrives price of a specific game
 float games_file_process::get_game_price(vector<string>& all_games, string& game_name)
 {
   string current_game_name;

@@ -400,7 +400,7 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
 
   }
 
-
+// logic for buy transaction
 string transactions::process_buy(string buyer_name, vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec)
 {
     utils utility;

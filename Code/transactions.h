@@ -74,7 +74,15 @@ public:
      */
     string refund(vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec);
     
-
+    /**
+     * @brief Process a buy transaction.
+     *
+     * @param buyer_name Name of buyer
+     * @param all_users Vector containing all user information.
+     * @param all_games Vector containing all available games.
+     * @param game_collec Vector containing game collections.
+     * @return A message indicating the result of the buy transaction.
+     */
     string process_buy(string buyer_name, vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec);
 };
 

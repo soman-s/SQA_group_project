@@ -143,7 +143,9 @@ string transactions::process_create(vector<string>& all_users){
   cout << "Enter Username: ";
   cin >> username;
 
-  cout << username << endl;
+  username = utils().pad_username(username);
+
+  cout << username.size() << endl;
 
   while(user_file_process().check_user_names(all_users,username) || username.size() > constants::MAX_USER_NAME_LENGTH){
 
@@ -158,14 +160,14 @@ string transactions::process_create(vector<string>& all_users){
     }
 
     cin >> username;
+    username = utils().pad_username(username);
+
 
     if (username == constants::EXIT_MENU_OPTION){
       return constants::EXIT_MENU_OPTION;
     }
 
   }
-
-  username=utils().pad_username(username);
 
 
   float credit_amount=0.0;
@@ -181,15 +183,20 @@ string transactions::process_create(vector<string>& all_users){
     try{
 
       credit_amount = stof(text_credit_amount);
-      if(constants::MIN_CREDIT_AMOUNT <= credit_amount <= constants::MAX_CREDIT_AMOUNT){
-        cout << "Succesfully created new user " << username << " with credit amount $" << credit_amount  << endl;
+
+      if( credit_amount >= constants::MIN_CREDIT_AMOUNT && credit_amount <= constants::MAX_CREDIT_AMOUNT){
+        cout << "Succesfully created new user " << endl;
         text_credit_amount = utils().pad_credit_amount(credit_amount);
-        return username + "_" + user_type_codes[new_account] + "_" + text_credit_amount;
+        return username + " " + user_type_codes[new_account] + " " + text_credit_amount;
       }
 
       cout << "Please enter a valid credit amount or -1 to go back to main menu: ";
       cin >> text_credit_amount;
-      credit_amount = stof(text_credit_amount);
+
+      if (text_credit_amount == constants::EXIT_MENU_OPTION){
+        return constants::EXIT_MENU_OPTION;
+      }
+      
     }
 
     catch (const std::invalid_argument& e) {
@@ -202,7 +209,7 @@ string transactions::process_create(vector<string>& all_users){
   }
 
 
-  return "-1";
+  return constants:: SUCESS_OPTION;
 
 
 }
@@ -218,17 +225,23 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
   cin >> user_to_remove;
 
-  while(user_file_process().check_user_names(all_users,user_to_remove) && user_to_remove!=current_user){
+  user_to_remove = utils().pad_username(user_to_remove);
 
+
+  while(!user_file_process().check_user_names(all_users,user_to_remove) || user_to_remove==current_user){
+    cout << user_to_remove.size() << endl;
+    cout << current_user.size() << endl;
     if(user_to_remove == current_user){
       cout << "user cannot remove itself please try again or -1 to exit: ";
     }
 
     else{
-      cout << "Username already exists please try again or -1 to exit: ";
+      cout << "Username does not exist please try again or -1 to exit: ";
     }
 
     cin >> user_to_remove;
+
+    user_to_remove = utils().pad_username(user_to_remove);
 
     if (user_to_remove == constants::EXIT_MENU_OPTION){
       return constants::EXIT_MENU_OPTION;
@@ -514,3 +527,95 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
 
     return constants:: SUCESS_OPTION;
 }
+
+
+string transactions::process_credit(string menu_option,vector<string>& all_users, string user){
+
+  cout << "Add Credit" << endl;
+  
+  if(menu_option == "6"){
+
+    cout << "Enter username: ";
+
+    cin >> user;
+
+    user = utils().pad_username(user);
+
+    while(!user_file_process().check_user_names(all_users,user)){
+
+      cout << "Username does not exist please try again or -1 to exit: ";
+      
+      cin >> user;
+
+      user = utils().pad_username(user);
+
+      if (user == constants::EXIT_MENU_OPTION){
+        return constants::EXIT_MENU_OPTION;
+      }
+    } 
+  }
+
+  cout << "Please enter credit amount to add: ";
+
+  float credit_amount=0.0;
+  string text_credit_amount;
+
+  cin >> text_credit_amount;
+
+  credit_amount = stof(text_credit_amount);
+
+
+  float user_balance=user_file_process().get_user_balance(all_users, user);
+
+  cout << "user balance before" << user_balance << endl;
+
+  bool valid_credit_amount = false;
+
+
+  while(!valid_credit_amount){
+
+    try{
+
+      if(user_balance + credit_amount > constants::MAX_CREDIT_AMOUNT){
+        cout << "credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit: ";
+
+      }
+
+      else if(credit_amount < constants::MIN_ADD_CREDITS || user_balance  > constants::MAX_ADD_CREDITS) {
+        cout << "Please enter a valid credit amount or -1 to go back to main menu: ";
+
+      }
+
+      else{
+        break;
+      }
+
+      cin >> text_credit_amount;
+      credit_amount = stof(text_credit_amount);
+
+     
+      if (text_credit_amount == constants::EXIT_MENU_OPTION){
+        return constants::EXIT_MENU_OPTION;
+      }
+    }
+
+    catch (const std::invalid_argument& e) {
+      cerr << "Invalid argument: " << e.what() << endl;
+      cout<<"Please enter a valid credit amount or -1 to go back to main menu: ";
+      cin>>text_credit_amount;
+      credit_amount = stof(text_credit_amount);
+
+    }
+
+  }
+
+  user_balance+=credit_amount;
+  cout << "user balance line 604" << user_balance << endl;
+  user_file_process().update_user_balance(all_users, user, user_balance);   
+
+  user_balance=user_file_process().get_user_balance(all_users, user);
+
+  cout << "user balance after" << user_balance << endl;   
+
+  return constants:: SUCESS_OPTION;
+} 

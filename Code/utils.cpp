@@ -134,23 +134,24 @@ void utils::update_games_list(vector<string>& current_games,vector<string>& new_
 }
 
 void utils::remove_user(string user_to_remove,  vector<string>& all_users) {
-  for(int i=0;i<all_users.size(); i++){
-
+  for(int i=0;i<all_users.size(); i++)
+  {
     string trimmed_user=utils().convert_to_lower(all_users[i].substr(0,user_to_remove.size()));
-    if(trimmed_user==user_to_remove){
-      cout << "user removed" << endl;
+    if(trimmed_user==utils().convert_to_lower(user_to_remove)){
       all_users.erase(all_users.begin() + i);
     }
   }
-  for(const auto& user: all_users ){
-
-    cout << "user" <<  user << endl;
-
-  }
 }
 
+void utils::remove_games(string user,vector<string>& current_games)
+{
+  for(int i=0;i<current_games.size();i++){
+    if(current_games[i].find(user) != std::string::npos){
+      current_games.erase(current_games.begin() + i);
+    }
+  }
 
-
+}
 
 
 // update games_collection vector

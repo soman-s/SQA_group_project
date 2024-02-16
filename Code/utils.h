@@ -99,6 +99,9 @@ void update_games_collection(vector<string>& games_collect, string& game_name, s
  * @param all_users The vector containing information about all users.
  */
 void remove_user(string user, vector<string>& all_users);
+
+void remove_games(string user, vector<string>& current_games);
+
 };
 
 #endif

@@ -46,6 +46,8 @@ public:
     static const std::string EXIT_MENU_OPTION; /**< Menu option: Exit. */
     static const float MAX_CREDIT_AMOUNT; /**< Maximum credit amount. */
     static const float MIN_CREDIT_AMOUNT; /**< Minimum credit amount. */
+    static const float MIN_ADD_CREDITS;
+    static const float MAX_ADD_CREDITS;
     static const std::string FAIL_OPTION; /**< Option indicating failure. */
     static const std::string SUCESS_OPTION; /**< Option indicating success. */
 };

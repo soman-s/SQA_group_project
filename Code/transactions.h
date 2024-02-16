@@ -84,6 +84,10 @@ public:
      * @return A message indicating the result of the buy transaction.
      */
     string process_buy(string buyer_name, vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec);
+
+
+    string process_credit(string menu_option, vector<string>& all_users, string user);
+
 };
 
 #endif

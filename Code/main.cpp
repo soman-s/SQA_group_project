@@ -136,7 +136,10 @@ int main()
                                 string user_to_remove;
                                 user_to_remove = transactions().process_delete(all_users, current_user_name);
                                 if (user_to_remove != constants::EXIT_MENU_OPTION) {
-                                    utils().remove_user(user_to_remove, all_users);
+                                  cout << "User deleted" << endl;
+                                  utils().remove_user(user_to_remove, all_users);
+                                  utils().remove_games(user_to_remove, all_games);
+
                                 }
                             }
                             else if (user_menu_option == constants::LIST_ALL_USERS)
@@ -170,6 +173,14 @@ int main()
                                 cout << "Game has been bought" << endl;
                                 cout << endl;
                                 }
+                            }
+
+                            else if (user_menu_option == constants::ADD_CREDIT)
+                            {
+                              if(transactions().process_credit(user_input,all_users,current_user_name) == constants :: SUCESS_OPTION){
+                                cout << "Sucessfully added credit amount to user" << endl;
+                              }
+
                             }
                         }
                         else {

@@ -528,7 +528,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
     return constants:: SUCESS_OPTION;
 }
 
-
+// process for updating a credit amount for a specific user 
 string transactions::process_credit(string menu_option,vector<string>& all_users, string user){
 
   cout << "Add Credit" << endl;

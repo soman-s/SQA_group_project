@@ -133,6 +133,7 @@ void utils::update_games_list(vector<string>& current_games,vector<string>& new_
   //return current_games;
 }
 
+// remove user from user's list 
 void utils::remove_user(string user_to_remove,  vector<string>& all_users) {
   for(int i=0;i<all_users.size(); i++)
   {
@@ -143,6 +144,7 @@ void utils::remove_user(string user_to_remove,  vector<string>& all_users) {
   }
 }
 
+// remove all games associated with the removed user 
 void utils::remove_games(string user,vector<string>& current_games)
 {
   for(int i=0;i<current_games.size();i++){

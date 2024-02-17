@@ -86,6 +86,14 @@ public:
     string process_buy(string buyer_name, vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec);
 
 
+    /**
+     * @brief Process a add-credit transaction.
+     *
+     * @param menu_option menu option to determine if it's an admin or non-admin menu
+     * @param all_users Vector containing all user information.
+     * @param user user to add credit amount to.
+     * @return A message indicating the result of the add credit transaction.
+     */
     string process_credit(string menu_option, vector<string>& all_users, string user);
 
 };

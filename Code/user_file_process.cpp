@@ -11,12 +11,15 @@
 using namespace std;
 
 
-
+/**
+ * @brief Default constructor for the user_file_process class.
+ */
 user_file_process::user_file_process()
 {
 
 }
 
+// Grab all the current users of the application
 vector<string> user_file_process::get_all_users_info(string user_file)
 {
     ifstream input_stream;
@@ -43,6 +46,7 @@ vector<string> user_file_process::get_all_users_info(string user_file)
     return all_user_info;
 }
 
+// Validate if username already exists 
 bool user_file_process::check_user_names(vector<string>& user_info,string& user_name)
 {
 
@@ -65,6 +69,7 @@ bool user_file_process::check_user_names(vector<string>& user_info,string& user_
   return false;
 }
 
+// Grab the user type for a user
 string user_file_process::get_user_type(vector<string>& user_info,string& user_name)
 {
   utils utility;
@@ -89,6 +94,7 @@ string user_file_process::get_user_type(vector<string>& user_info,string& user_n
   return "";
 }
 
+// Grab the the total balance/credit of a user
 float user_file_process::get_user_balance(vector<string>& user_info,string& user_name)
 {
   string current_user_info;
@@ -100,7 +106,6 @@ float user_file_process::get_user_balance(vector<string>& user_info,string& user
     current_user_info=utils().convert_to_lower(user_info[i].substr(0,constants::MAX_USER_NAME_LENGTH));
       if (current_user_info==test_user)
     {
-      //cout<<"FOUIND"<<endl;
 
       float num_credit_amount;
       string credit_amount = user_info[i].substr(constants::MAX_USER_NAME_LENGTH + constants::MAX_ACCOUNT_TYPE_LENGTH + 2);
@@ -117,6 +122,7 @@ float user_file_process::get_user_balance(vector<string>& user_info,string& user
   return 0;
 }
 
+// Update the user's balance/credit amount. 
 void user_file_process::update_user_balance(vector<string>& user_info,string& user_name, float&credit_amount)
 {
   string current_user_info;
@@ -124,11 +130,9 @@ void user_file_process::update_user_balance(vector<string>& user_info,string& us
   test_user=utils().pad_username(test_user);
   for (int i=0; i<user_info.size();i++)
   {
-    //cout<<user_info[i].length()<<endl;
     current_user_info=utils().convert_to_lower(user_info[i].substr(0,constants::MAX_USER_NAME_LENGTH));
       if (current_user_info==test_user)
     {
-      //cout<<"FOUIND"<<endl;
       int starting_pos=constants::MAX_USER_NAME_LENGTH + constants::MAX_ACCOUNT_TYPE_LENGTH + 2;
       int len= (user_info[i].length()+1)- starting_pos;
       string new_credit_amount;
@@ -137,7 +141,6 @@ void user_file_process::update_user_balance(vector<string>& user_info,string& us
       replacement_credit=new_credit_amount+"\r";
 
       user_info[i].replace(starting_pos,len,replacement_credit);
-      //cout<<user_info[i].length()<<endl;
 
     }
 

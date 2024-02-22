@@ -23,7 +23,7 @@ transactions::transactions()
 }
 
 // logic for sell transaction
-string transactions::process_sell(vector<string>& all_games,vector<string>& games_to_add, string current_user_name)
+string transactions::process_sell(vector<string>& all_games,vector<string>& games_to_add, string current_user_name,vector<string>& transaction_log)
 {
 
     string new_game_name;
@@ -92,7 +92,14 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
   text_new_game_price=utils().pad_game_price(num_new_game_price);
   if (text_new_game_price!=constants::EXIT_MENU_OPTION&&new_game_name != constants::EXIT_MENU_OPTION)
   {
-    return new_game_name+" "+current_user_name+" "+ text_new_game_price+"/r";
+    string log_entry;
+
+    string new_game_to_sell=new_game_name+" "+current_user_name+" "+ text_new_game_price;
+
+    log_entry= constants::SELL_GAME_CODE+" "+new_game_to_sell;
+    utils().update_transction_log(log_entry,transaction_log);
+
+    return new_game_to_sell;
   }
 
 
@@ -282,7 +289,7 @@ void transactions::show_all_game_info(vector<string>& all_games)
 }
 
 // logic for refund transaction
-string transactions:: refund(vector<string>& all_users,vector<string>& all_games,vector<string>& game_collec)
+string transactions:: refund(vector<string>& all_users,vector<string>& all_games,vector<string>& game_collec,vector<string>& transaction_log)
   {
 
     utils utility;
@@ -407,7 +414,17 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
       // games_file_process().remove_game_from_user_collection(game_collec,refund_game_name,buyer_name);
       // user_file_process().update_user_balance(all_users,seller_name,seller_credit_balance);
       // user_file_process().update_user_balance(all_users,buyer_name,buyer_credit_balance);
+
+      string log_entry;
+      string log_seller_name=utils().pad_username(seller_name);
+      string log_buyer_name=utils().pad_username(buyer_name);
+      string log_text_refund_price=utils().pad_credit_amount(num_refund_price);
+
+      log_entry=constants::REFUND_CODE+" "+log_buyer_name+" "+log_seller_name+" "+log_text_refund_price;
+      utils().update_transction_log(log_entry,transaction_log);
     }
+
+
     return constants:: SUCESS_OPTION;
 
 

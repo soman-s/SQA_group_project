@@ -43,3 +43,5 @@ const std::string constants:: SUCESS_OPTION="1";
 // transaction log codes
 
 const std::string constants::LOGOUT_CODE= "00";
+const std::string constants::SELL_GAME_CODE= "03";
+const std::string constants::REFUND_CODE= "05";

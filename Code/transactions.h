@@ -31,7 +31,7 @@ public:
      * @param current_user_name The name of the current user.
      * @return A message indicating the result of the transaction.
      */
-    string process_sell(vector<string>& all_games, vector<string>& games_to_add, string current_user_name);
+    string process_sell(vector<string>& all_games, vector<string>& games_to_add, string current_user_name,vector<string>& transaction_log);
 
     /**
      * @brief Process the creation of a new user.
@@ -72,7 +72,7 @@ public:
      * @param game_collec Vector containing game collections.
      * @return A message indicating the result of the refund transaction.
      */
-    string refund(vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec);
+    string refund(vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec,vector<string>& transaction_log);
 
     /**
      * @brief Process a buy transaction.

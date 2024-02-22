@@ -113,7 +113,7 @@ int main()
                             if (user_menu_option == constants::SELL)
                             {
                                 string new_game_to_sell;
-                                new_game_to_sell = transactions().process_sell(all_games, games_to_add, current_user_name);
+                                new_game_to_sell = transactions().process_sell(all_games, games_to_add, current_user_name,transaction_log);
                                 if (new_game_to_sell !=constants::FAIL_OPTION)
                                  {
                                     string game_name = new_game_to_sell.substr(0, constants::MAX_GAME_NAME_LENGTH);
@@ -122,6 +122,7 @@ int main()
 
                                     //utils().update_games_to_add_vector(games_to_add, new_game_to_sell);
                                     //utils().update_games_collection(all_games_collection, game_name, current_user_name);
+
                                 }
                             }
                             else if (user_menu_option == constants::CREATE)
@@ -153,12 +154,13 @@ int main()
                             } else if
                             (user_menu_option == constants::REFUND)
                              {
-                                if (transactions().refund(all_users, all_games, all_games_collection) == constants::FAIL_OPTION)
+                                if (transactions().refund(all_users, all_games, all_games_collection,transaction_log) == constants::FAIL_OPTION)
                                  {
                                     cout << "Cannot issue refund, seller will have negative balance" << endl;
                                 }
                                 else
                                  {
+                                   // daily transaction log is updated in the transactions().refund classs
                                     cout << "Refund Successfully" << endl;
                                 }
                             }
@@ -207,7 +209,7 @@ int main()
                 string log_entry;
                 log_entry= constants::LOGOUT_CODE+" "+current_user_name+" "+current_user_type+" "+user_file_process().get_user_credit(all_users,current_user_name);
                 utils().update_transction_log(log_entry,transaction_log);
-                
+
 
                 //utils().update_games_list(all_games, games_to_add);
             } // end of successful login

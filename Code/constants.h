@@ -53,6 +53,8 @@ public:
 
     // log codes
     static const std::string LOGOUT_CODE;
+    static const std::string SELL_GAME_CODE;
+    static const std::string REFUND_CODE;
 
 };
 

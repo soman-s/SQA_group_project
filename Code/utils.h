@@ -102,6 +102,8 @@ void remove_user(string user, vector<string>& all_users);
 
 void remove_games(string user, vector<string>& current_games);
 
+void update_transction_log(string entry,vector<string>& transaction_log);
+
 };
 
 #endif

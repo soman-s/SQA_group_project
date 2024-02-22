@@ -50,6 +50,10 @@ public:
     static const float MAX_ADD_CREDITS;/**< Maximum credit amount to add */
     static const std::string FAIL_OPTION; /**< Option indicating failure. */
     static const std::string SUCESS_OPTION; /**< Option indicating success. */
+
+    // log codes
+    static const std::string LOGOUT_CODE;
+
 };
 
 #endif

@@ -46,7 +46,7 @@ vector<string> user_file_process::get_all_users_info(string user_file)
     return all_user_info;
 }
 
-// Validate if username already exists 
+// Validate if username already exists
 bool user_file_process::check_user_names(vector<string>& user_info,string& user_name)
 {
 
@@ -122,7 +122,7 @@ float user_file_process::get_user_balance(vector<string>& user_info,string& user
   return 0;
 }
 
-// Update the user's balance/credit amount. 
+// Update the user's balance/credit amount.
 void user_file_process::update_user_balance(vector<string>& user_info,string& user_name, float&credit_amount)
 {
   string current_user_info;
@@ -147,4 +147,28 @@ void user_file_process::update_user_balance(vector<string>& user_info,string& us
   }
 
 
+}
+
+
+string  user_file_process::get_user_credit(vector<string>& user_info,string& user_name)
+{
+  string current_user_info;
+  string test_user= utils().convert_to_lower(user_name);
+  test_user=utils().pad_username(test_user);
+  for (int i=0; i<user_info.size();i++)
+  {
+
+    current_user_info=utils().convert_to_lower(user_info[i].substr(0,constants::MAX_USER_NAME_LENGTH));
+      if (current_user_info==test_user)
+    {
+
+      string credit_amount = user_info[i].substr(constants::MAX_USER_NAME_LENGTH + constants::MAX_ACCOUNT_TYPE_LENGTH + 2);
+      credit_amount=credit_amount.substr(0, credit_amount.length() - 1);
+      return credit_amount;
+
+    }
+
+  }
+
+  return "";
 }

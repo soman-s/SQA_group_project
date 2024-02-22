@@ -73,7 +73,7 @@ public:
      * @return A message indicating the result of the refund transaction.
      */
     string refund(vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec);
-    
+
     /**
      * @brief Process a buy transaction.
      *
@@ -96,6 +96,7 @@ public:
      */
     string process_credit(string menu_option, vector<string>& all_users, string user);
 
+    void process_logout(vector<string>& transaction_log);
 };
 
 #endif

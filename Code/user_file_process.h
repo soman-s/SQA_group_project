@@ -62,6 +62,8 @@ public:
      */
     void update_user_balance(vector<string>& user_info,string& user_name, float& credit_amount);
 
+    string get_user_credit(vector<string>& user_info,string& user_name);
+
 };
 
 #endif

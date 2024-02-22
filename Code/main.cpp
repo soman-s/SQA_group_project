@@ -21,6 +21,7 @@ using namespace std;
 int main()
 {
     // Initialization of data structures
+    vector <string> transaction_log;
     vector<string> all_users; /**< Vector containing information about all users. */
     vector<string> all_games; /**< Vector containing information about all available games. */
     vector<string> all_games_collection; /**< Vector containing information about games owned by users. */
@@ -201,8 +202,13 @@ int main()
                 } // end of user menu loop
 
                 // User logout process
-                // DO ALL THE WIRTING TO THE DAILY TRANSACTION FILES
+
                 cout << "LOGGED OUT" << endl;
+                string log_entry;
+                log_entry= constants::LOGOUT_CODE+" "+current_user_name+" "+current_user_type+" "+user_file_process().get_user_credit(all_users,current_user_name);
+                utils().update_transction_log(log_entry,transaction_log);
+                
+
                 //utils().update_games_list(all_games, games_to_add);
             } // end of successful login
         } // end of login option processing
@@ -212,5 +218,6 @@ int main()
     } // end of home menu loop
 
     cout << "EXITS" << endl;
+    transactions().process_logout(transaction_log);
     return 0;
 }

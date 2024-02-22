@@ -196,7 +196,7 @@ string transactions::process_create(vector<string>& all_users){
       if (text_credit_amount == constants::EXIT_MENU_OPTION){
         return constants::EXIT_MENU_OPTION;
       }
-      
+
     }
 
     catch (const std::invalid_argument& e) {
@@ -402,7 +402,7 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
       buyer_credit_balance=buyer_credit_balance+num_refund_price;
 
       // DON'T UPDATE ANY BALANCES
-      // ONLY WRITE TO DAILY TRANSACTION FILE 
+      // ONLY WRITE TO DAILY TRANSACTION FILE
 
       // games_file_process().remove_game_from_user_collection(game_collec,refund_game_name,buyer_name);
       // user_file_process().update_user_balance(all_users,seller_name,seller_credit_balance);
@@ -459,8 +459,8 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
         return constants::FAIL_OPTION;
       }
     }
-  
-  
+
+
     string seller_name;
     cout << "Enter seller name: ";
     cin >> seller_name;
@@ -528,11 +528,11 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
     return constants:: SUCESS_OPTION;
 }
 
-// process for updating a credit amount for a specific user 
+// process for updating a credit amount for a specific user
 string transactions::process_credit(string menu_option,vector<string>& all_users, string user){
 
   cout << "Add Credit" << endl;
-  
+
   if(menu_option == "6"){
 
     cout << "Enter username: ";
@@ -544,7 +544,7 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
     while(!user_file_process().check_user_names(all_users,user)){
 
       cout << "Username does not exist please try again or -1 to exit: ";
-      
+
       cin >> user;
 
       user = utils().pad_username(user);
@@ -552,7 +552,7 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
       if (user == constants::EXIT_MENU_OPTION){
         return constants::EXIT_MENU_OPTION;
       }
-    } 
+    }
   }
 
   cout << "Please enter credit amount to add: ";
@@ -593,7 +593,7 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
       cin >> text_credit_amount;
       credit_amount = stof(text_credit_amount);
 
-     
+
       if (text_credit_amount == constants::EXIT_MENU_OPTION){
         return constants::EXIT_MENU_OPTION;
       }
@@ -611,11 +611,28 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
   user_balance+=credit_amount;
   cout << "user balance line 604" << user_balance << endl;
-  user_file_process().update_user_balance(all_users, user, user_balance);   
+  user_file_process().update_user_balance(all_users, user, user_balance);
 
   user_balance=user_file_process().get_user_balance(all_users, user);
 
-  cout << "user balance after" << user_balance << endl;   
+  cout << "user balance after" << user_balance << endl;
 
   return constants:: SUCESS_OPTION;
-} 
+}
+
+
+void transactions::process_logout(vector<string>& transaction_log)
+{
+  ofstream output_stream;
+  output_stream.open("log_files/daily_transactions.etf");
+
+  for (const string& transaction : transaction_log) {
+       output_stream << transaction << std::endl;
+   }
+
+
+  output_stream.close();
+
+
+  return;
+}

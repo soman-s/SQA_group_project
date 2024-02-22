@@ -133,7 +133,7 @@ void utils::update_games_list(vector<string>& current_games,vector<string>& new_
   //return current_games;
 }
 
-// remove user from user's list 
+// remove user from user's list
 void utils::remove_user(string user_to_remove,  vector<string>& all_users) {
   for(int i=0;i<all_users.size(); i++)
   {
@@ -144,7 +144,7 @@ void utils::remove_user(string user_to_remove,  vector<string>& all_users) {
   }
 }
 
-// remove all games associated with the removed user 
+// remove all games associated with the removed user
 void utils::remove_games(string user,vector<string>& current_games)
 {
   for(int i=0;i<current_games.size();i++){
@@ -164,4 +164,16 @@ void utils::update_games_collection(vector<string>& games_collect, string& game_
   games_collect.push_back(new_entry);
 
   //return games_collect;
+}
+
+void utils::update_transction_log(string entry,vector<string>& transaction_log)
+{
+  transaction_log.push_back(entry);
+  // Print the contents of the 'transaction_log' vector
+
+// for (const auto& transaction : transaction_log) {
+//     // Assuming 'transaction' has an appropriate way to be printed
+//     std::cout << transaction << std::endl;
+// }
+
 }

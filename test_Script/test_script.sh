@@ -1,12 +1,9 @@
 
 #!/bin/bash
-# Move back one directory from the current directory
+#!/bin/sh
 
 custom_program="prototype_a.exe"
 cd ..
-# Print the current working directory to verify the change
-echo "Current directory: $(pwd)"
-
 test_inputs=()
 output_bto=()
 
@@ -41,7 +38,7 @@ for subdir in  login logout; do
            inputs_path="../Tests/$subdir/$folder/inputs/./$file"
            test_inputs+=("$inputs_path")
 
-            #run_custom_program "$file"
+
         else
             echo "Input file $file does not exist."
             echo "../Tests/$subdir/$folder/inputs/./$file"
@@ -65,13 +62,19 @@ for index in "${!test_inputs[@]}"; do
     # Access the input file at the current index
     input_file="${test_inputs[$index]}"
     # Access the corresponding output path at the current index
-    output_path="${output_bto[$index]}/output.bto"
+    output_path="${output_bto[$index]}"
+
+    output_path_file="${output_bto[$index]}/output.bto"
+
 
     # Run custom program with input from the current test file and output to the corresponding path
     echo "Running custom program with input from $input_file and output to $output_path..."
     if [ -r "$input_file" ]; then
         # Run the custom program with input from the current test file and output to the corresponding path
-        ./"$(basename "$custom_program")" < "$input_file" > "$output_path"
+        ./"$(basename "$custom_program")" < "$input_file" > "$output_path_file"
+
+        # Copying Log Files to Test directories
+        cp -r ./log_files/ "$output_path"
     else
         echo "$input_file is not readable or does not exist."
     fi

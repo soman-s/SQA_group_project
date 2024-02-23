@@ -22,9 +22,9 @@ const std::string constants::LOGOUT = "Logout";
 
 
 // file stuff
-const std::string constants::ALL_USER_FILE="files/current_users.etf";
-const std::string constants::AVAILABLE_GAMES="files/available_games.etf";
-const std::string constants::GAMES_COLLECTION="files/game_collection.etf";
+const std::string constants::ALL_USER_FILE="log_files/current_users.etf";
+const std::string constants::AVAILABLE_GAMES="log_files/available_games.etf";
+const std::string constants::GAMES_COLLECTION="log_files/game_collection.etf";
 
 // Constraints
 const int constants::MAX_USER_NAME_LENGTH=15;

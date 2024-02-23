@@ -8,6 +8,7 @@ cd ..
 echo "Current directory: $(pwd)"
 
 test_inputs=()
+output_bto=()
 
 # GETS ALL THE INPUTS FROM TESTS
 # Change into the Tests directory
@@ -25,6 +26,11 @@ for subdir in  login logout; do
 
         # Change into the folder
         cd "$folder" || { echo "Failed to enter folder: $folder"; continue; }
+
+        # GET OUTPUT PATH FOR BTO FILES
+        bto_paths="../Tests/$subdir/$folder/outputs/actual/"
+        output_bto+=("$bto_paths")
+
         # Navigate into the "inputs" folder
         cd inputs || { echo "Failed to enter inputs folder"; continue; }
         inputs_path="../Tests/$subdir/$folder/inputs/"
@@ -54,13 +60,18 @@ done
 cd ..
 cd Code
 
-# Loop through each test input file
-for input_file in "${test_inputs[@]}"; do
-    # Run custom program with input from the current test file
-    echo "Running custom program with input from $input_file..."
+# Loop through each index in the array of test input files
+for index in "${!test_inputs[@]}"; do
+    # Access the input file at the current index
+    input_file="${test_inputs[$index]}"
+    # Access the corresponding output path at the current index
+    output_path="${output_bto[$index]}/output.bto"
+
+    # Run custom program with input from the current test file and output to the corresponding path
+    echo "Running custom program with input from $input_file and output to $output_path..."
     if [ -r "$input_file" ]; then
-        # Run the custom program with input from the current test file
-        ./"$(basename "$custom_program")" < "$input_file"
+        # Run the custom program with input from the current test file and output to the corresponding path
+        ./"$(basename "$custom_program")" < "$input_file" > "$output_path"
     else
         echo "$input_file is not readable or does not exist."
     fi

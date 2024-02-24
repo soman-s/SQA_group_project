@@ -38,6 +38,7 @@ const float constants::MAX_ADD_CREDITS=1000.00;
 const std::string constants::EXIT_MENU_OPTION="-1";
 const std::string constants:: FAIL_OPTION="-1";
 const std::string constants:: SUCESS_OPTION="1";
+const std::string constants:: ERROR_CODE="-10";
 
 
 // transaction log codes

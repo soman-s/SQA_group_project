@@ -12,7 +12,8 @@ Enter an option: LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: HOME MENU
+Enter an option: Invalid argument. Please enter a valid integer.
+HOME MENU
 1)Login
 2)Exit
 Enter an option: EXITS

@@ -63,12 +63,12 @@ for index in "${!test_inputs[@]}"; do
     input_file="${test_inputs[$index]}"
     # Access the corresponding output path at the current index
     output_path="${output_bto[$index]}"
+    test_name=$(basename "$(dirname "$(dirname "$output_path")")")
 
-    output_path_file="${output_bto[$index]}/output.bto"
-
+    output_path_file="${output_bto[$index]}/$test_name.bto"
 
     # Run custom program with input from the current test file and output to the corresponding path
-    echo "Running custom program with input from $input_file and output to $output_path..."
+    echo "Running Test $test_name"
     if [ -r "$input_file" ]; then
         # Run the custom program with input from the current test file and output to the corresponding path
         ./"$(basename "$custom_program")" < "$input_file" > "$output_path_file"

@@ -37,6 +37,11 @@ int main()
     // Main loop for user interaction
     while (menu_option != constants::EXIT)
     {
+      if(menu_option==constants::ERROR_CODE)
+      {
+        cout << "Invalid argument. Please enter a valid integer." << endl;
+        menu_option = "";
+      }
         string user_input;
         int num_entry;
 
@@ -60,13 +65,13 @@ int main()
         }
         catch (const std::invalid_argument&)
         {
-            cerr << "Invalid argument. Please enter a valid integer." << endl;
-            menu_option = "";
+
+            menu_option = constants::ERROR_CODE;
         }
         catch (const std::out_of_range&)
         {
-            cerr << "Out of range. Please enter a smaller integer." << endl;
-            menu_option = "";
+            //cout << "Out of range. Please enter a smaller integer." << endl;
+            menu_option = constants::ERROR_CODE;
         }
 
         // Process selected option

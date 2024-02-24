@@ -88,7 +88,7 @@ int main()
             while (!user_file_process().check_user_names(all_users, current_user_name) && current_user_name != constants::EXIT_MENU_OPTION)
              {
                 cout << "Invalid Login" << endl;
-                cout << "Enter valid username or -1 to exit:";
+                cout << "Enter valid username or -1 to exit: ";
                 cin >> current_user_name;
                 if (current_user_name != constants::EXIT_MENU_OPTION) {
                     current_user_name = utils().pad_username(current_user_name);

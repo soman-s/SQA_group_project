@@ -1,10 +1,14 @@
 HOME MENU
 1)Login
 2)Exit
-Enter an option: Login
-Enter Username: Invalid Login
-Enter valid username or -1 to exit:EXIT
+Enter an option: 1
+Login
+Enter Username: buy19
+Invalid Login
+Enter valid username or -1 to exit: -1
+EXIT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: EXITS
+Enter an option: 2
+EXITS

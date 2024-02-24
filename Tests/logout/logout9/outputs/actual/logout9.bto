@@ -1,19 +1,24 @@
 HOME MENU
 1)Login
 2)Exit
-Enter an option: Login
-Enter Username: Logged IN
+Enter an option: 1
+Login
+Enter Username: sell1
+Logged IN
 Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
 4)Logout
-Enter an option: LOGGED OUT
+Enter an option: 4
+LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: Invalid entry
+Enter an option: 3
+Invalid entry
 HOME MENU
 1)Login
 2)Exit
-Enter an option: EXITS
+Enter an option: 2
+EXITS

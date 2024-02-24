@@ -1,8 +1,10 @@
 HOME MENU
 1)Login
 2)Exit
-Enter an option: Login
-Enter Username: Logged IN
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
 Admin Menu
 1)Create
 2)Delete
@@ -13,8 +15,10 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: LOGGED OUT
+Enter an option: 9
+LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: EXITS
+Enter an option: 2
+EXITS

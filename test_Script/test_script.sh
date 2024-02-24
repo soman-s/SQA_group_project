@@ -67,12 +67,47 @@ for index in "${!test_inputs[@]}"; do
 
     output_path_file="${output_bto[$index]}/$test_name.bto"
 
+    temp_file=$(mktemp)
+
     # Run custom program with input from the current test file and output to the corresponding path
     echo "Running Test $test_name"
     if [ -r "$input_file" ]; then
         # Run the custom program with input from the current test file and output to the corresponding path
         ./"$(basename "$custom_program")" < "$input_file" > "$output_path_file"
 
+        mapfile -t lines < "$input_file"
+        index=0
+
+        while IFS= read -r line; do
+            # Process each line here
+            if [[ "$line" == *":"* ]]; then
+                # Find the position of the first colon
+                semicolon_pos=$(expr index "$line" ":")
+                
+                # Extract the substring from the beginning of the line up to the colon
+                before_colon=${line:0:$((semicolon_pos))}
+                after_colon=${line:$semicolon_pos+1}
+                
+                # Define the new value to append after the colon position
+                new_value=${lines[index]}
+                
+                # Combine the substring before the colon with the new value
+                new_line="${before_colon} ${new_value}"
+                
+                # Output the new line
+                echo "$new_line"
+                echo "$after_colon"
+
+                ((index+=1))
+            else
+                echo "$line"
+
+            fi
+        
+        done < "$output_path_file" >> "$temp_file" 
+
+        mv "$temp_file" "$output_path_file"
+        
         # Copying Log Files to Test directories
         cp -r ./log_files/ "$output_path"
     else

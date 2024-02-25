@@ -3,7 +3,10 @@
 #!/bin/sh
 
 summary_bto_differences_file="../Tests/test_summary/bto_diff_summary.txt"
-summary_log_differences_file="../Tests/test_summary/log_diff_summary.txt"
+summary_daily_transaction_differences_file="../Tests/test_summary/daily_transactions_diff_summary.txt"
+summary_available_games_differences_file="../Tests/test_summary/available_games_diff_summary.txt"
+summary_games_collection_differences_file="../Tests/test_summary/games_collection_diff_summary.txt"
+summary_users_differences_file="../Tests/test_summary/users_diff_summary.txt"
 custom_program="prototype_a.exe"
 
 cd ..
@@ -75,8 +78,10 @@ cd Code
 rm "$summary_bto_differences_file"
 touch "$summary_bto_differences_file"
 
-rm "$summary_log_differences_file"
-touch "$summary_log_differences_file"
+rm "$summary_daily_transaction_differences_file"
+touch "$summary_daily_transaction_differences_file"
+
+
 
 # Loop through each index in the array of test input files
 for index in "${!test_inputs[@]}"; do
@@ -242,16 +247,16 @@ for index in "${!test_inputs[@]}"; do
 
         if [ -n "$diff_output" ]; then
             # If there are differences, save them to the differences file
-            echo "Test: $test_name" >> "$summary_log_differences_file"
-            echo "Expected Daily Transactions File and Actual Daily Transactions File Do Not Match" >> "$summary_log_differences_file"
-            echo "Differences:" >> "$summary_log_differences_file"
-            diff "$expected_transaction" "$actual_transaction" >> "$summary_log_differences_file"
-            echo "==================================" >> "$summary_log_differences_file"
+            echo "Test: $test_name" >> "$summary_daily_transaction_differences_file"
+            echo "Expected Daily Transactions File and Actual Daily Transactions File Do Not Match" >> "$summary_daily_transaction_differences_file"
+            echo "Differences:" >> "$summary_daily_transaction_differences_file"
+            diff "$expected_transaction" "$actual_transaction" >> "$summary_daily_transaction_differences_file"
+            echo "==================================" >> "$summary_daily_transaction_differences_file"
         else
             # If there are no differences, indicate that in the summary file
-            echo "Test: $test_name" >> "$summary_log_differences_file"
-            echo "Expected Daily Transactions File and Actual Daily Transactions File Match" >> "$summary_log_differences_file"
-            echo "===================================" >> "$summary_log_differences_file"
+            echo "Test: $test_name" >> "$summary_daily_transaction_differences_file"
+            echo "Expected Daily Transactions File and Actual Daily Transactions File Match" >> "$summary_daily_transaction_differences_file"
+            echo "===================================" >> "$summary_daily_transaction_differences_file"
         fi
 
 

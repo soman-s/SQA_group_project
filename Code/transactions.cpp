@@ -244,23 +244,24 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
 
   while(!user_file_process().check_user_names(all_users,user_to_remove) || user_to_remove==current_user){
-    cout << user_to_remove.size() << endl;
-    cout << current_user.size() << endl;
+
     if(user_to_remove == current_user){
-      cout << "user cannot remove itself please try again or -1 to exit: ";
+      cout << "user cannot remove itself please try again or -1 to exit" << endl;
+      cout << "Enter username: ";
     }
 
     else{
-      cout << "Username does not exist please try again or -1 to exit: ";
+      cout << "Username does not exist please try again or -1 to exit " << endl;
+      cout << "Enter username: ";
     }
 
     cin >> user_to_remove;
 
-    user_to_remove = utils().pad_username(user_to_remove);
-
     if (user_to_remove == constants::EXIT_MENU_OPTION){
       return constants::EXIT_MENU_OPTION;
     }
+
+    user_to_remove = utils().pad_username(user_to_remove);
 
   }
 
@@ -446,7 +447,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
     cout<<"Buy"<<endl;
     string game_name;
 
-    cout<<"Enter Game name:";
+    cout<<"Enter Game name: ";
     cin.ignore();
     getline(cin, game_name);
     game_name = utility.pad_game_name(game_name);

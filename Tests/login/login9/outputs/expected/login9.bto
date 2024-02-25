@@ -1,11 +1,15 @@
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 3
-Invalid Input 
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
-System Exit
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 3
+Invalid entry
+HOME MENU
+1)Login
+2)Exit
+Enter an option: -1
+Invalid entry
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

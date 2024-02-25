@@ -1,12 +1,14 @@
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
-Enter Username: Sell19
-User not registered
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
-System Exit
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: sell19
+Invalid Login
+Enter valid username or -1 to exit: -1
+EXIT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

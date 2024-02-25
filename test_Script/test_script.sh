@@ -21,7 +21,7 @@ differences_paths=()
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
-for subdir in delete; do
+for subdir in add_credit; do
     subdir="${subdir%/}"  # Remove trailing slash
     echo "Entering subdirectory: $subdir"
     # Change into the subdirectory

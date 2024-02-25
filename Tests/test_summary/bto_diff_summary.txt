@@ -1,75 +1,71 @@
-Test: create1
+Test: login1
 Expected Output and Actual Output Match
 ===================================
-Test: create10
+Test: login10
 Expected Output and Actual Output Match
 ===================================
-Test: create11
+Test: login11
 Expected Output and Actual Output Match
 ===================================
-Test: create12
+Test: login12
 Expected Output and Actual Output Match
 ===================================
-Test: create13
+Test: login13
+Expected Output and Actual Output Do Not Match
+Differences:
+19c19
+< EXITS456
+---
+> EXITS
+===================================
+Test: login2
 Expected Output and Actual Output Match
 ===================================
-Test: create14
+Test: login3
 Expected Output and Actual Output Match
 ===================================
-Test: create15
+Test: login4
 Expected Output and Actual Output Match
 ===================================
-Test: create16
+Test: login5
 Expected Output and Actual Output Match
 ===================================
-Test: create17
+Test: login6
 Expected Output and Actual Output Match
 ===================================
-Test: create18
+Test: login7
 Expected Output and Actual Output Match
 ===================================
-Test: create19
+Test: login8
 Expected Output and Actual Output Match
 ===================================
-Test: create2
+Test: login9
 Expected Output and Actual Output Match
 ===================================
-Test: create20
+Test: logout1
 Expected Output and Actual Output Match
 ===================================
-Test: create21
+Test: logout2
 Expected Output and Actual Output Match
 ===================================
-Test: create22
+Test: logout3
 Expected Output and Actual Output Match
 ===================================
-Test: create23
+Test: logout4
 Expected Output and Actual Output Match
 ===================================
-Test: create24
+Test: logout5
 Expected Output and Actual Output Match
 ===================================
-Test: create3
+Test: logout6
 Expected Output and Actual Output Match
 ===================================
-Test: create4
+Test: logout7
 Expected Output and Actual Output Match
 ===================================
-Test: create5
+Test: logout8
 Expected Output and Actual Output Match
 ===================================
-Test: create6
+Test: logout9
 Expected Output and Actual Output Match
 ===================================
-<<<<<<< HEAD
-=======
-Test: create7
-Expected Output and Actual Output Match
-===================================
-Test: create8
-Expected Output and Actual Output Match
-===================================
-Test: create9
-Expected Output and Actual Output Match
-===================================
->>>>>>> 9a5da148801b6d6d5bbdee7670e1091782e3a177

@@ -6,15 +6,11 @@ summary_bto_differences_file="../Tests/test_summary/bto_diff_summary.txt"
 summary_log_differences_file="../Tests/test_summary/log_diff_summary.txt"
 custom_program="prototype_a.exe"
 
-
-
-
 cd ..
 test_inputs=()
 output_bto=()
 expected_output_paths=()
 differences_paths=()
-
 
 # GETS ALL THE INPUTS FROM TESTS
 # Change into the Tests directory

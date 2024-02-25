@@ -27,8 +27,8 @@ Account type selected
 Enter Username: sell4
 username selected
 Enter new credit amount: 1000000
-
-Please enter a valid credit amount or -1 to go back to main menu: -1
+Please enter a valid credit amount or -1 to go back to main menu
+Enter credit amount: -1
 Admin Menu
 1)Create
 2)Delete

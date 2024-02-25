@@ -1,72 +1,72 @@
-Test: login1
+Test: create1
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login10
+Test: create10
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login11
+Test: create11
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login12
+Test: create12
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login13
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 buy1            BS 000900.00
-\ No newline at end of file
----
-> 00 buy1            BS 000900.00
-==================================
-Test: login2
+Test: create13
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login3
+Test: create14
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login4
+Test: create15
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login5
+Test: create16
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login6
+Test: create17
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login7
+Test: create18
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login8
+Test: create19
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login9
+Test: create2
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: logout1
+Test: create20
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: logout2
+Test: create21
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: logout3
+Test: create22
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: logout4
+Test: create23
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: logout5
+Test: create24
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: logout6
+Test: create3
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: logout7
+Test: create4
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: logout8
+Test: create5
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: logout9
+Test: create6
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: create7
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: create8
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: create9
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================

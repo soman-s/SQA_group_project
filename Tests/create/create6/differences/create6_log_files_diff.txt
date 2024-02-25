@@ -1,0 +1,4 @@
+Differences in daily_transactions.etf:
+Differences in available_games.etf:
+Differences in current_users.etf:
+Differences in game_collection.etf:

@@ -134,7 +134,8 @@ string transactions::process_create(vector<string>& all_users){
 
       }
 
-      cout << "Please provide valid account type: ";
+      cout << "Please provide valid account type or -1 to go back to main menu " <<  endl;
+      cout << "Enter account type: ";
       cin >> new_account;
 
       if (new_account == constants::EXIT_MENU_OPTION){
@@ -170,7 +171,6 @@ string transactions::process_create(vector<string>& all_users){
       cout << "Username length is too long please try again or -1 to exit" << endl;
       cout << "Enter valid Username: ";
     }
-    cout << endl;
     cin >> username;
 
 
@@ -202,8 +202,8 @@ string transactions::process_create(vector<string>& all_users){
         return username + " " + user_type_codes[new_account] + " " + text_credit_amount;
       }
 
-      cout << endl;
-      cout << "Please enter a valid credit amount or -1 to go back to main menu: ";
+      cout << "Please enter a valid credit amount or -1 to go back to main menu" << endl;
+      cout << "Enter credit amount: ";
       cin >> text_credit_amount;
 
 
@@ -215,7 +215,8 @@ string transactions::process_create(vector<string>& all_users){
 
     catch (const std::invalid_argument& e) {
       cerr << "Invalid argument: " << e.what() << endl;
-      cout<<"Please enter a valid credit amount -1 to go back to main menu: ";
+      cout << "Please enter a valid credit amount or -1 to go back to main menu" << endl;
+      cout << "Enter credit amount: ";
       cin>>text_credit_amount;
 
     }

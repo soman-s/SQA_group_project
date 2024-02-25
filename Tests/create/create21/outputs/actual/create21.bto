@@ -23,7 +23,9 @@ Select type of account you want to create
 3)Buy-Standard
 4)Sell-Standard
 Enter account type: 10
-Please provide valid account type: Admin Menu
+Please provide valid account type or -1 to go back to main menu 
+Enter account type: -1
+Admin Menu
 1)Create
 2)Delete
 3)Sell
@@ -33,10 +35,10 @@ Please provide valid account type: Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: -1
+Enter an option: 9
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 9
+Enter an option: 2
 EXITS

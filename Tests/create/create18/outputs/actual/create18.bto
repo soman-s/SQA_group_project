@@ -1,0 +1,48 @@
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 1
+Create
+Select type of account you want to create
+1)Admin
+2)Full-Standard
+3)Buy-Standard
+4)Sell-Standard
+Enter account type: 2
+Account type selected
+Enter Username: full4
+username selected
+Enter new credit amount: -100
+
+Please enter a valid credit amount or -1 to go back to main menu: -1
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

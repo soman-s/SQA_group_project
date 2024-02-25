@@ -17,7 +17,11 @@ differences_paths=()
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
+<<<<<<< HEAD
 for subdir in  login logout ; do
+=======
+for subdir in create; do
+>>>>>>> 9a5da148801b6d6d5bbdee7670e1091782e3a177
     subdir="${subdir%/}"  # Remove trailing slash
     echo "Entering subdirectory: $subdir"
     # Change into the subdirectory

@@ -121,6 +121,7 @@ string transactions::process_create(vector<string>& all_users){
   cout << "Enter account type: ";
   cin >> new_account;
 
+
   bool valid_account = false;
 
   int num = stoi(new_account);
@@ -135,6 +136,10 @@ string transactions::process_create(vector<string>& all_users){
 
       cout << "Please provide valid account type: ";
       cin >> new_account;
+
+      if (new_account == constants::EXIT_MENU_OPTION){
+        return constants::EXIT_MENU_OPTION;
+      }
     }
 
     catch (const std::invalid_argument& e) {
@@ -145,6 +150,7 @@ string transactions::process_create(vector<string>& all_users){
 
   }
 
+  cout << "Account type selected" << endl;
 
   string username;
   cout << "Enter Username: ";
@@ -152,7 +158,6 @@ string transactions::process_create(vector<string>& all_users){
 
   username = utils().pad_username(username);
 
-  cout << username.size() << endl;
 
   while(user_file_process().check_user_names(all_users,username) || username.size() > constants::MAX_USER_NAME_LENGTH){
 
@@ -165,31 +170,31 @@ string transactions::process_create(vector<string>& all_users){
       cout << "Username length is too long please try again or -1 to exit" << endl;
       cout << "Enter valid Username: ";
     }
-
+    cout << endl;
     cin >> username;
-    username = utils().pad_username(username);
 
 
     if (username == constants::EXIT_MENU_OPTION){
       return constants::EXIT_MENU_OPTION;
     }
-
+    
+    username = utils().pad_username(username);
   }
 
+  cout << "username selected" << endl;
 
-  float credit_amount=0.0;
+  double credit_amount=0.0;
   string text_credit_amount;
   bool valid_credit_amount = false;
 
   cout << "Enter new credit amount: ";
   cin >> text_credit_amount;
-
-
+  
   while(!valid_credit_amount){
 
     try{
 
-      credit_amount = stof(text_credit_amount);
+      credit_amount = stod(text_credit_amount);
 
       if( credit_amount >= constants::MIN_CREDIT_AMOUNT && credit_amount <= constants::MAX_CREDIT_AMOUNT){
         cout << "Succesfully created new user " << endl;
@@ -197,8 +202,10 @@ string transactions::process_create(vector<string>& all_users){
         return username + " " + user_type_codes[new_account] + " " + text_credit_amount;
       }
 
+      cout << endl;
       cout << "Please enter a valid credit amount or -1 to go back to main menu: ";
       cin >> text_credit_amount;
+
 
       if (text_credit_amount == constants::EXIT_MENU_OPTION){
         return constants::EXIT_MENU_OPTION;

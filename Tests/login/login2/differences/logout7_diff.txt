@@ -1,0 +1,6 @@
+Expected:
+Actual:
+00 full1           FS 000500.00
+Differences:
+0a1
+> 00 full1           FS 000500.00

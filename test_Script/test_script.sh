@@ -3,15 +3,17 @@
 #!/bin/sh
 
 summary_bto_differences_file="../Tests/test_summary/bto_diff_summary.txt"
+summary_log_differences_file="../Tests/test_summary/log_diff_summary.txt"
 custom_program="prototype_a.exe"
+
+
+
+
 cd ..
 test_inputs=()
 output_bto=()
 expected_output_paths=()
 differences_paths=()
-
-# clear the old summary logs
-
 
 
 # GETS ALL THE INPUTS FROM TESTS
@@ -19,7 +21,7 @@ differences_paths=()
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
-for subdir in  login logout refund; do
+for subdir in  login logout ; do
     subdir="${subdir%/}"  # Remove trailing slash
     echo "Entering subdirectory: $subdir"
     # Change into the subdirectory
@@ -42,7 +44,6 @@ for subdir in  login logout refund; do
         #getting all the differences path
         differences="../Tests/$subdir/$folder/differences/"
         differences_paths+=("$differences")
-
 
         # Navigate into the "inputs" folder
         cd inputs || { echo "Failed to enter inputs folder"; continue; }
@@ -73,9 +74,12 @@ done
 cd ..
 cd Code
 
-# Writing to the Summary.bto Files
+# Writing to the Summary.bto Files and Log Differnce files
 rm "$summary_bto_differences_file"
 touch "$summary_bto_differences_file"
+
+rm "$summary_log_differences_file"
+touch "$summary_log_differences_file"
 
 # Loop through each index in the array of test input files
 for index in "${!test_inputs[@]}"; do
@@ -89,21 +93,44 @@ for index in "${!test_inputs[@]}"; do
 
     #PATHS AND OUTPUT FROM THE EXPECTED DIRECTOTY
     expected_path="${expected_output_paths[$index]}"
+    expected_log_files_path="${expected_output_paths[$index]}log_files"
     expected_bto="$expected_path$test_name.bto"
 
-    # GETTING The Paths for the Difference
+    # GETTING The Paths for the Difference bto
     bto_differences="${differences_paths[$index]}"
-    bto_differences_file="$bto_differences"$test_name"_diff.txt"
+    bto_differences_file="$bto_differences"$test_name"_bto_diff.txt"
     # Check if the file exists
     if [ ! -e "$bto_differences_file" ]; then
         # Create the file if it doesn't exist
         touch "$bto_differences_file"
     fi
 
+    # GETTING The Paths for the Difference LOG FILES
+    expected_transaction="$expected_log_files_path/daily_transactions.etf"
+    actual_transaction="${output_path}log_files/daily_transactions.etf"
 
 
+    # GETTING The Paths for the Difference
+    log_file_differences="${differences_paths[index]}"
+    log_file_differences_file="${log_file_differences}${test_name}_log_files_diff.txt"
 
+    # Check if the file exists
+    if [ ! -e "$log_file_differences_file" ]; then
+        # Create the file if it doesn't exist
+        touch "$log_file_differences_file"
+    fi
 
+    # GETTING The Paths for the avaiable_Games Files
+    expected_available_games="$expected_log_files_path/available_games.etf"
+    actual_avaiable_games="${output_path}log_files/available_games.etf"
+
+    # GETTING The Paths for the avaiable_Games Files
+    expected_users="$expected_log_files_path/current_users.etf"
+    actual_users="${output_path}log_files/current_users.etf"
+
+    # GETTING The Paths for games collection
+    expected_game_collection="$expected_log_files_path/game_collection.etf"
+    actual_game_collection="${output_path}log_files/game_collection.etf"
 
 
     temp_file=$(mktemp)
@@ -147,8 +174,7 @@ for index in "${!test_inputs[@]}"; do
 
         mv "$temp_file" "$output_bto"
 
-        # comparing the differences between the bto
-        # Run the diff command and redirect its output to the differences file
+
         {
             echo "Expected:"
             cat "$expected_bto"
@@ -182,7 +208,57 @@ for index in "${!test_inputs[@]}"; do
 
 
         # Copying Log Files to Test directories
-        cp -r ./log_files/ "$output_path"
+        cp -r ./log_files "$output_path"
+
+
+
+        # comparing the LOG FILES
+        # comparing the differences between the bto
+        # Run the diff command and redirect its output to the differences file
+        # {
+        #     echo "Expected:"
+        #     cat "$expected_transaction"
+        #     echo
+        #     echo "Actual:"
+        #     cat "$actual_transaction"
+        #     echo
+        #     echo "Differences:"
+        #     diff "$expected_transaction" "$actual_transaction"
+        # } > "$log_file_differences_file"
+
+        # Run the diff command for each log file and append its output to the differences file
+        {
+            echo "Differences in daily_transactions.etf:"
+            diff "$expected_transaction" "$actual_transaction"
+
+            echo "Differences in available_games.etf:"
+            diff "$expected_available_games" "$actual_avaiable_games"
+
+            echo "Differences in current_users.etf:"
+            diff "$expected_users" "$actual_users"
+
+            echo "Differences in game_collection.etf:"
+            diff "$expected_game_collection" "$actual_game_collection"
+        } > "$log_file_differences_file"
+
+        diff_output_transaction=$(diff "$expected_transaction" "$actual_transaction")
+
+        if [ -n "$diff_output" ]; then
+            # If there are differences, save them to the differences file
+            echo "Test: $test_name" >> "$summary_log_differences_file"
+            echo "Expected Daily Transactions File and Actual Daily Transactions File Do Not Match" >> "$summary_log_differences_file"
+            echo "Differences:" >> "$summary_log_differences_file"
+            diff "$expected_transaction" "$actual_transaction" >> "$summary_log_differences_file"
+            echo "==================================" >> "$summary_log_differences_file"
+        else
+            # If there are no differences, indicate that in the summary file
+            echo "Test: $test_name" >> "$summary_log_differences_file"
+            echo "Expected Daily Transactions File and Actual Daily Transactions File Match" >> "$summary_log_differences_file"
+            echo "===================================" >> "$summary_log_differences_file"
+        fi
+
+
+
     else
         echo "$input_file is not readable or does not exist."
     fi

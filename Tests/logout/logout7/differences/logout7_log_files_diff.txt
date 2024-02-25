@@ -1,0 +1,6 @@
+Differences in daily_transactions.etf:
+0a1
+> 00 full1           FS 000500.00
+Differences in available_games.etf:
+Differences in current_users.etf:
+Differences in game_collection.etf:

@@ -1,0 +1,41 @@
+Expected:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: sell1
+Logged IN
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: sell1
+Logged IN
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:

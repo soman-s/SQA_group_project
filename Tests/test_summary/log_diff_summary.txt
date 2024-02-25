@@ -1,0 +1,159 @@
+Test: login1
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+===================================
+Test: login10
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+===================================
+Test: login11
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 full1           FS 000500.00
+\ No newline at end of file
+---
+> 00 full1           FS 000500.00
+===================================
+Test: login12
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 sell1           SS 000100.00
+\ No newline at end of file
+---
+> 00 sell1           SS 000100.00
+===================================
+Test: login13
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 buy1            BS 000900.00
+\ No newline at end of file
+---
+> 00 buy1            BS 000900.00
+===================================
+Test: login2
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 full1           FS 000500.00
+\ No newline at end of file
+---
+> 00 full1           FS 000500.00
+===================================
+Test: login3
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 sell1           SS 000100.00
+\ No newline at end of file
+---
+> 00 sell1           SS 000100.00
+===================================
+Test: login4
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 buy1            BS 000900.00
+\ No newline at end of file
+---
+> 00 buy1            BS 000900.00
+===================================
+Test: login5
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: login6
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: login7
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: login8
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: login9
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout1
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+===================================
+Test: logout2
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 full1           FS 000500.00
+\ No newline at end of file
+---
+> 00 full1           FS 000500.00
+===================================
+Test: logout3
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 sell1           SS 000100.00
+\ No newline at end of file
+---
+> 00 sell1           SS 000100.00
+===================================
+Test: logout4
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< buy1            BS 000900.00
+\ No newline at end of file
+---
+> 00 buy1            BS 000900.00
+===================================
+Test: logout5
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout6
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+===================================
+Test: logout7
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+0a1
+> 00 full1           FS 000500.00
+===================================
+Test: logout8
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 buy1            BS 000900.00
+\ No newline at end of file
+---
+> 00 buy1            BS 000900.00
+===================================
+Test: logout9
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 sell1           SS 000100.00
+\ No newline at end of file
+---
+> 00 sell1           SS 000100.00
+===================================

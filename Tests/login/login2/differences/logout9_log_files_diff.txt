@@ -1,0 +1,9 @@
+Expected:
+00 sell1           SS 000100.00Actual:
+00 sell1           SS 000100.00
+Differences:
+1c1
+< 00 sell1           SS 000100.00
+\ No newline at end of file
+---
+> 00 sell1           SS 000100.00

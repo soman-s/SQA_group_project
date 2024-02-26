@@ -1,0 +1,13 @@
+Differences in daily_transactions.etf:
+1,2c1,2
+< 03 admingame9                admin1          100.23
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 03 admingame9                admin1          100.23
+> 00 admin1          AA 000500.00
+Differences in available_games.etf:
+16d15
+< admingame9                admin1          100.23
+Differences in current_users.etf:
+Differences in game_collection.etf:

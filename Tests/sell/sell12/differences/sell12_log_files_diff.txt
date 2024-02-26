@@ -1,0 +1,12 @@
+Differences in daily_transactions.etf:
+1,2c1,2
+< 03 fullgame9                 full1           050.61
+< 00 full1           FS 000500.00
+---
+> 03 fullgame9                 full1           050.61
+> 00 full1           FS 000500.00
+Differences in available_games.etf:
+16d15
+< fullgame9                 full1           050.61
+Differences in current_users.etf:
+Differences in game_collection.etf:

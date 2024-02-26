@@ -1,0 +1,147 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: full1
+Logged in. 
+
+Full standard Menu
+1)sell
+2)buy
+3)add credit
+4)logout
+Select Option: 1
+Sell
+Enter Game Name: fullGame9
+Enter Price: -50.61
+Invalid price entry. Enter valid price or (-1) to quit to menu: -1
+
+Full standard Menu
+1)sell
+2)buy
+3)add credit
+4)logout
+Select Option: 4
+Logout 
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2 
+System Exit.
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: full1
+Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 1
+Sell
+Enter game name: Fullgame9
+
+Enter Game price: -50.61
+
+Invlaid Game Price
+Enter Game price or -1 to exit: -1
+
+Enter Game price: 5
+
+Invlaid Game Price
+Enter Game price or -1 to exit: 2
+
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 
+EXITS
+Differences:
+1,31c1,40
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+< Enter Username: full1
+< Logged in. 
+< 
+< Full standard Menu
+< 1)sell
+< 2)buy
+< 3)add credit
+< 4)logout
+< Select Option: 1
+< Sell
+< Enter Game Name: fullGame9
+< Enter Price: -50.61
+< Invalid price entry. Enter valid price or (-1) to quit to menu: -1
+< 
+< Full standard Menu
+< 1)sell
+< 2)buy
+< 3)add credit
+< 4)logout
+< Select Option: 4
+< Logout 
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2 
+< System Exit.
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: full1
+> Logged IN
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 1
+> Sell
+> Enter game name: Fullgame9
+> 
+> Enter Game price: -50.61
+> 
+> Invlaid Game Price
+> Enter Game price or -1 to exit: -1
+> 
+> Enter Game price: 5
+> 
+> Invlaid Game Price
+> Enter Game price or -1 to exit: 2
+> 
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 
+> EXITS

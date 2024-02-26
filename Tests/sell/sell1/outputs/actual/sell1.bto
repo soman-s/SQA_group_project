@@ -17,8 +17,11 @@ Admin Menu
 9)Logout
 Enter an option: 3
 Sell
-Enter game name: admingame18
-nter Game price:Admin Menu
+Enter game name: admin game8
+
+Enter Game price: 10
+
+Admin Menu
 1)Create
 2)Delete
 3)Sell
@@ -28,10 +31,10 @@ nter Game price:Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: 10
+Enter an option: 9
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 9
+Enter an option: 2
 EXITS

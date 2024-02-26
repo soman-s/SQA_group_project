@@ -1,0 +1,177 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: admin1
+Logged in. 
+
+Admin Menu
+1)create
+2)delete
+3)sell
+4)buy
+5) add credit
+6) refund
+7) logout
+Select option:  3
+Sell
+Enter Game Name: admingame8
+Enter Price: 100.23
+Invalid price entry
+Enter valid price or (-1) to quit to menu: -1
+
+Admin Menu
+1)create
+2)delete
+3)sell
+4)buy
+5) add credit
+6) refund
+7) logout
+Select option:  7
+Logout 
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2 
+System Exit.
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 3
+Sell
+Enter game name: admingame8
+
+Enter Game price: -100.23
+
+Invlaid Game Price
+Enter Game price or -1 to exit: -1
+
+Enter Game price: 9
+
+Invlaid Game Price
+Enter Game price or -1 to exit: 2
+
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 
+EXITS
+Differences:
+1,38c1,48
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+< Enter Username: admin1
+< Logged in. 
+< 
+< Admin Menu
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option:  3
+< Sell
+< Enter Game Name: admingame8
+< Enter Price: 100.23
+< Invalid price entry
+< Enter valid price or (-1) to quit to menu: -1
+< 
+< Admin Menu
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option:  7
+< Logout 
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2 
+< System Exit.
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 3
+> Sell
+> Enter game name: admingame8
+> 
+> Enter Game price: -100.23
+> 
+> Invlaid Game Price
+> Enter Game price or -1 to exit: -1
+> 
+> Enter Game price: 9
+> 
+> Invlaid Game Price
+> Enter Game price or -1 to exit: 2
+> 
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 
+> EXITS

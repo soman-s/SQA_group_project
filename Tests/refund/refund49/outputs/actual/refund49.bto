@@ -18,11 +18,29 @@ Admin Menu
 Enter an option: 5
 Refund
 Enter Game name: sellgame1
-Enter seller name: Enter buyer name: Enter Refund Amount: Invlaid Refund Price or Refund price entered is not equal to game amount
-Enter Refund price or -1 to exit: sell1
 
-Enter Refund Amount: buy1
-Cannot issue refund, seller will have negative balance
+Enter seller name: sell1
+
+Enter buyer name: buy1
+
+Enter Refund Amount: -10
+
+Invlaid Refund Price or Refund price entered is not equal to game amount
+Enter Refund price or -1 to exit: -1
+
+Invalid argument: 9
+
+Enter Refund price or -1 to exit: 2
+
+Enter Refund Amount: 
+
+Refund cannot not be issued
+Reasons refund Failed( 1 or more of the following): 
+
+Seller doesn't sell game
+Buyer doesn't own game
+Invalid Price Entry
+Refund will result in Seller having negative balance
 Admin Menu
 1)Create
 2)Delete
@@ -33,10 +51,10 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: -10
+Enter an option: 
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: -1
+Enter an option: 
 EXITS

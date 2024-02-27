@@ -1,21 +1,9 @@
-Differences in daily_transactions.etf:
-1,2c1,2
-< 05 full2           full1           000025.50
-< 00 admin1          AA 000500.00
-\ No newline at end of file
----
-> 05 full2           full1           000025.50
-> 00 admin1          AA 000500.00
-Differences in available_games.etf:
-Differences in current_users.etf:
-3c3
-< full1           FS 000474.50
----
-> full1           FS 000500.00
-7c7
-< full2           FS 000525.50
----
-> full2           FS 000500.00
-Differences in game_collection.etf:
-14a15
-> fullgame1                 full2          
+Expected:
+05 full2           full1           000025.50
+00 admin1          AA 000500.00
+
+Actual:
+05 full2           full1           000025.50
+00 admin1          AA 000500.00
+
+Differences:

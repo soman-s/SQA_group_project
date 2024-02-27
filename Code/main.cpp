@@ -161,7 +161,14 @@ int main()
                              {
                                 if (transactions().refund(all_users, all_games, all_games_collection,transaction_log) == constants::FAIL_OPTION)
                                  {
-                                    cout << "Cannot issue refund, seller will have negative balance" << endl;
+                                    cout << "Refund cannot not be issued"<< endl;
+                                    cout<<"Reasons refund Failed( 1 or more of the following):"<<endl;
+                                    cout<<"Seller doesn't sell game"<<endl;
+                                    cout<<"Buyer doesn't own game"<<endl;
+                                    cout<<"Invalid Price Entry"<<endl;
+                                    cout<<"Refund will result in Seller having negative balance"<<endl;
+
+
                                 }
                                 else
                                  {

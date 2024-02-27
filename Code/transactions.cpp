@@ -102,7 +102,7 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
   if (text_new_game_price!=constants::EXIT_MENU_OPTION&&new_game_name != constants::EXIT_MENU_OPTION)
   {
     text_new_game_price=utils().pad_game_price(num_new_game_price);
-    
+
     string log_entry;
 
     string new_game_to_sell=new_game_name+" "+current_user_name+" "+ text_new_game_price;
@@ -324,6 +324,7 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
     cin.ignore();
     getline(cin,refund_game_name);
     refund_game_name=utility.pad_game_name(refund_game_name);
+    cout<<endl;
 
     while (games_file_process().check_game_already_exists(all_games,refund_game_name)==false)
     {
@@ -345,11 +346,13 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
     string seller_name;
     cout<<"Enter seller name: ";
     cin>>seller_name;
+    cout<<endl;
     while(games_file_process().check_user_sells_game(all_games,refund_game_name,seller_name)==false)
     {
       cout<<"Invalid Seller name or Seller doesn't Sell Game"<<endl;
       cout<<"Enter Seller name or -1 to quit: ";
       cin>>seller_name;
+      cout<<endl;
 
       if (seller_name==constants::EXIT_MENU_OPTION)
       {
@@ -361,12 +364,14 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
     string buyer_name;
     cout<<"Enter buyer name: ";
     cin>>buyer_name;
+    cout<<endl;
     while((games_file_process().check_user_owns_game(game_collec,refund_game_name,buyer_name)==false) ||
         utils().convert_to_lower(buyer_name)==utils().convert_to_lower(seller_name))
     {
       cout<<"Invalid Buyer name or Buyer doesn't Own Game"<<endl;
       cout<<"Enter Buyer name or -1 to quit: ";
       cin>>buyer_name;
+      cout<<endl;
 
 
       if (buyer_name==constants::EXIT_MENU_OPTION)
@@ -382,8 +387,19 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
 
     while(val_price==false && text_refund_price!=constants::EXIT_MENU_OPTION)
     {
+
+      if (text_refund_price==constants::ERROR_CODE)
+      {
+        cout << "Invalid argument: "<< endl;
+        cout<<"Enter Refund price or -1 to exit: "<<endl;
+        text_refund_price="";
+
+      }
+
       cout<<"Enter Refund Amount: ";
       cin>>text_refund_price;
+      cout<<endl;
+
       if (text_refund_price==constants::EXIT_MENU_OPTION)
       {
         return constants::FAIL_OPTION;
@@ -401,15 +417,19 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
             cout<<"Invlaid Refund Price or Refund price entered is not equal to game amount"<<endl;
             cout<<"Enter Refund price or -1 to exit: "<<endl;
 
+
+
           }
 
       } catch (const std::invalid_argument& e) {
-          cerr << "Invalid argument: " << e.what() << endl;
-          cout<<"Enter Refund price or -1 to exit: "<<endl;
+
+
+          text_refund_price=constants::ERROR_CODE;
 
 
       } catch (const std::out_of_range& e) {
           cerr << "Out of range: " << e.what() << endl;
+          text_refund_price=constants::ERROR_CODE;
       }
     }
 

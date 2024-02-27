@@ -18,9 +18,26 @@ Admin Menu
 Enter an option: 5
 Refund
 Enter Game name: sellgame1
-Enter seller name: Enter buyer name: Enter Refund Amount: Enter Refund price or -1 to exit: 
-Enter Refund Amount: sell1
-Cannot issue refund, seller will have negative balance
+
+Enter seller name: sell1
+
+Enter buyer name: admin1
+
+Enter Refund Amount: Ab
+
+Invalid argument: -1
+
+Enter Refund price or -1 to exit: 9
+
+Enter Refund Amount: 2
+
+Refund cannot not be issued
+Reasons refund Failed( 1 or more of the following): 
+
+Seller doesn't sell game
+Buyer doesn't own game
+Invalid Price Entry
+Refund will result in Seller having negative balance
 Admin Menu
 1)Create
 2)Delete
@@ -31,10 +48,10 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: admin1
+Enter an option: 
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: Ab
+Enter an option: 
 EXITS

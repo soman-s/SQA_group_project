@@ -1,44 +1,61 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: admin1
-Logged in. 
-
+Logged IN
 Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add credit
-6) refund
-7) logout
-Select option: 6
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 5
 Refund
-Enter Game Name:admingame1
-Enter Seller Name: admin1
-Enter Buyer Name: buy1
-Enter Refund amount: AB
-Refund amount incorrect or invalid entry.
-Re-enter amount or (-1) to exit to menu: -1 
+Enter Game name: admingame1
 
+Enter seller name: admin1
+
+Enter buyer name: buy1
+
+Enter Refund Amount: AB
+
+Invalid argument: -1
+
+Enter Refund price or -1 to exit: 9
+
+Enter Refund Amount: 2
+
+Refund cannot not be issued
+Reasons refund Failed( 1 or more of the following): 
+
+Seller doesn't sell game
+Buyer doesn't own game
+Invalid Price Entry
+Refund will result in Seller having negative balance
 Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add credit
-6) refund
-7) logout
-Select option: 7
-Logout 
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2 
-System Exit.
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -60,9 +77,26 @@ Admin Menu
 Enter an option: 5
 Refund
 Enter Game name: admingame1
-Enter seller name: Enter buyer name: Enter Refund Amount: Enter Refund price or -1 to exit: 
-Enter Refund Amount: admin1
-Cannot issue refund, seller will have negative balance
+
+Enter seller name: admin1
+
+Enter buyer name: buy1
+
+Enter Refund Amount: AB
+
+Invalid argument: -1
+
+Enter Refund price or -1 to exit: 9
+
+Enter Refund Amount: 2
+
+Refund cannot not be issued
+Reasons refund Failed( 1 or more of the following): 
+
+Seller doesn't sell game
+Buyer doesn't own game
+Invalid Price Entry
+Refund will result in Seller having negative balance
 Admin Menu
 1)Create
 2)Delete
@@ -73,93 +107,11 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: buy1
+Enter an option: 
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: AB
+Enter an option: 
 EXITS
 Differences:
-1,40c1,40
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< Enter Username: admin1
-< Logged in. 
-< 
-< Admin Menu
-< 1)create
-< 2)delete
-< 3)sell
-< 4)buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 6
-< Refund
-< Enter Game Name:admingame1
-< Enter Seller Name: admin1
-< Enter Buyer Name: buy1
-< Enter Refund amount: AB
-< Refund amount incorrect or invalid entry.
-< Re-enter amount or (-1) to exit to menu: -1 
-< 
-< Admin Menu
-< 1)create
-< 2)delete
-< 3)sell
-< 4)buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< Logout 
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2 
-< System Exit.
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 5
-> Refund
-> Enter Game name: admingame1
-> Enter seller name: Enter buyer name: Enter Refund Amount: Enter Refund price or -1 to exit: 
-> Enter Refund Amount: admin1
-> Cannot issue refund, seller will have negative balance
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: buy1
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: AB
-> EXITS

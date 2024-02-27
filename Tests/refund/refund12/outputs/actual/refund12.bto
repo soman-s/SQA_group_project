@@ -18,9 +18,21 @@ Admin Menu
 Enter an option: 5
 Refund
 Enter Game name: fullgame1
-Enter seller name: Enter buyer name: Invalid Buyer name or Buyer doesn't Own Game
-Enter Buyer name or -1 to quit: full1
-Cannot issue refund, seller will have negative balance
+
+Enter seller name: full1
+
+Enter buyer name: buyer69523
+
+Invalid Buyer name or Buyer doesn't Own Game
+Enter Buyer name or -1 to quit: -1
+
+Refund cannot not be issued
+Reasons refund Failed( 1 or more of the following): 9
+
+Seller doesn't sell game
+Buyer doesn't own game
+Invalid Price Entry
+Refund will result in Seller having negative balance
 Admin Menu
 1)Create
 2)Delete
@@ -31,10 +43,10 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: buyer69523
+Enter an option: 2
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: -1
+Enter an option: 
 EXITS

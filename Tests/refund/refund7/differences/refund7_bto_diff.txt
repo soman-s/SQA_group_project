@@ -1,4 +1,49 @@
 Expected:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 5
+Refund
+Enter Game name: sellgame1
+
+Enter seller name: sell1
+
+Enter buyer name: full1 
+
+Enter Refund Amount: 10.25
+
+Refund Successfully
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -20,7 +65,14 @@ Admin Menu
 Enter an option: 5
 Refund
 Enter Game name: sellgame1
-Enter seller name: Enter buyer name: Enter Refund Amount: Refund Successfully
+
+Enter seller name: sell1
+
+Enter buyer name: full1 
+
+Enter Refund Amount: 10.25
+
+Refund Successfully
 Admin Menu
 1)Create
 2)Delete
@@ -31,11 +83,11 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: sell1
+Enter an option: 9
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: full1 
+Enter an option: 2
 EXITS
 Differences:

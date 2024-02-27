@@ -18,7 +18,14 @@ Admin Menu
 Enter an option: 5
 Refund
 Enter Game name: sellgame1
-Enter seller name: Enter buyer name: Enter Refund Amount: Refund Successfully
+
+Enter seller name: sell1
+
+Enter buyer name: buy1 
+
+Enter Refund Amount: 10.25
+
+Refund Successfully
 Admin Menu
 1)Create
 2)Delete
@@ -29,10 +36,10 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: sell1
+Enter an option: 9
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: buy1 
+Enter an option: 2
 EXITS

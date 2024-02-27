@@ -548,6 +548,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
     cout<< "BUYER: " << buyer_credit_balance << endl;
     cout << endl;
 
+    game_name = utils().convert_to_lower(game_name);
     float game_price = games_file_process().get_game_price(all_games, game_name);
 
     if (game_price > buyer_credit_balance)

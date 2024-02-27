@@ -1,19 +1,19 @@
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: buy1
-Logged in
-
-Buy-Standard Menu 
+Logged IN
+Buy Standard Menu
 1)Buy
-2)add cred
-3)logout 
-Select Option: 3
-Logout 
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2 
-System Exit
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

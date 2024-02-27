@@ -1,13 +1,9 @@
-Differences in daily_transactions.etf:
-1,2c1,2
-< 03 sellgame8                 sell1           500.00
-< 00 sell1           SS 000100.00
-\ No newline at end of file
----
-> 03 sellgame8                 sell1           500.00
-> 00 sell1           SS 000100.00
-Differences in available_games.etf:
-16d15
-< sellgame8                 sell1           500.00
-Differences in current_users.etf:
-Differences in game_collection.etf:
+Expected:
+03 sellgame8                 sell1           500.00
+00 sell1           SS 000100.00
+
+Actual:
+03 sellgame8                 sell1           500.00
+00 sell1           SS 000100.00
+
+Differences:

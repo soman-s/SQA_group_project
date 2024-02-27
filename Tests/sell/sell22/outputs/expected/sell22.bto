@@ -1,49 +1,68 @@
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: admin1
-Logged in. 
-
+Logged IN
 Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add credit
-6) refund
-7) logout
-Select option:  3
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 3
 Sell
-Enter Game Name: admin game1
-Enter Price: 100
-Game Listed 
+Enter game name: admingame8
+
+Enter Game price: 100
 
 Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add credit
-6) refund
-7) logout
-Select option:  4
-Enter buy game name to buy: admin game1
-Game not listed, enter valid game or (-1) to exit: -1
-
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 8
+All Games Available
+Game Name                 Seller          Price
+PUBG                      admin2          030.00
+Halo                      full1           040.00
+Uncharted                 sell1           050.00
+MinCraft                  admin1          030.00
+Fifa                      admin1          020.00
+admingame1                admin1          010.00
+sellgame1                 sell1           010.25
+fullgame1                 full1           025.50
+admingame2                admin1          999.99
+fullgame2                 full1           999.99
+sellgame2                 sell1           999.99
+admingame3                admin1          050.00
+fullgame3                 full1           040.00
+Sellgame3                 sell1           060.00
+Dota                      admin2          999.00
 Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add credit
-6) refund
-7) logout
-Select option:  7
-Logout 
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2 
-System Exit.
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

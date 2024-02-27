@@ -1,40 +1,44 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: admin1
-Logged in. 
-
+Logged IN
 Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add credit
-6) refund
-7) logout
-Select option:  3
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 3
 Sell
-Enter Game Name: Admingame1234567891012013141516
-Invalid Game name. Re-enter game name or (-1) to quit to menu: -1
+Enter game name: Admingame1234567891012013141516
 
+Invalid Game Name or Game already Exists
+Enter game name or -1 to exit: -1
 Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add credit
-6) refund
-7) logout
-Select option:  7
-Logout 
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2 
-System Exit.
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -77,81 +81,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,36c1,40
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< Enter Username: admin1
-< Logged in. 
-< 
-< Admin Menu
-< 1)create
-< 2)delete
-< 3)sell
-< 4)buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option:  3
-< Sell
-< Enter Game Name: Admingame1234567891012013141516
-< Invalid Game name. Re-enter game name or (-1) to quit to menu: -1
-< 
-< Admin Menu
-< 1)create
-< 2)delete
-< 3)sell
-< 4)buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option:  7
-< Logout 
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2 
-< System Exit.
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 3
-> Sell
-> Enter game name: Admingame1234567891012013141516
-> 
-> Invalid Game Name or Game already Exists
-> Enter game name or -1 to exit: -1
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS

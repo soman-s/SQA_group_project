@@ -1,35 +1,36 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: full1
-Logged in. 
-
-Full standard Menu
-1)sell
-2)buy
-3)add credit
-4)logout
-Select Option: 1
+Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 1
 Sell
-Enter Game Name:  fullgame8
-Enter Price: 50
-Game Listed 
+Enter game name: fullgame8
 
-Full standard Menu
-1)sell
-2)buy
-3)add credit
-4)logout
-Select Option: 4
-Logout 
+Enter Game price: 50
 
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2 
-System Exit.
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 5
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -64,68 +65,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,31c1,32
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< Enter Username: full1
-< Logged in. 
-< 
-< Full standard Menu
-< 1)sell
-< 2)buy
-< 3)add credit
-< 4)logout
-< Select Option: 1
-< Sell
-< Enter Game Name:  fullgame8
-< Enter Price: 50
-< Game Listed 
-< 
-< Full standard Menu
-< 1)sell
-< 2)buy
-< 3)add credit
-< 4)logout
-< Select Option: 4
-< Logout 
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2 
-< System Exit.
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 1
-> Sell
-> Enter game name: fullgame8
-> 
-> Enter Game price: 50
-> 
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS

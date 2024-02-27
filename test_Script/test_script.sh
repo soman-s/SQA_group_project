@@ -21,7 +21,7 @@ differences_paths=()
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
-for subdir in sell; do
+for subdir in login logout sell; do
     subdir="${subdir%/}"  # Remove trailing slash
     echo "Entering subdirectory: $subdir"
     # Change into the subdirectory
@@ -198,6 +198,7 @@ for index in "${!test_inputs[@]}"; do
             echo "Differences:" >> "$summary_bto_differences_file"
             diff "$expected_bto" "$output_bto" >> "$summary_bto_differences_file"
             echo "===================================" >> "$summary_bto_differences_file"
+            #cp -r "$output_bto" "$expected_bto"
         else
             # If there are no differences, indicate that in the summary file
             echo "Test: $test_name" >> "$summary_bto_differences_file"
@@ -214,44 +215,46 @@ for index in "${!test_inputs[@]}"; do
 
 
 
-        # comparing the LOG FILES
+        # comparing the DAILY TRANSACTION FILES
         # comparing the differences between the bto
         # Run the diff command and redirect its output to the differences file
-        # {
-        #     echo "Expected:"
-        #     cat "$expected_transaction"
-        #     echo
-        #     echo "Actual:"
-        #     cat "$actual_transaction"
-        #     echo
-        #     echo "Differences:"
-        #     diff "$expected_transaction" "$actual_transaction"
-        # } > "$log_file_differences_file"
-
-        # Run the diff command for each log file and append its output to the differences file
         {
-            echo "Differences in daily_transactions.etf:"
+            echo "Expected:"
+            cat "$expected_transaction"
+            echo
+            echo "Actual:"
+            cat "$actual_transaction"
+            echo
+            echo "Differences:"
             diff "$expected_transaction" "$actual_transaction"
-
-            echo "Differences in available_games.etf:"
-            diff "$expected_available_games" "$actual_avaiable_games"
-
-            echo "Differences in current_users.etf:"
-            diff "$expected_users" "$actual_users"
-
-            echo "Differences in game_collection.etf:"
-            diff "$expected_game_collection" "$actual_game_collection"
         } > "$log_file_differences_file"
+
+        ## THIS IS USED TO COMPARE ALL THE LOG FILES
+        # # Run the diff command for each log file and append its output to the differences file
+        # {
+        #     echo "Differences in daily_transactions.etf:"
+        #     diff "$expected_transaction" "$actual_transaction"
+        #
+        #     echo "Differences in available_games.etf:"
+        #     diff "$expected_available_games" "$actual_avaiable_games"
+        #
+        #     echo "Differences in current_users.etf:"
+        #     diff "$expected_users" "$actual_users"
+        #
+        #     echo "Differences in game_collection.etf:"
+        #     diff "$expected_game_collection" "$actual_game_collection"
+        # } > "$log_file_differences_file"
 
         diff_output_transaction=$(diff "$expected_transaction" "$actual_transaction")
 
-        if [ -n "$diff_output" ]; then
+        if [ -n "$diff_output_transaction" ]; then
             # If there are differences, save them to the differences file
             echo "Test: $test_name" >> "$summary_daily_transaction_differences_file"
             echo "Expected Daily Transactions File and Actual Daily Transactions File Do Not Match" >> "$summary_daily_transaction_differences_file"
             echo "Differences:" >> "$summary_daily_transaction_differences_file"
             diff "$expected_transaction" "$actual_transaction" >> "$summary_daily_transaction_differences_file"
             echo "==================================" >> "$summary_daily_transaction_differences_file"
+            #cp -r  "$actual_transaction" "$expected_transaction"
         else
             # If there are no differences, indicate that in the summary file
             echo "Test: $test_name" >> "$summary_daily_transaction_differences_file"

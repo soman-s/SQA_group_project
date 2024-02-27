@@ -1,45 +1,60 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: full1
-Logged in 
-
-Full standard Menu
-1)sell
-2)buy
-3)add credit
-4)logout
-Select Option: 1
+Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 1
 Sell
-Enter Game Name:  fullGame1
-Enter Price: 50
-Game Listed 
+Enter game name: fullgame8
 
-Full standard Menu
-1)sell
-2)buy
-3)add credit
-4)logout
-Select Option: 2
-Buy
-Enter name of game to buy: fullgame1
-Game not listed, enter valid game or (-1) to exit: -1
+Enter Game price: 50
 
-Full standard Menu
-1)sell
-2)buy
-3)add credit
-4)logout
-Select Option: 4
-Logout 
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2 
-System Exit
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 4
+All Games Available
+Game Name                 Seller          Price
+PUBG                      admin2          030.00
+Halo                      full1           040.00
+Uncharted                 sell1           050.00
+MinCraft                  admin1          030.00
+Fifa                      admin1          020.00
+admingame1                admin1          010.00
+sellgame1                 sell1           010.25
+fullgame1                 full1           025.50
+admingame2                admin1          999.99
+fullgame2                 full1           999.99
+sellgame2                 sell1           999.99
+admingame3                admin1          050.00
+fullgame3                 full1           040.00
+Sellgame3                 sell1           060.00
+Dota                      admin2          999.00
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 5
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -66,12 +81,24 @@ Full Standard Menu
 3)Add Credit
 4)View Available Games
 5)Logout
-Enter an option: 1
-Sell
-Enter game name: fullgame8
-
-Enter Game price: 50
-
+Enter an option: 4
+All Games Available
+Game Name                 Seller          Price
+PUBG                      admin2          030.00
+Halo                      full1           040.00
+Uncharted                 sell1           050.00
+MinCraft                  admin1          030.00
+Fifa                      admin1          020.00
+admingame1                admin1          010.00
+sellgame1                 sell1           010.25
+fullgame1                 full1           025.50
+admingame2                admin1          999.99
+fullgame2                 full1           999.99
+sellgame2                 sell1           999.99
+admingame3                admin1          050.00
+fullgame3                 full1           040.00
+Sellgame3                 sell1           060.00
+Dota                      admin2          999.00
 Full Standard Menu
 1)Sell
 2)Buy
@@ -86,90 +113,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,41c1,44
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< Enter Username: full1
-< Logged in 
-< 
-< Full standard Menu
-< 1)sell
-< 2)buy
-< 3)add credit
-< 4)logout
-< Select Option: 1
-< Sell
-< Enter Game Name:  fullGame1
-< Enter Price: 50
-< Game Listed 
-< 
-< Full standard Menu
-< 1)sell
-< 2)buy
-< 3)add credit
-< 4)logout
-< Select Option: 2
-< Buy
-< Enter name of game to buy: fullgame1
-< Game not listed, enter valid game or (-1) to exit: -1
-< 
-< Full standard Menu
-< 1)sell
-< 2)buy
-< 3)add credit
-< 4)logout
-< Select Option: 4
-< Logout 
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2 
-< System Exit
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 1
-> Sell
-> Enter game name: fullgame8
-> 
-> Enter Game price: 50
-> 
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 1
-> Sell
-> Enter game name: fullgame8
-> 
-> Enter Game price: 50
-> 
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS

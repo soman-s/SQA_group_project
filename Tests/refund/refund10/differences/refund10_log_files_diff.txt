@@ -1,0 +1,22 @@
+Differences in daily_transactions.etf:
+1,2c1,2
+< 05 buy1            sell1           000010.25
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 05 buy1            sell1           000010.25
+> 00 admin1          AA 000500.00
+Differences in available_games.etf:
+Differences in current_users.etf:
+4,5c4,5
+< sell1           SS 000089.75
+< buy1            BS 000910.25
+---
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+Differences in game_collection.etf:
+11c11,12
+< sellgame1                 full1                    
+---
+> sellgame1                 full1          
+> sellgame1                 buy1           

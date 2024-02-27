@@ -1,0 +1,9 @@
+Differences in daily_transactions.etf:
+1c1
+< 00 full1           FS 000500.00
+\ No newline at end of file
+---
+> 00 full1           FS 000500.00
+Differences in available_games.etf:
+Differences in current_users.etf:
+Differences in game_collection.etf:

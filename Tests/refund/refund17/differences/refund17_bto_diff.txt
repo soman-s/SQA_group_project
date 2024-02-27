@@ -1,0 +1,163 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: admin1
+Logged in. 
+
+Admin Menu
+1)create
+2)delete
+3)sell
+4)buy
+5) add credit
+6) refund
+7) logout
+Select option:  6
+Refund
+Enter Game Name: sellgame1
+Enter Seller Name: sell1
+Seller account does not exist or doesn’t sell the game
+Retype  account name or -1 to quit to main menu: -1
+
+Admin Menu
+1)create
+2)delete
+3)sell
+4)buy
+5) add credit
+6) refund
+7) logout
+Select option:  7
+Logout 
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2 
+System Exit.
+
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 5
+Refund
+Enter Game name: admingame1
+Enter seller name: Invalid Seller name or Seller doesn't Sell Game
+Enter Seller name or -1 to quit: admin456
+Cannot issue refund, seller will have negative balance
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: -1
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 9
+EXITS
+Differences:
+1,39c1,40
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+< Enter Username: admin1
+< Logged in. 
+< 
+< Admin Menu
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option:  6
+< Refund
+< Enter Game Name: sellgame1
+< Enter Seller Name: sell1
+< Seller account does not exist or doesn’t sell the game
+< Retype  account name or -1 to quit to main menu: -1
+< 
+< Admin Menu
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option:  7
+< Logout 
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2 
+< System Exit.
+< 
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 5
+> Refund
+> Enter Game name: admingame1
+> Enter seller name: Invalid Seller name or Seller doesn't Sell Game
+> Enter Seller name or -1 to quit: admin456
+> Cannot issue refund, seller will have negative balance
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: -1
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 9
+> EXITS

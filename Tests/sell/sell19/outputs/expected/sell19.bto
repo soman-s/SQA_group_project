@@ -1,29 +1,30 @@
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: sell1
-Logged in. 
-
-Sell-Standard Menu 
+Logged IN
+Sell Standard Menu
 1)Sell
-2)add credit
-3)logout 
-Select Option:1
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 1
 Sell
-Enter Game Name:  Halo
-Game Already Exist. Re-enter game name or (-1) to quit to menu: -1
+Enter game name: Halo
 
-Full standard Menu
-1)sell
-2)buy
-3)add credit
-4)logout
-Select Option: 4
-Logout 
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2 
-System Exit.
+Invalid Game Name or Game already Exists
+Enter game name or -1 to exit: -1
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

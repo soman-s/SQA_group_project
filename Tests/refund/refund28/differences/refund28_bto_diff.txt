@@ -1,0 +1,159 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: admin1
+Logged in. 
+
+Admin Menu
+1)create
+2)delete
+3)sell
+4)buy
+5) add credit
+6) refund
+7) logout
+Select option: 6
+Refund
+Enter Game Name: admingame2
+Enter Seller Name: admin1
+Enter Buyer Name: sell1
+Enter Refund amount: 999.99
+Cannot issue refund, seller will have negative balance.  
+
+Admin Menu
+1)create
+2)delete
+3)sell
+4)buy
+5) add credit
+6) refund
+7) logout
+Select option: 7
+Logout 
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2 
+System Exit.
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 5
+Refund
+Enter Game name: admingame2
+Enter seller name: Enter buyer name: Enter Refund Amount: Cannot issue refund, seller will have negative balance
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: admin1
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: buy1
+EXITS
+Differences:
+1,39c1,38
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+< Enter Username: admin1
+< Logged in. 
+< 
+< Admin Menu
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 6
+< Refund
+< Enter Game Name: admingame2
+< Enter Seller Name: admin1
+< Enter Buyer Name: sell1
+< Enter Refund amount: 999.99
+< Cannot issue refund, seller will have negative balance.  
+< 
+< Admin Menu
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< Logout 
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2 
+< System Exit.
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 5
+> Refund
+> Enter Game name: admingame2
+> Enter seller name: Enter buyer name: Enter Refund Amount: Cannot issue refund, seller will have negative balance
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: admin1
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: buy1
+> EXITS

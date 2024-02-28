@@ -26,7 +26,7 @@ differences_paths=()
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
-for subdir in buy; do
+for subdir in all_user; do
     subdir="${subdir%/}"
     # Change into the subdirectory
     cd "$subdir" || { echo "Failed to enter subdirectory: $subdir"; continue; }
@@ -107,7 +107,7 @@ for index in "${!test_inputs[@]}"; do
     bto_differences_file="$bto_differences"$test_name"_bto_diff.txt"
     # Check if the file exists
     if [ ! -e "$bto_differences_file" ]; then
-        # Create the file if it doesn't exist
+
         touch "$bto_differences_file"
     fi
 
@@ -122,7 +122,6 @@ for index in "${!test_inputs[@]}"; do
 
     # Check if the file exists
     if [ ! -e "$log_file_differences_file" ]; then
-        # Create the file if it doesn't exist
         touch "$log_file_differences_file"
     fi
 
@@ -180,7 +179,7 @@ for index in "${!test_inputs[@]}"; do
 
         mv "$temp_file" "$output_bto"
 
-
+        # comparing the actual and expected output files
         {
             echo "Expected:"
             cat "$expected_bto"
@@ -192,8 +191,6 @@ for index in "${!test_inputs[@]}"; do
 
 
         diff_output=$(diff "$expected_bto" "$output_bto")
-
-
 
         if [ -n "$diff_output" ]; then
             # If there are differences, save them to the differences file
@@ -220,8 +217,7 @@ for index in "${!test_inputs[@]}"; do
 
 
 
-        # comparing the DAILY TRANSACTION FILES
-        # comparing the differences between the bto
+        # comparing the DAILY TRANSACTION FILES expected vs actual
         # Run the diff command and redirect its output to the differences file
         {
             echo "Expected:"
@@ -233,22 +229,6 @@ for index in "${!test_inputs[@]}"; do
             echo "Differences:"
             diff "$expected_transaction" "$actual_transaction"
         } > "$log_file_differences_file"
-
-        ## THIS IS USED TO COMPARE ALL THE LOG FILES
-        # # Run the diff command for each log file and append its output to the differences file
-        # {
-        #     echo "Differences in daily_transactions.etf:"
-        #     diff "$expected_transaction" "$actual_transaction"
-        #
-        #     echo "Differences in available_games.etf:"
-        #     diff "$expected_available_games" "$actual_avaiable_games"
-        #
-        #     echo "Differences in current_users.etf:"
-        #     diff "$expected_users" "$actual_users"
-        #
-        #     echo "Differences in game_collection.etf:"
-        #     diff "$expected_game_collection" "$actual_game_collection"
-        # } > "$log_file_differences_file"
 
         diff_output_transaction=$(diff "$expected_transaction" "$actual_transaction")
 

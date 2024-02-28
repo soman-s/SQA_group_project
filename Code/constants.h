@@ -56,6 +56,7 @@ public:
     static const std::string LOGOUT_CODE;
     static const std::string SELL_GAME_CODE;
     static const std::string REFUND_CODE;
+    static const std::string BUY_CODE;
 
 };
 

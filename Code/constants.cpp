@@ -46,3 +46,4 @@ const std::string constants:: ERROR_CODE="-10";
 const std::string constants::LOGOUT_CODE= "00";
 const std::string constants::SELL_GAME_CODE= "03";
 const std::string constants::REFUND_CODE= "05";
+const std::string constants::BUY_CODE = "04";

@@ -1,0 +1,130 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: buy1
+Logged in.
+ 
+Buy- standard Menu 
+1)buy
+2) add credit
+3)logout 
+Select option: 1
+buy
+Enter game name: PUBG
+Enter seller name: admin2
+Game has been bought
+Buy- standard Menu 
+1)buy
+2) add credit
+3)logout 
+Select option: 3
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: buy1
+Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 1
+Buy
+Enter Game name: PUBG
+Enter seller name: 
+BALANCE BEFORE PURCHASE
+SELLER 500
+BUYER 900
+
+BALANCE AFTER PURCHASE
+SELLER 530
+BUYER 870
+Game has been bought
+
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: admin2
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 4
+EXITS
+Differences:
+1,4c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+6,15c7,23
+< Logged in.
+<  
+< Buy- standard Menu 
+< 1)buy
+< 2) add credit
+< 3)logout 
+< Select option: 1
+< buy
+< Enter game name: PUBG
+< Enter seller name: admin2
+---
+> Logged IN
+> Buy Standard Menu
+> 1)Buy
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 1
+> Buy
+> Enter Game name: PUBG
+> Enter seller name: 
+> BALANCE BEFORE PURCHASE
+> SELLER 500
+> BUYER 900
+> 
+> BALANCE AFTER PURCHASE
+> SELLER 530
+> BUYER 870
+17,21d24
+< Buy- standard Menu 
+< 1)buy
+< 2) add credit
+< 3)logout 
+< Select option: 3
+23,26c26,37
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+---
+> Buy Standard Menu
+> 1)Buy
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: admin2
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 4
+> EXITS

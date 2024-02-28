@@ -78,23 +78,15 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,4c1,5
+1,37c1,40
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-6,7c7
+< Enter Username: admin1
 < Logged in.
 <  
----
-> Logged IN
-9,22c9,23
+< Admin Menu
 < 1)create
 < 2)delete
 < 3)sell
@@ -109,23 +101,7 @@ Differences:
 < Error message: Incorrect game name
 < Enter game name: -1
 < Back to menu
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 4
-> Buy
-> Enter Game name: PUBF
-> Invalid game name or Game name doesn't exist
-> Enter Game name or -1 to quit: -1
-> Buy transaction unsuccessful
-24,37c25,40
+< Admin Menu
 < 1)create
 < 2)delete
 < 3)sell
@@ -141,6 +117,30 @@ Differences:
 < 2) Exit:
 < Enter an Option: 2
 ---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 4
+> Buy
+> Enter Game name: PUBF
+> Invalid game name or Game name doesn't exist
+> Enter Game name or -1 to quit: -1
+> Buy transaction unsuccessful
+> Admin Menu
 > 1)Create
 > 2)Delete
 > 3)Sell

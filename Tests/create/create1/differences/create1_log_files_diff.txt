@@ -1,7 +1,7 @@
 Expected:
+
 00 admin1          AA 000500.00
 
 Actual:
-00 admin1          AA 000500.00
 
 Differences:

@@ -83,23 +83,15 @@ HOME MENU
 Enter an option: 9
 EXITS
 Differences:
-1,4c1,5
+1,36c1,47
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-6,7c7
+< Enter Username: admin1
 < Logged in.
 < 
----
-> Logged IN
-9,20c9,28
+< Admin Menu
 < 1)create
 < 2)delete
 < 3)sell
@@ -112,7 +104,32 @@ Differences:
 < buy
 < Enter game name: PUBG
 < Enter seller name: admin2
+< Game has been bought
+< Admin Menu
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+\ No newline at end of file
 ---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -133,24 +150,8 @@ Differences:
 > BALANCE AFTER PURCHASE
 > SELLER 530
 > BUYER 470
-22,31d29
-< Admin Menu
-< 1)create
-< 2)delete
-< 3)sell
-< 4)buy
-< 5) add
-<   credit
-< 6) refund
-< 7) logout
-< Select option: 7
-33,36c31,47
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-\ No newline at end of file
----
+> Game has been bought
+> 
 > Admin Menu
 > 1)Create
 > 2)Delete

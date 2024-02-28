@@ -26,7 +26,7 @@ differences_paths=()
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
-for subdir in create; do
+for subdir in buy; do
     subdir="${subdir%/}"
     # Change into the subdirectory
     cd "$subdir" || { echo "Failed to enter subdirectory: $subdir"; continue; }
@@ -41,15 +41,8 @@ for subdir in create; do
         bto_paths="../Tests/$subdir/$folder/outputs/actual/"
         output_bto+=("$bto_paths")
 
-        # Check if the directory exists in the specified paths
-        if [ -d "../Tests/$subdir/$folder/outputs/expected/" ]; then
-            expected_path="../Tests/$subdir/$folder/outputs/expected/"
-        elif [ -d "../Tests/$subdir/$folder/outputs/Expected/" ]; then
-            expected_path="../Tests/$subdir/$folder/outputs/Expected/"
-
-
-        fi
-
+        # getting all the paths for the expected_output
+        expected_path="../Tests/$subdir/$folder/outputs/expected/"
         expected_output_paths+=("$expected_path")
 
         #getting all the differences path
@@ -120,12 +113,7 @@ for index in "${!test_inputs[@]}"; do
 
     # GETTING The Paths for the Difference LOG FILES
     expected_transaction="$expected_log_files_path/daily_transactions.etf"
-
-    if [ -f "${output_path}log_files/daily_transactions.etf" ]; then
     actual_transaction="${output_path}log_files/daily_transactions.etf"
-    elif [ -f "${output_path}Log_files/daily_transactions.etf" ]; then
-    actual_transaction="${output_path}Log_files/daily_transactions.etf"
-    fi
 
 
     # GETTING The Paths for the Difference

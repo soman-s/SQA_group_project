@@ -1,39 +1,90 @@
-Test: login1
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login10
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login11
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login12
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login13
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login2
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login3
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login4
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login5
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login6
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login7
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login8
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login9
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
+Test: all_user1
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1
+< 06 admin1          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+==================================
+Test: all_user2
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1
+< 06 admin1          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000600.00
+==================================
+Test: all_user3
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1
+< 06 admin1          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+==================================
+Test: all_user4
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1
+< 06 admin1          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+==================================
+Test: all_user5
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1
+< 06 admin1          AA 000600.00
+< 00 admin1          AA 000600.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+==================================
+Test: all_user6
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1
+< 06 admin1          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+==================================
+Test: all_user7
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1
+< 06 admin1          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+==================================
+Test: all_user8
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1
+< 06 admin1          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+==================================
+Test: all_user9
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1
+< 06 admin1          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.00
+==================================

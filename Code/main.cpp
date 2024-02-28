@@ -18,6 +18,9 @@
 
 using namespace std;
 
+// Main Programs
+// Contains  logic and basic flow to how the system will work
+
 int main()
 {
     // Initialization of data structures

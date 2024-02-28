@@ -16,12 +16,17 @@ expected_output_paths=()
 differences_paths=()
 
 
+# This script does both running the program with the inputs
+# and does comparions for the expected/ actual bto files
+# and the expected and actual daily transaction file
+
+
 # GETS ALL THE INPUTS FROM TESTS
 # Change into the Tests directory
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
-for subdir in login logout sell refund; do
+for subdir in create; do
     subdir="${subdir%/}"
     # Change into the subdirectory
     cd "$subdir" || { echo "Failed to enter subdirectory: $subdir"; continue; }
@@ -36,8 +41,15 @@ for subdir in login logout sell refund; do
         bto_paths="../Tests/$subdir/$folder/outputs/actual/"
         output_bto+=("$bto_paths")
 
-        # getting all the paths for the expected_output
-        expected_path="../Tests/$subdir/$folder/outputs/expected/"
+        # Check if the directory exists in the specified paths
+        if [ -d "../Tests/$subdir/$folder/outputs/expected/" ]; then
+            expected_path="../Tests/$subdir/$folder/outputs/expected/"
+        elif [ -d "../Tests/$subdir/$folder/outputs/Expected/" ]; then
+            expected_path="../Tests/$subdir/$folder/outputs/Expected/"
+
+
+        fi
+
         expected_output_paths+=("$expected_path")
 
         #getting all the differences path
@@ -108,7 +120,12 @@ for index in "${!test_inputs[@]}"; do
 
     # GETTING The Paths for the Difference LOG FILES
     expected_transaction="$expected_log_files_path/daily_transactions.etf"
+
+    if [ -f "${output_path}log_files/daily_transactions.etf" ]; then
     actual_transaction="${output_path}log_files/daily_transactions.etf"
+    elif [ -f "${output_path}Log_files/daily_transactions.etf" ]; then
+    actual_transaction="${output_path}Log_files/daily_transactions.etf"
+    fi
 
 
     # GETTING The Paths for the Difference

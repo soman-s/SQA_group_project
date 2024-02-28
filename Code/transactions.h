@@ -83,7 +83,7 @@ public:
      * @param game_collec Vector containing game collections.
      * @return A message indicating the result of the buy transaction.
      */
-    string process_buy(string buyer_name, vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec);
+    string process_buy(string buyer_name, vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec, vector<string>& transaction_log);
 
 
     /**

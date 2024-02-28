@@ -182,7 +182,7 @@ int main()
 
                             else if (user_menu_option == constants::BUY)
                             {
-                                if (transactions().process_buy(current_user_name, all_users, all_games, all_games_collection) == constants :: FAIL_OPTION)
+                                if (transactions().process_buy(current_user_name, all_users, all_games, all_games_collection, transaction_log) == constants :: FAIL_OPTION)
                                 {
                                 cout << "Buy transaction unsuccessful" << endl;
                                 }

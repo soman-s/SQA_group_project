@@ -1,0 +1,157 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: admin1
+Logged in.
+ 
+Admin Menu
+1)create
+2)delete
+3)sell
+4)buy
+5) add
+  credit
+6) refund
+7) logout
+Select option: 4
+buy
+Enter game name: Apex
+Error message: Game not found in available games collection. 
+Enter another game or enter -1 to go back to main menu: -1
+Back to menu
+Admin Menu
+1)create
+2)delete
+3)sell
+4)buy
+5) add
+  credit
+6) refund
+7) logout
+Select option: 7
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 4
+Buy
+Enter Game name: Apex
+Invalid game name or Game name doesn't exist
+Enter Game name or -1 to quit: -1
+Buy transaction unsuccessful
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:
+1,4c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+6,7c7
+< Logged in.
+<  
+---
+> Logged IN
+9,22c9,23
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 4
+< buy
+< Enter game name: Apex
+< Error message: Game not found in available games collection. 
+< Enter another game or enter -1 to go back to main menu: -1
+< Back to menu
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 4
+> Buy
+> Enter Game name: Apex
+> Invalid game name or Game name doesn't exist
+> Enter Game name or -1 to quit: -1
+> Buy transaction unsuccessful
+24,36c25,40
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS

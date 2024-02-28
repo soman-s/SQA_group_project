@@ -475,7 +475,7 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
   }
 
 // logic for buy transaction
-string transactions::process_buy(string buyer_name, vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec)
+string transactions::process_buy(string buyer_name, vector<string>& all_users, vector<string>& all_games, vector<string>& game_collec, vector<string>& transaction_log)
 {
     utils utility;
 
@@ -525,6 +525,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
     string seller_name;
     cout << "Enter seller name: ";
     cin >> seller_name;
+    cout << endl;
 
     // check if seller sells the requested game
     while(games_file_process().check_user_sells_game(all_games, game_name, seller_name) == false)
@@ -532,6 +533,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
       cout << "Invalid Seller name or Seller doesn't Sell Game"<<endl;
       cout << "Enter Seller name or -1 to quit: ";
       cin >> seller_name;
+      cout << endl;
 
       if (seller_name == constants :: EXIT_MENU_OPTION)
       {
@@ -544,10 +546,11 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
     float buyer_credit_balance=user_file_process().get_user_balance(all_users, buyer_name);
 
     cout<< "BALANCE BEFORE PURCHASE" << endl;
-    cout<< "SELLER: " << seller_credit_balance << endl;
-    cout<< "BUYER: " << buyer_credit_balance << endl;
+    cout<< "SELLER " << seller_credit_balance << endl;
+    cout<< "BUYER " << buyer_credit_balance << endl;
     cout << endl;
 
+    game_name = utils().convert_to_lower(game_name);
     float game_price = games_file_process().get_game_price(all_games, game_name);
 
     if (game_price > buyer_credit_balance)
@@ -581,9 +584,20 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
       // cout << endl;
 
       cout<< "BALANCE AFTER PURCHASE" << endl;
-      cout<< "SELLER: " << seller_credit_balance << endl;
-      cout<< "BUYER: " << buyer_credit_balance << endl;
-      cout << endl;
+      cout<< "SELLER " << seller_credit_balance << endl;
+      cout<< "BUYER " << buyer_credit_balance << endl;
+      // cout << endl;
+
+
+      // update daily transaction file
+      string log_entry;
+      string log_game_name = utils().pad_game_name(game_name);
+      string log_seller_name = utils().pad_username(seller_name);
+      string log_buyer_name = utils().pad_username(buyer_name);
+      string log_text_buy_price = utils().pad_credit_amount(game_price);
+
+      log_entry = constants::BUY_CODE + log_game_name + " " + log_seller_name + " " + log_buyer_name + " " + log_text_buy_price;
+      utils().update_transction_log(log_entry, transaction_log);
     }
 
     return constants:: SUCESS_OPTION;

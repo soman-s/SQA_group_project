@@ -1,0 +1,125 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: buy1
+Logged in.
+ 
+Buy- standard Menu 
+1)buy
+2) add credit
+3)logout 
+Select option: 1
+buy
+Enter game name: Dota
+Enter seller name: admin2
+Error message: You do not have enough credits to buy this game. You will return to the previous menu.
+Buy- standard Menu 
+1)buy
+2) add credit
+3)logout 
+Select option: 3
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: buy1
+Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 1
+Buy
+Enter Game name: Dota
+Enter seller name: 
+BALANCE BEFORE PURCHASE
+SELLER 500
+BUYER 900
+
+You do not have enough credits to buy this game. You will return to the previous menu.
+Buy transaction unsuccessful
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: admin2
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 4
+EXITS
+Differences:
+1,4c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+6,21c7,19
+< Logged in.
+<  
+< Buy- standard Menu 
+< 1)buy
+< 2) add credit
+< 3)logout 
+< Select option: 1
+< buy
+< Enter game name: Dota
+< Enter seller name: admin2
+< Error message: You do not have enough credits to buy this game. You will return to the previous menu.
+< Buy- standard Menu 
+< 1)buy
+< 2) add credit
+< 3)logout 
+< Select option: 3
+---
+> Logged IN
+> Buy Standard Menu
+> 1)Buy
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 1
+> Buy
+> Enter Game name: Dota
+> Enter seller name: 
+> BALANCE BEFORE PURCHASE
+> SELLER 500
+> BUYER 900
+23,26c21,34
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+---
+> You do not have enough credits to buy this game. You will return to the previous menu.
+> Buy transaction unsuccessful
+> Buy Standard Menu
+> 1)Buy
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: admin2
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 4
+> EXITS

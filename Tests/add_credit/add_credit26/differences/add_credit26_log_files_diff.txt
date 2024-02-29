@@ -1,0 +1,11 @@
+Expected:
+00 buy1            BS 000900.00
+
+Actual:
+00 buy1            BS 000900.0
+
+Differences:
+1c1
+< 00 buy1            BS 000900.00
+---
+> 00 buy1            BS 000900.0

@@ -1,0 +1,13 @@
+Expected:
+06  sell1           SS 000200.00
+00  admin1          AA 000500.00
+
+Actual:
+00 admin1          AA 000500.0
+
+Differences:
+1,2c1
+< 06  sell1           SS 000200.00
+< 00  admin1          AA 000500.00
+---
+> 00 admin1          AA 000500.0

@@ -1,0 +1,135 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+
+Enter Username: sell1
+
+Logged in.
+
+Sell-Standard Menu
+1) sell 
+2) add credit
+3)logout 
+Select option: 2
+
+Enter Credit Amount: -150.00
+
+Error: Cannot add a negative credit amount. Please enter a positive value.
+
+Enter Credit Amount:-1
+
+Sell-Standard Menu
+1) sell 
+2) add credit
+3)logout 
+Select option: 3
+
+Logout
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+
+System Exit.
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: sell1      
+Logged IN
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 2
+Add Credit
+username selected
+Enter credit amount to add: -150.00 
+Please enter a valid credit amount or -1 to go back to main menu 
+Enter credit amount to add: -1
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:
+1,35c1,30
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+< 
+< Enter Username: sell1
+< 
+< Logged in.
+< 
+< Sell-Standard Menu
+< 1) sell 
+< 2) add credit
+< 3)logout 
+< Select option: 2
+< 
+< Enter Credit Amount: -150.00
+< 
+< Error: Cannot add a negative credit amount. Please enter a positive value.
+< 
+< Enter Credit Amount:-1
+< 
+< Sell-Standard Menu
+< 1) sell 
+< 2) add credit
+< 3)logout 
+< Select option: 3
+< 
+< Logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+< 
+< System Exit.
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: sell1      
+> Logged IN
+> Sell Standard Menu
+> 1)Sell
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 2
+> Add Credit
+> username selected
+> Enter credit amount to add: -150.00 
+> Please enter a valid credit amount or -1 to go back to main menu 
+> Enter credit amount to add: -1
+> Sell Standard Menu
+> 1)Sell
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS

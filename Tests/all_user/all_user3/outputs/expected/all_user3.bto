@@ -17,10 +17,11 @@ Admin Menu
 9)Logout
 Enter an option: 6
 Add Credit
-Enter username: buy1
+Enter username: full1
 username selected
-Enter credit amount to add: 100
-Sucessfully added credit amount to user
+Enter credit amount to add: -100
+Please enter a valid credit amount or -1 to go back to main menu 
+Enter credit amount to add: -1
 Admin Menu
 1)Create
 2)Delete

@@ -1,2466 +1,381 @@
-Test: add_credit1
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1 
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,24c9,23
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: admin1
-< Enter Credit Amount: 100.00
-< 
-< Credit added successfully.
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: admin1
-> username selected
-> Enter credit amount to add: 100.00
-> Sucessfully added credit amount to user
-26,42c25,40
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login1
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit10
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,28c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: full3
-< Enter Credit Amount: 100.00
-< 
-< Error message total credit limit cannot exceed 999 999
-< 
-< Enter Credit Amount: -1
-< 
-< Back to menu
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: full3
-> username selected
-> Enter credit amount to add: 100.0
-> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
-> Enter credit amount to add: -1
-30,46c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login10
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit11
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,26c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: sell3
-< Enter Credit Amount: 100.00
-< 
-< Error message total credit limit cannot exceed 999 999
-< 
-< Enter Credit Amount: -1
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: sell3
-> username selected
-> Enter credit amount to add: 100.00
-> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
-> Enter credit amount to add: -1
-28,44c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login11
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit12
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,26c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: buy3
-< Enter Credit Amount: 100.00
-< 
-< Error message total credit limit cannot exceed 999 999
-< 
-< Enter Credit Amount: -1
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: buy3
-> username selected
-> Enter credit amount to add: 100.00
-> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
-> Enter credit amount to add: -1
-28,44c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login12
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit13
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,35c7,31
-< 
-< Logged in.
-< 
-< Full-Standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 3
-< 
-< Enter Credit Amount: 100.00
-< 
-< Credit added successfully.
-< 
-< Full-Standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 4
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 3
-> Add Credit
-> username selected
-> Enter credit amount to add: 100.00
-> Sucessfully added credit amount to user
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login13
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit14
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,38c7,32
-< 
-< Logged in.
-< 
-< Full-Standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 3
-< 
-< 
-< Enter Credit Amount: 1200.00
-< 
-< Error: Cannot add more than $1000 to the account per session.
-< 
-< Enter Credit Amount: -1
-< 
-< Full-Standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 4
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 3
-> Add Credit
-> username selected
-> Enter credit amount to add: 1200.00
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login2
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit15
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,40c7,32
-< 
-< Logged in.
-< 
-< Full-Standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 3
-< 
-< Add credit
-< 
-< 
-< Enter Credit Amount: 100.00
-< 
-< Error message total credit limit cannot exceed 999 999
-< 
-< Enter Credit Amount: -1
-< 
-< Full-Standard Menu
-< 1) sell
-< 2) add credit
-< 3) refund
-< 4) logout
-< Select option: 4
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 3
-> Add Credit
-> username selected
-> Enter credit amount to add: 100.00
-> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
-> Enter credit amount to add: -1
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login3
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit16
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,34c7,29
-< 
-< Logged in.
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout 
-< 
-< Select option: 2
-< 
-< Enter Credit Amount: 300.00
-< 
-< Credit added successfully.
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout 
-< Select option: 3
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: 300.00
-> Sucessfully added credit amount to user
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login4
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit17
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1 
-> Login
-7,39c7,30
-< 
-< Logged in.
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout
-< Select option: 2
-< 
-< 
-< Enter Credit Amount: 1200.00
-< 
-< Error: Cannot add more than $1000 in a single session.
-< 
-< Enter Credit Amount: -1
-< 
-< Back to main menu
-< 
-< Buy-Standard Menu
-< 1) sell
-< 2) add credit
-< 3) refund
-< 4) logout
-< Select option: 4
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: 1200.00 
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login5
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit18
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1 
-> Login
-7,37c7,30
-< 
-< Logged in.
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout
-< Select option: 2
-< 
-< Enter Credit Amount: 100.00
-< 
-< Error message total credit limit cannot exceed 999 999.
-< 
-< Enter Credit Amount: -1
-< 
-< Back to menu
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout
-< Select option: 3
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: 100.00
-> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
-> Enter credit amount to add: -1
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login6
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit19
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1 
-> Login
-7,33c7,29
-< 
-< Logged in.
-< 
-< Sell-Standard Menu
-< 1) sell 
-< 2) add credit
-< 3)logout 
-< Select option: 2
-< 
-< Enter Credit Amount: 100.00
-< 
-< Credit added successfully.
-< 
-< Sell-Standard Menu
-< 1) sell 
-< 2) add credit
-< 3)logout 
-< Select option: 3
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: 100.00
-> Sucessfully added credit amount to user
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login7
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit2
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,24c9,23
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: full1
-< Enter Credit Amount: 100.00
-< 
-< Credit added successfully.
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: full1
-> username selected
-> Enter credit amount to add: 100.00
-> Sucessfully added credit amount to user
-26,42c25,40
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login8
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit20
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1 
-> Login
-7,37c7,30
-< 
-< Logged in.
-< 
-< Sell-Standard Menu
-< 1)Sell 
-< 2) add credit
-< 3)logout 
-< 
-< Select option: 2
-< 
-< Enter Credit Amount: 1200.00
-< 
-< Error: Cannot add more than $1000 in a single session.
-< 
-< Enter Credit Amount: -1
-< 
-< Sell-Standard Menu
-< 1)Sell 
-< 2) add credit
-< 3)logout 
-< 
-< Select option: 3
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: 1200.00
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: login9
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit21
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1     
-> Login
-7,37c7,30
-< 
-< Logged in.
-< 
-< Sell-Standard Menu
-< 1)Sell 
-< 2) add credit
-< 3)logout 
-< Select option: 2
-< 
-< Enter Credit Amount: 100.00
-< 
-< Error message total credit limit cannot exceed 999 999.
-< 
-< Enter Credit Amount: -1
-< 
-< Back to menu
-< 
-< Sell-Standard Menu
-< 1)Sell 
-< 2) add credit
-< 3)logout 
-< Select option: 3
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: 100.00
-> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
-> Enter credit amount to add: -1
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2 
-> EXITS
+Test: logout1
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit22
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,27c9,22
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: TestUser
-< 
-< Error: User ‘TestUser’ does not exist. Cannot add credit.
-< 
-< Enter Username: -1
-< 
-< Back to menu
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: TestUser
-> Username does not exist please try again or -1 to exit 
-> Enter username: -1       
-29,45c24,39
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: logout2
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit23
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1         
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,28c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: admin1
-< Enter Credit Amount: -50.00
-< 
-< Error: Cannot add a negative credit amount. Please enter a positive value.
-< 
-< Enter Credit Amount: -1
-< 
-< back to menu
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: admin1
-> username selected
-> Enter credit amount to add: -50.00    
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-30,46c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: logout3
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit24
-Expected Output and Actual Output Do Not Match
-Differences:
-1,36c1,32
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
-< Enter Username: full1
-< 
-< Logged in.
-< 
-< Full-Standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 3
-< 
-< Enter Credit Amount: -200.00
-< 
-< Error: Cannot add a negative credit amount. Please enter a positive value.
-< 
-< Full-Standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 4
-< 
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1         
-> Login
-> Enter Username: full1       
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 3  
-> Add Credit
-> username selected
-> Enter credit amount to add: -200.00 
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: logout4
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit25
-Expected Output and Actual Output Do Not Match
-Differences:
-1,35c1,30
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
-< Enter Username: sell1
-< 
-< Logged in.
-< 
-< Sell-Standard Menu
-< 1) sell 
-< 2) add credit
-< 3)logout 
-< Select option: 2
-< 
-< Enter Credit Amount: -150.00
-< 
-< Error: Cannot add a negative credit amount. Please enter a positive value.
-< 
-< Enter Credit Amount:-1
-< 
-< Sell-Standard Menu
-< 1) sell 
-< 2) add credit
-< 3)logout 
-< Select option: 3
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: sell1      
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: -150.00 
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: logout5
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit26
-Expected Output and Actual Output Do Not Match
-Differences:
-1,36c1,30
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
-< Enter Username: buy1
-< 
-< Logged in.
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout
-< Select option: 2
-< 
-< Enter Credit Amount: -200.00
-< 
-< Error: Cannot add a negative credit amount. Please enter a positive value.
-< 
-< Enter Credit Amount: -1
-< 
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout
-< Select option: 3
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1         
-> Login
-> Enter Username: buy1      
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: -200.00
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: logout6
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit27
-Expected Output and Actual Output Do Not Match
-Differences:
-1,9c1,7
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
-< Enter Username: admin1
-< 
-< Logged in.
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1         
-> Login
-> Enter Username: admin1      
-> Logged IN
-11,26c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: admin1
-< Enter Credit Amount: ““abc”
-< 
-< Error: Invalid input. Please enter a numeric value for the credit amount.
-< 
-< Enter Credit Amount:-1
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6           
-> Add Credit
-> Enter username: admin1  
-> username selected
-> Enter credit amount to add: “abc”
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-28,44c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: logout7
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit28
-Expected Output and Actual Output Do Not Match
-Differences:
-1,37c1,32
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
-< Enter Username: full1
-< 
-< Logged in.
-< 
-< Full-Standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 3
-< 
-< Enter Credit Amount: “abc” 
-< 
-< Error: Invalid input. Please enter a numeric value for the credit amount.
-< 
-< Enter Credit Amount: -1
-< 
-< Full-Standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 4
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1     
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 3
-> Add Credit
-> username selected
-> Enter credit amount to add: “abc”   
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: logout8
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit29
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1         
-> Login
-7,36c7,30
-< 
-< Logged in.
-< 
-< Sell-Standard Menu
-< 1)Sell 
-< 2) add credit
-< 3)logout 
-< Select option: 2
-< 
-< Enter Credit Amount: “abc” 
-< 
-< Error: Invalid input. Please enter a numeric value for the credit amount.
-< 
-< Enter Credit Amount: -1
-< 
-< Sell-Standard Menu
-< 1) sell 
-< 2) add credit
-< 3)logout 
-< Select option: 3
-< 
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: “abc”
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1   
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: logout9
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit3
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,26c9,23
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< 
-< Enter Username: buy1
-< 
-< Enter Credit Amount: 100.00
-< 
-< Credit added successfully.
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: buy1
-> username selected
-> Enter credit amount to add: 100.00
-> Sucessfully added credit amount to user
-28,45c25,40
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< 
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: sell1
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit30
-Expected Output and Actual Output Do Not Match
-Differences:
-1,35c1,30
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
-< Enter Username: buy1
-< 
-< Logged in.
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout 
-< Select option: 2
-< 
-< Enter Credit Amount: “abc”  
-< 
-< Error: Invalid input. Please enter a numeric value for the credit amount.
-< 
-< Enter Credit Amount: -1
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout 
-< Select option: 3
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1         
-> Login
-> Enter Username: buy1      
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: “abc”  
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: sell10
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit4
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,26c9,23
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< 
-< Select option: 5
-< 
-< Enter Username: sell1
-< 
-< Enter Credit Amount: 100.00
-< 
-< Credit added successfully.
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: sell1
-> username selected
-> Enter credit amount to add: 100.00
-> Sucessfully added credit amount to user
-28,45c25,40
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< 
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: sell11
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit5
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1 
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,28c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: admin1
-< Enter Credit Amount: 1100.00
-< 
-< Error: Credit amount exceeds the limit. Maximum allowed is $1000.
-< 
-< Enter Credit Amount: -1
-< 
-< Back to main menu
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: admin1
-> username selected
-> Enter credit amount to add: 1100.00
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-30,46c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: sell12
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit6
-Expected Output and Actual Output Do Not Match
-Differences:
-1,6c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-8c7
-< 
----
-> Logged IN
-10,30c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Add credit
-< 
-< Enter Username: full2
-< 
-< Enter Credit Amount: 1200.00
-< 
-< Error: Cannot add more than $1000 to an account per session.
-< 
-< Enter Credit Amount: -1
-< 
-< back to menu
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: full2
-> username selected
-> Enter credit amount to add: 1200.00
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-32,48c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: sell13
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit7
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,26c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: buy1
-< Enter Credit Amount: 1200.00
-< 
-< Error: Admin cannot add more than $1000 to an account per session.
-< 
-< Enter Credit Amount: -1
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: buy1
-> username selected
-> Enter credit amount to add: 1200.00
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-28,44c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: sell14
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit8
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,10c7
-< 
-< Logged in.
-< .
-< 
----
-> Logged IN
-12,20c9,19
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-22,29c21,24
-< 
-< Enter Credit Amount: 1200.00
-< 
-< Error: Admin cannot add more than $1000 to an account per session.
-< 
-< 
-< Enter Credit Amount: -1
-< 
----
-> username selected
-> Enter credit amount to add: 1200.00
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-31,48c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: sell15
+Expected Output and Actual Output Match
 ===================================
-Test: add_credit9
-Expected Output and Actual Output Do Not Match
-Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,9c7
-< 
-< Logged in.
-< 
----
-> Logged IN
-11,28c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: admin3
-< Enter Credit Amount: 100.00
-< 
-< Error message total credit limit cannot exceed 999 999
-< 
-< Enter Credit Amount: -1
-< 
-< Back to menu
-< 
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: admin3
-> username selected
-> Enter credit amount to add: 100.00
-> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
-> Enter credit amount to add: -1
-30,46c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Test: sell16
+Expected Output and Actual Output Match
+===================================
+Test: sell17
+Expected Output and Actual Output Match
+===================================
+Test: sell18
+Expected Output and Actual Output Match
+===================================
+Test: sell19
+Expected Output and Actual Output Match
+===================================
+Test: sell2
+Expected Output and Actual Output Match
+===================================
+Test: sell20
+Expected Output and Actual Output Match
+===================================
+Test: sell21
+Expected Output and Actual Output Match
+===================================
+Test: sell22
+Expected Output and Actual Output Match
+===================================
+Test: sell23
+Expected Output and Actual Output Match
+===================================
+Test: sell3
+Expected Output and Actual Output Match
+===================================
+Test: sell4
+Expected Output and Actual Output Match
+===================================
+Test: sell5
+Expected Output and Actual Output Match
+===================================
+Test: sell6
+Expected Output and Actual Output Match
+===================================
+Test: sell7
+Expected Output and Actual Output Match
+===================================
+Test: sell8
+Expected Output and Actual Output Match
+===================================
+Test: sell9
+Expected Output and Actual Output Match
+===================================
+Test: refund1
+Expected Output and Actual Output Match
+===================================
+Test: refund10
+Expected Output and Actual Output Match
+===================================
+Test: refund11
+Expected Output and Actual Output Match
+===================================
+Test: refund12
+Expected Output and Actual Output Match
+===================================
+Test: refund13
+Expected Output and Actual Output Match
+===================================
+Test: refund14
+Expected Output and Actual Output Match
+===================================
+Test: refund15
+Expected Output and Actual Output Match
+===================================
+Test: refund16
+Expected Output and Actual Output Match
+===================================
+Test: refund17
+Expected Output and Actual Output Match
+===================================
+Test: refund18
+Expected Output and Actual Output Match
+===================================
+Test: refund19
+Expected Output and Actual Output Match
+===================================
+Test: refund2
+Expected Output and Actual Output Match
+===================================
+Test: refund20
+Expected Output and Actual Output Match
+===================================
+Test: refund21
+Expected Output and Actual Output Match
+===================================
+Test: refund22
+Expected Output and Actual Output Match
+===================================
+Test: refund23
+Expected Output and Actual Output Match
+===================================
+Test: refund24
+Expected Output and Actual Output Match
+===================================
+Test: refund25
+Expected Output and Actual Output Match
+===================================
+Test: refund26
+Expected Output and Actual Output Match
+===================================
+Test: refund27
+Expected Output and Actual Output Match
+===================================
+Test: refund28
+Expected Output and Actual Output Match
+===================================
+Test: refund29
+Expected Output and Actual Output Match
+===================================
+Test: refund3
+Expected Output and Actual Output Match
+===================================
+Test: refund30
+Expected Output and Actual Output Match
+===================================
+Test: refund31
+Expected Output and Actual Output Match
+===================================
+Test: refund32
+Expected Output and Actual Output Match
+===================================
+Test: refund33
+Expected Output and Actual Output Match
+===================================
+Test: refund34
+Expected Output and Actual Output Match
+===================================
+Test: refund35
+Expected Output and Actual Output Match
+===================================
+Test: refund36
+Expected Output and Actual Output Match
+===================================
+Test: refund37
+Expected Output and Actual Output Match
+===================================
+Test: refund38
+Expected Output and Actual Output Match
+===================================
+Test: refund39
+Expected Output and Actual Output Match
+===================================
+Test: refund4
+Expected Output and Actual Output Match
+===================================
+Test: refund40
+Expected Output and Actual Output Match
+===================================
+Test: refund41
+Expected Output and Actual Output Match
+===================================
+Test: refund42
+Expected Output and Actual Output Match
+===================================
+Test: refund43
+Expected Output and Actual Output Match
+===================================
+Test: refund44
+Expected Output and Actual Output Match
+===================================
+Test: refund45
+Expected Output and Actual Output Match
+===================================
+Test: refund46
+Expected Output and Actual Output Match
+===================================
+Test: refund47
+Expected Output and Actual Output Match
+===================================
+Test: refund48
+Expected Output and Actual Output Match
+===================================
+Test: refund49
+Expected Output and Actual Output Match
+===================================
+Test: refund5
+Expected Output and Actual Output Match
+===================================
+Test: refund50
+Expected Output and Actual Output Match
+===================================
+Test: refund51
+Expected Output and Actual Output Match
+===================================
+Test: refund52
+Expected Output and Actual Output Match
+===================================
+Test: refund53
+Expected Output and Actual Output Match
+===================================
+Test: refund54
+Expected Output and Actual Output Match
+===================================
+Test: refund55
+Expected Output and Actual Output Match
+===================================
+Test: refund56
+Expected Output and Actual Output Match
+===================================
+Test: refund57
+Expected Output and Actual Output Match
+===================================
+Test: refund58
+Expected Output and Actual Output Match
+===================================
+Test: refund59
+Expected Output and Actual Output Match
+===================================
+Test: refund6
+Expected Output and Actual Output Match
+===================================
+Test: refund60
+Expected Output and Actual Output Match
+===================================
+Test: refund61
+Expected Output and Actual Output Match
+===================================
+Test: refund62
+Expected Output and Actual Output Match
+===================================
+Test: refund63
+Expected Output and Actual Output Match
+===================================
+Test: refund64
+Expected Output and Actual Output Match
+===================================
+Test: refund65
+Expected Output and Actual Output Match
+===================================
+Test: refund66
+Expected Output and Actual Output Match
+===================================
+Test: refund67
+Expected Output and Actual Output Match
+===================================
+Test: refund68
+Expected Output and Actual Output Match
+===================================
+Test: refund69
+Expected Output and Actual Output Match
+===================================
+Test: refund7
+Expected Output and Actual Output Match
+===================================
+Test: refund70
+Expected Output and Actual Output Match
+===================================
+Test: refund71
+Expected Output and Actual Output Match
+===================================
+Test: refund72
+Expected Output and Actual Output Match
+===================================
+Test: refund73
+Expected Output and Actual Output Match
+===================================
+Test: refund74
+Expected Output and Actual Output Match
+===================================
+Test: refund75
+Expected Output and Actual Output Match
+===================================
+Test: refund76
+Expected Output and Actual Output Match
+===================================
+Test: refund77
+Expected Output and Actual Output Match
+===================================
+Test: refund78
+Expected Output and Actual Output Match
+===================================
+Test: refund79
+Expected Output and Actual Output Match
+===================================
+Test: refund8
+Expected Output and Actual Output Match
+===================================
+Test: refund80
+Expected Output and Actual Output Match
+===================================
+Test: refund81
+Expected Output and Actual Output Match
+===================================
+Test: refund82
+Expected Output and Actual Output Match
+===================================
+Test: refund9
+Expected Output and Actual Output Match
 ===================================

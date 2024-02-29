@@ -1,10 +1,26 @@
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1 
+Enter an option: 1
 Login
 Enter Username: admin1
 Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 6
+Add Credit
+Enter username: admin1
+username selected
+Enter credit amount to add: 100
+Sucessfully added credit amount to user
 Admin Menu
 1)Create
 2)Delete
@@ -22,7 +38,7 @@ admin1          AA 000500.00
 admin2          AA 000500.00
 full1           FS 000500.00
 sell1           SS 000100.00
-buy1            BS 000900.00
+buy1            BS 001000.00
 buy2            BS 000500.00
 full2           FS 000500.00
 sell2           SS 000100.00
@@ -45,5 +61,5 @@ LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 2
+Enter an option:  2
 EXITS

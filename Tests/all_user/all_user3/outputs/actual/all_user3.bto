@@ -1,7 +1,7 @@
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1 
+Enter an option: 1
 Login
 Enter Username: admin1
 Logged IN
@@ -17,10 +17,11 @@ Admin Menu
 9)Logout
 Enter an option: 6
 Add Credit
-Enter username: sell1
+Enter username: full1
 username selected
-Enter credit amount to add: 100
-Sucessfully added credit amount to user
+Enter credit amount to add: -100
+Please enter a valid credit amount or -1 to go back to main menu 
+Enter credit amount to add: -1
 Admin Menu
 1)Create
 2)Delete
@@ -37,7 +38,7 @@ User          Type Balance
 admin1          AA 000500.00
 admin2          AA 000500.00
 full1           FS 000500.00
-sell1           SS 000200.00
+sell1           SS 000100.00
 buy1            BS 000900.00
 buy2            BS 000500.00
 full2           FS 000500.00

@@ -81,15 +81,23 @@ HOME MENU
 Enter an option: 9
 EXITS
 Differences:
-1,38c1,42
+1,4c1,5
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
-< Enter Username: admin1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+6,7c7
 < Logged in.
 <  
-< Admin Menu
+---
+> Logged IN
+9,33c9,23
 < 1)create
 < 2)delete
 < 3)sell
@@ -115,20 +123,7 @@ Differences:
 < 6) refund
 < 7) logout
 < Select option: 7
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -144,7 +139,12 @@ Differences:
 > Enter seller name: 
 > Invalid Seller name or Seller doesn't Sell Game
 > Enter Seller name or -1 to quit: fill1
-> 
+35,38c25,42
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+---
 > Buy transaction unsuccessful
 > Admin Menu
 > 1)Create

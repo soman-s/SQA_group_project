@@ -65,12 +65,18 @@ HOME MENU
 Enter an option: 5
 EXITS
 Differences:
-1,28c1,36
+1,4c1,5
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
-< Enter Username: full1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+6,23c7,20
 < Logged in.
 <  
 < Full standard Menu 
@@ -89,18 +95,7 @@ Differences:
 < 3) add credit
 < 4)logout
 < Select option: 4
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
 > Logged IN
 > Full Standard Menu
 > 1)Sell
@@ -115,7 +110,12 @@ Differences:
 > BALANCE BEFORE PURCHASE
 > SELLER 500
 > BUYER 500
-> 
+25,28c22,36
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+---
 > You do not have enough credits to buy this game. You will return to the previous menu.
 > Buy transaction unsuccessful
 > Full Standard Menu

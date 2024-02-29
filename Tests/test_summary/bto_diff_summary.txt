@@ -1,36 +1,37 @@
-Test: all_user1
+Test: create1
 Expected Output and Actual Output Do Not Match
 Differences:
-1,20c1,20
-< HHOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 7
-< All Users
-< User          Type Balance
+1,4c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
-> Enter Username: admin1
+6,8c7
+<  
+< Logged in.
+<  
+---
 > Logged IN
-> Admin Menu
+10,21c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -40,30 +41,46 @@ Differences:
 > 7)View All Users
 > 8)View Available Games
 > 9)Logout
-> Enter an option: 7
-> All Users
-> User          Type Balance
-33,49c33,49
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
-\ No newline at end of file
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+26,30c25,28
+< Select option: 1
+< 
+< Enter new 
+< username: admin4
+< 
 ---
-> Admin Menu
+> Enter account type: 1
+> Account type selected
+> Enter Username: admin4
+> username selected
+32,34c30
+< 
+< user created
+<  
+---
+> Succesfully created new user 
+36,53c32,47
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+< 
+---
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -81,105 +98,91 @@ Differences:
 > Enter an option: 2
 > EXITS
 ===================================
-Test: all_user2
+Test: create10
 Expected Output and Actual Output Do Not Match
 Differences:
-1,37c1,37
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 6
-< Add Credit
-< Enter username: sell1
-< username selected
-< Enter credit amount to add: 100
-< Sucessfully added credit amount to user
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 7
-< All Users
-< User          Type Balance
-< admin1          AA 000500.00
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: admin1
-> username selected
-> Enter credit amount to add: 100
-> Sucessfully added credit amount to user
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 7
-> All Users
-> User          Type Balance
-> admin1          AA 000600.00
-49,64c49,65
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 
-\ No newline at end of file
+7,9c7
+<  
+< Logged in.
+<  
 ---
-> Admin Menu
+> Logged IN
+11,22c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,38c25,29
+< Select option: 2
+< 
+< Enter new 
+< username: full1
+< 
+< Error message username already exists try again 
+< 
+< Enter new 
+< username: -1
+< 
+< Back to main menu
+<  
+---
+> Enter account type: 2
+> Account type selected
+> Enter Username: full1
+> Username already exists please try again or -1 to exit
+> Enter valid Username: -1
+40,56c31,46
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -197,55 +200,41 @@ Differences:
 > Enter an option: 2
 > EXITS
 ===================================
-Test: all_user3
+Test: create11
 Expected Output and Actual Output Do Not Match
 Differences:
-1,36c1,36
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 6
-< Add Credit
-< Enter username: buy1
-< username selected
-< Enter credit amount to add: 100
-< Sucessfully added credit amount to user
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 7
-< All Users
-< User          Type Balance
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
-> Enter Username: admin1
+7,9c7
+<  
+< Logged in.
+<  
+---
 > Logged IN
-> Admin Menu
+11,22c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -255,50 +244,47 @@ Differences:
 > 7)View All Users
 > 8)View Available Games
 > 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: sell1
-> username selected
-> Enter credit amount to add: 100
-> Sucessfully added credit amount to user
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 7
-> All Users
-> User          Type Balance
-40c40
-< sell1           SS 000100.00
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,38c25,29
+< Select option: 3
+< 
+< Enter new 
+< username: buy1
+< 
+< Error message username already exists try again 
+< 
+< Enter new 
+< username: -1
+< 
+< Back to main menu
+<  
 ---
-> sell1           SS 000200.00
-49,65c49,65
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
-\ No newline at end of file
+> Enter account type: 3
+> Account type selected
+> Enter Username: buy1
+> Username already exists please try again or -1 to exit
+> Enter valid Username: -1
+40,56c31,46
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
 ---
-> Admin Menu
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -316,55 +302,41 @@ Differences:
 > Enter an option: 2
 > EXITS
 ===================================
-Test: all_user4
+Test: create12
 Expected Output and Actual Output Do Not Match
 Differences:
-1,36c1,36
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 6
-< Add Credit 
-< Enter username: full1
-< username selected
-< Enter credit amount to add: 100
-< Sucessfully added credit amount to user
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 7
-< All Users
-< User          Type Balance
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
-> Enter Username: admin1
+7,9c7
+<  
+< Logged in.
+<  
+---
 > Logged IN
-> Admin Menu
+11,22c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -374,50 +346,47 @@ Differences:
 > 7)View All Users
 > 8)View Available Games
 > 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: buy1
-> username selected
-> Enter credit amount to add: 100
-> Sucessfully added credit amount to user
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 7
-> All Users
-> User          Type Balance
-41c41
-< buy1            BS 000900.00
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,38c25,29
+< Select option: 4
+< 
+< Enter new 
+< username: sell1
+< 
+< Error message username already exists try again 
+< 
+< Enter new 
+< username: -1
+< 
+< Back to main menu
+<  
 ---
-> buy1            BS 001000.00
-49,65c49,65
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
-\ No newline at end of file
+> Enter account type: 4
+> Account type selected
+> Enter Username: sell1
+> Username already exists please try again or -1 to exit
+> Enter valid Username: -1
+40,56c31,46
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
 ---
-> Admin Menu
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -435,104 +404,98 @@ Differences:
 > Enter an option: 2
 > EXITS
 ===================================
-Test: all_user5
+Test: create13
 Expected Output and Actual Output Do Not Match
 Differences:
-1,36c1,36
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 6
-< Add Credit 
-< Enter username: full1
-< username selected
-< Enter credit amount to add: 100
-< Sucessfully added credit amount to user
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 7
-< All Users
-< User          Type Balance
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: full1
-> username selected
-> Enter credit amount to add: 100
-> Sucessfully added credit amount to user
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 7
-> All Users
-> User          Type Balance
-49,65c49,65
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
-\ No newline at end of file
+7,9c7
+<  
+< Logged in.
+<  
 ---
-> Admin Menu
+> Logged IN
+11,22c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,34c25,28
+< Select option: 1
+< 
+< Enter new 
+< username: admin4
+< 
+< 
+< 
+< 
+---
+> Enter account type: 1
+> Account type selected
+> Enter Username: admin4
+> username selected
+36,43c30,31
+< 
+< Error message incorrect amount must be between 0 and 999,999
+< 
+< 
+< Enter new credit amount: -1
+< 
+< Back to main menu
+<  
+---
+> Please enter a valid credit amount or -1 to go back to main menu
+> Enter credit amount: -1
+45,61c33,48
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -550,106 +513,98 @@ Differences:
 > Enter an option: 2
 > EXITS
 ===================================
-Test: all_user6
+Test: create14
 Expected Output and Actual Output Do Not Match
 Differences:
-1,37c1,37
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 6
-< Add Credit
-< Enter username: admin1
-< username selected
-< Enter credit amount to add: -100
-< Please enter a valid credit amount or -1 to go back to main menu 
-< Enter credit amount to add: -1
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 7
-< All Users
-< User          Type Balance
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: admin1
-> username selected
-> Enter credit amount to add: -100
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 7
-> All Users
-> User          Type Balance
-50,66c50,66
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
-\ No newline at end of file
+7,9c7
+<  
+< Logged in.
+<  
 ---
-> Admin Menu
+> Logged IN
+11,22c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,34c25,28
+< Select option: 2
+< 
+< Enter new 
+< username: full4
+< 
+< 
+< 
+< 
+---
+> Enter account type: 2
+> Account type selected
+> Enter Username: full4
+> username selected
+36,43c30,31
+< 
+< Error message incorrect amount must be between 0 and 999,999
+< 
+< 
+< Enter new credit amount: -1
+< 
+< Back to main menu
+<  
+---
+> Please enter a valid credit amount or -1 to go back to main menu
+> Enter credit amount: -1
+45,61c33,48
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -667,106 +622,98 @@ Differences:
 > Enter an option: 2
 > EXITS
 ===================================
-Test: all_user7
+Test: create15
 Expected Output and Actual Output Do Not Match
 Differences:
-1,37c1,37
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 6
-< Add Credit
-< Enter username: buy1
-< username selected
-< Enter credit amount to add: -100
-< Please enter a valid credit amount or -1 to go back to main menu 
-< Enter credit amount to add: -1
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 7
-< All Users
-< User          Type Balance
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: buy1
-> username selected
-> Enter credit amount to add: -100
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 7
-> All Users
-> User          Type Balance
-50,66c50,66
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
-\ No newline at end of file
+7,9c7
+<  
+< Logged in.
+<  
 ---
-> Admin Menu
+> Logged IN
+11,22c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,34c25,28
+< Select option: 3
+< 
+< Enter new 
+< username: buy4
+< 
+< 
+< 
+< 
+---
+> Enter account type: 3
+> Account type selected
+> Enter Username: buy4
+> username selected
+36,43c30,31
+< 
+< Error message incorrect amount must be between 0 and 999,999
+< 
+< 
+< Enter new credit amount: -1
+< 
+< Back to main menu
+<  
+---
+> Please enter a valid credit amount or -1 to go back to main menu
+> Enter credit amount: -1
+45,61c33,48
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -784,106 +731,98 @@ Differences:
 > Enter an option: 2
 > EXITS
 ===================================
-Test: all_user8
+Test: create16
 Expected Output and Actual Output Do Not Match
 Differences:
-1,37c1,37
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 6
-< Add Credit
-< Enter username: sell1
-< username selected
-< Enter credit amount to add: -100
-< Please enter a valid credit amount or -1 to go back to main menu 
-< Enter credit amount to add: -1
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 7
-< All Users
-< User          Type Balance
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: sell1
-> username selected
-> Enter credit amount to add: -100
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 7
-> All Users
-> User          Type Balance
-50,66c50,66
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
-\ No newline at end of file
+7,9c7
+<  
+< Logged in.
+<  
 ---
-> Admin Menu
+> Logged IN
+11,22c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,34c25,28
+< Select option: 4
+< 
+< Enter new 
+< username: sell4
+< 
+< 
+< 
+< 
+---
+> Enter account type: 4
+> Account type selected
+> Enter Username: sell4
+> username selected
+36,43c30,31
+< 
+< Error message incorrect amount must be between 0 and 999,999
+< 
+< 
+< Enter new credit amount: -1
+< 
+< Back to main menu
+<  
+---
+> Please enter a valid credit amount or -1 to go back to main menu
+> Enter credit amount: -1
+45,61c33,48
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -901,106 +840,1489 @@ Differences:
 > Enter an option: 2
 > EXITS
 ===================================
-Test: all_user9
+Test: create17
 Expected Output and Actual Output Do Not Match
 Differences:
-1,37c1,37
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 6
-< Add Credit
-< Enter username: full1
-< username selected
-< Enter credit amount to add: -100
-< Please enter a valid credit amount or -1 to go back to main menu 
-< Enter credit amount to add: -1
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 7
-< All Users
-< User          Type Balance
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 6
-> Add Credit
-> Enter username: full1
-> username selected
-> Enter credit amount to add: -100
-> Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 7
-> All Users
-> User          Type Balance
-50,66c50,66
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
-\ No newline at end of file
+7,9c7
+<  
+< Logged in.
+<  
 ---
-> Admin Menu
+> Logged IN
+11,22c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,34c25,28
+< Select option: 1
+< 
+< Enter new 
+< username: admin4
+< 
+< 
+< 
+< 
+---
+> Enter account type: 1
+> Account type selected
+> Enter Username: admin4
+> username selected
+36,43c30,31
+< 
+< Error message incorrect amount must be between 0 and 999,999
+< 
+< 
+< Enter new credit amount: -1
+< 
+< Back to main menu
+<  
+---
+> Please enter a valid credit amount or -1 to go back to main menu
+> Enter credit amount: -1
+45,61c33,48
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create18
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+11,22c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,34c25,28
+< Select option: 2
+< 
+< Enter new 
+< username: full4
+< 
+< 
+< 
+< 
+---
+> Enter account type: 2
+> Account type selected
+> Enter Username: full4
+> username selected
+36,43c30,31
+< 
+< Error message incorrect amount must be between 0 and 999,999
+< 
+< 
+< Enter new credit amount: -1
+< 
+< Back to main menu
+<  
+---
+> Please enter a valid credit amount or -1 to go back to main menu
+> Enter credit amount: -1
+45,61c33,48
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create19
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+11,22c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,34c25,28
+< Select option: 4
+< 
+< Enter new 
+< username: sell4
+< 
+< 
+< 
+< 
+---
+> Enter account type: 4
+> Account type selected
+> Enter Username: sell4
+> username selected
+36,43c30,31
+< 
+< Error message incorrect amount must be between 0 and 999,999
+< 
+< 
+< Enter new credit amount: -1
+< 
+< Back to main menu
+<  
+---
+> Please enter a valid credit amount or -1 to go back to main menu
+> Enter credit amount: -1
+45,61c33,48
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create2
+Expected Output and Actual Output Do Not Match
+Differences:
+1,4c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+6,8c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+10,20c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+<  
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+25,29c25,28
+< Select option: 1
+< 
+< Enter new 
+< username: full4
+< 
+---
+> Enter account type: 2
+> Account type selected
+> Enter Username: full4
+> username selected
+31,33c30
+< 
+< user created
+<  
+---
+> Succesfully created new user 
+35,51c32,47
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+< 
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create20
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+11,22c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,34c25,28
+< Select option: 3
+< 
+< Enter new 
+< username: buy4
+< 
+< 
+< 
+< 
+---
+> Enter account type: 3
+> Account type selected
+> Enter Username: buy4
+> username selected
+36,43c30,31
+< 
+< Error message incorrect amount must be between 0 and 999,999
+< 
+< 
+< Enter new credit amount: -1
+< 
+< Back to main menu
+<  
+---
+> Please enter a valid credit amount or -1 to go back to main menu
+> Enter credit amount: -1
+45,61c33,48
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create21
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+11,23c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+28,41c25,27
+< Select option: 10
+< 
+< Error message invalid account type
+< 
+< Account types
+< 1)Admin
+< 2)Full-Standard
+< 3)Buy-Standard
+< 4)Sell-Standard
+< Select option: -1
+< 
+< 
+< Back to main menu
+<  
+---
+> Enter account type: 10
+> Please provide valid account type or -1 to go back to main menu 
+> Enter account type: -1
+43,59c29,44
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create22
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,26c7,20
+<  
+< Logged in.
+<  
+< 
+< Full standard Menu
+< 1)sell
+< 2)buy
+< 3) add credit
+< 4)logout
+< Select option: 4
+< 
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> Logged IN
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 5
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create23
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,25c7,19
+<  
+< Logged in.
+<  
+< 
+< Buy standard Menu
+< 1)buy
+< 2) add credit
+< 3)logout 
+< Select option: 3
+< 
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> Logged IN
+> Buy Standard Menu
+> 1)Buy
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create24
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,25c7,19
+<  
+< Logged in.
+<  
+< 
+< Sell standard Menu
+< 1)Sell 
+< 2) add credit
+< 3)logout 
+< Select option: 3
+< 
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> Logged IN
+> Sell Standard Menu
+> 1)Sell
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create3
+Expected Output and Actual Output Do Not Match
+Differences:
+1,4c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+6,8c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+10,20c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+<  
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+25,29c25,28
+< Select option: 1
+< 
+< Enter new 
+< username: full4
+< 
+---
+> Enter account type: 4
+> Account type selected
+> Enter Username: sell4
+> username selected
+31,33c30
+< 
+< user created
+<  
+---
+> Succesfully created new user 
+35,51c32,47
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+< 
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create4
+Expected Output and Actual Output Do Not Match
+Differences:
+1,4c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+6,8c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+10,20c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+<  
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+25,29c25,28
+< Select option: 1
+< 
+< Enter new 
+< username: buy4
+< 
+---
+> Enter account type: 4
+> Account type selected
+> Enter Username: buy4
+> username selected
+31,33c30
+< 
+< user created
+<  
+---
+> Succesfully created new user 
+35,51c32,47
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+< 
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create5
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+11,23c9,20
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+28,39c25,29
+< Select option: 1
+< 
+< Enter new 
+< username: admin52000000000
+< 
+< Error message username length too long try again 
+< 
+< Enter new 
+< username: -1
+< 
+< Back to main menu
+<  
+---
+> Enter account type: 1
+> Account type selected
+> Enter Username: Admin52000000000
+> Username length is too long please try again or -1 to exit
+> Enter valid Username: -1
+41,58c31,46
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create6
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+11,22c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,38c25,29
+< Select option: 2
+< 
+< Enter new 
+< username: full520000000000
+< 
+< Error message username length too long try again 
+< 
+< Enter new 
+< username: -1
+< 
+< Back to main menu
+<  
+---
+> Enter account type: 2
+> Account type selected
+> Enter Username: full520000000000
+> Username length is too long please try again or -1 to exit
+> Enter valid Username: -1
+40,57c31,46
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create7
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+11,22c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,38c25,29
+< Select option: 4
+< 
+< Enter new 
+< username: sell520000000000
+< 
+< Error message username length too long try again 
+< 
+< Enter new 
+< username: -1
+< 
+< Back to main menu
+<  
+---
+> Enter account type: 4
+> Account type selected
+> Enter Username: sell520000000000
+> Username length is too long please try again or -1 to exit
+> Enter valid Username: -1
+40,57c31,46
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create8
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+11,22c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,38c25,29
+< Select option: 3
+< 
+< Enter new 
+< username: buy5200000000000
+< 
+< Error message username length too long try again 
+< 
+< Enter new 
+< username: -1
+< 
+< Back to main menu
+<  
+---
+> Enter account type: 3
+> Account type selected
+> Enter Username: buy5200000000000
+> Username length is too long please try again or -1 to exit
+> Enter valid Username: -1
+40,57c31,46
+< 1)create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add
+<   credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
+===================================
+Test: create9
+Expected Output and Actual Output Do Not Match
+Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
+<  
+< Logged in.
+<  
+---
+> Logged IN
+11,22c9,20
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 1
+< 
+< create 
+< 
+< Account types
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 1
+> Create
+> Select type of account you want to create
+27,38c25,29
+< Select option: 1
+< 
+< Enter new 
+< username: admin1
+< 
+< Error message username already exists try again 
+< 
+< Enter new 
+< username: -1
+< 
+< Back to main menu
+<  
+---
+> Enter account type: 1
+> Account type selected
+> Enter Username: admin1
+> Username already exists please try again or -1 to exit
+> Enter valid Username: -1
+40,56c31,46
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+<  
+< System Exit.
+---
 > 1)Create
 > 2)Delete
 > 3)Sell

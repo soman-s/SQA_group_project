@@ -7,18 +7,19 @@ Expected:
 
  
 Actual:
-04halo                      full1           buy1            000040.00
+04 halo                      full1           buy1            000040.00
 00 buy1            BS 000860.00
 
 Differences:
-1c1
+1,7c1,2
 < 04 Halo                      full1           buy1            040.00
----
-> 04halo                      full1           buy1            000040.00
-3,7d2
+< 00 buy1            BS 000860.00
 < 
 < 
 < 
 < 
 <  
 \ No newline at end of file
+---
+> 04 halo                      full1           buy1            000040.00
+> 00 buy1            BS 000860.00

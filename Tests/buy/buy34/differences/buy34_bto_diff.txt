@@ -12,7 +12,7 @@ Buy- standard Menu
 3)logout 
 Select option: 1
 buy
-Enter game name: Fifa
+Enter game name: admingame1
 Error message: Game already owned.  
 Enter another game or enter -1 to go back to main menu: -1
 Buy- standard Menu 
@@ -40,8 +40,8 @@ Buy Standard Menu
 4)Logout
 Enter an option: 1
 Buy
-Enter Game name: Fifa
-buy1            already owns Fifa                     
+Enter Game name: admingame1
+buy1            already owns admingame1               
 Enter another game or enter -1 to quit: -1
 Buy transaction unsuccessful
 Buy Standard Menu
@@ -57,18 +57,12 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,4c1,5
+1,26c1,30
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-6,26c7,30
+< Enter Username: buy1
 < Logged in.
 < 
 < Buy- standard Menu 
@@ -77,7 +71,7 @@ Differences:
 < 3)logout 
 < Select option: 1
 < buy
-< Enter game name: Fifa
+< Enter game name: admingame1
 < Error message: Game already owned.  
 < Enter another game or enter -1 to go back to main menu: -1
 < Buy- standard Menu 
@@ -91,6 +85,12 @@ Differences:
 < 2) Exit:
 < Enter an Option: 2
 ---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: buy1
 > Logged IN
 > Buy Standard Menu
 > 1)Buy
@@ -99,8 +99,8 @@ Differences:
 > 4)Logout
 > Enter an option: 1
 > Buy
-> Enter Game name: Fifa
-> buy1            already owns Fifa                     
+> Enter Game name: admingame1
+> buy1            already owns admingame1               
 > Enter another game or enter -1 to quit: -1
 > Buy transaction unsuccessful
 > Buy Standard Menu

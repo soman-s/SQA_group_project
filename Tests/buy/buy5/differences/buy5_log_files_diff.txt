@@ -2,7 +2,7 @@ Expected:
 04 Halo                      full1           full2           040.00  
 00 full2           FS 000460.00
 Actual:
-04halo                      full1           full2           000040.00
+04 halo                      full1           full2           000040.00
 00 full2           FS 000460.00
 
 Differences:
@@ -11,5 +11,5 @@ Differences:
 < 00 full2           FS 000460.00
 \ No newline at end of file
 ---
-> 04halo                      full1           full2           000040.00
+> 04 halo                      full1           full2           000040.00
 > 00 full2           FS 000460.00

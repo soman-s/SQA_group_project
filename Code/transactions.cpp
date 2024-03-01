@@ -596,7 +596,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
       string log_buyer_name = utils().pad_username(buyer_name);
       string log_text_buy_price = utils().pad_credit_amount(game_price);
 
-      log_entry = constants::BUY_CODE + log_game_name + " " + log_seller_name + " " + log_buyer_name + " " + log_text_buy_price;
+      log_entry = constants::BUY_CODE + " " + log_game_name + " " + log_seller_name + " " + log_buyer_name + " " + log_text_buy_price;
       utils().update_transction_log(log_entry, transaction_log);
     }
 

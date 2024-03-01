@@ -58,18 +58,12 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,4c1,5
+1,27c1,30
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-6,27c7,30
+< Enter Username: buy1
 < Logged in.
 <  
 < Buy- standard Menu 
@@ -93,6 +87,12 @@ Differences:
 < 2) Exit:
 < Enter an Option: 2
 ---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: buy1
 > Logged IN
 > Buy Standard Menu
 > 1)Buy

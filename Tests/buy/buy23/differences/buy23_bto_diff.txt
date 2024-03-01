@@ -65,18 +65,12 @@ HOME MENU
 Enter an option: 5
 EXITS
 Differences:
-1,4c1,5
+1,30c1,34
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-6,25c7,19
+< Enter Username: full2
 < Logged in.
 <  
 < Full standard Menu 
@@ -97,7 +91,18 @@ Differences:
 < 3) add credit
 < 4)logout
 < Select option: 4
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
 ---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: full2
 > Logged IN
 > Full Standard Menu
 > 1)Sell
@@ -111,12 +116,7 @@ Differences:
 > Enter seller name: 
 > Invalid Seller name or Seller doesn't Sell Game
 > Enter Seller name or -1 to quit: full3
-27,30c21,34
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
----
+> 
 > Buy transaction unsuccessful
 > Full Standard Menu
 > 1)Sell

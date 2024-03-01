@@ -2,7 +2,7 @@ Expected:
 04 Uncharted                 sell1           admin1          050.00
 00 admin1          AA 000450.00
 Actual:
-04uncharted                 sell1           admin1          000050.00
+04 uncharted                 sell1           admin1          000050.00
 00 admin1          AA 000450.00
 
 Differences:
@@ -11,5 +11,5 @@ Differences:
 < 00 admin1          AA 000450.00
 \ No newline at end of file
 ---
-> 04uncharted                 sell1           admin1          000050.00
+> 04 uncharted                 sell1           admin1          000050.00
 > 00 admin1          AA 000450.00

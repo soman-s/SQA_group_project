@@ -64,18 +64,12 @@ HOME MENU
 Enter an option: 4
 EXITS
 Differences:
-1,4c1,5
+1,26c1,37
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-6,15c7,23
+< Enter Username: buy1
 < Logged in.
 <  
 < Buy- standard Menu 
@@ -86,7 +80,24 @@ Differences:
 < buy
 < Enter game name: Uncharted
 < Enter seller name: sell1
+< Game has been bought
+< Buy- standard Menu 
+< 1)buy
+< 2) add credit
+< 3)logout 
+< Select option: 3
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
 ---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: buy1
 > Logged IN
 > Buy Standard Menu
 > 1)Buy
@@ -104,18 +115,8 @@ Differences:
 > BALANCE AFTER PURCHASE
 > SELLER 150
 > BUYER 850
-17,21d24
-< Buy- standard Menu 
-< 1)buy
-< 2) add credit
-< 3)logout 
-< Select option: 3
-23,26c26,37
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
----
+> Game has been bought
+> 
 > Buy Standard Menu
 > 1)Buy
 > 2)Add Credit

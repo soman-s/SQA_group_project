@@ -61,18 +61,12 @@ HOME MENU
 Enter an option: 4
 EXITS
 Differences:
-1,4c1,5
+1,28c1,32
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-6,23c7,18
+< Enter Username: buy1
 < Logged in.
 <  
 < Buy- standard Menu 
@@ -91,7 +85,18 @@ Differences:
 < 2) add credit
 < 3)logout 
 < Select option: 3
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
 ---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: buy1
 > Logged IN
 > Buy Standard Menu
 > 1)Buy
@@ -104,12 +109,7 @@ Differences:
 > Enter seller name: 
 > Invalid Seller name or Seller doesn't Sell Game
 > Enter Seller name or -1 to quit: admon2
-25,28c20,32
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
----
+> 
 > Buy transaction unsuccessful
 > Buy Standard Menu
 > 1)Buy

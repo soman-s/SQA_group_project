@@ -1,29 +1,38 @@
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1
+Enter an option: 1         
 Login
-Enter Username: full1     
+Enter Username: admin1      
 Logged IN
-Full Standard Menu
-1)Sell
-2)Buy
-3)Add Credit
-4)View Available Games
-5)Logout
-Enter an option: 3
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 6           
 Add Credit
+Enter username: admin1  
 username selected
-Enter credit amount to add: “abc”   
+Enter credit amount to add: “abc”
 Please enter a valid credit amount or -1 to go back to main menu 
 Enter credit amount to add: -1
-Full Standard Menu
-1)Sell
-2)Buy
-3)Add Credit
-4)View Available Games
-5)Logout
-Enter an option: 5
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
 LOGGED OUT
 HOME MENU
 1)Login

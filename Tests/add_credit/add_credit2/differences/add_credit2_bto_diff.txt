@@ -1,0 +1,147 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+
+Enter Username: admin1
+
+Logged in.
+
+Admin Menu
+1) create
+2) delete
+3) sell
+4) buy
+5) add credit
+6) refund
+7) logout
+Select option: 5
+
+Enter Username: full1
+Enter Credit Amount: 100.00
+
+Credit added successfully.
+
+Admin Menu
+1) create
+2) delete
+3) sell
+4) buy
+5) add credit
+6) refund
+7) logout
+Select option: 7
+
+Logout
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+
+System Exit.
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1 
+Login
+Enter Username: sell1
+Logged IN
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 2
+Add Credit
+username selected
+Enter credit amount to add: 100.00
+Sucessfully added credit amount to user
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:
+1,42c1,29
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+< 
+< Enter Username: admin1
+< 
+< Logged in.
+< 
+< Admin Menu
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 5
+< 
+< Enter Username: full1
+< Enter Credit Amount: 100.00
+< 
+< Credit added successfully.
+< 
+< Admin Menu
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< Logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+< 
+< System Exit.
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1 
+> Login
+> Enter Username: sell1
+> Logged IN
+> Sell Standard Menu
+> 1)Sell
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 2
+> Add Credit
+> username selected
+> Enter credit amount to add: 100.00
+> Sucessfully added credit amount to user
+> Sell Standard Menu
+> 1)Sell
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS

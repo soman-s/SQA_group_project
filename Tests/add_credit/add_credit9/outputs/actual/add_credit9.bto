@@ -17,10 +17,10 @@ Admin Menu
 9)Logout
 Enter an option: 6
 Add Credit
-Enter username: admin3
+Enter username: buy1
 username selected
-Enter credit amount to add: 100.00
-credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
+Enter credit amount to add: 1200.00
+Please enter a valid credit amount or -1 to go back to main menu 
 Enter credit amount to add: -1
 Admin Menu
 1)Create

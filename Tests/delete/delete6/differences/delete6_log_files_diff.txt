@@ -1,4 +1,11 @@
-Differences in daily_transactions.etf:
-Differences in available_games.etf:
-Differences in current_users.etf:
-Differences in game_collection.etf:
+Expected:
+00 buy1            BS 000900.00
+Actual:
+00 admin1          AA 000500.0
+
+Differences:
+1c1
+< 00 buy1            BS 000900.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0

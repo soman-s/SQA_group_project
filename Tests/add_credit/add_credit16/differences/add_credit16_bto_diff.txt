@@ -1,0 +1,137 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+
+Enter Username: buy1
+
+Logged in.
+
+Buy-Standard Menu
+1)buy
+2) add credit
+3)logout 
+
+Select option: 2
+
+Enter Credit Amount: 300.00
+
+Credit added successfully.
+
+Buy-Standard Menu
+1)buy
+2) add credit
+3)logout 
+Select option: 3
+
+Logout
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+
+System Exit.
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: full3
+Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 3
+Add Credit
+username selected
+Enter credit amount to add: 100.00
+credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
+Enter credit amount to add: -1
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 5
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:
+1,34c1,32
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+< 
+< Enter Username: buy1
+< 
+< Logged in.
+< 
+< Buy-Standard Menu
+< 1)buy
+< 2) add credit
+< 3)logout 
+< 
+< Select option: 2
+< 
+< Enter Credit Amount: 300.00
+< 
+< Credit added successfully.
+< 
+< Buy-Standard Menu
+< 1)buy
+< 2) add credit
+< 3)logout 
+< Select option: 3
+< 
+< Logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+< 
+< System Exit.
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: full3
+> Logged IN
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 3
+> Add Credit
+> username selected
+> Enter credit amount to add: 100.00
+> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
+> Enter credit amount to add: -1
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 5
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS

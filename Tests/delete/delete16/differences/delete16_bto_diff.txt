@@ -1,4 +1,55 @@
 Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+ 
+Enter Username: admin1
+ 
+Logged in.
+ 
+
+Admin Menu
+1) create
+2)delete
+3)sell
+4)buy
+5) add credit
+6) refund
+7) logout
+
+Select option: 2
+
+
+delete 
+
+Enter Username: admin2
+
+admin user deleted
+
+Admin Menu
+1) create
+2)delete
+3)sell
+4)buy
+5) add credit
+6) refund
+7) logout
+
+Select option: 7
+
+logout
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+Enter Username: admin2
+Error message user does not exist
+ Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+System Exit.
 Actual:
 HOME MENU
 1)Login
@@ -48,3 +99,103 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
+1,5c1,5
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+<  
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,10c7
+<  
+< Logged in.
+<  
+< 
+---
+> Logged IN
+12,28c9,21
+< 1) create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< 
+< Select option: 2
+< 
+< 
+< delete 
+< 
+< Enter Username: admin2
+< 
+< admin user deleted
+< 
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 2
+> Delete
+> Enter username: admin2
+> User deleted
+30,44c23,38
+< 1) create
+< 2)delete
+< 3)sell
+< 4)buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< 
+< Select option: 7
+< 
+< logout
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+46,51c40,47
+< Error message user does not exist
+<  Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+< System Exit.
+---
+> Invalid Login
+> Enter valid username or -1 to exit: -1
+> EXIT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS

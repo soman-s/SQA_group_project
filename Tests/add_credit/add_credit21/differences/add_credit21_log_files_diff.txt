@@ -1,0 +1,11 @@
+Expected:
+00 sell3           AA 999999.00
+
+Actual:
+00 sell1           SS 000100.0
+
+Differences:
+1c1
+< 00 sell3           AA 999999.00
+---
+> 00 sell1           SS 000100.0

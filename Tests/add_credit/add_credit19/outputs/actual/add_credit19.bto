@@ -3,10 +3,10 @@ HOME MENU
 2)Exit
 Enter an option: 1 
 Login
-Enter Username: sell1
+Enter Username: buy3
 Logged IN
-Sell Standard Menu
-1)Sell
+Buy Standard Menu
+1)Buy
 2)Add Credit
 3)View Available Games
 4)Logout
@@ -14,9 +14,10 @@ Enter an option: 2
 Add Credit
 username selected
 Enter credit amount to add: 100.00
-Sucessfully added credit amount to user
-Sell Standard Menu
-1)Sell
+credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
+Enter credit amount to add: -1
+Buy Standard Menu
+1)Buy
 2)Add Credit
 3)View Available Games
 4)Logout

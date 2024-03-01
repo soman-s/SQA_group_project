@@ -1,0 +1,13 @@
+Expected:
+06  full1           FS 000600.00
+00  full1           FS 000600.00
+
+Actual:
+00 admin1          AA 000500.0
+
+Differences:
+1,2c1
+< 06  full1           FS 000600.00
+< 00  full1           FS 000600.00
+---
+> 00 admin1          AA 000500.0

@@ -1,0 +1,157 @@
+Expected:
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 1
+
+Enter Username: admin1
+
+Logged in.
+
+Admin Menu
+1) create
+2) delete
+3) sell
+4) buy
+5) add credit
+6) refund
+7) logout
+Select option: 5
+
+Enter Username: admin1
+Enter Credit Amount: 1100.00
+
+Error: Credit amount exceeds the limit. Maximum allowed is $1000.
+
+Enter Credit Amount: -1
+
+Back to main menu
+
+Admin Menu
+1) create
+2) delete
+3) sell
+4) buy
+5) add credit
+6) refund
+7) logout
+Select option: 7
+
+Logout
+
+Welcome to Game Distribution Service
+1) Login:
+2) Exit:
+Enter an Option: 2
+
+System Exit.
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1         
+Login
+Enter Username: buy1      
+Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 2
+Add Credit
+username selected
+Enter credit amount to add: “abc”  
+Please enter a valid credit amount or -1 to go back to main menu 
+Enter credit amount to add: -1
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:
+1,46c1,30
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 1
+< 
+< Enter Username: admin1
+< 
+< Logged in.
+< 
+< Admin Menu
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 5
+< 
+< Enter Username: admin1
+< Enter Credit Amount: 1100.00
+< 
+< Error: Credit amount exceeds the limit. Maximum allowed is $1000.
+< 
+< Enter Credit Amount: -1
+< 
+< Back to main menu
+< 
+< Admin Menu
+< 1) create
+< 2) delete
+< 3) sell
+< 4) buy
+< 5) add credit
+< 6) refund
+< 7) logout
+< Select option: 7
+< 
+< Logout
+< 
+< Welcome to Game Distribution Service
+< 1) Login:
+< 2) Exit:
+< Enter an Option: 2
+< 
+< System Exit.
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1         
+> Login
+> Enter Username: buy1      
+> Logged IN
+> Buy Standard Menu
+> 1)Buy
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 2
+> Add Credit
+> username selected
+> Enter credit amount to add: “abc”  
+> Please enter a valid credit amount or -1 to go back to main menu 
+> Enter credit amount to add: -1
+> Buy Standard Menu
+> 1)Buy
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS

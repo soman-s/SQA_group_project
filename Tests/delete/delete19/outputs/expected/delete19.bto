@@ -18,7 +18,7 @@ Admin Menu
 Enter an option: 2
 Delete
 Enter username: buy1
-User deleted
+User sucessfully removed
 Admin Menu
 1)Create
 2)Delete
@@ -37,9 +37,14 @@ HOME MENU
 Enter an option: 1
 Login
 Enter Username: buy1
-Invalid Login
-Enter valid username or -1 to exit: -1
-EXIT
+Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
 HOME MENU
 1)Login
 2)Exit

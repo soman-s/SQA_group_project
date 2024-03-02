@@ -19,7 +19,7 @@ Admin Menu
 Enter an option: 2
 Delete
 Enter username: sell1
-User deleted
+User sucessfully removed
 Admin Menu
 1)Create
 2)Delete
@@ -38,9 +38,14 @@ HOME MENU
 Enter an option: 1
 Login
 Enter Username: sell1
-Invalid Login
-Enter valid username or -1 to exit: -1
-EXIT
+Logged IN
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
@@ -100,20 +105,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-21c21
-< User deleted
----
-> User sucessfully removed
-40,42c40,47
-< Invalid Login
-< Enter valid username or -1 to exit: -1
-< EXIT
----
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT

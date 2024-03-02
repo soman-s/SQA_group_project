@@ -1,67 +1,27 @@
 Test: login1
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
 Test: login10
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
 Test: login11
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
 Test: login12
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
 Test: login13
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 buy1            BS 000900.00
----
-> 00 buy1            BS 000900.00
-==================================
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
 Test: login2
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
 Test: login3
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
 Test: login4
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 buy1            BS 000900.00
----
-> 00 buy1            BS 000900.00
-==================================
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
 Test: login5
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
@@ -75,5 +35,347 @@ Test: login8
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
 Test: login9
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout1
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout2
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout3
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout4
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout5
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout6
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout7
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout8
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: logout9
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund1
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund10
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund11
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund12
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund13
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund14
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund15
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund16
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund17
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund18
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund19
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund2
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund20
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund21
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund22
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund23
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund24
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund25
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund26
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund27
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund28
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund29
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund3
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund30
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund31
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund32
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund33
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund34
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund35
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund36
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund37
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund38
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund39
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund4
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund40
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund41
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund42
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund43
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund44
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund45
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund46
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund47
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund48
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund49
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund5
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund50
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund51
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund52
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund53
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund54
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund55
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund56
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund57
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund58
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund59
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund6
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund60
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund61
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund62
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund63
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund64
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund65
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund66
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund67
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund68
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund69
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund7
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund70
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund71
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund72
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund73
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund74
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund75
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund76
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund77
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund78
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund79
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund8
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund80
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund81
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund82
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: refund9
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell1
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell10
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell11
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell12
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell13
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell14
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell15
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell16
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell17
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell18
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell19
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell2
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell20
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell21
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell22
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell23
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell3
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell4
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell5
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell6
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell7
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell8
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: sell9
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================

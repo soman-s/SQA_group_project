@@ -26,7 +26,7 @@ differences_paths=()
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
-for subdir in login; do
+for subdir in login logout refund sell; do
     subdir="${subdir%/}"
     # Change into the subdirectory
     cd "$subdir" || { echo "Failed to enter subdirectory: $subdir"; continue; }
@@ -201,6 +201,7 @@ for index in "${!test_inputs[@]}"; do
             echo "===================================" >> "$summary_bto_differences_file"
 
 
+
         else
             # If there are no differences, indicate that in the summary file
             echo "Test: $test_name" >> "$summary_bto_differences_file"
@@ -239,6 +240,7 @@ for index in "${!test_inputs[@]}"; do
             echo "Differences:" >> "$summary_daily_transaction_differences_file"
             diff "$expected_transaction" "$actual_transaction" >> "$summary_daily_transaction_differences_file"
             echo "==================================" >> "$summary_daily_transaction_differences_file"
+
 
 
         else

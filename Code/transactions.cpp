@@ -118,7 +118,7 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
 }
 
 // logic for create transaction
-string transactions::process_create(vector<string>& all_users){
+string transactions::process_create(vector<string>& all_users, vector<string>& transaction_log){
 
   unordered_map <string, string> user_type_codes = {{"1","AA"},{"2","FS"},{"3","BS"},{"4","SS"}};
 
@@ -210,7 +210,9 @@ string transactions::process_create(vector<string>& all_users){
       if( credit_amount >= constants::MIN_CREDIT_AMOUNT && credit_amount <= constants::MAX_CREDIT_AMOUNT){
         cout << "Succesfully created new user " << endl;
         text_credit_amount = utils().pad_credit_amount(credit_amount);
-        return username + " " + user_type_codes[new_account] + " " + text_credit_amount;
+        string log_entry = constants::CREATE_CODE+" "+username+ " " + user_type_codes[new_account] + " " + text_credit_amount;
+        utils().update_transction_log(log_entry,transaction_log);
+        return constants:: SUCESS_OPTION;
       }
 
       cout << "Please enter a valid credit amount or -1 to go back to main menu" << endl;
@@ -245,7 +247,7 @@ string transactions::process_create(vector<string>& all_users){
 }
 
 // logic for delete transactions
-string transactions:: process_delete(vector<string>& all_users, string current_user){
+string transactions:: process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log){
 
   string user_to_remove;
 
@@ -280,7 +282,14 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
   }
 
-  return user_to_remove;
+  cout << "User sucessfully removed" << endl; 
+
+  float user_amount = user_file_process().get_user_balance(all_users, user_to_remove);
+
+  string log_entry = constants::DELETE_CODE+" "+user_to_remove+ " " + user_file_process().get_user_type(all_users, user_to_remove) + " " + to_string(user_amount);
+  utils().update_transction_log(log_entry,transaction_log);
+
+  return constants:: SUCESS_OPTION;;
 
 }
 

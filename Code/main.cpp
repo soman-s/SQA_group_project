@@ -135,22 +135,11 @@ int main()
                             }
                             else if (user_menu_option == constants::CREATE)
                              {
-                                string new_user;
-                                new_user = transactions().process_create(all_users);
-                                if (new_user != constants::EXIT_MENU_OPTION) {
-                                    all_users.push_back(new_user);
-                                }
+                                transactions().process_create(all_users,transaction_log);
                             }
                             else if (user_menu_option == constants::DELETE)
                              {
-                                string user_to_remove;
-                                user_to_remove = transactions().process_delete(all_users, current_user_name);
-                                if (user_to_remove != constants::EXIT_MENU_OPTION) {
-                                  cout << "User deleted" << endl;
-                                  utils().remove_user(user_to_remove, all_users);
-                                  utils().remove_games(user_to_remove, all_games);
-
-                                }
+                                transactions().process_delete(all_users, current_user_name, transaction_log);
                             }
                             else if (user_menu_option == constants::LIST_ALL_USERS)
                              {
@@ -223,6 +212,7 @@ int main()
                 cout << "LOGGED OUT" << endl;
                 string log_entry;
                 log_entry= constants::LOGOUT_CODE+" "+current_user_name+" "+current_user_type+" "+user_file_process().get_user_credit(all_users,current_user_name);
+                cout << "log_entry " << log_entry << endl;
                 utils().update_transction_log(log_entry,transaction_log);
 
 

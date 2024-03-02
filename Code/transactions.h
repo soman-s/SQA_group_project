@@ -37,18 +37,20 @@ public:
      * @brief Process the creation of a new user.
      *
      * @param all_users Vector containing all user information.
+     * @param transaction_log Vector containg all transaction logs
      * @return A message indicating the result of the transaction.
      */
-    string process_create(vector<string>& all_users);
+    string process_create(vector<string>& all_users,vector<string>& transaction_log);
 
     /**
      * @brief Process the deletion of a user.
      *
      * @param all_users Vector containing all user information.
      * @param current_user The name of the user to be deleted.
+     * @param transaction_log Vector containg all transaction logs
      * @return A message indicating the result of the transaction.
      */
-    string process_delete(vector<string>& all_users, string current_user);
+    string process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log);
 
     /**
      * @brief Show information about all users.

@@ -113,3 +113,89 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
+1,28c1,28
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: full1
+< Logged IN
+< Full Standard Menu
+< 1)Sell
+< 2)Buy
+< 3)Add Credit
+< 4)View Available Games
+< 5)Logout
+< Enter an option: 1
+< Sell
+< Enter game name: fullgame8
+< 
+< Enter Game price: 50
+< 
+< Full Standard Menu
+< 1)Sell
+< 2)Buy
+< 3)Add Credit
+< 4)View Available Games
+< 5)Logout
+< Enter an option: 4
+< All Games Available
+< Game Name                 Seller          Price
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: full1
+> Logged IN
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 1
+> Sell
+> Enter game name: fullgame8
+> 
+> Enter Game price: 50
+> 
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 4
+> All Games Available
+> Game Name                 Seller          Price
+44,56c44,56
+< Full Standard Menu
+< 1)Sell
+< 2)Buy
+< 3)Add Credit
+< 4)View Available Games
+< 5)Logout
+< Enter an option: 5
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 5
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS

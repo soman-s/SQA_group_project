@@ -7,3 +7,9 @@ Actual:
 00 full1           FS 000500.00
 
 Differences:
+1,2c1,2
+< 03 fullgame9                 full1           050.61
+< 00 full1           FS 000500.00
+---
+> 03 fullgame9                 full1           050.61
+> 00 full1           FS 000500.00

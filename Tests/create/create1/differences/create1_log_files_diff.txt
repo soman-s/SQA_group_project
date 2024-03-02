@@ -3,7 +3,7 @@ Expected:
 00_admin1          AA_000500.00
 Actual:
 01 admin4          AA 000500.00
-00 admin1          AA 000500.0
+00 admin1          AA 000500.00
 
 Differences:
 1,2c1,2
@@ -12,4 +12,4 @@ Differences:
 \ No newline at end of file
 ---
 > 01 admin4          AA 000500.00
-> 00 admin1          AA 000500.0
+> 00 admin1          AA 000500.00

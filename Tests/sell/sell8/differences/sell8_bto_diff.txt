@@ -99,3 +99,103 @@ HOME MENU
 Enter an option: 
 EXITS
 Differences:
+1,49c1,49
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: admin1
+< Logged IN
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 3
+< Sell
+< Enter game name: admingame8
+< 
+< Enter Game price: The price
+< 
+< Invlaid Game Price
+< Enter Game price: -1
+< 
+< Invlaid Game Price
+< Enter Game price: 9
+< 
+< Invlaid Game Price
+< Enter Game price or -1 to exit: 2
+< 
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 3
+> Sell
+> Enter game name: admingame8
+> 
+> Enter Game price: The price
+> 
+> Invlaid Game Price
+> Enter Game price: -1
+> 
+> Invlaid Game Price
+> Enter Game price: 9
+> 
+> Invlaid Game Price
+> Enter Game price or -1 to exit: 2
+> 
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 
+> EXITS

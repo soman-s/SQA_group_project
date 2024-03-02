@@ -54,18 +54,6 @@ Admin Menu
 8)View Available Games
 9)Logout
 Enter an option: admin2
-Invalid entry
-Admin Menu
-1)Create
-2)Delete
-3)Sell
-4)Buy
-5)Refund
-6)Add Credit
-7)View All Users
-8)View Available Games
-9)Logout
-Enter an option: -1
 LOGGED OUT
 HOME MENU
 1)Login
@@ -135,16 +123,3 @@ HOME MENU
 Enter an option: 9
 EXITS
 Differences:
-56,67d55
-< Invalid entry
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: -1

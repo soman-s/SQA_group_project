@@ -1,1022 +1,680 @@
-Test: login1
+Test: create1
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,2
+< 01_admin4          AA_000500.00
+< 00_admin1          AA_000500.00
+\ No newline at end of file
+---
+> 01 admin4          AA 000500.00
+> 00 admin1          AA 000500.0
+==================================
+Test: create10
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 admin1          AA 000500.00
+\ No newline at end of file
 ---
-> 00 admin1          AA 000500.00
+> 00 admin1          AA 000500.0
 ==================================
-Test: login10
+Test: create11
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 admin1          AA 000500.00
+\ No newline at end of file
 ---
-> 00 admin1          AA 000500.00
+> 00 admin1          AA 000500.0
 ==================================
-Test: login11
+Test: create12
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create13
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create14
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create15
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create16
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create17
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create18
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create19
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create2
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+2c2
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create20
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create21
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create22
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 full1          FS 000500.00
+\ No newline at end of file
+---
+> 00 full1           FS 000500.0
+==================================
+Test: create23
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 buy1           BS 000500.00
+\ No newline at end of file
+---
+> 00 buy1            BS 000900.0
+==================================
+Test: create24
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 sell1          SS 000500.00
+\ No newline at end of file
+---
+> 00 sell1           SS 000100.0
+==================================
+Test: create3
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+2c2
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create4
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,2
+< 01 buy4            BS 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 01 buy4            SS 000500.00
+> 00 admin1          AA 000500.0
+==================================
+Test: create5
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create6
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create7
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create8
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: create9
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: delete1
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,2
+< 02_admin2          AA_000500.00
+< 00_admin1          AA_000500.00
+\ No newline at end of file
+---
+> 02 admin2          AA 500.000000
+> 00 admin1          AA 000500.0
+==================================
+Test: delete10
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: delete11
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: delete12
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: delete13
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,3
+< 02 admin2          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 admin2          AA 500.000000
+> 04 pubg                      admin2          admin1          000030.00
+> 00 admin1          AA 000470.00
+==================================
+Test: delete14
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,3
+< 00 full1           FS 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 full1           FS 500.000000
+> 04 halo                      full1           admin1          000040.00
+> 00 admin1          AA 000460.00
+==================================
+Test: delete15
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,3
+< 01 sell1           SS 000100.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 sell1           SS 100.000000
+> 04 uncharted                 sell1           admin1          000050.00
+> 00 admin1          AA 000450.00
+==================================
+Test: delete16
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,3
+< 02 admin1          AA 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 admin2          AA 500.000000
+> 00 admin1          AA 000500.0
+> 00 admin2          AA 000500.0
+==================================
+Test: delete17
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,3
+< 02 full1           FS 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 full1           FS 500.000000
+> 00 admin1          AA 000500.0
+> 00 full1           FS 000500.0
+==================================
+Test: delete18
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,3
+< 02 admin1          SS 000100.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 sell1           SS 100.000000
+> 00 admin1          AA 000500.0
+> 00 sell1           SS 000100.0
+==================================
+Test: delete19
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,3
+< 00 admin1          BS 000900.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 buy1            BS 900.000000
+> 00 admin1          AA 000500.0
+> 00 buy1            BS 000900.0
+==================================
+Test: delete2
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,2
+< 02 full1           FS 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 full1           FS 500.000000
+> 00 admin1          AA 000500.0
+==================================
+Test: delete3
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,2
+< 01 sell1           SS 000100.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 sell1           SS 100.000000
+> 00 admin1          AA 000500.0
+==================================
+Test: delete4
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,2
+< 01 buy1            BS 000900.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 02 buy1            BS 900.000000
+> 00 admin1          AA 000500.0
+==================================
+Test: delete5
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: delete6
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 buy1            BS 000900.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: delete7
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 sell1           SS 000100.00
+\ No newline at end of file
+---
+> 00 sell1           SS 000100.0
+==================================
+Test: delete8
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 full1           FS 000500.00
+\ No newline at end of file
 ---
-> 00 full1           FS 000500.00
+> 00 full1           FS 000500.0
 ==================================
-Test: login12
+Test: delete9
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: add_credit1
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+2c2
+< 00 admin1          AA 000600.00
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: add_credit10
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: add_credit11
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+\ No newline at end of file
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: add_credit12
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: add_credit13
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,2
+< 06  full1           FS 000600.00
+< 00  full1           FS 000600.00
+---
+> 06 full1           FS 000600.00
+> 00 full1           FS 000500.0
+==================================
+Test: add_credit14
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 full1           FS 000500.00
+\ No newline at end of file
+---
+> 00 full1           FS 000500.0
+==================================
+Test: add_credit15
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 full3           FS 999999.00
+---
+> 00 full3           FS 999999.0
+==================================
+Test: add_credit16
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,2
+< 06  buy1            BS 001200.00
+< 00  buy1            BS 001200.00
+---
+> 06 buy1            BS 001200.00
+> 00 buy1            BS 000900.0
+==================================
+Test: add_credit17
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00  buy1            BS 000900.00
+---
+> 00 buy1            BS 000900.0
+==================================
+Test: add_credit18
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00  buy3            BS 999999.00
+---
+> 00 buy3            BS 999999.0
+==================================
+Test: add_credit19
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,2c1,2
+< 06  sell1           SS 000200.00
+< 00  sell1           SS 000200.00
+---
+> 06 sell1           SS 000200.00
+> 00 sell1           SS 000100.0
+==================================
+Test: add_credit2
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,3c1,2
+< 06  full1            FS 000600.00
+< 00 
+< admin1          AA 000500.00
+---
+> 06 full1           FS 000600.00
+> 00 admin1          AA 000500.0
+==================================
+Test: add_credit20
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 sell1           SS 000100.00
 ---
-> 00 sell1           SS 000100.00
+> 00 sell1           SS 000100.0
 ==================================
-Test: login13
+Test: add_credit21
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 sell3           AA 999999.00
+---
+> 00 sell3           SS 999999.0
+==================================
+Test: add_credit22
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: add_credit23
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 admin1          AA 000500.00
+---
+> 00 admin1          AA 000500.0
+==================================
+Test: add_credit24
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 full1           FS 000500.00
+---
+> 00 full1           FS 000500.0
+==================================
+Test: add_credit25
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 sell1           SS 000100.00
+---
+> 00 sell1           SS 000100.0
+==================================
+Test: add_credit26
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 buy1            BS 000900.00
 ---
-> 00 buy1            BS 000900.00
+> 00 buy1            BS 000900.0
 ==================================
-Test: login2
+Test: add_credit27
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
-< 00 full1           FS 000500.00
+< 00 admin1          AA 000500.00
+\ No newline at end of file
 ---
-> 00 full1           FS 000500.00
+> 00 admin1          AA 000500.0
 ==================================
-Test: login3
+Test: add_credit28
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1c1
+< 00 full1           AA 000500.00
+\ No newline at end of file
+---
+> 00 full1           FS 000500.0
+==================================
+Test: add_credit29
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 sell1           SS 000100.00
 ---
-> 00 sell1           SS 000100.00
+> 00 sell1           SS 000100.0
 ==================================
-Test: login4
+Test: add_credit3
+Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
+Differences:
+1,4c1,2
+< 06 
+< buy1            BS 001000.00
+< 00 
+< admin1          AA 000500.00
+---
+> 06 buy1            BS 001000.00
+> 00 admin1          AA 000500.0
+==================================
+Test: add_credit30
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 buy1            BS 000900.00
 ---
-> 00 buy1            BS 000900.00
+> 00 buy1            BS 000900.0
 ==================================
-Test: login5
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login6
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login7
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login8
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: login9
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: logout1
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: logout2
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
-Test: logout3
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
-Test: logout4
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 buy1            BS 000900.00
----
-> 00 buy1            BS 000900.00
-==================================
-Test: logout5
-Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: logout6
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: logout7
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
-Test: logout8
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 buy1            BS 000900.00
----
-> 00 buy1            BS 000900.00
-==================================
-Test: logout9
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
-Test: sell1
+Test: add_credit4
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1,2c1,2
-< 03 admin game8               admin1          100.00
-< 00 admin1          AA 000500.00
----
-> 03 admin game8               admin1          100.00
-> 00 admin1          AA 000500.00
-==================================
-Test: sell10
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: sell11
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: sell12
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 03 fullgame9                 full1           050.61
-< 00 full1           FS 000500.00
----
-> 03 fullgame9                 full1           050.61
-> 00 full1           FS 000500.00
-==================================
-Test: sell13
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
-Test: sell14
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
-Test: sell15
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
-Test: sell16
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
-Test: sell17
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 03 sellgame8                 sell1           500.65
-< 00 sell1           SS 000100.00
----
-> 03 sellgame8                 sell1           500.65
-> 00 sell1           SS 000100.00
-==================================
-Test: sell18
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
-Test: sell19
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
-Test: sell2
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 03 fullgame8                 full1           050.00
-< 00 full1           FS 000500.00
----
-> 03 fullgame8                 full1           050.00
-> 00 full1           FS 000500.00
-==================================
-Test: sell20
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
-Test: sell21
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
-Test: sell22
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 03 admingame8                admin1          100.00
-< 00 admin1          AA 000500.00
----
-> 03 admingame8                admin1          100.00
-> 00 admin1          AA 000500.00
-==================================
-Test: sell23
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 03 fullgame8                 full1           050.00
-< 00 full1           FS 000500.00
----
-> 03 fullgame8                 full1           050.00
-> 00 full1           FS 000500.00
-==================================
-Test: sell3
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 03 sellgame8                 sell1           500.00
-< 00 sell1           SS 000100.00
----
-> 03 sellgame8                 sell1           500.00
-> 00 sell1           SS 000100.00
-==================================
-Test: sell4
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 buy1            BS 000900.00
----
-> 00 buy1            BS 000900.00
-==================================
-Test: sell5
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 03 admingame9                admin1          100.23
-< 00 admin1          AA 000500.00
----
-> 03 admingame9                admin1          100.23
-> 00 admin1          AA 000500.00
-==================================
-Test: sell6
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: sell7
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: sell8
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: sell9
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund1
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 admin2          admin1          000010.00
-< 00 admin1          AA 000500.00
----
-> 05 admin2          admin1          000010.00
-> 00 admin1          AA 000500.00
-==================================
-Test: refund10
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 buy1            sell1           000010.25
-< 00 admin1          AA 000500.00
----
-> 05 buy1            sell1           000010.25
-> 00 admin1          AA 000500.00
-==================================
-Test: refund11
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund12
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund13
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund14
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund15
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund16
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund17
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund18
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund19
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
-Test: refund2
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 admin1          full1           000025.50
-< 00 admin1          AA 000500.00
----
-> 05 admin1          full1           000025.50
-> 00 admin1          AA 000500.00
-==================================
-Test: refund20
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 buy1            BS 000900.00
----
-> 00 buy1            BS 000900.00
-==================================
-Test: refund21
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
-Test: refund22
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund23
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund24
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund25
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund26
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund27
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund28
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund29
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund3
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 admin1          sell1           000010.25
-< 00 admin1          AA 000500.00
----
-> 05 admin1          sell1           000010.25
-> 00 admin1          AA 000500.00
-==================================
-Test: refund30
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund31
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund32
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund33
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund34
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund35
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund36
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund37
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund38
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund39
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund4
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 full1           admin1          000010.00
-< 00 admin1          AA 000500.00
----
-> 05 full1           admin1          000010.00
-> 00 admin1          AA 000500.00
-==================================
-Test: refund40
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund41
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund42
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund43
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund44
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund45
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund46
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund47
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund48
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund49
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund5
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 full2           full1           000025.50
-< 00 admin1          AA 000500.00
----
-> 05 full2           full1           000025.50
-> 00 admin1          AA 000500.00
-==================================
-Test: refund50
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund51
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund52
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund53
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund54
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund55
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund56
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund57
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund58
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund59
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund6
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 full1           sell1           000010.25
-< 00 admin1          AA 000500.00
----
-> 05 full1           sell1           000010.25
-> 00 admin1          AA 000500.00
-==================================
-Test: refund60
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund61
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund62
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund63
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund64
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund65
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund66
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund67
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund68
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund69
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund7
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 full1           sell1           000010.25
-< 00 admin1          AA 000500.00
----
-> 05 full1           sell1           000010.25
-> 00 admin1          AA 000500.00
-==================================
-Test: refund70
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund71
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund72
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund73
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund74
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund75
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund76
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund77
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
+< 06  sell1           SS 000200.00
+< 00  admin1          AA 000500.00
 ---
-> 00 admin1          AA 000500.00
+> 06 sell1           SS 000200.00
+> 00 admin1          AA 000500.0
 ==================================
-Test: refund78
+Test: add_credit5
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 admin1          AA 000500.00
 ---
-> 00 admin1          AA 000500.00
+> 00 admin1          AA 000500.0
 ==================================
-Test: refund79
+Test: add_credit6
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund8
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 buy1            admin1          000010.00
 < 00 admin1          AA 000500.00
 ---
-> 05 buy1            admin1          000010.00
-> 00 admin1          AA 000500.00
+> 00 admin1          AA 000500.0
 ==================================
-Test: refund80
+Test: add_credit7
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 admin1          AA 000500.00
 ---
-> 00 admin1          AA 000500.00
+> 00 admin1          AA 000500.0
 ==================================
-Test: refund81
+Test: add_credit8
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
 < 00 admin1          AA 000500.00
 ---
-> 00 admin1          AA 000500.00
+> 00 admin1          AA 000500.0
 ==================================
-Test: refund82
+Test: add_credit9
 Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
 Differences:
 1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: refund9
-Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1,2c1,2
-< 05 buy1            full1           000025.50
 < 00 admin1          AA 000500.00
+\ No newline at end of file
 ---
-> 05 buy1            full1           000025.50
-> 00 admin1          AA 000500.00
+> 00 admin1          AA 000500.0
 ==================================

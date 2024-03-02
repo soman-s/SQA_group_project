@@ -64,7 +64,7 @@ Admin Menu
 9)Logout
 Enter an option: 6
 Add Credit
-Enter username: buy1
+Enter username: sell1
 username selected
 Enter credit amount to add: 100.00
 Sucessfully added credit amount to user
@@ -133,7 +133,7 @@ Differences:
 > 9)Logout
 > Enter an option: 6
 > Add Credit
-> Enter username: buy1
+> Enter username: sell1
 > username selected
 > Enter credit amount to add: 100.00
 > Sucessfully added credit amount to user

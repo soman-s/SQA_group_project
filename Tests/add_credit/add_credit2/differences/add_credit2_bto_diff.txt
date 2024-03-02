@@ -45,26 +45,37 @@ Actual:
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1 
+Enter an option: 1
 Login
-Enter Username: sell1
+Enter Username: admin1
 Logged IN
-Sell Standard Menu
-1)Sell
-2)Add Credit
-3)View Available Games
-4)Logout
-Enter an option: 2
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 6
 Add Credit
+Enter username: full1
 username selected
 Enter credit amount to add: 100.00
 Sucessfully added credit amount to user
-Sell Standard Menu
-1)Sell
-2)Add Credit
-3)View Available Games
-4)Logout
-Enter an option: 4
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
 LOGGED OUT
 HOME MENU
 1)Login
@@ -72,17 +83,25 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,42c1,29
+1,5c1,5
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
 < 
-< Enter Username: admin1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
 < 
 < Logged in.
 < 
-< Admin Menu
+---
+> Logged IN
+11,24c9,23
 < 1) create
 < 2) delete
 < 3) sell
@@ -97,7 +116,23 @@ Differences:
 < 
 < Credit added successfully.
 < 
-< Admin Menu
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 6
+> Add Credit
+> Enter username: full1
+> username selected
+> Enter credit amount to add: 100.00
+> Sucessfully added credit amount to user
+26,42c25,40
 < 1) create
 < 2) delete
 < 3) sell
@@ -116,29 +151,16 @@ Differences:
 < 
 < System Exit.
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1 
-> Login
-> Enter Username: sell1
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: 100.00
-> Sucessfully added credit amount to user
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
 > LOGGED OUT
 > HOME MENU
 > 1)Login

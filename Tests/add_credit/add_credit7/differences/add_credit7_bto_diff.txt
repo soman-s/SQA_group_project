@@ -47,7 +47,7 @@ Actual:
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1 
+Enter an option: 1
 Login
 Enter Username: admin1
 Logged IN
@@ -63,9 +63,9 @@ Admin Menu
 9)Logout
 Enter an option: 6
 Add Credit
-Enter username: admin1
+Enter username: buy1
 username selected
-Enter credit amount to add: 1100.00
+Enter credit amount to add: 1200.00
 Please enter a valid credit amount or -1 to go back to main menu 
 Enter credit amount to add: -1
 Admin Menu
@@ -96,7 +96,7 @@ Differences:
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
 7,9c7
 < 
@@ -133,9 +133,9 @@ Differences:
 > 9)Logout
 > Enter an option: 6
 > Add Credit
-> Enter username: admin1
+> Enter username: buy1
 > username selected
-> Enter credit amount to add: 1100.00
+> Enter credit amount to add: 1200.00
 > Please enter a valid credit amount or -1 to go back to main menu 
 > Enter credit amount to add: -1
 28,44c26,41

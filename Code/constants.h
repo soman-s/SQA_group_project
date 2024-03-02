@@ -59,6 +59,8 @@ public:
     static const std::string BUY_CODE;
     static const std::string CREATE_CODE;
     static const std::string DELETE_CODE;
+    static const std::string ADD_CREDIT_CODE;
+
 
 
 

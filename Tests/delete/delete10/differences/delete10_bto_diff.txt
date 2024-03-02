@@ -82,6 +82,7 @@ Admin Menu
 9)Logout
 Enter an option: 9
 LOGGED OUT
+log_entry 00 admin1          AA 000500.0
 HOME MENU
 1)Login
 2)Exit
@@ -100,7 +101,7 @@ Differences:
 > 2)Exit
 > Enter an option: 1
 > Login
-7,48c7,39
+7,48c7,40
 <  
 < Logged in.
 <  
@@ -172,6 +173,7 @@ Differences:
 > 9)Logout
 > Enter an option: 9
 > LOGGED OUT
+> log_entry 00 admin1          AA 000500.0
 > HOME MENU
 > 1)Login
 > 2)Exit

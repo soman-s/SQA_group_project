@@ -54,8 +54,9 @@ Full Standard Menu
 Enter an option: 3
 Add Credit
 username selected
-Enter credit amount to add: 100.00
-Sucessfully added credit amount to user
+Enter credit amount to add: 1200.00
+Please enter a valid credit amount or -1 to go back to main menu 
+Enter credit amount to add: -1
 Full Standard Menu
 1)Sell
 2)Buy
@@ -82,7 +83,7 @@ Differences:
 > 2)Exit
 > Enter an option: 1
 > Login
-7,38c7,31
+7,38c7,32
 < 
 < Logged in.
 < 
@@ -126,8 +127,9 @@ Differences:
 > Enter an option: 3
 > Add Credit
 > username selected
-> Enter credit amount to add: 100.00
-> Sucessfully added credit amount to user
+> Enter credit amount to add: 1200.00
+> Please enter a valid credit amount or -1 to go back to main menu 
+> Enter credit amount to add: -1
 > Full Standard Menu
 > 1)Sell
 > 2)Buy

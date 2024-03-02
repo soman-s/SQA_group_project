@@ -48,45 +48,62 @@ Actual:
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1     
+Enter an option: 1
 Login
-Enter Username: sell3
+Enter Username: admin1
 Logged IN
-Sell Standard Menu
-1)Sell
-2)Add Credit
-3)View Available Games
-4)Logout
-Enter an option: 2
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 6
 Add Credit
-username selected
-Enter credit amount to add: 100.00
-credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
-Enter credit amount to add: -1
-Sell Standard Menu
-1)Sell
-2)Add Credit
-3)View Available Games
-4)Logout
-Enter an option: 4
+Enter username: TestUser
+Username does not exist please try again or -1 to exit 
+Enter username: -1       
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 2 
+Enter an option: 2
 EXITS
 Differences:
-1,45c1,30
+1,5c1,5
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
 < 
-< Enter Username: admin1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,9c7
 < 
 < Logged in.
 < 
-< Admin Menu
+---
+> Logged IN
+11,27c9,22
 < 1) create
 < 2) delete
 < 3) sell
@@ -104,7 +121,22 @@ Differences:
 < 
 < Back to menu
 < 
-< Admin Menu
+---
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 6
+> Add Credit
+> Enter username: TestUser
+> Username does not exist please try again or -1 to exit 
+> Enter username: -1       
+29,45c24,39
 < 1) create
 < 2) delete
 < 3) sell
@@ -123,33 +155,19 @@ Differences:
 < 
 < System Exit.
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1     
-> Login
-> Enter Username: sell3
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 2
-> Add Credit
-> username selected
-> Enter credit amount to add: 100.00
-> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
-> Enter credit amount to add: -1
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
 > LOGGED OUT
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 2 
+> Enter an option: 2
 > EXITS

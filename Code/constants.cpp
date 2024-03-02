@@ -49,5 +49,7 @@ const std::string constants::REFUND_CODE= "05";
 const std::string constants::BUY_CODE = "04";
 const std::string constants::CREATE_CODE = "01";
 const std::string constants::DELETE_CODE = "02";
+const std::string constants::ADD_CREDIT_CODE = "06";
+
 
 

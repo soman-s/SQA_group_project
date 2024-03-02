@@ -65,7 +65,7 @@ Admin Menu
 Enter an option: 2
 Delete
 Enter username: admin2
-User deleted
+User sucessfully removed
 Admin Menu
 1)Create
 2)Delete
@@ -78,6 +78,7 @@ Admin Menu
 9)Logout
 Enter an option: 9
 LOGGED OUT
+log_entry 00 admin1          AA 000500.0
 HOME MENU
 1)Login
 2)Exit
@@ -133,8 +134,8 @@ Differences:
 > Enter an option: 2
 > Delete
 > Enter username: admin2
-> User deleted
-29,45c23,38
+> User sucessfully removed
+29,45c23,39
 < 1) create
 < 2)delete
 < 3)sell
@@ -164,6 +165,7 @@ Differences:
 > 9)Logout
 > Enter an option: 9
 > LOGGED OUT
+> log_entry 00 admin1          AA 000500.0
 > HOME MENU
 > 1)Login
 > 2)Exit

@@ -39,29 +39,27 @@ Actual:
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1
+Enter an option: 1         
 Login
-Enter Username: full1     
+Enter Username: sell1
 Logged IN
-Full Standard Menu
+Sell Standard Menu
 1)Sell
-2)Buy
-3)Add Credit
-4)View Available Games
-5)Logout
-Enter an option: 3
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 2
 Add Credit
 username selected
-Enter credit amount to add: “abc”   
+Enter credit amount to add: “abc”
 Please enter a valid credit amount or -1 to go back to main menu 
-Enter credit amount to add: -1
-Full Standard Menu
+Enter credit amount to add: -1   
+Sell Standard Menu
 1)Sell
-2)Buy
-3)Add Credit
-4)View Available Games
-5)Logout
-Enter an option: 5
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
 LOGGED OUT
 HOME MENU
 1)Login
@@ -69,13 +67,19 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,36c1,32
+1,5c1,5
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
 < 
-< Enter Username: sell1
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1         
+> Login
+7,36c7,30
 < 
 < Logged in.
 < 
@@ -107,32 +111,24 @@ Differences:
 < 
 < System Exit.
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1     
 > Logged IN
-> Full Standard Menu
+> Sell Standard Menu
 > 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 3
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 2
 > Add Credit
 > username selected
-> Enter credit amount to add: “abc”   
+> Enter credit amount to add: “abc”
 > Please enter a valid credit amount or -1 to go back to main menu 
-> Enter credit amount to add: -1
-> Full Standard Menu
+> Enter credit amount to add: -1   
+> Sell Standard Menu
 > 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
 > LOGGED OUT
 > HOME MENU
 > 1)Login

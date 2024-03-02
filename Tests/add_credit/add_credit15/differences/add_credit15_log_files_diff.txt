@@ -5,3 +5,7 @@ Actual:
 00 full3           FS 999999.00
 
 Differences:
+1c1
+< 00 full3           FS 999999.00
+---
+> 00 full3           FS 999999.00

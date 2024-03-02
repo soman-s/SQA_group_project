@@ -6,8 +6,10 @@ Actual:
 00 full1           FS 000500.00
 
 Differences:
-2c2
+1,2c1,2
+< 06 full1           FS 000600.00
 < 00 full1           FS 000500.00
 \ No newline at end of file
 ---
+> 06 full1           FS 000600.00
 > 00 full1           FS 000500.00

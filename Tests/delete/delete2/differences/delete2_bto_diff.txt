@@ -77,7 +77,81 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-21c21
+1,38c1,38
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: admin1
+< Logged IN
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 2
+< Delete
+< Enter username: full1
 < User deleted
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 9
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
 ---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 2
+> Delete
+> Enter username: full1
 > User sucessfully removed
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS

@@ -9,3 +9,11 @@ Actual:
 00 admin1          AA 000460.00
 
 Differences:
+1,3c1,3
+< 02 full1           FS 000500.00
+< 04 halo                      full1           admin1          000040.00
+< 00 admin1          AA 000460.00
+---
+> 02 full1           FS 000500.00
+> 04 halo                      full1           admin1          000040.00
+> 00 admin1          AA 000460.00

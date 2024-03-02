@@ -1,48 +1,45 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
-
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: admin1
-
-Logged in.
-
+Logged IN
 Admin Menu
-1) create
-2) delete
-3) sell
-4) buy
-5) add credit
-6) refund
-7) logout
-Select option: 5
-
-Enter Username: buy3
-Enter Credit Amount: 100.00
-
-Error message total credit limit cannot exceed 999 999
-
-Enter Credit Amount: -1
-
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 6
+Add Credit
+Enter username: buy3
+username selected
+Enter credit amount to add: 100.00
+credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
+Enter credit amount to add: -1
 Admin Menu
-1) create
-2) delete
-3) sell
-4) buy
-5) add credit
-6) refund
-7) logout
-Select option: 7
-
-Logout
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
-
-System Exit.
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -86,42 +83,57 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
+1,41c1,41
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: admin1
+< Logged IN
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 6
+< Add Credit
+< Enter username: buy3
+< username selected
+< Enter credit amount to add: 100.00
+< credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
+< Enter credit amount to add: -1
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 9
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
 > Enter an option: 1
 > Login
-7,9c7
-< 
-< Logged in.
-< 
----
+> Enter Username: admin1
 > Logged IN
-11,26c9,24
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 5
-< 
-< Enter Username: buy3
-< Enter Credit Amount: 100.00
-< 
-< Error message total credit limit cannot exceed 999 999
-< 
-< Enter Credit Amount: -1
-< 
----
+> Admin Menu
 > 1)Create
 > 2)Delete
 > 3)Sell
@@ -138,25 +150,7 @@ Differences:
 > Enter credit amount to add: 100.00
 > credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
 > Enter credit amount to add: -1
-28,44c26,41
-< 1) create
-< 2) delete
-< 3) sell
-< 4) buy
-< 5) add credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
+> Admin Menu
 > 1)Create
 > 2)Delete
 > 3)Sell

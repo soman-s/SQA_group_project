@@ -7,3 +7,9 @@ Actual:
 00 admin1          AA 000500.00
 
 Differences:
+1,2c1,2
+< 05 buy1            admin1          000010.00
+< 00 admin1          AA 000500.00
+---
+> 05 buy1            admin1          000010.00
+> 00 admin1          AA 000500.00

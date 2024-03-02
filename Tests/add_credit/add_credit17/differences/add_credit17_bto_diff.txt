@@ -1,43 +1,34 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
-
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1 
+Login
 Enter Username: buy1
-
-Logged in.
-
-Buy-Standard Menu
-1)buy
-2) add credit
-3)logout
-Select option: 2
-
-
-Enter Credit Amount: 1200.00
-
-Error: Cannot add more than $1000 in a single session.
-
-Enter Credit Amount: -1
-
-Back to main menu
-
-Buy-Standard Menu
-1) sell
-2) add credit
-3) refund
-4) logout
-Select option: 4
-
-Logout
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
-
-System Exit.
+Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 2
+Add Credit
+username selected
+Enter credit amount to add: 1200.00 
+Please enter a valid credit amount or -1 to go back to main menu 
+Enter credit amount to add: -1
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -70,53 +61,44 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< 
+1,30c1,30
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1 
+< Login
+< Enter Username: buy1
+< Logged IN
+< Buy Standard Menu
+< 1)Buy
+< 2)Add Credit
+< 3)View Available Games
+< 4)Logout
+< Enter an option: 2
+< Add Credit
+< username selected
+< Enter credit amount to add: 1200.00 
+< Please enter a valid credit amount or -1 to go back to main menu 
+< Enter credit amount to add: -1
+< Buy Standard Menu
+< 1)Buy
+< 2)Add Credit
+< 3)View Available Games
+< 4)Logout
+< Enter an option: 4
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
 ---
 > HOME MENU
 > 1)Login
 > 2)Exit
 > Enter an option: 1 
 > Login
-7,39c7,30
-< 
-< Logged in.
-< 
-< Buy-Standard Menu
-< 1)buy
-< 2) add credit
-< 3)logout
-< Select option: 2
-< 
-< 
-< Enter Credit Amount: 1200.00
-< 
-< Error: Cannot add more than $1000 in a single session.
-< 
-< Enter Credit Amount: -1
-< 
-< Back to main menu
-< 
-< Buy-Standard Menu
-< 1) sell
-< 2) add credit
-< 3) refund
-< 4) logout
-< Select option: 4
-< 
-< Logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-< 
-< System Exit.
----
+> Enter Username: buy1
 > Logged IN
 > Buy Standard Menu
 > 1)Buy

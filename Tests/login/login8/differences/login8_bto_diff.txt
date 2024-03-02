@@ -29,3 +29,33 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
+1,14c1,14
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: buy19
+< Invalid Login
+< Enter valid username or -1 to exit: -1
+< EXIT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: buy19
+> Invalid Login
+> Enter valid username or -1 to exit: -1
+> EXIT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS

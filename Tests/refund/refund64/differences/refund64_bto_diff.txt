@@ -95,3 +95,99 @@ HOME MENU
 Enter an option: 
 EXITS
 Differences:
+1,47c1,47
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: admin1
+< Logged IN
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 5
+< Refund
+< Enter Game name: NonExistentGame
+< 
+< Invalid game name or Game name doesn't exist
+< Enter Game name or -1 to quit: -1
+< Refund cannot not be issued
+< Reasons refund Failed( 1 or more of the following): 9
+< 
+< Seller doesn't sell game
+< Buyer doesn't own game
+< Invalid Price Entry
+< Refund will result in Seller having negative balance
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 2
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 5
+> Refund
+> Enter Game name: NonExistentGame
+> 
+> Invalid game name or Game name doesn't exist
+> Enter Game name or -1 to quit: -1
+> Refund cannot not be issued
+> Reasons refund Failed( 1 or more of the following): 9
+> 
+> Seller doesn't sell game
+> Buyer doesn't own game
+> Invalid Price Entry
+> Refund will result in Seller having negative balance
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 2
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 
+> EXITS

@@ -1,15 +1,13 @@
 Expected:
-06  buy1            BS 001200.00
-00  buy1            BS 001200.00
-
+06 buy1            BS 001200.00
+00 buy1            BS 000900.00
 Actual:
 06 buy1            BS 001200.00
-00 buy1            BS 000900.0
+00 buy1            BS 000900.00
 
 Differences:
-1,2c1,2
-< 06  buy1            BS 001200.00
-< 00  buy1            BS 001200.00
+2c2
+< 00 buy1            BS 000900.00
+\ No newline at end of file
 ---
-> 06 buy1            BS 001200.00
-> 00 buy1            BS 000900.0
+> 00 buy1            BS 000900.00

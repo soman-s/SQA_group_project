@@ -1,30 +1,24 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
- 
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: full1
- 
-Logged in.
- 
-
-Full standard Menu
-1)sell
-2)buy
-3) add credit
-4)logout
-Select option: 4
-
-
-logout
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
- 
-System Exit.
+Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 5
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -47,51 +41,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,5c1,5
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-<  
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-7,26c7,20
-<  
-< Logged in.
-<  
-< 
-< Full standard Menu
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 4
-< 
-< 
-< logout
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-<  
-< System Exit.
----
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS

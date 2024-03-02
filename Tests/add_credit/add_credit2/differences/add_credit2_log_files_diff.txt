@@ -4,12 +4,14 @@ Expected:
 admin1          AA 000500.00
 
 Actual:
-00 sell1           SS 000200.00
+06 full1           FS 000600.00
+00 admin1          AA 000500.0
 
 Differences:
-1,3c1
+1,3c1,2
 < 06  full1            FS 000600.00
 < 00 
 < admin1          AA 000500.00
 ---
-> 00 sell1           SS 000200.00
+> 06 full1           FS 000600.00
+> 00 admin1          AA 000500.0

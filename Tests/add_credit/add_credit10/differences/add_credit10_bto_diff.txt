@@ -49,7 +49,7 @@ Actual:
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1 
+Enter an option: 1
 Login
 Enter Username: admin1
 Logged IN
@@ -65,10 +65,11 @@ Admin Menu
 9)Logout
 Enter an option: 6
 Add Credit
-Enter username: admin1
+Enter username: full3
 username selected
-Enter credit amount to add: 100.00
-Sucessfully added credit amount to user
+Enter credit amount to add: 100.0
+credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
+Enter credit amount to add: -1
 Admin Menu
 1)Create
 2)Delete
@@ -97,7 +98,7 @@ Differences:
 > HOME MENU
 > 1)Login
 > 2)Exit
-> Enter an option: 1 
+> Enter an option: 1
 > Login
 7,9c7
 < 
@@ -105,7 +106,7 @@ Differences:
 < 
 ---
 > Logged IN
-11,28c9,23
+11,28c9,24
 < 1) create
 < 2) delete
 < 3) sell
@@ -136,11 +137,12 @@ Differences:
 > 9)Logout
 > Enter an option: 6
 > Add Credit
-> Enter username: admin1
+> Enter username: full3
 > username selected
-> Enter credit amount to add: 100.00
-> Sucessfully added credit amount to user
-30,46c25,40
+> Enter credit amount to add: 100.0
+> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
+> Enter credit amount to add: -1
+30,46c26,41
 < 1) create
 < 2) delete
 < 3) sell

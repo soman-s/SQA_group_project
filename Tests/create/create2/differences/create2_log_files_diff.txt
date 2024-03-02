@@ -2,11 +2,11 @@ Expected:
 01 full4           FS 000500.00
 00 admin1          AA 000500.00
 Actual:
+01 full4           FS 000500.00
 00 admin1          AA 000500.0
 
 Differences:
-1,2c1
-< 01 full4           FS 000500.00
+2c2
 < 00 admin1          AA 000500.00
 \ No newline at end of file
 ---

@@ -613,7 +613,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
 }
 
 // process for updating a credit amount for a specific user
-string transactions::process_credit(string menu_option,vector<string>& all_users, string user){
+string transactions::process_credit(string menu_option,vector<string>& all_users, string user,vector<string>& transaction_log){
 
   cout << "Add Credit" << endl;
 
@@ -698,9 +698,12 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
   }
 
   user_balance+=credit_amount;
-  user_file_process().update_user_balance(all_users, user, user_balance);
 
-  user_balance=user_file_process().get_user_balance(all_users, user);
+  string user_balance_padded = utils().pad_credit_amount(user_balance);
+
+  string log_entry = constants::ADD_CREDIT_CODE+" "+user+ " " + user_file_process().get_user_type(all_users, user) + " " + user_balance_padded;
+  utils().update_transction_log(log_entry,transaction_log);
+
 
   return constants:: SUCESS_OPTION;
 }

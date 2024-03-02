@@ -3,8 +3,11 @@ Expected:
 00 admin1          AA 000600.00
 
 Actual:
-00 admin1          AA 000600.00
+06 admin1          AA 000600.00
+00 admin1          AA 000500.0
 
 Differences:
-1d0
-< 06 admin1          AA 000600.00
+2c2
+< 00 admin1          AA 000600.00
+---
+> 00 admin1          AA 000500.0

@@ -5,13 +5,15 @@ buy1            BS 001000.00
 admin1          AA 000500.00
 
 Actual:
-00 sell1           SS 000100.0
+06 buy1            BS 001000.00
+00 admin1          AA 000500.0
 
 Differences:
-1,4c1
+1,4c1,2
 < 06 
 < buy1            BS 001000.00
 < 00 
 < admin1          AA 000500.00
 ---
-> 00 sell1           SS 000100.0
+> 06 buy1            BS 001000.00
+> 00 admin1          AA 000500.0

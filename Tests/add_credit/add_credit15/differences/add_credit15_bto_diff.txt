@@ -45,7 +45,7 @@ HOME MENU
 2)Exit
 Enter an option: 1
 Login
-Enter Username: full1
+Enter Username: full3
 Logged IN
 Full Standard Menu
 1)Sell
@@ -56,8 +56,8 @@ Full Standard Menu
 Enter an option: 3
 Add Credit
 username selected
-Enter credit amount to add: 1200.00
-Please enter a valid credit amount or -1 to go back to main menu 
+Enter credit amount to add: 100.00
+credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
 Enter credit amount to add: -1
 Full Standard Menu
 1)Sell
@@ -73,13 +73,19 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,40c1,32
+1,5c1,5
 < Welcome to Game Distribution Service
 < 1) Login:
 < 2) Exit:
 < Enter an Option: 1
 < 
-< Enter Username: full3
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+7,40c7,32
 < 
 < Logged in.
 < 
@@ -115,12 +121,6 @@ Differences:
 < 
 < System Exit.
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
 > Logged IN
 > Full Standard Menu
 > 1)Sell
@@ -131,8 +131,8 @@ Differences:
 > Enter an option: 3
 > Add Credit
 > username selected
-> Enter credit amount to add: 1200.00
-> Please enter a valid credit amount or -1 to go back to main menu 
+> Enter credit amount to add: 100.00
+> credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit 
 > Enter credit amount to add: -1
 > Full Standard Menu
 > 1)Sell

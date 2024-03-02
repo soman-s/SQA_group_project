@@ -3,11 +3,13 @@ Expected:
 00  buy1            BS 001200.00
 
 Actual:
-00 full3           FS 999999.0
+06 buy1            BS 001200.00
+00 buy1            BS 000900.0
 
 Differences:
-1,2c1
+1,2c1,2
 < 06  buy1            BS 001200.00
 < 00  buy1            BS 001200.00
 ---
-> 00 full3           FS 999999.0
+> 06 buy1            BS 001200.00
+> 00 buy1            BS 000900.0

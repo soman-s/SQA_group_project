@@ -1,7 +1,7 @@
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1
+Enter an option: 1         
 Login
 Enter Username: admin1
 Logged IN
@@ -17,9 +17,11 @@ Admin Menu
 9)Logout
 Enter an option: 6
 Add Credit
-Enter username: TestUser
-Username does not exist please try again or -1 to exit 
-Enter username: -1       
+Enter username: admin1
+username selected
+Enter credit amount to add: -50.00    
+Please enter a valid credit amount or -1 to go back to main menu 
+Enter credit amount to add: -1
 Admin Menu
 1)Create
 2)Delete

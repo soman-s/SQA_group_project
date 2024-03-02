@@ -2,10 +2,6 @@ Expected:
 00 sell1           SS 000100.00
 
 Actual:
-00 sell1           SS 000100.0
+00 sell1           SS 000100.00
 
 Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.0

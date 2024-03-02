@@ -286,7 +286,7 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
   float user_amount = user_file_process().get_user_balance(all_users, user_to_remove);
 
-  string log_entry = constants::DELETE_CODE+" "+user_to_remove+ " " + user_file_process().get_user_type(all_users, user_to_remove) + " " + to_string(user_amount);
+  string log_entry = constants::DELETE_CODE+" "+user_to_remove+ " " + user_file_process().get_user_type(all_users, user_to_remove) + " " + utils().pad_credit_amount(user_amount);
   utils().update_transction_log(log_entry,transaction_log);
 
   return constants:: SUCESS_OPTION;;

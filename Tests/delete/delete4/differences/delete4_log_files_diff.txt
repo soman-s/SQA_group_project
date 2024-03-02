@@ -1,15 +1,9 @@
 Expected:
-01 buy1            BS 000900.00
+02 buy1            BS 000900.00
 00 admin1          AA 000500.00
+
 Actual:
-02 buy1            BS 900.000000
-00 admin1          AA 000500.0
+02 buy1            BS 000900.00
+00 admin1          AA 000500.00
 
 Differences:
-1,2c1,2
-< 01 buy1            BS 000900.00
-< 00 admin1          AA 000500.00
-\ No newline at end of file
----
-> 02 buy1            BS 900.000000
-> 00 admin1          AA 000500.0

@@ -7,7 +7,7 @@ summary_daily_transaction_differences_file="../Tests/test_summary/daily_transact
 summary_available_games_differences_file="../Tests/test_summary/available_games_diff_summary.txt"
 summary_games_collection_differences_file="../Tests/test_summary/games_collection_diff_summary.txt"
 summary_users_differences_file="../Tests/test_summary/users_diff_summary.txt"
-custom_program="prototype_a.exe"
+custom_program="front_end.exe"
 
 cd ..
 test_inputs=()
@@ -26,7 +26,7 @@ differences_paths=()
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
-for subdir in create delete add_credit; do
+for subdir in login; do
     subdir="${subdir%/}"
     # Change into the subdirectory
     cd "$subdir" || { echo "Failed to enter subdirectory: $subdir"; continue; }

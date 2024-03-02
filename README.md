@@ -15,10 +15,10 @@ Edmond Lee   : 100523634
 # How to run Code.
 To compile the code enter:
 
-g++ -o prototype_a main.cpp menus.cpp user_file_process.cpp constants.cpp games_file_process.cpp utils.cpp trans
-actions.cpp in terminal.
+ g++ -o front_end.exe main.cpp menus.cpp user_file_process.cpp constants.cpp games_file_process.cpp utils.cpp transactions.cpp 
+
 
 
 To run the the program:
 
-./prototype_a
+./font_end.exe

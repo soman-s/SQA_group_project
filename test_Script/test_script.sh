@@ -20,12 +20,12 @@ differences_paths=()
 # and does comparions for the expected/ actual bto files
 # and the expected and actual daily transaction file
 
+echo "Running Tests"
 
 # GETS ALL THE INPUTS FROM TESTS
 # Change into the Tests directory
 cd Tests || exit 1  # Exit if cd fails
-# Loop through each subdirectory in "Tests"
-# for subdir in */; do
+# Loop through each test subdirectory in "Tests" excluding the summary folder
 for subdir in login logout refund sell add_credit create delete buy all_user available_games; do
     subdir="${subdir%/}"
     # Change into the subdirectory
@@ -202,6 +202,7 @@ for index in "${!test_inputs[@]}"; do
 
 
 
+
         else
             # If there are no differences, indicate that in the summary file
             echo "Test: $test_name" >> "$summary_bto_differences_file"
@@ -240,6 +241,7 @@ for index in "${!test_inputs[@]}"; do
             echo "Differences:" >> "$summary_daily_transaction_differences_file"
             diff "$expected_transaction" "$actual_transaction" >> "$summary_daily_transaction_differences_file"
             echo "==================================" >> "$summary_daily_transaction_differences_file"
+
 
 
 

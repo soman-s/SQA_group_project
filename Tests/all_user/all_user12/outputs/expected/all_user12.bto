@@ -1,7 +1,7 @@
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1
+Enter an option: 1 
 Login
 Enter Username: admin1
 Logged IN
@@ -16,8 +16,8 @@ Admin Menu
 8)View Available Games
 9)Logout
 Enter an option: 6
-Add Credit 
-Enter username: full1
+Add Credit
+Enter username: buy1
 username selected
 Enter credit amount to add: 100
 Sucessfully added credit amount to user

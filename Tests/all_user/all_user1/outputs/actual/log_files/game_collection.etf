@@ -3,7 +3,7 @@ Halo                      full1
 Minecraft                 admin2         
 Fortnite                  full1          
 Uncharted                 sell1          
-Fifa                      buy1           
+Fifa                      admin1         
 admingame1                admin2         
 admingame1                full1          
 admingame1                buy1           
@@ -31,6 +31,5 @@ sellgame2                 sell1
 admingame3                admin1         
 fullgame3                 full1          
 Sellgame3                 sell1          
-Dota                      admin2
-PUBG                      admin1         
-END 
+Dota                      admin2         
+END                                      

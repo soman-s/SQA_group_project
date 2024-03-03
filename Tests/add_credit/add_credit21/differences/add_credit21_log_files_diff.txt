@@ -1,11 +1,7 @@
 Expected:
-00 sell3           AA 999999.00
+00 sell3           SS 999999.00
 
 Actual:
 00 sell3           SS 999999.00
 
 Differences:
-1c1
-< 00 sell3           AA 999999.00
----
-> 00 sell3           SS 999999.00

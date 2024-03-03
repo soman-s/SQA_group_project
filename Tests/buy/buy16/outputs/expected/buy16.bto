@@ -1,27 +1,30 @@
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: buy1
-Logged in.
- 
-Buy- standard Menu 
-1)buy
-2) add credit
-3)logout 
-Select option: 1
-buy
-Enter game name: PUNG
-Error message: Incorrect game name
-Enter game name: -1
-Back to main menu
-Buy- standard Menu 
-1)buy
-2) add credit
-3)logout 
-Select option: 3
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
+Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 1
+Buy
+Enter Game name: PUNG
+Invalid game name or Game name doesn't exist
+Enter Game name or -1 to quit: -1
+Buy transaction unsuccessful
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

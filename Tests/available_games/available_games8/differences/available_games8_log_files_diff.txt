@@ -1,15 +1,9 @@
 Expected:
-06 admin1          AA 000500.00
-00 admin1          AA 000500.00
+03 fifa15                    sell1           200.00
+00 sell1           SS 000100.00
+
 Actual:
 03 fifa15                    sell1           200.00
-00 sell1           SS 000100.0
+00 sell1           SS 000100.00
 
 Differences:
-1,2c1,2
-< 06 admin1          AA 000500.00
-< 00 admin1          AA 000500.00
-\ No newline at end of file
----
-> 03 fifa15                    sell1           200.00
-> 00 sell1           SS 000100.0

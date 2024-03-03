@@ -3,43 +3,25 @@ HOME MENU
 2)Exit
 Enter an option: 1
 Login
-Enter Username: admin1
+Enter Username: buy1
 Logged IN
-Admin Menu
-1)Create
-2)Delete
-3)Sell
-4)Buy
-5)Refund
-6)Add Credit
-7)View All Users
-8)View Available Games
-9)Logout
-Enter an option: 4
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 1
 Buy
 Enter Game name: fifa
-Enter seller name: admin1
-
-BALANCE BEFORE PURCHASE
-SELLER 500
-BUYER 500
-
-BALANCE AFTER PURCHASE
-SELLER 520
-BUYER 480
+Enter seller name: 
 Game has been bought
 
-Admin Menu
-1)Create
-2)Delete
-3)Sell
-4)Buy
-5)Refund
-6)Add Credit
-7)View All Users
-8)View Available Games
-9)Logout
-Enter an option: 8
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: admin1
 All Games Available
 Game Name                 Seller          Price
 PUBG                      admin2          030.00
@@ -57,20 +39,15 @@ admingame3                admin1          050.00
 fullgame3                 full1           040.00
 Sellgame3                 sell1           060.00
 Dota                      admin2          999.00
-Admin Menu
-1)Create
-2)Delete
-3)Sell
-4)Buy
-5)Refund
-6)Add Credit
-7)View All Users
-8)View Available Games
-9)Logout
-Enter an option: 9
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 3
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 2
+Enter an option: 4
 EXITS

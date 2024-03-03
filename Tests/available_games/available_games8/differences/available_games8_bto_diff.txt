@@ -13,7 +13,7 @@ Sell Standard Menu
 4)Logout
 Enter an option: 1
 Sell
-Enter game name:fifa15
+Enter game name: fifa15
 
 Enter Game price: 200
 
@@ -51,7 +51,8 @@ HOME MENU
 1)Login
 2)Exit
 Enter an option: 2
-EXITSActual:
+EXITS
+Actual:
 HOME MENU
 1)Login
 2)Exit
@@ -106,12 +107,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-15c15
-< Enter game name:fifa15
----
-> Enter game name: fifa15
-53c53
-< EXITS
-\ No newline at end of file
----
-> EXITS

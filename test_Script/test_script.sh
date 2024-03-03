@@ -26,7 +26,7 @@ differences_paths=()
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each subdirectory in "Tests"
 # for subdir in */; do
-for subdir in login logout refund sell add_credit create delete buy; do
+for subdir in login logout refund sell add_credit create delete buy all_user available_games; do
     subdir="${subdir%/}"
     # Change into the subdirectory
     cd "$subdir" || { echo "Failed to enter subdirectory: $subdir"; continue; }

@@ -715,3 +715,69 @@ Expected Daily Transactions File and Actual Daily Transactions File Match
 Test: buy9
 Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
+Test: all_user1
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user10
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user11
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user12
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user2
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user3
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user4
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user5
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user6
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user7
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user8
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user9
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games1
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games10
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games2
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games3
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games4
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games5
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games6
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games7
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games8
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: available_games9
+Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================

@@ -15,15 +15,7 @@ Full Standard Menu
 Enter an option: 2
 Buy
 Enter Game name: fifa
-Enter seller name: admin1
-
-BALANCE BEFORE PURCHASE
-SELLER 500
-BUYER 500
-
-BALANCE AFTER PURCHASE
-SELLER 520
-BUYER 480
+Enter seller name: 
 Game has been bought
 
 Full Standard Menu
@@ -32,7 +24,7 @@ Full Standard Menu
 3)Add Credit
 4)View Available Games
 5)Logout
-Enter an option: 4
+Enter an option: admin1
 All Games Available
 Game Name                 Seller          Price
 PUBG                      admin2          030.00
@@ -56,13 +48,14 @@ Full Standard Menu
 3)Add Credit
 4)View Available Games
 5)Logout
-Enter an option: 5
+Enter an option: 4
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 2
-EXITSActual:
+Enter an option: 5
+EXITS
+Actual:
 HOME MENU
 1)Login
 2)Exit
@@ -80,13 +73,6 @@ Enter an option: 2
 Buy
 Enter Game name: fifa
 Enter seller name: 
-BALANCE BEFORE PURCHASE
-SELLER 500
-BUYER 500
-
-BALANCE AFTER PURCHASE
-SELLER 520
-BUYER 480
 Game has been bought
 
 Full Standard Menu
@@ -127,23 +113,3 @@ HOME MENU
 Enter an option: 5
 EXITS
 Differences:
-17,18c17
-< Enter seller name: admin1
-< 
----
-> Enter seller name: 
-34c33
-< Enter an option: 4
----
-> Enter an option: admin1
-58c57
-< Enter an option: 5
----
-> Enter an option: 4
-63,64c62,63
-< Enter an option: 2
-< EXITS
-\ No newline at end of file
----
-> Enter an option: 5
-> EXITS

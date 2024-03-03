@@ -1,36 +1,40 @@
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: admin1
-Logged in.
+Logged IN
 Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add
-  credit
-6) refund
-7) logout
-Select option: 4
-buy
-Enter game name: Fifa
-Error message: Users cannot buy a game they have listed for sale
-Enter another game or enter -1 to go back to main menu: -1
-Back to menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 4
+Buy
+Enter Game name: Fifa
+admin1          already owns Fifa                     
+Enter another game or enter -1 to quit: -1
+Buy transaction unsuccessful
 Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add
-  credit
-6) refund
-7) logout
-Select option: 7
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 9
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

@@ -1,40 +1,4 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
-Enter Username: admin1
-Logged in.
-
-Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add
-  credit
-6) refund
-7) logout
-Select option: 4
-buy
-Enter game name: PUBG
-Enter seller name: admin2
-Game has been bought
-Admin Menu
-1)create
-2)delete
-3)sell
-4)buy
-5) add
-  credit
-6) refund
-7) logout
-Select option: 7
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2Actual:
 HOME MENU
 1)Login
 2)Exit
@@ -56,13 +20,47 @@ Enter an option: 4
 Buy
 Enter Game name: PUBG
 Enter seller name: 
-BALANCE BEFORE PURCHASE
-SELLER 500
-BUYER 500
+Game has been bought
 
-BALANCE AFTER PURCHASE
-SELLER 530
-BUYER 470
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: admin2
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 9
+EXITS
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Logout
+Enter an option: 4
+Buy
+Enter Game name: PUBG
+Enter seller name: 
 Game has been bought
 
 Admin Menu
@@ -83,89 +81,3 @@ HOME MENU
 Enter an option: 9
 EXITS
 Differences:
-1,36c1,47
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< Enter Username: admin1
-< Logged in.
-< 
-< Admin Menu
-< 1)create
-< 2)delete
-< 3)sell
-< 4)buy
-< 5) add
-<   credit
-< 6) refund
-< 7) logout
-< Select option: 4
-< buy
-< Enter game name: PUBG
-< Enter seller name: admin2
-< Game has been bought
-< Admin Menu
-< 1)create
-< 2)delete
-< 3)sell
-< 4)buy
-< 5) add
-<   credit
-< 6) refund
-< 7) logout
-< Select option: 7
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
-\ No newline at end of file
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 4
-> Buy
-> Enter Game name: PUBG
-> Enter seller name: 
-> BALANCE BEFORE PURCHASE
-> SELLER 500
-> BUYER 500
-> 
-> BALANCE AFTER PURCHASE
-> SELLER 530
-> BUYER 470
-> Game has been bought
-> 
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: admin2
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 9
-> EXITS

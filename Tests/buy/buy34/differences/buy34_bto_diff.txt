@@ -1,30 +1,34 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: buy1
-Logged in.
-
-Buy- standard Menu 
-1)buy
-2) add credit
-3)logout 
-Select option: 1
-buy
-Enter game name: admingame1
-Error message: Game already owned.  
-Enter another game or enter -1 to go back to main menu: -1
-Buy- standard Menu 
-1)buy
-2) add credit
-3)logout 
-Select option: 3
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
+Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 1
+Buy
+Enter Game name: admingame1
+buy1            already owns admingame1               
+Enter another game or enter -1 to quit: -1
+Buy transaction unsuccessful
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -57,61 +61,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,26c1,30
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< Enter Username: buy1
-< Logged in.
-< 
-< Buy- standard Menu 
-< 1)buy
-< 2) add credit
-< 3)logout 
-< Select option: 1
-< buy
-< Enter game name: admingame1
-< Error message: Game already owned.  
-< Enter another game or enter -1 to go back to main menu: -1
-< Buy- standard Menu 
-< 1)buy
-< 2) add credit
-< 3)logout 
-< Select option: 3
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: buy1
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 1
-> Buy
-> Enter Game name: admingame1
-> buy1            already owns admingame1               
-> Enter another game or enter -1 to quit: -1
-> Buy transaction unsuccessful
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS

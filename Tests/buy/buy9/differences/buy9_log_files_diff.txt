@@ -1,17 +1,9 @@
 Expected:
-04 Uncharted                 sell1           buy1            050.00
-00 buy1            BS 000850.00
-  
+04 Uncharted                 sell1           buy1            000050.00
+00 buy1            BS 000900.00
+
 Actual:
-04 uncharted                 sell1           buy1            000050.00
-00 buy1            BS 000850.00
+04 Uncharted                 sell1           buy1            000050.00
+00 buy1            BS 000900.00
 
 Differences:
-1,3c1,2
-< 04 Uncharted                 sell1           buy1            050.00
-< 00 buy1            BS 000850.00
-<   
-\ No newline at end of file
----
-> 04 uncharted                 sell1           buy1            000050.00
-> 00 buy1            BS 000850.00

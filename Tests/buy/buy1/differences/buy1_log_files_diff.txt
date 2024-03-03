@@ -1,15 +1,9 @@
 Expected:
-04 PUBG                      admin2          admin1          030.00             
-00 admin1          AA 000470.00
+04 PUBG                      admin2          admin1          000030.00
+00 admin1          AA 000500.00
+
 Actual:
-04 pubg                      admin2          admin1          000030.00
-00 admin1          AA 000470.00
+04 PUBG                      admin2          admin1          000030.00
+00 admin1          AA 000500.00
 
 Differences:
-1,2c1,2
-< 04 PUBG                      admin2          admin1          030.00             
-< 00 admin1          AA 000470.00
-\ No newline at end of file
----
-> 04 pubg                      admin2          admin1          000030.00
-> 00 admin1          AA 000470.00

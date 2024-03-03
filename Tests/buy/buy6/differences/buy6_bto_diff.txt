@@ -1,32 +1,36 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: full1
-Logged in.
- 
-Full standard Menu 
-1)sell
-2)buy
-3) add credit
-4)logout
-Select option: 2
-buy
-Enter game name: Uncharted
-Enter seller name: sell1
+Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 2
+Buy
+Enter Game name: Uncharted
+Enter seller name: 
 Game has been bought
-Full standard Menu 
-1)sell
-2)buy
-3) add credit
-4)logout
-Select option: 4
 
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: sell1
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 5
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -45,13 +49,6 @@ Enter an option: 2
 Buy
 Enter Game name: Uncharted
 Enter seller name: 
-BALANCE BEFORE PURCHASE
-SELLER 100
-BUYER 500
-
-BALANCE AFTER PURCHASE
-SELLER 150
-BUYER 450
 Game has been bought
 
 Full Standard Menu
@@ -68,72 +65,3 @@ HOME MENU
 Enter an option: 5
 EXITS
 Differences:
-1,28c1,39
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< Enter Username: full1
-< Logged in.
-<  
-< Full standard Menu 
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 2
-< buy
-< Enter game name: Uncharted
-< Enter seller name: sell1
-< Game has been bought
-< Full standard Menu 
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 4
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 2
-> Buy
-> Enter Game name: Uncharted
-> Enter seller name: 
-> BALANCE BEFORE PURCHASE
-> SELLER 100
-> BUYER 500
-> 
-> BALANCE AFTER PURCHASE
-> SELLER 150
-> BUYER 450
-> Game has been bought
-> 
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: sell1
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 5
-> EXITS

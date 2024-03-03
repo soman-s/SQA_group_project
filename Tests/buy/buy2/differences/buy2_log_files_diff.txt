@@ -1,15 +1,9 @@
 Expected:
-04 Halo                      full1           admin1          040.00
-00 admin1          AA 000460.00
+04 Halo                      full1           admin1          000040.00
+00 admin1          AA 000500.00
+
 Actual:
-04 halo                      full1           admin1          000040.00
-00 admin1          AA 000460.00
+04 Halo                      full1           admin1          000040.00
+00 admin1          AA 000500.00
 
 Differences:
-1,2c1,2
-< 04 Halo                      full1           admin1          040.00
-< 00 admin1          AA 000460.00
-\ No newline at end of file
----
-> 04 halo                      full1           admin1          000040.00
-> 00 admin1          AA 000460.00

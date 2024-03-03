@@ -1,0 +1,91 @@
+Expected:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: sell1
+Logged IN
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 3
+All Games Available
+Game Name                 Seller          Price
+PUBG                      admin2          030.00
+Halo                      full1           040.00
+Uncharted                 sell1           050.00
+MinCraft                  admin1          030.00
+Fifa                      admin1          020.00
+admingame1                admin1          010.00
+sellgame1                 sell1           010.25
+fullgame1                 full1           025.50
+admingame2                admin1          999.99
+fullgame2                 full1           999.99
+sellgame2                 sell1           999.99
+admingame3                admin1          050.00
+fullgame3                 full1           040.00
+Sellgame3                 sell1           060.00
+Dota                      admin2          999.00
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITSActual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: sell1
+Logged IN
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 3
+All Games Available
+Game Name                 Seller          Price
+PUBG                      admin2          030.00
+Halo                      full1           040.00
+Uncharted                 sell1           050.00
+MinCraft                  admin1          030.00
+Fifa                      admin1          020.00
+admingame1                admin1          010.00
+sellgame1                 sell1           010.25
+fullgame1                 full1           025.50
+admingame2                admin1          999.99
+fullgame2                 full1           999.99
+sellgame2                 sell1           999.99
+admingame3                admin1          050.00
+fullgame3                 full1           040.00
+Sellgame3                 sell1           060.00
+Dota                      admin2          999.00
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Logout
+Enter an option: 4
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:
+42c42
+< EXITS
+\ No newline at end of file
+---
+> EXITS

@@ -28,6 +28,8 @@ To run the the program:
 In the test_Script Directory enter the conmmands:
 
 dos2unix test_script.sh
+
 chmod +x ./test_script.sh
+
 ./test_script.sh
 

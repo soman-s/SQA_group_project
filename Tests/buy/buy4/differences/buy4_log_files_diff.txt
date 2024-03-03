@@ -1,17 +1,9 @@
 Expected:
-04 PUBG                      admin2          full1           030.00
-00 full1           FS 000470.00
-
+04 PUBG                      admin2          full1           000030.00
+00 full1           FS 000500.00
 
 Actual:
-04 pubg                      admin2          full1           000030.00
-00 full1           FS 000470.00
+04 PUBG                      admin2          full1           000030.00
+00 full1           FS 000500.00
 
 Differences:
-1,3c1,2
-< 04 PUBG                      admin2          full1           030.00
-< 00 full1           FS 000470.00
-< 
----
-> 04 pubg                      admin2          full1           000030.00
-> 00 full1           FS 000470.00

@@ -1,33 +1,36 @@
 Expected:
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 1
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
 Enter Username: full1
-Logged in.
- 
-Full standard Menu 
-1)sell
-2)buy
-3) add credit
-4)logout
-Select option: 2
-buy
-Enter game name: Halo
-Error message: full2 already owns this game.  
-Enter another game or enter -1 to go back to main menu: -1
-Back to menu
-Full standard Menu 
-1)sell
-2)buy
-3) add credit
-4)logout
-Select option: 4
-
-Welcome to Game Distribution Service
-1) Login:
-2) Exit:
-Enter an Option: 2
+Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 2
+Buy
+Enter Game name: Halo
+full1           already owns Halo                     
+Enter another game or enter -1 to quit: -1
+Buy transaction unsuccessful
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Logout
+Enter an option: 5
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
 Actual:
 HOME MENU
 1)Login
@@ -62,66 +65,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,29c1,32
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 1
-< Enter Username: full1
-< Logged in.
-<  
-< Full standard Menu 
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 2
-< buy
-< Enter game name: Halo
-< Error message: full2 already owns this game.  
-< Enter another game or enter -1 to go back to main menu: -1
-< Back to menu
-< Full standard Menu 
-< 1)sell
-< 2)buy
-< 3) add credit
-< 4)logout
-< Select option: 4
-< 
-< Welcome to Game Distribution Service
-< 1) Login:
-< 2) Exit:
-< Enter an Option: 2
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 2
-> Buy
-> Enter Game name: Halo
-> full1           already owns Halo                     
-> Enter another game or enter -1 to quit: -1
-> Buy transaction unsuccessful
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS

@@ -15,6 +15,7 @@ Full Standard Menu
 Enter an option: 2
 Buy
 Enter Game name: Halo
+
 full1           already owns Halo                     
 Enter another game or enter -1 to quit: -1
 Buy transaction unsuccessful
@@ -48,6 +49,7 @@ Full Standard Menu
 Enter an option: 2
 Buy
 Enter Game name: Halo
+
 full1           already owns Halo                     
 Enter another game or enter -1 to quit: -1
 Buy transaction unsuccessful

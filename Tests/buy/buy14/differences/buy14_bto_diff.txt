@@ -15,6 +15,7 @@ Full Standard Menu
 Enter an option: 2
 Buy
 Enter Game name: Galo
+
 Invalid game name or Game name doesn't exist
 Enter Game name or -1 to quit: -1
 Buy transaction unsuccessful
@@ -48,6 +49,7 @@ Full Standard Menu
 Enter an option: 2
 Buy
 Enter Game name: Galo
+
 Invalid game name or Game name doesn't exist
 Enter Game name or -1 to quit: -1
 Buy transaction unsuccessful

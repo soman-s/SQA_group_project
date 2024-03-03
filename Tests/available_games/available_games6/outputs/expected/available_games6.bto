@@ -18,7 +18,9 @@ Admin Menu
 Enter an option: 4
 Buy
 Enter Game name: Halo
-Enter seller name: 
+
+Enter seller name: full1
+
 Game has been bought
 
 Admin Menu
@@ -31,7 +33,7 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: full1
+Enter an option: 8
 All Games Available
 Game Name                 Seller          Price
 PUBG                      admin2          030.00
@@ -59,10 +61,10 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: 8
+Enter an option: 9
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 9
+Enter an option: 2
 EXITS

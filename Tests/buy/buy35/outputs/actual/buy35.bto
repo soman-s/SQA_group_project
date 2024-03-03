@@ -18,6 +18,7 @@ Admin Menu
 Enter an option: 4
 Buy
 Enter Game name: Apex
+
 Invalid game name or Game name doesn't exist
 Enter Game name or -1 to quit: -1
 Buy transaction unsuccessful

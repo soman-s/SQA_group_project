@@ -14,9 +14,11 @@ Full Standard Menu
 Enter an option: 2
 Buy
 Enter Game name: Halo
-Enter seller name: 
+
+Enter seller name: full3
+
 Invalid Seller name or Seller doesn't Sell Game
-Enter Seller name or -1 to quit: full3
+Enter Seller name or -1 to quit: -1
 
 Buy transaction unsuccessful
 Full Standard Menu
@@ -25,10 +27,10 @@ Full Standard Menu
 3)Add Credit
 4)View Available Games
 5)Logout
-Enter an option: -1
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 5
+Enter an option: 2
 EXITS

@@ -15,7 +15,9 @@ Full Standard Menu
 Enter an option: 2
 Buy
 Enter Game name: Uncharted
-Enter seller name: 
+
+Enter seller name: sell1
+
 Game has been bought
 
 Full Standard Menu
@@ -24,12 +26,12 @@ Full Standard Menu
 3)Add Credit
 4)View Available Games
 5)Logout
-Enter an option: sell1
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 5
+Enter an option: 2
 EXITS
 Actual:
 HOME MENU
@@ -48,7 +50,9 @@ Full Standard Menu
 Enter an option: 2
 Buy
 Enter Game name: Uncharted
-Enter seller name: 
+
+Enter seller name: sell1
+
 Game has been bought
 
 Full Standard Menu
@@ -57,11 +61,11 @@ Full Standard Menu
 3)Add Credit
 4)View Available Games
 5)Logout
-Enter an option: sell1
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 5
+Enter an option: 2
 EXITS
 Differences:

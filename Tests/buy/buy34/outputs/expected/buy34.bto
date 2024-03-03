@@ -13,6 +13,7 @@ Buy Standard Menu
 Enter an option: 1
 Buy
 Enter Game name: admingame1
+
 buy1            already owns admingame1               
 Enter another game or enter -1 to quit: -1
 Buy transaction unsuccessful

@@ -494,6 +494,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
     cout<<"Enter Game name: ";
     cin.ignore();
     getline(cin, game_name);
+    cout << endl;
     game_name = utility.pad_game_name(game_name);
 
     // check if game exists

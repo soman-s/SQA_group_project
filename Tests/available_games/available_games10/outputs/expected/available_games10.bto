@@ -14,7 +14,9 @@ Full Standard Menu
 Enter an option: 2
 Buy
 Enter Game name: fifa
-Enter seller name: 
+
+Enter seller name: admin1
+
 Game has been bought
 
 Full Standard Menu
@@ -23,7 +25,7 @@ Full Standard Menu
 3)Add Credit
 4)View Available Games
 5)Logout
-Enter an option: admin1
+Enter an option: 4
 All Games Available
 Game Name                 Seller          Price
 PUBG                      admin2          030.00
@@ -47,10 +49,10 @@ Full Standard Menu
 3)Add Credit
 4)View Available Games
 5)Logout
-Enter an option: 4
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 5
+Enter an option: 2
 EXITS

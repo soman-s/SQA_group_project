@@ -13,7 +13,9 @@ Buy Standard Menu
 Enter an option: 1
 Buy
 Enter Game name: PUBG
-Enter seller name: 
+
+Enter seller name: admin2
+
 Game has been bought
 
 Buy Standard Menu
@@ -21,10 +23,10 @@ Buy Standard Menu
 2)Add Credit
 3)View Available Games
 4)Logout
-Enter an option: admin2
+Enter an option: 4
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 4
+Enter an option: 2
 EXITS

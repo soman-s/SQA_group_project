@@ -13,6 +13,7 @@ Buy Standard Menu
 Enter an option: 1
 Buy
 Enter Game name: PUNG
+
 Invalid game name or Game name doesn't exist
 Enter Game name or -1 to quit: -1
 Buy transaction unsuccessful

@@ -18,7 +18,9 @@ Admin Menu
 Enter an option: 4
 Buy
 Enter Game name: Uncharted
-Enter seller name: 
+
+Enter seller name: sell1
+
 Game has been bought
 
 Admin Menu
@@ -31,10 +33,10 @@ Admin Menu
 7)View All Users
 8)View Available Games
 9)Logout
-Enter an option: sell1
+Enter an option: 9
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 9
+Enter an option: 2
 EXITS

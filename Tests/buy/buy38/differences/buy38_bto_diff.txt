@@ -19,6 +19,7 @@ Admin Menu
 Enter an option: 4
 Buy
 Enter Game name: Fifa
+
 admin1          already owns Fifa                     
 Enter another game or enter -1 to quit: -1
 Buy transaction unsuccessful
@@ -60,6 +61,7 @@ Admin Menu
 Enter an option: 4
 Buy
 Enter Game name: Fifa
+
 admin1          already owns Fifa                     
 Enter another game or enter -1 to quit: -1
 Buy transaction unsuccessful

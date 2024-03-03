@@ -554,13 +554,13 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
     float seller_credit_balance=user_file_process().get_user_balance(all_users, seller_name);
     float buyer_credit_balance=user_file_process().get_user_balance(all_users, buyer_name);
 
-    cout<< "BALANCE BEFORE PURCHASE" << endl;
-    cout<< "SELLER " << seller_credit_balance << endl;
-    cout<< "BUYER " << buyer_credit_balance << endl;
-    cout << endl;
-
-    game_name = utils().convert_to_lower(game_name);
-    float game_price = games_file_process().get_game_price(all_games, game_name);
+    // cout<< "BALANCE BEFORE PURCHASE" << endl;
+    // cout<< "SELLER " << seller_credit_balance << endl;
+    // cout<< "BUYER " << buyer_credit_balance << endl;
+    // cout << endl;
+    
+    string game_name_temp = utils().convert_to_lower(game_name);
+    float game_price = games_file_process().get_game_price(all_games, game_name_temp);
 
     if (game_price > buyer_credit_balance)
     {
@@ -573,28 +573,18 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
       buyer_credit_balance = buyer_credit_balance - game_price;
       seller_credit_balance = seller_credit_balance + game_price;
 
-      user_file_process().update_user_balance(all_users, buyer_name, buyer_credit_balance);
-      user_file_process().update_user_balance(all_users, seller_name, seller_credit_balance);
 
-      // cout << "GAMES COLLECTION BEFORE BUY TRANSACTION" << endl;
-      // for (int i = 0; i < game_collec.size(); i++)
-      // {
-      //   cout << game_collec[i] << endl;
-      // }
-      // cout << endl;
+      // not updating balances in this phase
+      // user_file_process().update_user_balance(all_users, buyer_name, buyer_credit_balance);
+      // user_file_process().update_user_balance(all_users, seller_name, seller_credit_balance);
+
 
       games_file_process().update_games_collection(game_collec, game_name, buyer_name);
 
-      // cout << "GAMES COLLECTION AFTER BUY TRANSACTION" << endl;
-      // for (int i = 0; i < game_collec.size(); i++)
-      // {
-      //   cout << game_collec[i] << endl;
-      // }
-      // cout << endl;
 
-      cout<< "BALANCE AFTER PURCHASE" << endl;
-      cout<< "SELLER " << seller_credit_balance << endl;
-      cout<< "BUYER " << buyer_credit_balance << endl;
+      // cout<< "BALANCE AFTER PURCHASE" << endl;
+      // cout<< "SELLER " << seller_credit_balance << endl;
+      // cout<< "BUYER " << buyer_credit_balance << endl;
       // cout << endl;
 
 

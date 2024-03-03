@@ -658,7 +658,7 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
       }
 
-      else if(credit_amount < constants::MIN_ADD_CREDITS || credit_amount  > constants::MAX_ADD_CREDITS) {
+      else if(credit_amount < constants::MIN_ADD_CREDITS || credit_amount  >= constants::MAX_ADD_CREDITS) {
         cout << "Please enter a valid credit amount or -1 to go back to main menu " << endl;
         cout << "Enter credit amount to add: ";
       }

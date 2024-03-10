@@ -1,10 +1,10 @@
 
 class Transactions:
-    def create_user():
+    def create_user(self,info):
+        print("in create")
+    def remove_user(self):
         pass
-    def remove_user():
+    def add_credit(self):
         pass
-    def add_credit():
-        pass
-    def buy_game():
+    def buy_game(self):
         pass

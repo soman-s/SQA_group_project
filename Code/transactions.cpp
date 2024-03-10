@@ -282,7 +282,7 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
   }
 
-  cout << "User sucessfully removed" << endl; 
+  cout << "User sucessfully removed" << endl;
 
   float user_amount = user_file_process().get_user_balance(all_users, user_to_remove);
 
@@ -473,7 +473,7 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
       string log_buyer_name=utils().pad_username(buyer_name);
       string log_text_refund_price=utils().pad_credit_amount(num_refund_price);
 
-      log_entry=constants::REFUND_CODE+" "+log_buyer_name+" "+log_seller_name+" "+log_text_refund_price;
+      log_entry=constants::REFUND_CODE+" "+refund_game_name+" "+log_buyer_name+" "+log_seller_name+" "+log_text_refund_price;
       utils().update_transction_log(log_entry,transaction_log);
     }
 
@@ -559,7 +559,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
     // cout<< "SELLER " << seller_credit_balance << endl;
     // cout<< "BUYER " << buyer_credit_balance << endl;
     // cout << endl;
-    
+
     string game_name_temp = utils().convert_to_lower(game_name);
     float game_price = games_file_process().get_game_price(all_games, game_name_temp);
 

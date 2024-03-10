@@ -31,6 +31,7 @@ public:
     static const std::string LIST_AVAILABLE_GAMES; /**< Menu option: List available games. */
     static const std::string LIST_ALL_USERS; /**< Menu option: List all users. */
     static const std::string ADD_CREDIT; /**< Menu option: Add credit. */
+    static const std::string SEARCH; /**< Menu option: Logout. */
     static const std::string LOGOUT; /**< Menu option: Logout. */
 
     // file stuff

@@ -15,6 +15,7 @@ const std::string constants::DELETE = "Delete";
 const std::string constants::SELL = "Sell";
 const std::string constants::BUY = "Buy";
 const std::string constants::REFUND = "Refund";
+const std::string constants::SEARCH = "Search";
 const std::string constants::LIST_AVAILABLE_GAMES = "View Available Games";
 const std::string constants::LIST_ALL_USERS = "View All Users";
 const std::string constants::ADD_CREDIT = "Add Credit";
@@ -50,6 +51,3 @@ const std::string constants::BUY_CODE = "04";
 const std::string constants::CREATE_CODE = "01";
 const std::string constants::DELETE_CODE = "02";
 const std::string constants::ADD_CREDIT_CODE = "06";
-
-
-

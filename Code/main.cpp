@@ -189,6 +189,11 @@ int main()
                               }
 
                             }
+                            else if (user_menu_option == constants::SEARCH)
+                            {
+                              // ADD LOGIC FOR SEARCH TRANSACTION
+
+                            }
                         }
                         else {
                             cout << "Invalid entry" << endl;

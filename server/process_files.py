@@ -5,7 +5,6 @@ from constants import Constants
 def get_daily_transactions():
     pass
 
-<<<<<<< HEAD
 def update_files():
     pass
 

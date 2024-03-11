@@ -1,7 +1,12 @@
 from constants import Constants
 import string
 
-def create_user():
+def process_create(transaction_line: string, current_users:list[str]):
+    print("transaction_line", transaction_line)
+    start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
+    new_user = transaction_line[start_index:Constants.MAX_USER_NAME_LENGTH+start_index]
+    print(len(new_user))
+    print("new_user", new_user)
     pass
 def remove_user():
     pass

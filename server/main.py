@@ -31,6 +31,9 @@ def main():
         elif(current_code==Constants.REFUND_CODE):
             transactions.process_refund(transaction,games_collection,all_users)
 
+        elif (current_code==Constants.CREATE_CODE):
+            transactions.process_create(transaction,all_users)
+
 
     print("Writing back into the transaction files")
 

@@ -122,6 +122,7 @@ float user_file_process::get_user_balance(vector<string>& user_info,string& user
   return 0;
 }
 
+// MAY NOT NEED THE "/R"
 // Update the user's balance/credit amount.
 void user_file_process::update_user_balance(vector<string>& user_info,string& user_name, float&credit_amount)
 {

@@ -29,7 +29,8 @@ def main():
             transactions.process_sell(transaction,available_games,games_collection)
 
         elif(current_code==Constants.REFUND_CODE):
-            print("UPDATE REFUND STUFF")
+            transactions.process_refund(transaction,games_collection,all_users)
+
 
     print("Writing back into the transaction files")
 
@@ -43,3 +44,7 @@ def main():
     file_ending=utils.pad_end_file(end_games_collection)
     games_collection.append(file_ending)
     process_files.write_file_contents(Constants.OUTPUT_GAMES_COLLECTION,games_collection)
+
+
+if __name__ == "__main__":
+    main()

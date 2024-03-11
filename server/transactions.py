@@ -29,3 +29,10 @@ def process_sell(transaction_line: string, available_games:list[str], games_coll
     # if game doesn't already exist, add to games_collection list and available_games list
     available_games.append(new_game_name+" "+seller_name+" "+game_price)
     games_collection.append(new_game_name+" "+seller_name)
+
+
+def process_refund(transaction_line: string, games_collection:list[str],current_users:list[str]):
+
+    start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
+    refund_game_name = transaction_line[start_index:start_index + Constants.MAX_GAME_NAME_LENGTH]
+    print(refund_game_name)

@@ -1,3 +1,4 @@
+
 from constants import Constants
 import process_files
 import transactions
@@ -42,11 +43,3 @@ def main():
     file_ending=utils.pad_end_file(end_games_collection)
     games_collection.append(file_ending)
     process_files.write_file_contents(Constants.OUTPUT_GAMES_COLLECTION,games_collection)
-
-
-
-
-
-if __name__ == '__main__':
-    # Call the main function
-    main()

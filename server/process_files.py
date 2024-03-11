@@ -5,6 +5,7 @@ from constants import Constants
 def get_daily_transactions():
     pass
 
+<<<<<<< HEAD
 def update_files():
     pass
 
@@ -32,5 +33,5 @@ def write_file_contents(output_file_name: str, contents:list[str]):
         print(f"Contents written to '{output_file_name}' successfully.")
     except Exception as e:
         print(f"Error writing to file '{output_file_name}': {e}")
-        
+
     pass

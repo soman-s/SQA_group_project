@@ -14,16 +14,17 @@ def read_file_contents(file_name: str) -> list[str]:
             # Read all lines from the file and store them in a list
             lines = file.readlines()
             # Remove newline characters from each line
-            lines = [line.strip() for line in lines]
+            lines = [line.rstrip('\n') for line in lines]  # Strip newline characters from the end of each line
+            lines = [line.lstrip('\n') for line in lines]  # Strip newline characters from the beginning of each line
             return lines
     except FileNotFoundError:
         print(f"Error: File '{file_name}' not found.")
         return []
 
 def write_file_contents(output_file_name: str, contents:list[str]):
-    print("CONTENTS TO WRITE")
-    for line in contents:
-        print(line)
+    # print("CONTENTS TO WRITE")
+    # for line in contents:
+    #     print(line)
 
     try:
         with open(output_file_name, 'w') as file:
@@ -34,3 +35,8 @@ def write_file_contents(output_file_name: str, contents:list[str]):
         print(f"Error writing to file '{output_file_name}': {e}")
 
     pass
+
+def update_and_write_file(output_file: str, data: list[str], end_length: int):
+    file_ending = utils.pad_end_file(end_length)
+    data.append(file_ending)
+    write_file_contents(output_file, data)

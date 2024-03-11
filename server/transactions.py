@@ -3,14 +3,18 @@ import string
 import utils
 
 def process_create(transaction_line: string, current_users:list[str]):
-    print("transaction_line", transaction_line)
     start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
     new_user = transaction_line[start_index:Constants.MAX_USER_NAME_LENGTH+start_index]
-    print(len(new_user))
-    print("new_user", new_user)
-    pass
-def remove_user():
-    pass
+    new_user_code = transaction_line[19:21]
+    new_user_amount = transaction_line[len(transaction_line)-Constants.MAX_USER_NAME_LENGTH+start_index+3:len(transaction_line)]
+    current_users.append(new_user+" "+new_user_code+" "+new_user_amount)
+def process_delete(transaction_line: string, current_users:list[str]):
+    start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
+    removed_user = transaction_line[start_index:Constants.MAX_USER_NAME_LENGTH+start_index]
+    for user in current_users:
+        if removed_user in user:
+            current_users.remove(user)
+            return    
 def add_credit():
     pass
 def buy_game():

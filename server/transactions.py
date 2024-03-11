@@ -1,8 +1,6 @@
 from constants import Constants
 import string
 
-<<<<<<< HEAD
-
 def create_user():
     pass
 def remove_user():
@@ -31,14 +29,3 @@ def process_sell(transaction_line: string, available_games:list[str], games_coll
     # if game doesn't already exist, add to games_collection list and available_games list
     available_games.append(new_game_name+" "+seller_name+" "+game_price)
     games_collection.append(new_game_name+" "+seller_name)
-=======
-class Transactions:
-    def create_user(self,info):
-        print("in create")
-    def remove_user(self):
-        pass
-    def add_credit(self):
-        pass
-    def buy_game(self):
-        pass
->>>>>>> 326ca04645054bbd6c0903a00a45e7116fdc0966

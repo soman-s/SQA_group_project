@@ -34,16 +34,17 @@ def main():
 
     print("Writing back into the transaction files")
 
-    # updating and writing back to the available_games file
-    end_avaiable_games=Constants.MAX_GAME_NAME_LENGTH+Constants.MAX_USER_NAME_LENGTH+Constants.MAX_GAME_PRICE_LENGTH+2
-    file_ending=utils.pad_end_file(end_avaiable_games)
-    available_games.append(file_ending)
-    process_files.write_file_contents(Constants.OUTPUT_AVAILABLE_GAMES,available_games)
 
-    end_games_collection=Constants.MAX_GAME_NAME_LENGTH+Constants.MAX_USER_NAME_LENGTH+1
-    file_ending=utils.pad_end_file(end_games_collection)
-    games_collection.append(file_ending)
-    process_files.write_file_contents(Constants.OUTPUT_GAMES_COLLECTION,games_collection)
+    # Updating and writing back to the available_games file
+    process_files.update_and_write_file(Constants.OUTPUT_AVAILABLE_GAMES, available_games, Constants.MAX_GAME_NAME_LENGTH + Constants.MAX_USER_NAME_LENGTH + Constants.MAX_GAME_PRICE_LENGTH + 2)
+
+    # Updating and writing back to the games_collection file
+    process_files.update_and_write_file(Constants.OUTPUT_GAMES_COLLECTION, games_collection, Constants.MAX_GAME_NAME_LENGTH + Constants.MAX_USER_NAME_LENGTH + 1)
+
+    # Updating and writing back to the all_users file
+    process_files.update_and_write_file(Constants.OUTPUT_ALL_USER_FILE, all_users, Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_ACCOUNT_TYPE_LENGTH + 1 + Constants.MAX_CREDIT_LENGTH)
+
+
 
 
 if __name__ == "__main__":

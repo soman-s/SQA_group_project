@@ -1,5 +1,6 @@
 from constants import Constants
 import string
+import utils
 
 def create_user():
     pass
@@ -22,7 +23,7 @@ def process_sell(transaction_line: string, available_games:list[str], games_coll
     for games in available_games:
 
         current_game_name=games[:Constants.MAX_GAME_NAME_LENGTH]
-        if (current_game_name==new_game_name):
+        if current_game_name.lower() == new_game_name.lower():
             #print("GAME ALREADY EXISTS")
             return
 
@@ -34,5 +35,35 @@ def process_sell(transaction_line: string, available_games:list[str], games_coll
 def process_refund(transaction_line: string, games_collection:list[str],current_users:list[str]):
 
     start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
-    refund_game_name = transaction_line[start_index:start_index + Constants.MAX_GAME_NAME_LENGTH]
-    print(refund_game_name)
+    game_name_length = Constants.MAX_GAME_NAME_LENGTH
+    user_name_length = Constants.MAX_USER_NAME_LENGTH
+
+    refund_game_name = transaction_line[start_index:start_index + game_name_length]
+    buyer_name = transaction_line[start_index + game_name_length + 1:start_index + game_name_length + 1 + user_name_length]
+    seller_name = transaction_line[start_index + game_name_length + 1 + user_name_length + 1:start_index + game_name_length + 1 + user_name_length + 1 + user_name_length]
+    refund_price=transaction_line[start_index + game_name_length + 1 + user_name_length + 1 + user_name_length+1:]
+
+
+    game_to_remove=refund_game_name+" "+buyer_name
+    game_removed=False
+    for collection_entry in games_collection:
+
+        # remove game from games collection , and issue refund from seller to buyer
+        if game_to_remove.lower() == collection_entry.lower():
+            games_collection.remove(collection_entry)
+            game_removed=True
+
+
+    # if game was removed from games_collection, the refund was not preoviosuly issued
+    if game_removed:
+        refund_price = float(refund_price)
+        for i, user in enumerate(current_users):
+            current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]
+
+            if current_user_name == buyer_name:
+                current_users[i] = utils.update_balance(user, refund_price)
+            elif current_user_name == seller_name:
+                current_users[i] = utils.update_balance(user, -refund_price)
+
+
+    return

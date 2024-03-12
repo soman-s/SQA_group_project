@@ -11,6 +11,7 @@ and updates back-end files accordingly.
 """
 def main():
 
+    print("Reading in Files...")
     # Reading contents of input files
     all_users = process_files.read_file_contents(Constants.INPUT_ALL_USER_FILE)
     available_games = process_files.read_file_contents(Constants.INPUT_AVAILABLE_GAMES)
@@ -25,6 +26,7 @@ def main():
     process_files.merge_daily_transaction_files(Constants.LOG_FILES_PATH, Constants.INPUT__MERGE_DAILY_TRANSACTION)
     daily_transactions = process_files.read_file_contents(Constants.INPUT__MERGE_DAILY_TRANSACTION)
 
+    print("Processing Daily Transaction Files..")
     # Loop through the daily transaction list to view transactions
     # and determine which files need to be updated in the back end
     for transaction in daily_transactions:

@@ -42,3 +42,22 @@ def update_balance(user: str, balance_change: Union[int, float]) -> str:
     balance += balance_change
     formatted_balance: str = "{:09.2f}".format(balance)
     return user[:balance_index] + formatted_balance
+
+
+def display_error_message(message: str):
+    """
+    Display an error message.
+
+    Args:
+        message (str): The error message to display.
+    """
+    print(f"Error: {message}")
+
+def display__sucess_message(transaction: str):
+    """
+    Display a sucess message
+
+    Args:
+        Transaction (str): The tranaction that was sucessful processed.
+    """
+    print(f"Transaction processed: {transaction}")

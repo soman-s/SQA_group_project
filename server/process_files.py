@@ -1,8 +1,9 @@
 import string
 import utils
 import os
-from constants import Constants
+import logging
 
+from constants import Constants
 
 def read_file_contents(file_name: str) -> list[str]:
     """
@@ -21,8 +22,13 @@ def read_file_contents(file_name: str) -> list[str]:
             lines = [line.lstrip('\n') for line in lines]
             return lines
     except FileNotFoundError:
-        print(f"Error: File '{file_name}' not found.")
+        logging.error(f"Error: File '{file_name}' not found.")
         return []
+    except Exception as e:
+        logging.error(f"Fatal Error: {e}")
+        # Stop further execution by raising the exception
+        raise e
+
 
 
 def write_file_contents(output_file_name: str, contents: list[str]):

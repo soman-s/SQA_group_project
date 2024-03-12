@@ -8,15 +8,21 @@ def process_create(transaction_line: string, current_users:list[str]):
     new_user_code = transaction_line[19:21]
     new_user_amount = transaction_line[len(transaction_line)-Constants.MAX_USER_NAME_LENGTH+start_index+3:len(transaction_line)]
     current_users.append(new_user+" "+new_user_code+" "+new_user_amount)
-def process_delete(transaction_line: string, current_users:list[str]):
+def process_delete(transaction_line: string, current_users:list[str],available_games:list[str], games_collection:list[str]):
     start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
     removed_user = transaction_line[start_index:Constants.MAX_USER_NAME_LENGTH+start_index]
-    for user in current_users:
-        if removed_user in user:
-            current_users.remove(user)
-            return    
-def add_credit():
-    pass
+    utils.remove_item(current_users,removed_user)
+    utils.remove_item(available_games,removed_user)
+    utils.remove_item(games_collection,removed_user)
+   
+def process_credit(transaction_line: string, current_users:list[str]):
+    start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
+    new_user_amount = float(transaction_line[len(transaction_line)-Constants.MAX_USER_NAME_LENGTH+start_index+3:].lstrip('0'))
+    curr_user = transaction_line[start_index:Constants.MAX_USER_NAME_LENGTH+start_index]
+    for i, user in enumerate(current_users):
+        if curr_user in user:
+            current_users[i] = utils.update_balance(user, new_user_amount)
+            return
 def buy_game():
     pass
 

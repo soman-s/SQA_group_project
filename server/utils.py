@@ -5,8 +5,10 @@ def pad_end_file(total_chars:int)->str:
     ending=word = "END" + " " * (total_chars - len("END"))
     return ending
 
-
-
+def remove_item(items, item_to_remove):
+    for item in items:
+        if item_to_remove in item:
+            items.remove(item)
 
 def update_balance(user: str, balance_change: Union[int, float]) -> str:
     """

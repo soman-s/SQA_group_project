@@ -34,7 +34,9 @@ def main():
         elif (current_code==Constants.CREATE_CODE):
             transactions.process_create(transaction,all_users)
         elif(current_code==Constants.DELETE_CODE):
-            transactions.process_delete(transaction,all_users)
+            transactions.process_delete(transaction,all_users,available_games,games_collection)
+        elif(current_code==Constants.ADD_CREDIT_CODE):
+            transactions.process_credit(transaction,all_users)
 
     print("Writing back into the transaction files")
 

@@ -1,11 +1,27 @@
 from typing import Union
 from constants import Constants
 
-def pad_end_file(total_chars:int)->str:
-    ending=word = "END" + " " * (total_chars - len("END"))
+def pad_end_file(total_chars: int) -> str:
+    """
+    Pad the end of a file with spaces to reach a total number of characters.
+
+    Args:
+        total_chars (int): The total number of characters desired.
+
+    Returns:
+        str: A string containing 'END' followed by spaces to reach the desired total number of characters.
+    """
+    ending = "END" + " " * (total_chars - len("END"))
     return ending
 
 def remove_item(items, item_to_remove):
+    """
+    Remove an item from a list.
+
+    Args:
+        items: The list from which to remove the item.
+        item_to_remove: The item to remove from the list.
+    """
     for item in items:
         if item_to_remove in item:
             items.remove(item)

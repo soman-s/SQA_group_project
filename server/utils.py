@@ -61,3 +61,11 @@ def display__sucess_message(transaction: str):
         Transaction (str): The tranaction that was sucessful processed.
     """
     print(f"Transaction processed: {transaction}")
+
+def check_valid_file(data:list[str]) -> bool:
+     """
+    Validate if file has not been corrupted
+
+    Args:
+        data (str): The data from the input files.
+    """

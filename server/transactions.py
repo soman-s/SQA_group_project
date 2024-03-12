@@ -110,7 +110,7 @@ def process_refund(transaction_line: string, games_collection: list[str], curren
             balance: float = float(user[balance_index:])
             balance =balance- float(refund_price)
             if balance<0:
-                utils.display_error_message("Cannot process Refund, Seller will have negtitive balance")
+                utils.display_error_message("Cannot process Refund, Seller will have negative balance")
                 return
 
 

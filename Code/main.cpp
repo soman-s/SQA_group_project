@@ -124,7 +124,9 @@ int main()
                                 new_game_to_sell = transactions().process_sell(all_games, games_to_add, current_user_name,transaction_log);
                                 if (new_game_to_sell !=constants::FAIL_OPTION)
                                  {
+
                                     string game_name = new_game_to_sell.substr(0, constants::MAX_GAME_NAME_LENGTH);
+                                    cout<<" Game Listed for Sale"<<endl;
 
                                     // Don't update the vectors, only take in accounts read from file
 

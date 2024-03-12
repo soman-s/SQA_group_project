@@ -1,6 +1,8 @@
 import string
 import utils
+import os
 from constants import Constants
+
 
 def get_daily_transactions():
     pass
@@ -40,3 +42,17 @@ def update_and_write_file(output_file: str, data: list[str], end_length: int):
     file_ending = utils.pad_end_file(end_length)
     data.append(file_ending)
     write_file_contents(output_file, data)
+
+
+
+# Function to merge daily transaction files
+def merge_daily_transaction_files(input_folder, output_file):
+    with open(output_file, 'w') as outfile:
+        for filename in sorted(os.listdir(input_folder)):
+            if 'daily_transaction' in filename and filename !=Constants.MERGE_DAILY_TRANSACTION_FILENAME:
+                with open(os.path.join(input_folder, filename), 'r') as infile:
+                    for line in infile:
+                        outfile.write(line)
+
+        # Add a line with a 00 transaction code at the end
+        outfile.write("00\n")

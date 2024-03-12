@@ -11,12 +11,17 @@ def main():
     all_users = process_files.read_file_contents(Constants.INPUT_ALL_USER_FILE)
     available_games=process_files.read_file_contents(Constants.INPUT_AVAILABLE_GAMES)
     games_collection=process_files.read_file_contents(Constants.INPUT_GAMES_COLLECTION)
-    daily_transactions=process_files.read_file_contents(Constants.INPUT_DAILY_TRANSACTION)
+
 
     # reading only contents of the files, ignoring the last line since its the end line
     all_users=all_users[:-1]
     available_games=available_games[:-1]
     games_collection=games_collection[:-1]
+
+    # Merging all the daily transaction files
+
+    process_files.merge_daily_transaction_files(Constants.LOG_FILES_PATH,Constants.INPUT__MERGE_DAILY_TRANSACTION)
+    daily_transactions=process_files.read_file_contents(Constants.INPUT__MERGE_DAILY_TRANSACTION)
 
 
     # loog through the daiily transaction list to view list of transactions

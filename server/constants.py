@@ -8,10 +8,16 @@ class Constants:
     DELETE_CODE = "02"
     ADD_CREDIT_CODE = "06"
 
+    #File Name
+    MERGE_DAILY_TRANSACTION_FILENAME='merged_daily_transactions.etf'
+
+    #input File PATHS
+    LOG_FILES_PATH="ori_log_files/daily_transactions"
+
 
 
     # INPUT File Locations
-    INPUT_DAILY_TRANSACTION="ori_log_files/daily_transactions.etf"
+    INPUT__MERGE_DAILY_TRANSACTION="ori_log_files/merged_daily_transactions.etf"
     INPUT_ALL_USER_FILE="ori_log_files/current_users.etf"
     INPUT_AVAILABLE_GAMES="ori_log_files/available_games.etf"
     INPUT_GAMES_COLLECTION="ori_log_files/game_collection.etf"

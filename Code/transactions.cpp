@@ -4,6 +4,10 @@
 #include <algorithm>
 #include <cstring>
 #include <unordered_map>
+#include <sstream>
+#include <iomanip>
+#include <chrono>
+#include <ctime>
 
 #include "menus.h"
 #include "user_file_process.h"
@@ -702,16 +706,28 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
 void transactions::process_logout(vector<string>& transaction_log)
 {
-  ofstream output_stream;
-  output_stream.open("log_files/daily_transactions.etf");
+    // Define the base filename
+    string base_filename = "log_files/daily_transactions";
 
-  for (const string& transaction : transaction_log) {
-       output_stream << transaction << std::endl;
-   }
+    // Get the current timestamp
+    auto now = chrono::system_clock::now();
+    auto now_time_t = chrono::system_clock::to_time_t(now);
 
+    // Generate a unique filename using the timestamp
+    stringstream ss;
+    ss << base_filename << "_" << now_time_t << ".etf";
+    string new_filename = ss.str();
 
-  output_stream.close();
+    // Open the output stream with the new filename
+    ofstream output_stream(new_filename);
 
+    // Write each transaction to the output stream
+    for (const string& transaction : transaction_log) {
+        output_stream << transaction << endl;
+    }
 
-  return;
+    // Close the output stream
+    output_stream.close();
+
+    return;
 }

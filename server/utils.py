@@ -80,7 +80,7 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
     if file_name == Constants.INPUT_ALL_USER_FILE:
         print("Checking Validity of Current Users File")
 
-        for line_num,line in enumerate(data[:-1],start=0):
+        for line_num,line in enumerate(data[:],start=0):
             # check to see that after user name there is a space
             check_format=line[Constants.MAX_USER_NAME_LENGTH:Constants.MAX_USER_NAME_LENGTH+1]
             if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
@@ -106,7 +106,7 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
 
     elif file_name==Constants.INPUT_GAMES_COLLECTION:
         print("Checking Validity of GAMES COLLECTIONS FILE")
-        for line_num,line in enumerate(data[:-1],start=0):
+        for line_num,line in enumerate(data[:],start=0):
 
             # check to see that after game name there is a space
             check_format=line[Constants.MAX_GAME_NAME_LENGTH:Constants.MAX_GAME_NAME_LENGTH+1]
@@ -126,7 +126,7 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
 
     elif file_name==Constants.INPUT_AVAILABLE_GAMES:
         print("Checking Validity of AVAILABLE GAMES FILE")
-        for line_num,line in enumerate(data[:-1],start=0):
+        for line_num,line in enumerate(data[:],start=0):
 
             # check to see that after game name there is a space
             check_format=line[Constants.MAX_GAME_NAME_LENGTH:Constants.MAX_GAME_NAME_LENGTH+1]
@@ -152,4 +152,117 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
             print("AVAILABLE GAMES FILE is VALID")
             return True
 
+    return True
+
+
+def check_valid_transaction_file(data: list[str])-> bool:
+    print("Checking Validity of Merged Transaction File")
+    for line_num,line in enumerate(data[:-1],start=0):
+        check_format=line[:Constants.MAX_ACCOUNT_TYPE_LENGTH]
+
+        if check_format not in Constants.ALL_CODES:
+            display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid code on line:  {line_num+1}")
+            return False
+        else:
+            check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH:Constants.MAX_ACCOUNT_TYPE_LENGTH+1]
+            if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid code formating on line:  {line_num+1}")
+                return False
+
+            current_code=line[:Constants.MAX_ACCOUNT_TYPE_LENGTH]
+
+            # checking the transaction format based on code given
+            if current_code==Constants.LOGOUT_CODE:
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH:Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1]
+                if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid username formating on line:  {line_num+1}")
+                    return False
+
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_ACCOUNT_TYPE_LENGTH:
+                                Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_ACCOUNT_TYPE_LENGTH+1]
+                if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid ACCOUNT TYPE formating on line:  {line_num+1}")
+                    return False
+
+                # checking avaiable credit component
+                pattern = r'^[\d.]{%d}$' % Constants.MAX_CREDIT_LENGTH
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_ACCOUNT_TYPE_LENGTH+1:]
+
+                if not re.match(pattern, check_format):
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid balance on line:  {line_num+1}")
+                    return False
+
+            elif current_code==Constants.SELL_GAME_CODE:
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH:
+                                Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1]
+
+
+                if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid game name formating on line:  {line_num+1}")
+                    return False
+
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH:
+                                Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1:]
+
+                if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid username formating on line:  {line_num+1}")
+                    return False
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1:]
+                pattern = r'^[\d.]{%d}$' % Constants.MAX_GAME_PRICE_LENGTH
+
+                if not re.match(pattern, check_format):
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE invalid game price on line:  {line_num+1}")
+                    return False
+            elif current_code==Constants.REFUND_CODE:
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH:
+                                Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1]
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH:
+                                Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1]
+
+
+                if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid game name formating on line:  {line_num+1}")
+                    return False
+
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH:
+                                Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1:]
+
+                if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid username formating on line:  {line_num+1}")
+                    return False
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH:
+                                    Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1:]
+                if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid username formating on line:  {line_num+1}")
+                    return False
+
+
+                check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1:]
+                pattern = r'^[\d.]{%d}$' % Constants.MAX_CREDIT_LENGTH
+                if not re.match(pattern, check_format):
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid refund amount format on line:  {line_num+1}")
+                    return False
+
+
+
+            # ADD CHECKS HERE
+            elif current_code==Constants.BUY_CODE:
+                return
+            elif current_code==Constants.CREATE_CODE:
+                return
+            elif current_code==Constants.DELETE_CODE:
+                return
+            elif current_code==Constants.ADD_CREDIT_CODE:
+                return
+
+    print("MERGED DAILY TRANSACTION FILE is VALID")
     return True

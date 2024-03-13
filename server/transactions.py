@@ -74,10 +74,23 @@ def process_buy(transaction_line: string, current_users: list[str], games_collec
     game_price_current_users = transaction_line[start_index + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1:]
 
     game_price_available_games = game_price_current_users[3:]
+    game_price_available_games = float(game_price_available_games)
 
-    for games in games_collection:
-        # current_game = games[:Constants.MAX_GAME_NAME_LENGTH + 1]
-        pass
+    for i, user in enumerate(current_users):
+        balance_index: int = Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
+        user_balance: float = float(user[balance_index:])
+        
+        current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]
+        if current_user_name == seller_name:
+            # new_seller_balance = user_balance + float(game_price_available_games)
+            current_users[i] = utils.update_balance(user, game_price_available_games)
+
+        elif current_user_name == buyer_name:
+            new_buyer_balance = user_balance - float(game_price_available_games)
+            current_users[i] = utils.update_balance(user, -game_price_available_games)
+
+
+    games_collection.append(game_name + " " + buyer_name) 
 
             
 

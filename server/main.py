@@ -43,6 +43,8 @@ def main():
             transactions.process_delete(transaction, all_users, available_games, games_collection)
         elif current_code == Constants.ADD_CREDIT_CODE:
             transactions.process_credit(transaction, all_users)
+        elif current_code == Constants.BUY_CODE:
+            transactions.process_buy(transaction, all_users, games_collection)
 
     print("Writing back into the transaction files")
 

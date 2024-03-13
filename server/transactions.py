@@ -53,11 +53,33 @@ def process_credit(transaction_line: string, current_users: list[str]):
             return
 
 
-def buy_game():
+def process_buy(transaction_line: string, current_users: list[str], games_collection: list[str]):
     """
-    Placeholder function for processing a 'buy game' transaction.
+    Process a 'buy' transaction.
+
+    Parameters:
+        transaction_line (string): The transaction line to process.
+        current_users (list[str]): The list of current users.
+        games_collection (list[str]): The list of games in the collection.
     """
-    pass
+    start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
+
+    game_name = transaction_line[start_index:start_index + Constants.MAX_GAME_NAME_LENGTH]
+
+    seller_name = transaction_line[start_index + Constants.MAX_GAME_NAME_LENGTH + 1:start_index + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH]
+
+    buyer_name = transaction_line[start_index + Constants.MAX_GAME_NAME_LENGTH + Constants.MAX_USER_NAME_LENGTH + 2:
+                                  start_index + Constants.MAX_GAME_NAME_LENGTH + Constants.MAX_USER_NAME_LENGTH + 2 + Constants.MAX_USER_NAME_LENGTH]
+
+    game_price_current_users = transaction_line[start_index + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1:]
+
+    game_price_available_games = game_price_current_users[3:]
+
+    for games in games_collection:
+        # current_game = games[:Constants.MAX_GAME_NAME_LENGTH + 1]
+        pass
+
+            
 
 
 def process_sell(transaction_line: string, available_games: list[str], games_collection: list[str]):

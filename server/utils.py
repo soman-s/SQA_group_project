@@ -1,4 +1,6 @@
 from typing import Union
+import re
+
 from constants import Constants
 
 def pad_end_file(total_chars: int) -> str:
@@ -62,10 +64,92 @@ def display__sucess_message(transaction: str):
     """
     print(f"Transaction processed: {transaction}")
 
-def check_valid_file(data:list[str]) -> bool:
-     """
+
+def check_valid_file(data: list[str], file_name: str) -> bool:
+    """
     Validate if file has not been corrupted
 
     Args:
-        data (str): The data from the input files.
+        data (list[str]): The data from the input files.
+        file_name (str): File name of the file being checked
+
+    Returns:
+        bool: True if file is valid, False otherwise.
     """
+
+    if file_name == Constants.INPUT_ALL_USER_FILE:
+        print("Checking Validity of Current Users File")
+
+        for line_num,line in enumerate(data[:-1],start=0):
+            # check to see that after user name there is a space
+            check_format=line[Constants.MAX_USER_NAME_LENGTH:Constants.MAX_USER_NAME_LENGTH+1]
+            if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                display_error_message(f"INVALID CURRENT USERS FILE, username not formatted properly on line: {line_num+1}")
+                return False
+
+            # checjing for account type
+            check_format=line[Constants.MAX_USER_NAME_LENGTH+1:Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_ACCOUNT_TYPE_LENGTH]
+            if check_format.lower() not in [account.lower() for account in Constants.ALL_ACCOUNTS]:
+                display_error_message(f"INVALID CURRENT USERS FILE, invalid account type on line:  {line_num+1}")
+                return False
+
+            # checking for credit
+            pattern = r'^[\d.]{%d}$' % Constants.MAX_CREDIT_LENGTH
+            check_format=line[Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_ACCOUNT_TYPE_LENGTH+1:]
+
+
+            if not re.match(pattern, check_format):
+                display_error_message(f"INVALID CURRENT USERS FILE, invalid balance on line:  {line_num+1}")
+                return False
+        print("CURRENT USER FILE is Valid")
+        return True
+
+    elif file_name==Constants.INPUT_GAMES_COLLECTION:
+        print("Checking Validity of GAMES COLLECTIONS FILE")
+        for line_num,line in enumerate(data[:-1],start=0):
+
+            # check to see that after game name there is a space
+            check_format=line[Constants.MAX_GAME_NAME_LENGTH:Constants.MAX_GAME_NAME_LENGTH+1]
+
+            if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                display_error_message(f"INVALID GAMES COLLECTIONS FILE, game name not formatted properly on line: {line_num+1}")
+                return False
+
+            #  chceck that the usernames are valid foramtting
+            check_format=line[Constants.MAX_GAME_NAME_LENGTH+1:]
+            if len(check_format)!=Constants.MAX_USER_NAME_LENGTH:
+                display_error_message(f"INVALID GAMES COLLECTIONS FILE, user name  not formatted properly on line: {line_num+1}")
+                return False
+
+        print("GAMES COLLECTION FILE is VALID")
+        return True
+
+    elif file_name==Constants.INPUT_AVAILABLE_GAMES:
+        print("Checking Validity of AVAILABLE GAMES FILE")
+        for line_num,line in enumerate(data[:-1],start=0):
+
+            # check to see that after game name there is a space
+            check_format=line[Constants.MAX_GAME_NAME_LENGTH:Constants.MAX_GAME_NAME_LENGTH+1]
+
+            if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                display_error_message(f"INVALID AVAILABLE GAMES FILE, game name not formatted properly on line: {line_num+1}")
+                return False
+
+            # check to see that after username  there is a space
+            check_format=line[Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH:Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1]
+            if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+                display_error_message(f"INVALID AVAILABLE GAMES FILE, user name not formatted properly on line: {line_num+1}")
+                return False
+
+            #checking for credit
+            check_format=line[Constants.MAX_GAME_NAME_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1:]
+            pattern = r'^[\d.]{%d}$' % Constants.MAX_GAME_PRICE_LENGTH
+
+            if not re.match(pattern, check_format):
+                display_error_message(f"INVALID AVAILABLE GAMES FILE, invalid game price on line:  {line_num+1}")
+                return False
+
+            print("AVAILABLE GAMES FILE is VALID")
+            return True
+
+    return True

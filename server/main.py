@@ -17,6 +17,14 @@ def main():
     available_games = process_files.read_file_contents(Constants.INPUT_AVAILABLE_GAMES)
     games_collection = process_files.read_file_contents(Constants.INPUT_GAMES_COLLECTION)
 
+    # checking the validity of the input fuiles
+    if(utils.check_valid_file(all_users,Constants.INPUT_ALL_USER_FILE)== False):
+        return
+    elif (utils.check_valid_file(games_collection,Constants.INPUT_GAMES_COLLECTION)== False):
+        return
+    elif(utils.check_valid_file(available_games,Constants.INPUT_AVAILABLE_GAMES)== False):
+        return
+
     # Removing the last line of each file since it's an end line
     all_users = all_users[:-1]
     available_games = available_games[:-1]

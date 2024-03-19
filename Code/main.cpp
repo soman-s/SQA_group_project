@@ -150,8 +150,8 @@ int main()
                             else if (user_menu_option == constants::LIST_AVAILABLE_GAMES)
                             {
                                 transactions().show_all_game_info(all_games);
-                            } else if
-                            (user_menu_option == constants::REFUND)
+                            }
+                            else if (user_menu_option == constants::REFUND)
                              {
                                 if (transactions().refund(all_users, all_games, all_games_collection,transaction_log) == constants::FAIL_OPTION)
                                  {
@@ -170,6 +170,7 @@ int main()
                                     cout << "Refund Successfully" << endl;
                                 }
                             }
+
 
                             else if (user_menu_option == constants::BUY)
                             {
@@ -193,7 +194,7 @@ int main()
                             }
                             else if (user_menu_option == constants::SEARCH)
                             {
-                              // ADD LOGIC FOR SEARCH TRANSACTION
+                              cout<<"ADD SEARCH LOGIC HERE"<<endl;
 
                             }
                         }

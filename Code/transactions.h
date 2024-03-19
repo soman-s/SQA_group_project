@@ -98,7 +98,10 @@ public:
      */
     string process_credit(string menu_option, vector<string>& all_users, string user,vector<string>& transaction_log);
 
+
     void process_logout(vector<string>& transaction_log);
+
+    void search();
 };
 
 #endif

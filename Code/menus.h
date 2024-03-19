@@ -17,11 +17,11 @@ private:
     // TO DO ADD SEARCH INTO ALL THE MENUS
     // Menu options
     vector<string> home_options = {"Login", "Exit"}; /**< Options for the home menu. */
-    vector<string> admin_options = {"Create", "Delete", "Sell", "Buy", "Refund", "Add Credit", "View All Users", "View Available Games","Logout"}; /**< Options for the admin menu. */
-    vector<string> full_options = {"Sell", "Buy", "Add Credit", "View Available Games", "Logout"}; /**< Options for the full-standard user menu. */
-    vector<string> buy_options = {"Buy", "Add Credit", "View Available Games", "Logout"}; /**< Options for the buy-standard user menu. */
-    vector<string> sell_options = {"Sell", "Add Credit", "View Available Games", "Logout"}; /**< Options for the sell-standard user menu. */
-    vector<string> create_options = {"Admin", "Full-Standard", "Buy-Standard", "Sell-Standard"}; /**< Options for the create menu. */
+    vector<string> admin_options = {"Create", "Delete", "Sell", "Buy", "Refund", "Add Credit", "View All Users", "View Available Games","Search","Logout"}; /**< Options for the admin menu. */
+    vector<string> full_options = {"Sell", "Buy", "Add Credit", "View Available Games", "Search","Logout"}; /**< Options for the full-standard user menu. */
+    vector<string> buy_options = {"Buy", "Add Credit", "View Available Games", "Search","Logout"}; /**< Options for the buy-standard user menu. */
+    vector<string> sell_options = {"Sell", "Add Credit", "View Available Games", "Search","Logout"}; /**< Options for the sell-standard user menu. */
+    vector<string> create_options = {"Admin", "Account-Manager","Full-Standard", "Buy-Standard", "Sell-Standard"}; /**< Options for the create menu. */
 
 public:
     /**

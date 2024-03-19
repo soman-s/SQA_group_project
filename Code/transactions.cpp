@@ -737,3 +737,8 @@ void transactions::process_logout(vector<string>& transaction_log)
 
     return;
 }
+
+void transactions::search()
+{
+  return;
+}

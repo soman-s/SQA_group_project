@@ -18,6 +18,7 @@ public:
     static const std::string FULL_STANDARD; /**< Full standard user type. */
     static const std::string SELL_STANDARD; /**< Sell standard user type. */
     static const std::string BUY_STANDARD; /**< Buy standard user type. */
+    static const std::string ACCOUNT_MANAGER;
     static const std::string UNKNOWN; /**< Unknown user type. */
 
     // menu stuff

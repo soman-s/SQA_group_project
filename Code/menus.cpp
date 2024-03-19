@@ -49,10 +49,17 @@ void menus:: display_user_menus(string user_type)
     cout<<"Sell Standard Menu"<<endl;
   }
 
-  else
+  else if(user_type==constants::BUY_STANDARD)
   {
     options= buy_options;
     cout<<"Buy Standard Menu"<<endl;
+  }
+  else if (user_type==constants::ACCOUNT_MANAGER)
+  {
+
+    options= account_manager_options;
+    cout<<"Account Manager Menu"<<endl;
+
   }
 
 
@@ -85,10 +92,15 @@ int menus:: get_num_menu_options(string user_type)
 
   }
 
-  else
+  else if (user_type==constants::BUY_STANDARD)
   {
     return buy_options.size();
 
+  }
+
+  else if (user_type==constants::ACCOUNT_MANAGER)
+  {
+    return account_manager_options.size();
   }
 
   return 0;
@@ -129,11 +141,19 @@ string menus:: get_user_menu_option(string user_type ,int index)
 
   }
 
-  else
+  else if (user_type==constants::BUY_STANDARD)
   {
     return buy_options[index];
 
   }
+
+  else if (user_type==constants::ACCOUNT_MANAGER)
+  {
+    return account_manager_options[index];
+
+  }
+
+
 
   return " option not found";
 

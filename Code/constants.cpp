@@ -5,6 +5,7 @@ const std::string constants::ADMIN = "AA";
 const std::string constants::FULL_STANDARD = "FS";
 const std::string constants::SELL_STANDARD = "SS";
 const std::string constants::BUY_STANDARD = "BS";
+const std::string constants::ACCOUNT_MANAGER = "AM";
 const std::string constants::UNKNOWN = "-1";
 
 // Menu Options

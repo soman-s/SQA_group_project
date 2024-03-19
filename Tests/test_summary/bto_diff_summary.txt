@@ -1,783 +1,512 @@
 Test: login1
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,24c1,24
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: admin1
+< Logged IN
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 9
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login10
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,24c1,24
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: admin1
+< Logged IN
+< Admin Menu
+< 1)Create
+< 2)Delete
+< 3)Sell
+< 4)Buy
+< 5)Refund
+< 6)Add Credit
+< 7)View All Users
+< 8)View Available Games
+< 9)Logout
+< Enter an option: 9
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: admin1
+> Logged IN
+> Admin Menu
+> 1)Create
+> 2)Delete
+> 3)Sell
+> 4)Buy
+> 5)Refund
+> 6)Add Credit
+> 7)View All Users
+> 8)View Available Games
+> 9)Logout
+> Enter an option: 9
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login11
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,20c1,20
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: full1
+< Logged IN
+< Full Standard Menu
+< 1)Sell
+< 2)Buy
+< 3)Add Credit
+< 4)View Available Games
+< 5)Logout
+< Enter an option: 5
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: full1
+> Logged IN
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 5
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login12
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,19c1,19
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: sell1
+< Logged IN
+< Sell Standard Menu
+< 1)Sell
+< 2)Add Credit
+< 3)View Available Games
+< 4)Logout
+< Enter an option: 4
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: sell1
+> Logged IN
+> Sell Standard Menu
+> 1)Sell
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login13
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,19c1,19
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: buy1
+< Logged IN
+< Buy Standard Menu
+< 1)Buy
+< 2)Add Credit
+< 3)View Available Games
+< 4)Logout
+< Enter an option: 4
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: buy1
+> Logged IN
+> Buy Standard Menu
+> 1)Buy
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login2
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,20c1,20
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: full1
+< Logged IN
+< Full Standard Menu
+< 1)Sell
+< 2)Buy
+< 3)Add Credit
+< 4)View Available Games
+< 5)Logout
+< Enter an option: 5
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: full1
+> Logged IN
+> Full Standard Menu
+> 1)Sell
+> 2)Buy
+> 3)Add Credit
+> 4)View Available Games
+> 5)Logout
+> Enter an option: 5
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login3
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,19c1,19
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: sell1
+< Logged IN
+< Sell Standard Menu
+< 1)Sell
+< 2)Add Credit
+< 3)View Available Games
+< 4)Logout
+< Enter an option: 4
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: sell1
+> Logged IN
+> Sell Standard Menu
+> 1)Sell
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login4
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,19c1,19
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: buy1
+< Logged IN
+< Buy Standard Menu
+< 1)Buy
+< 2)Add Credit
+< 3)View Available Games
+< 4)Logout
+< Enter an option: 4
+< LOGGED OUT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: buy1
+> Logged IN
+> Buy Standard Menu
+> 1)Buy
+> 2)Add Credit
+> 3)View Available Games
+> 4)Logout
+> Enter an option: 4
+> LOGGED OUT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login5
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,14c1,14
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: Admin19
+< Invalid Login
+< Enter valid username or -1 to exit: -1
+< EXIT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: Admin19
+> Invalid Login
+> Enter valid username or -1 to exit: -1
+> EXIT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login6
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,14c1,14
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: full19
+< Invalid Login
+< Enter valid username or -1 to exit: -1
+< EXIT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: full19
+> Invalid Login
+> Enter valid username or -1 to exit: -1
+> EXIT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login7
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,14c1,14
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: sell19
+< Invalid Login
+< Enter valid username or -1 to exit: -1
+< EXIT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: sell19
+> Invalid Login
+> Enter valid username or -1 to exit: -1
+> EXIT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================
 Test: login8
-Expected Output and Actual Output Match
-===================================
-Test: login9
-Expected Output and Actual Output Match
-===================================
-Test: logout1
-Expected Output and Actual Output Match
-===================================
-Test: logout2
-Expected Output and Actual Output Match
-===================================
-Test: logout3
-Expected Output and Actual Output Match
-===================================
-Test: logout4
-Expected Output and Actual Output Match
-===================================
-Test: logout5
-Expected Output and Actual Output Match
-===================================
-Test: logout6
-Expected Output and Actual Output Match
-===================================
-Test: logout7
-Expected Output and Actual Output Match
-===================================
-Test: logout8
-Expected Output and Actual Output Match
-===================================
-Test: logout9
-Expected Output and Actual Output Match
-===================================
-Test: refund1
-Expected Output and Actual Output Match
-===================================
-Test: refund10
-Expected Output and Actual Output Match
-===================================
-Test: refund11
-Expected Output and Actual Output Match
-===================================
-Test: refund12
-Expected Output and Actual Output Match
-===================================
-Test: refund13
-Expected Output and Actual Output Match
-===================================
-Test: refund14
-Expected Output and Actual Output Match
-===================================
-Test: refund15
-Expected Output and Actual Output Match
-===================================
-Test: refund16
-Expected Output and Actual Output Match
-===================================
-Test: refund17
-Expected Output and Actual Output Match
-===================================
-Test: refund18
-Expected Output and Actual Output Match
-===================================
-Test: refund19
-Expected Output and Actual Output Match
-===================================
-Test: refund2
-Expected Output and Actual Output Match
-===================================
-Test: refund20
-Expected Output and Actual Output Match
-===================================
-Test: refund21
-Expected Output and Actual Output Match
-===================================
-Test: refund22
-Expected Output and Actual Output Match
-===================================
-Test: refund23
-Expected Output and Actual Output Match
-===================================
-Test: refund24
-Expected Output and Actual Output Match
-===================================
-Test: refund25
-Expected Output and Actual Output Match
-===================================
-Test: refund26
-Expected Output and Actual Output Match
-===================================
-Test: refund27
-Expected Output and Actual Output Match
-===================================
-Test: refund28
-Expected Output and Actual Output Match
-===================================
-Test: refund29
-Expected Output and Actual Output Match
-===================================
-Test: refund3
-Expected Output and Actual Output Match
-===================================
-Test: refund30
-Expected Output and Actual Output Match
-===================================
-Test: refund31
-Expected Output and Actual Output Match
-===================================
-Test: refund32
-Expected Output and Actual Output Match
-===================================
-Test: refund33
-Expected Output and Actual Output Match
-===================================
-Test: refund34
-Expected Output and Actual Output Match
-===================================
-Test: refund35
-Expected Output and Actual Output Match
-===================================
-Test: refund36
-Expected Output and Actual Output Match
-===================================
-Test: refund37
-Expected Output and Actual Output Match
-===================================
-Test: refund38
-Expected Output and Actual Output Match
-===================================
-Test: refund39
-Expected Output and Actual Output Match
-===================================
-Test: refund4
-Expected Output and Actual Output Match
-===================================
-Test: refund40
-Expected Output and Actual Output Match
-===================================
-Test: refund41
-Expected Output and Actual Output Match
-===================================
-Test: refund42
-Expected Output and Actual Output Match
-===================================
-Test: refund43
-Expected Output and Actual Output Match
-===================================
-Test: refund44
-Expected Output and Actual Output Match
-===================================
-Test: refund45
-Expected Output and Actual Output Match
-===================================
-Test: refund46
-Expected Output and Actual Output Match
-===================================
-Test: refund47
-Expected Output and Actual Output Match
-===================================
-Test: refund48
-Expected Output and Actual Output Match
-===================================
-Test: refund49
-Expected Output and Actual Output Match
-===================================
-Test: refund5
-Expected Output and Actual Output Match
-===================================
-Test: refund50
-Expected Output and Actual Output Match
-===================================
-Test: refund51
-Expected Output and Actual Output Match
-===================================
-Test: refund52
-Expected Output and Actual Output Match
-===================================
-Test: refund53
-Expected Output and Actual Output Match
-===================================
-Test: refund54
-Expected Output and Actual Output Match
-===================================
-Test: refund55
-Expected Output and Actual Output Match
-===================================
-Test: refund56
-Expected Output and Actual Output Match
-===================================
-Test: refund57
-Expected Output and Actual Output Match
-===================================
-Test: refund58
-Expected Output and Actual Output Match
-===================================
-Test: refund59
-Expected Output and Actual Output Match
-===================================
-Test: refund6
-Expected Output and Actual Output Match
-===================================
-Test: refund60
-Expected Output and Actual Output Match
-===================================
-Test: refund61
-Expected Output and Actual Output Match
-===================================
-Test: refund62
-Expected Output and Actual Output Match
-===================================
-Test: refund63
-Expected Output and Actual Output Match
-===================================
-Test: refund64
-Expected Output and Actual Output Match
-===================================
-Test: refund65
-Expected Output and Actual Output Match
-===================================
-Test: refund66
-Expected Output and Actual Output Match
-===================================
-Test: refund67
-Expected Output and Actual Output Match
-===================================
-Test: refund68
-Expected Output and Actual Output Match
-===================================
-Test: refund69
-Expected Output and Actual Output Match
-===================================
-Test: refund7
-Expected Output and Actual Output Match
-===================================
-Test: refund70
-Expected Output and Actual Output Match
-===================================
-Test: refund71
-Expected Output and Actual Output Match
-===================================
-Test: refund72
-Expected Output and Actual Output Match
-===================================
-Test: refund73
-Expected Output and Actual Output Match
-===================================
-Test: refund74
-Expected Output and Actual Output Match
-===================================
-Test: refund75
-Expected Output and Actual Output Match
-===================================
-Test: refund76
-Expected Output and Actual Output Match
-===================================
-Test: refund77
-Expected Output and Actual Output Match
-===================================
-Test: refund78
-Expected Output and Actual Output Match
-===================================
-Test: refund79
-Expected Output and Actual Output Match
-===================================
-Test: refund8
-Expected Output and Actual Output Match
-===================================
-Test: refund80
-Expected Output and Actual Output Match
-===================================
-Test: refund81
-Expected Output and Actual Output Match
-===================================
-Test: refund82
-Expected Output and Actual Output Match
-===================================
-Test: refund9
-Expected Output and Actual Output Match
-===================================
-Test: sell1
-Expected Output and Actual Output Match
-===================================
-Test: sell10
-Expected Output and Actual Output Match
-===================================
-Test: sell11
-Expected Output and Actual Output Match
-===================================
-Test: sell12
-Expected Output and Actual Output Match
-===================================
-Test: sell13
-Expected Output and Actual Output Match
-===================================
-Test: sell14
-Expected Output and Actual Output Match
-===================================
-Test: sell15
-Expected Output and Actual Output Match
-===================================
-Test: sell16
-Expected Output and Actual Output Match
-===================================
-Test: sell17
-Expected Output and Actual Output Match
-===================================
-Test: sell18
-Expected Output and Actual Output Match
-===================================
-Test: sell19
-Expected Output and Actual Output Match
-===================================
-Test: sell2
-Expected Output and Actual Output Match
-===================================
-Test: sell20
-Expected Output and Actual Output Match
-===================================
-Test: sell21
-Expected Output and Actual Output Match
-===================================
-Test: sell22
-Expected Output and Actual Output Match
-===================================
-Test: sell23
-Expected Output and Actual Output Match
-===================================
-Test: sell3
-Expected Output and Actual Output Match
-===================================
-Test: sell4
-Expected Output and Actual Output Match
-===================================
-Test: sell5
-Expected Output and Actual Output Match
-===================================
-Test: sell6
-Expected Output and Actual Output Match
-===================================
-Test: sell7
-Expected Output and Actual Output Match
-===================================
-Test: sell8
-Expected Output and Actual Output Match
-===================================
-Test: sell9
-Expected Output and Actual Output Match
-===================================
-Test: add_credit1
-Expected Output and Actual Output Match
-===================================
-Test: add_credit10
-Expected Output and Actual Output Match
-===================================
-Test: add_credit11
-Expected Output and Actual Output Match
-===================================
-Test: add_credit12
-Expected Output and Actual Output Match
-===================================
-Test: add_credit13
-Expected Output and Actual Output Match
-===================================
-Test: add_credit14
-Expected Output and Actual Output Match
-===================================
-Test: add_credit15
-Expected Output and Actual Output Match
-===================================
-Test: add_credit16
-Expected Output and Actual Output Match
-===================================
-Test: add_credit17
-Expected Output and Actual Output Match
-===================================
-Test: add_credit18
-Expected Output and Actual Output Match
-===================================
-Test: add_credit19
-Expected Output and Actual Output Match
-===================================
-Test: add_credit2
-Expected Output and Actual Output Match
-===================================
-Test: add_credit20
-Expected Output and Actual Output Match
-===================================
-Test: add_credit21
-Expected Output and Actual Output Match
-===================================
-Test: add_credit22
-Expected Output and Actual Output Match
-===================================
-Test: add_credit23
-Expected Output and Actual Output Match
-===================================
-Test: add_credit24
-Expected Output and Actual Output Match
-===================================
-Test: add_credit25
-Expected Output and Actual Output Match
-===================================
-Test: add_credit26
-Expected Output and Actual Output Match
-===================================
-Test: add_credit27
-Expected Output and Actual Output Match
-===================================
-Test: add_credit28
-Expected Output and Actual Output Match
-===================================
-Test: add_credit29
-Expected Output and Actual Output Match
-===================================
-Test: add_credit3
-Expected Output and Actual Output Match
-===================================
-Test: add_credit30
-Expected Output and Actual Output Match
-===================================
-Test: add_credit4
-Expected Output and Actual Output Match
-===================================
-Test: add_credit5
-Expected Output and Actual Output Match
-===================================
-Test: add_credit6
-Expected Output and Actual Output Match
-===================================
-Test: add_credit7
-Expected Output and Actual Output Match
-===================================
-Test: add_credit8
-Expected Output and Actual Output Match
-===================================
-Test: add_credit9
-Expected Output and Actual Output Match
-===================================
-Test: create1
-Expected Output and Actual Output Match
-===================================
-Test: create10
-Expected Output and Actual Output Match
-===================================
-Test: create11
-Expected Output and Actual Output Match
-===================================
-Test: create12
-Expected Output and Actual Output Match
-===================================
-Test: create13
-Expected Output and Actual Output Match
-===================================
-Test: create14
-Expected Output and Actual Output Match
-===================================
-Test: create15
-Expected Output and Actual Output Match
-===================================
-Test: create16
-Expected Output and Actual Output Match
-===================================
-Test: create17
-Expected Output and Actual Output Match
-===================================
-Test: create18
-Expected Output and Actual Output Match
-===================================
-Test: create19
-Expected Output and Actual Output Match
-===================================
-Test: create2
-Expected Output and Actual Output Match
-===================================
-Test: create20
-Expected Output and Actual Output Match
-===================================
-Test: create21
-Expected Output and Actual Output Match
-===================================
-Test: create22
-Expected Output and Actual Output Match
-===================================
-Test: create23
-Expected Output and Actual Output Match
-===================================
-Test: create24
-Expected Output and Actual Output Match
-===================================
-Test: create3
-Expected Output and Actual Output Match
-===================================
-Test: create4
-Expected Output and Actual Output Match
-===================================
-Test: create5
-Expected Output and Actual Output Match
-===================================
-Test: create6
-Expected Output and Actual Output Match
-===================================
-Test: create7
-Expected Output and Actual Output Match
-===================================
-Test: create8
-Expected Output and Actual Output Match
-===================================
-Test: create9
-Expected Output and Actual Output Match
-===================================
-Test: delete1
-Expected Output and Actual Output Match
-===================================
-Test: delete10
-Expected Output and Actual Output Match
-===================================
-Test: delete11
-Expected Output and Actual Output Match
-===================================
-Test: delete12
-Expected Output and Actual Output Match
-===================================
-Test: delete13
-Expected Output and Actual Output Match
-===================================
-Test: delete14
-Expected Output and Actual Output Match
-===================================
-Test: delete15
-Expected Output and Actual Output Match
-===================================
-Test: delete16
-Expected Output and Actual Output Match
-===================================
-Test: delete17
-Expected Output and Actual Output Match
-===================================
-Test: delete18
-Expected Output and Actual Output Match
-===================================
-Test: delete19
-Expected Output and Actual Output Match
-===================================
-Test: delete2
-Expected Output and Actual Output Match
-===================================
-Test: delete3
-Expected Output and Actual Output Match
-===================================
-Test: delete4
-Expected Output and Actual Output Match
-===================================
-Test: delete5
-Expected Output and Actual Output Match
-===================================
-Test: delete6
-Expected Output and Actual Output Match
-===================================
-Test: delete7
-Expected Output and Actual Output Match
-===================================
-Test: delete8
-Expected Output and Actual Output Match
-===================================
-Test: delete9
-Expected Output and Actual Output Match
-===================================
-Test: buy1
-Expected Output and Actual Output Match
-===================================
-Test: buy10
-Expected Output and Actual Output Match
-===================================
-Test: buy11
-Expected Output and Actual Output Match
-===================================
-Test: buy12
-Expected Output and Actual Output Match
-===================================
-Test: buy13
-Expected Output and Actual Output Match
-===================================
-Test: buy14
-Expected Output and Actual Output Match
-===================================
-Test: buy15
-Expected Output and Actual Output Match
-===================================
-Test: buy16
-Expected Output and Actual Output Match
-===================================
-Test: buy17
-Expected Output and Actual Output Match
-===================================
-Test: buy18
-Expected Output and Actual Output Match
-===================================
-Test: buy19
-Expected Output and Actual Output Match
-===================================
-Test: buy2
-Expected Output and Actual Output Match
-===================================
-Test: buy20
-Expected Output and Actual Output Match
-===================================
-Test: buy21
-Expected Output and Actual Output Match
-===================================
-Test: buy22
-Expected Output and Actual Output Match
-===================================
-Test: buy23
-Expected Output and Actual Output Match
-===================================
-Test: buy24
-Expected Output and Actual Output Match
-===================================
-Test: buy25
-Expected Output and Actual Output Match
-===================================
-Test: buy26
-Expected Output and Actual Output Match
-===================================
-Test: buy27
-Expected Output and Actual Output Match
-===================================
-Test: buy28
-Expected Output and Actual Output Match
-===================================
-Test: buy29
-Expected Output and Actual Output Match
-===================================
-Test: buy3
-Expected Output and Actual Output Match
-===================================
-Test: buy30
-Expected Output and Actual Output Match
-===================================
-Test: buy31
-Expected Output and Actual Output Match
-===================================
-Test: buy32
-Expected Output and Actual Output Match
-===================================
-Test: buy33
-Expected Output and Actual Output Match
-===================================
-Test: buy34
-Expected Output and Actual Output Match
-===================================
-Test: buy35
-Expected Output and Actual Output Match
-===================================
-Test: buy36
-Expected Output and Actual Output Match
-===================================
-Test: buy37
-Expected Output and Actual Output Match
-===================================
-Test: buy38
-Expected Output and Actual Output Match
-===================================
-Test: buy39
-Expected Output and Actual Output Match
-===================================
-Test: buy4
-Expected Output and Actual Output Match
-===================================
-Test: buy5
-Expected Output and Actual Output Match
-===================================
-Test: buy6
-Expected Output and Actual Output Match
-===================================
-Test: buy7
-Expected Output and Actual Output Match
-===================================
-Test: buy8
-Expected Output and Actual Output Match
-===================================
-Test: buy9
-Expected Output and Actual Output Match
-===================================
-Test: all_user1
-Expected Output and Actual Output Match
-===================================
-Test: all_user10
-Expected Output and Actual Output Match
-===================================
-Test: all_user11
-Expected Output and Actual Output Match
-===================================
-Test: all_user12
-Expected Output and Actual Output Match
-===================================
-Test: all_user2
-Expected Output and Actual Output Match
-===================================
-Test: all_user3
-Expected Output and Actual Output Match
-===================================
-Test: all_user4
-Expected Output and Actual Output Match
-===================================
-Test: all_user5
-Expected Output and Actual Output Match
-===================================
-Test: all_user6
-Expected Output and Actual Output Match
-===================================
-Test: all_user7
-Expected Output and Actual Output Match
-===================================
-Test: all_user8
-Expected Output and Actual Output Match
-===================================
-Test: all_user9
-Expected Output and Actual Output Match
-===================================
-Test: available_games1
-Expected Output and Actual Output Match
-===================================
-Test: available_games10
-Expected Output and Actual Output Match
-===================================
-Test: available_games2
-Expected Output and Actual Output Match
-===================================
-Test: available_games3
-Expected Output and Actual Output Match
-===================================
-Test: available_games4
-Expected Output and Actual Output Match
-===================================
-Test: available_games5
-Expected Output and Actual Output Match
-===================================
-Test: available_games6
-Expected Output and Actual Output Match
-===================================
-Test: available_games7
-Expected Output and Actual Output Match
-===================================
-Test: available_games8
-Expected Output and Actual Output Match
-===================================
-Test: available_games9
-Expected Output and Actual Output Match
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+1,14c1,14
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 1
+< Login
+< Enter Username: buy19
+< Invalid Login
+< Enter valid username or -1 to exit: -1
+< EXIT
+< HOME MENU
+< 1)Login
+< 2)Exit
+< Enter an option: 2
+< EXITS
+---
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 1
+> Login
+> Enter Username: buy19
+> Invalid Login
+> Enter valid username or -1 to exit: -1
+> EXIT
+> HOME MENU
+> 1)Login
+> 2)Exit
+> Enter an option: 2
+> EXITS
 ===================================

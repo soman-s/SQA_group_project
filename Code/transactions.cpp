@@ -707,19 +707,25 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 void transactions::process_logout(vector<string>& transaction_log)
 {
     // Define the base filename
-    string base_filename = "log_files/daily_transactions";
+    string base_filename = "log_files/daily_transactions.etf";
 
-    // Get the current timestamp
-    auto now = chrono::system_clock::now();
-    auto now_time_t = chrono::system_clock::to_time_t(now);
 
-    // Generate a unique filename using the timestamp
-    stringstream ss;
-    ss << base_filename << "_" << now_time_t << ".etf";
-    string new_filename = ss.str();
+    // ADD THIS BACK FOR PHASE 6
+    // // Get the current timestamp
+    // auto now = chrono::system_clock::now();
+    // auto now_time_t = chrono::system_clock::to_time_t(now);
+    //
+    // // Generate a unique filename using the timestamp
+    // stringstream ss;
+    // ss << base_filename << "_" << now_time_t << ".etf";
+    // string new_filename = ss.str();
 
+
+    ofstream output_stream(base_filename);
+
+    // ADD THIS BACK FOR PHASE 6
     // Open the output stream with the new filename
-    ofstream output_stream(new_filename);
+    //ofstream output_stream(new_filename);
 
     // Write each transaction to the output stream
     for (const string& transaction : transaction_log) {

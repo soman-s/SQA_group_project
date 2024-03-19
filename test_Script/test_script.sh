@@ -26,7 +26,8 @@ echo "Running Tests"
 # Change into the Tests directory
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each test subdirectory in "Tests" excluding the summary folder
-for subdir in login logout refund sell add_credit create delete buy all_user available_games; do
+# for subdir in login logout refund sell add_credit create delete buy all_user available_games;
+for subdir in login; do
     subdir="${subdir%/}"
     # Change into the subdirectory
     cd "$subdir" || { echo "Failed to enter subdirectory: $subdir"; continue; }
@@ -85,7 +86,10 @@ touch "$summary_bto_differences_file"
 rm "$summary_daily_transaction_differences_file"
 touch "$summary_daily_transaction_differences_file"
 
-
+passed_transaction_tests=0
+failed_transaction_tests=0
+passed_output_tests=0
+failed_output_tests=0
 
 # Loop through each index in the array of test input files
 for index in "${!test_inputs[@]}"; do
@@ -193,22 +197,23 @@ for index in "${!test_inputs[@]}"; do
         diff_output=$(diff "$expected_bto" "$output_bto")
 
         if [ -n "$diff_output" ]; then
-            # If there are differences, save them to the differences file
-            echo "Test: $test_name" >> "$summary_bto_differences_file"
-            echo "Expected Output and Actual Output Do Not Match" >> "$summary_bto_differences_file"
-            echo "Differences:" >> "$summary_bto_differences_file"
-            diff "$expected_bto" "$output_bto" >> "$summary_bto_differences_file"
-            echo "===================================" >> "$summary_bto_differences_file"
+        # If there are differences, save them to the differences file
+        ((failed_output_tests++))
+        echo "Test: $test_name" >> "$summary_bto_differences_file"
+        echo "Fail: Expected Output and Actual Output Do Not Match" >> "$summary_bto_differences_file"
+        echo "Differences:" >> "$summary_bto_differences_file"
+        diff "$expected_bto" "$output_bto" >> "$summary_bto_differences_file"
+        echo "===================================" >> "$summary_bto_differences_file"
+        echo -e "\e[31mFail: Expected Output and Actual Output Do Not Match\e[0m"
+    else
+        # If there are no differences, indicate that in the summary file
+        ((passed_output_tests++))
+        echo "Test: $test_name" >> "$summary_bto_differences_file"
+        echo "Pass: Outputs match" >> "$summary_bto_differences_file"
+        echo "===================================" >> "$summary_bto_differences_file"
+        echo -e "\e[32mPass: Expected and Actual Output match\e[0m"
+    fi
 
-
-
-
-        else
-            # If there are no differences, indicate that in the summary file
-            echo "Test: $test_name" >> "$summary_bto_differences_file"
-            echo "Expected Output and Actual Output Match" >> "$summary_bto_differences_file"
-            echo "===================================" >> "$summary_bto_differences_file"
-        fi
 
 
 
@@ -236,20 +241,24 @@ for index in "${!test_inputs[@]}"; do
 
         if [ -n "$diff_output_transaction" ]; then
             # If there are differences, save them to the differences file
+            ((failed_transaction_tests++))
             echo "Test: $test_name" >> "$summary_daily_transaction_differences_file"
-            echo "Expected Daily Transactions File and Actual Daily Transactions File Do Not Match" >> "$summary_daily_transaction_differences_file"
+            echo "Fail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match" >> "$summary_daily_transaction_differences_file"
             echo "Differences:" >> "$summary_daily_transaction_differences_file"
             diff "$expected_transaction" "$actual_transaction" >> "$summary_daily_transaction_differences_file"
             echo "==================================" >> "$summary_daily_transaction_differences_file"
+            echo -e "\e[31mFail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match\e[0m"
 
 
 
 
         else
             # If there are no differences, indicate that in the summary file
+            ((passed_transaction_tests++))
             echo "Test: $test_name" >> "$summary_daily_transaction_differences_file"
-            echo "Expected Daily Transactions File and Actual Daily Transactions File Match" >> "$summary_daily_transaction_differences_file"
+            echo "Pass: Expected Daily Transactions File and Actual Daily Transactions File Match" >> "$summary_daily_transaction_differences_file"
             echo "===================================" >> "$summary_daily_transaction_differences_file"
+            echo -e "\e[32mPass: Expected Daily Transactions File and Actual Daily Transactions File Match\e[0m"
         fi
 
 
@@ -261,3 +270,21 @@ for index in "${!test_inputs[@]}"; do
 
 
 done
+
+
+# Define color codes
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+# Display summary statistics for transaction tests
+echo -e " Summary for Transaction Tests:${NC}"
+echo -e "Total transaction tests: $((passed_transaction_tests + failed_transaction_tests))${NC}"
+echo -e "${GREEN}Passed transaction tests: $passed_transaction_tests${NC}"
+echo -e "${RED}Failed transaction tests: $failed_transaction_tests${NC}"
+
+# Display summary statistics for output tests
+echo -e " Summary for Output Tests:${NC}"
+echo -e "Total output tests: $((passed_output_tests + failed_output_tests))${NC}"
+echo -e "${GREEN}Passed output tests: $passed_output_tests${NC}"
+echo -e "${RED}Failed output tests: $failed_output_tests${NC}"

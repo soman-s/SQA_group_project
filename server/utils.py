@@ -154,6 +154,47 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
 
     return True
 
+def check_valid_username_formatting(line,line_num):
+    check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH:Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1]
+    if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+        display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid username formating on line:  {line_num+1}")
+        return False
+    return True
+def check_valid_account_type_formatting(line,line_num):
+    check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_ACCOUNT_TYPE_LENGTH:
+                     Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_ACCOUNT_TYPE_LENGTH+1]
+    if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
+        display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid ACCOUNT TYPE formating on line:  {line_num+1}")
+        return False
+    return True
+
+def check_valid_credit_amount_formatting(line,line_num):
+    pattern = r'^[\d.]{%d}$' % Constants.MAX_CREDIT_LENGTH
+    check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1+Constants.MAX_ACCOUNT_TYPE_LENGTH+1:]
+    if not re.match(pattern, check_format):
+        display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid balance on line:  {line_num+1}")
+        return False
+    return True
+
+def check_valid_account_type(line,line_num):
+    valid_accounts = set({"AA","FS","BS","SS"})
+    account_type=line[Constants.USER_CODE_START_INDEX:Constants.USER_CODE_END_INDEX]
+    if account_type not in valid_accounts:
+        display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid ACCOUNT TYPE:  {line_num+1}")
+        return False
+    return True
+
+def validation_checks(line,line_num):
+    all_checks = [
+        check_valid_username_formatting,
+        check_valid_account_type_formatting,
+        check_valid_credit_amount_formatting,
+        check_valid_account_type
+    ]
+    for check in all_checks:
+        if not check(line, line_num):
+            return False               
+
 
 def check_valid_transaction_file(data: list[str])-> bool:
     print("Checking Validity of Merged Transaction File")
@@ -256,13 +297,16 @@ def check_valid_transaction_file(data: list[str])-> bool:
 
             # ADD CHECKS HERE
             elif current_code==Constants.BUY_CODE:
-                return
+               return
             elif current_code==Constants.CREATE_CODE:
-                return
-            elif current_code==Constants.DELETE_CODE:
-                return
+                if not validation_checks(line,line_num):
+                    return False   
+            elif current_code==Constants.DELETE_CODE:  
+                if not validation_checks(line,line_num):
+                    return False  
             elif current_code==Constants.ADD_CREDIT_CODE:
-                return
+                if not validation_checks(line,line_num):
+                    return False  
 
     print("MERGED DAILY TRANSACTION FILE is VALID")
     return True

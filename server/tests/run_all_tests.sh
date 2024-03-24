@@ -21,7 +21,7 @@ if [ ${#all_files[@]} -eq 0 ]; then
 else
     # Run pytest for all .py files
     echo "Running pytest for all files..."
-    pytest "${all_files[@]}"
+    pytest -v -r v "${all_files[@]}"
 
     # Run pytest with coverage for all .py files
     echo "Running pytest with coverage for all files..."

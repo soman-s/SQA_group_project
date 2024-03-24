@@ -1,0 +1,42 @@
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: full1
+Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: 5
+Search value: 23
+admin2
+full2
+sell2
+admingame2         
+Sellgame2                
+fullgame2
+admin3
+full3
+sell3
+admingame3         
+Sellgame3                
+fullgame3
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: 5
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

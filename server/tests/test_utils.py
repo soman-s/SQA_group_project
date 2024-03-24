@@ -162,55 +162,55 @@ def test_check_valid_file():
 def test_valid_username_formatting_success():
 
     test_line = "01 admin4          AA 000500.00"
-    line_numer  = "2"
-    result = check_valid_username_formatting(test_line, line_numer)
+    line_number  = 2
+    result = check_valid_username_formatting(test_line, line_number)
     assert result==True
 
 def test_valid_username_formatting_failure():
     test_line = "01 admin4    AA 000500.00"
-    line_numer  = "2"
-    result = check_valid_username_formatting(test_line, line_numer)
+    line_number  = 2
+    result = check_valid_username_formatting(test_line, line_number)
     assert result==False
 
 def test_valid_username_formatting_success():
 
     test_line = "01 admin4          AA 000500.00"
-    line_numer  = "2"
-    result = check_valid_username_formatting(test_line, line_numer)
+    line_number  = 2
+    result = check_valid_username_formatting(test_line, line_number)
     assert result==True
 
 def test_valid_account_type_formatting_success():
     test_line = "01 admin4          AA 000500.00"
-    line_numer  = "2"
-    result = check_valid_account_type_formatting(test_line, line_numer)
+    line_number  = 2
+    result = check_valid_account_type_formatting(test_line, line_number)
     assert result==True
 
 def test_valid_account_type_formatting_failure():
     test_line = "01 admin4     AA 000500.00"
-    line_numer  = "2"
-    result = check_valid_account_type_formatting(test_line, line_numer)
+    line_number  = 2
+    result = check_valid_account_type_formatting(test_line, line_number)
     assert result==False
 
 def test_valid_credit_amount_formatting_success():
     test_line = "01 admin4          AA 000500.00"
-    line_numer  = "2"
-    result = check_valid_credit_amount_formatting(test_line, line_numer)
+    line_number  = 2
+    result = check_valid_credit_amount_formatting(test_line, line_number)
     assert result==True
 
 def test_valid_credit_amount_formatting_failure():
     test_line = "01 admin4          AA 050.00"
-    line_numer  = "2"
-    result = check_valid_credit_amount_formatting(test_line, line_numer)
+    line_number  = 2
+    result = check_valid_credit_amount_formatting(test_line, line_number)
     assert result==False
 
 def test_valid_account_type_success():
     test_line = "01 admin4          AA 000500.00"
-    line_numer  = "2"
-    result = check_valid_account_type(test_line, line_numer)
+    line_number  = 2
+    result = check_valid_account_type(test_line, line_number)
     assert result==True
 
 def test_valid_account_type_failure():
     test_line = "01 admin4          SA 000500.00"
-    line_numer  = "2"
-    result = check_valid_account_type(test_line, line_numer)
-    assert result==True
+    line_number  = 2
+    result = check_valid_account_type(test_line, line_number)
+    assert result==False

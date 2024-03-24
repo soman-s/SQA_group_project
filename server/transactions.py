@@ -186,6 +186,6 @@ def process_refund(transaction_line: string, games_collection: list[str], curren
                 current_users[i] = utils.update_balance(user, refund_price)
             elif current_user_name == seller_name:
                 current_users[i] = utils.update_balance(user, -refund_price)
-        utils.display__sucess_message("Refund")
+        utils.display_success_message("Refund")
     else:
         utils.display_error_message("Refund cannot be processed, refund already processed")

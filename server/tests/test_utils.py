@@ -11,6 +11,10 @@ from utils import update_balance
 from utils import display_error_message
 from utils import display_success_message
 from utils import check_valid_file
+from utils import check_valid_username_formatting
+from utils import check_valid_account_type_formatting
+from utils import check_valid_credit_amount_formatting
+from utils import check_valid_account_type
 
 
 INPUT_ALL_USER_FILE="ori_log_files/current_users.etf"
@@ -153,4 +157,60 @@ def test_check_valid_file():
     test_data=read_file_contents(test_file)
     test_data=test_data[:-1]
     result=check_valid_file(test_data,INPUT_ALL_USER_FILE)
+    assert result==True
+
+def test_valid_username_formatting_success():
+
+    test_line = "01 admin4          AA 000500.00"
+    line_numer  = "2"
+    result = check_valid_username_formatting(test_line, line_numer)
+    assert result==True
+
+def test_valid_username_formatting_failure():
+    test_line = "01 admin4    AA 000500.00"
+    line_numer  = "2"
+    result = check_valid_username_formatting(test_line, line_numer)
+    assert result==False
+
+def test_valid_username_formatting_success():
+
+    test_line = "01 admin4          AA 000500.00"
+    line_numer  = "2"
+    result = check_valid_username_formatting(test_line, line_numer)
+    assert result==True
+
+def test_valid_account_type_formatting_success():
+    test_line = "01 admin4          AA 000500.00"
+    line_numer  = "2"
+    result = check_valid_account_type_formatting(test_line, line_numer)
+    assert result==True
+
+def test_valid_account_type_formatting_failure():
+    test_line = "01 admin4     AA 000500.00"
+    line_numer  = "2"
+    result = check_valid_account_type_formatting(test_line, line_numer)
+    assert result==False
+
+def test_valid_credit_amount_formatting_success():
+    test_line = "01 admin4          AA 000500.00"
+    line_numer  = "2"
+    result = check_valid_credit_amount_formatting(test_line, line_numer)
+    assert result==True
+
+def test_valid_credit_amount_formatting_failure():
+    test_line = "01 admin4          AA 050.00"
+    line_numer  = "2"
+    result = check_valid_credit_amount_formatting(test_line, line_numer)
+    assert result==False
+
+def test_valid_account_type_success():
+    test_line = "01 admin4          AA 000500.00"
+    line_numer  = "2"
+    result = check_valid_account_type(test_line, line_numer)
+    assert result==True
+
+def test_valid_account_type_failure():
+    test_line = "01 admin4          SA 000500.00"
+    line_numer  = "2"
+    result = check_valid_account_type(test_line, line_numer)
     assert result==True

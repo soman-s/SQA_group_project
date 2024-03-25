@@ -196,6 +196,7 @@ def validation_checks(line,line_num):
     for check in all_checks:
         if not check(line, line_num):
             return False
+    return True
 
 
 def check_valid_transaction_file(data: list[str])-> bool:

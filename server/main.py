@@ -36,6 +36,8 @@ def main():
     process_files.merge_daily_transaction_files(Constants.LOG_FILES_PATH, Constants.INPUT__MERGE_DAILY_TRANSACTION)
     daily_transactions = process_files.read_file_contents(Constants.INPUT__MERGE_DAILY_TRANSACTION)
 
+    
+
     if(utils.check_valid_transaction_file(daily_transactions)==False):
         return
 

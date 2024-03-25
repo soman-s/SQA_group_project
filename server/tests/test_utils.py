@@ -18,6 +18,8 @@ from utils import check_valid_account_type
 
 
 INPUT_ALL_USER_FILE="ori_log_files/current_users.etf"
+INPUT_GAMES_COLLECTION="ori_log_files/game_collection.etf"
+INPUT_AVAILABLE_GAMES="ori_log_files/available_games.etf"
 
 def read_file_contents(file_name: str) -> list[str]:
     """
@@ -35,7 +37,7 @@ def read_file_contents(file_name: str) -> list[str]:
         lines = [line.rstrip('\n') for line in lines]
         lines = [line.lstrip('\n') for line in lines]
         return lines
-        
+
 def test_pad_end_file():
     # Test case 1 where total_chars is greater than length of "END"
     result = pad_end_file(10)
@@ -152,12 +154,101 @@ def test_display_success_message(capsys):
 
 def test_check_valid_file():
 
-    # Test for valid file
+    # Test for valid file in currernt users file
     test_file="test_files/test_user_1.etf"
     test_data=read_file_contents(test_file)
     test_data=test_data[:-1]
     result=check_valid_file(test_data,INPUT_ALL_USER_FILE)
     assert result==True
+
+
+    # Test for invalid username in currernt users file
+    test_file="test_files/test_user_2.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_ALL_USER_FILE)
+    assert result==False
+
+
+    # Test for invalid accunt type in currernt users file
+    test_file="test_files/test_user_3.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_ALL_USER_FILE)
+    assert result==False
+
+    # Test for invalid accunt type in currernt users file
+    test_file="test_files/test_user_4.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_ALL_USER_FILE)
+    assert result==False
+
+    # Test for valid games collection file
+    test_file="test_files/test_game_collection_1.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_GAMES_COLLECTION)
+    assert result==True
+
+    # Test for invalid game name in games collection file
+    test_file="test_files/test_game_collection_2.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_GAMES_COLLECTION)
+    assert result==False
+
+    # Test for invalid username in games collection file
+    test_file="test_files/test_game_collection_3.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_GAMES_COLLECTION)
+    assert result==False
+
+    # Test for valid games collection file
+    test_file="test_files/test_game_collection_1.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_GAMES_COLLECTION)
+    assert result==True
+
+
+    # Test for valid available games file
+    test_file="test_files/test_available_games_1.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_AVAILABLE_GAMES)
+    assert result==True
+
+    # Test for invalid game name in available games file
+    test_file="test_files/test_available_games_2.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_AVAILABLE_GAMES)
+    assert result==False
+
+    # Test for invalid username in available games file
+    test_file="test_files/test_available_games_3.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_AVAILABLE_GAMES)
+    assert result==False
+
+    # Test for invalid balance in available games file
+    test_file="test_files/test_available_games_4.etf"
+    test_data=read_file_contents(test_file)
+    test_data=test_data[:-1]
+    result=check_valid_file(test_data,INPUT_AVAILABLE_GAMES)
+    assert result==False
+
+
+
+
+
+
+
+    # Test for valid file in games collection file
+
 
 def test_valid_username_formatting_success():
 

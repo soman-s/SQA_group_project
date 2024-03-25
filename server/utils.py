@@ -128,10 +128,10 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
         print("Checking Validity of AVAILABLE GAMES FILE")
         for line_num,line in enumerate(data[:],start=0):
 
-            print(line)
+
             # check to see that after game name there is a space
             check_format=line[Constants.MAX_GAME_NAME_LENGTH:Constants.MAX_GAME_NAME_LENGTH+1]
-            print(check_format)
+
 
             if check_format!=Constants.CHAR_BETWEEN_COMPONENTS:
                 display_error_message(f"INVALID AVAILABLE GAMES FILE, game name not formatted properly on line: {line_num+1}")
@@ -154,7 +154,7 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
         print("AVAILABLE GAMES FILE is VALID")
         return True
 
-    return True
+    
 
 def check_valid_username_formatting(line,line_num):
     check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH:Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1]
@@ -298,18 +298,18 @@ def check_valid_transaction_file(data: list[str])-> bool:
 
 
 
-            # ADD CHECKS HERE
-            # elif current_code==Constants.BUY_CODE:
-            #    return
-            # elif current_code==Constants.CREATE_CODE:
-            #     if not validation_checks(line,line_num):
-            #         return False
-            # elif current_code==Constants.DELETE_CODE:
-            #     if not validation_checks(line,line_num):
-            #         return False
-            # elif current_code==Constants.ADD_CREDIT_CODE:
-            #     if not validation_checks(line,line_num):
-            #         return False
+            #ADD CHECKS HERE
+            elif current_code==Constants.BUY_CODE:
+               return
+            elif current_code==Constants.CREATE_CODE:
+                if not validation_checks(line,line_num):
+                    return False
+            elif current_code==Constants.DELETE_CODE:
+                if not validation_checks(line,line_num):
+                    return False
+            elif current_code==Constants.ADD_CREDIT_CODE:
+                if not validation_checks(line,line_num):
+                    return False
 
     print("MERGED DAILY TRANSACTION FILE is VALID")
     return True

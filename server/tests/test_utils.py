@@ -15,6 +15,7 @@ from utils import check_valid_username_formatting
 from utils import check_valid_account_type_formatting
 from utils import check_valid_credit_amount_formatting
 from utils import check_valid_account_type
+from utils import check_valid_transaction_file
 
 
 INPUT_ALL_USER_FILE="ori_log_files/current_users.etf"
@@ -248,6 +249,89 @@ def test_check_valid_file():
 
 
     # Test for valid file in games collection file
+
+def test_check_valid_transaction_file():
+
+    # Test for valid merged daily transaction file
+    test_file="test_files/test_merged_daily_transactions_1.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==True
+
+    # Test for invalid transaction code  merged daily transaction file
+    test_file="test_files/test_merged_daily_transactions_2.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid transaction code formatting merged daily transaction file
+    test_file="test_files/test_merged_daily_transactions_3.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid username formatting merged daily transaction file(LOGOUT CODE)
+    test_file="test_files/test_merged_daily_transactions_4.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid balance formatting merged daily transaction file(LOGOUT CODE)
+    test_file="test_files/test_merged_daily_transactions_5.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid Account type formatting merged daily transaction file(LOGOUT CODE)
+    test_file="test_files/test_merged_daily_transactions_6.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid game name formatting merged daily transaction file(SELL CODE)
+    test_file="test_files/test_merged_daily_transactions_7.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid user name formatting merged daily transaction file(SELL CODE)
+    test_file="test_files/test_merged_daily_transactions_8.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid game price merged daily transaction file(SELL CODE)
+    test_file="test_files/test_merged_daily_transactions_9.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid user name(buyer) formatting merged daily transaction file(Refund CODE)
+    test_file="test_files/test_merged_daily_transactions_10.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid user name(seller) formatting merged daily transaction file(Refund CODE)
+    test_file="test_files/test_merged_daily_transactions_11.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid game name formatting merged daily transaction file(Refund CODE)
+    test_file="test_files/test_merged_daily_transactions_12.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid game price formatting merged daily transaction file(Refund CODE)
+    test_file="test_files/test_merged_daily_transactions_13.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+
+
 
 
 def test_valid_username_formatting_success():

@@ -201,9 +201,9 @@ def validation_checks(line,line_num):
 
 def check_valid_transaction_file(data: list[str])-> bool:
     print("Checking Validity of Merged Transaction File")
+    all_transactions = set()
     for line_num,line in enumerate(data[:-1],start=0):
         check_format=line[:Constants.MAX_ACCOUNT_TYPE_LENGTH]
-
         if check_format not in Constants.ALL_CODES:
             display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid code on line:  {line_num+1}")
             return False
@@ -302,11 +302,21 @@ def check_valid_transaction_file(data: list[str])-> bool:
             elif current_code==Constants.BUY_CODE:
                return
             elif current_code==Constants.CREATE_CODE:
+                if line in all_transactions:
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, duplicate transaction:  {line_num+1}")
+                    return False
                 if not validation_checks(line,line_num):
                     return False
+                else:
+                    all_transactions.add(line)
             elif current_code==Constants.DELETE_CODE:
+                if line in all_transactions:
+                    display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, duplicate transaction:  {line_num+1}")
+                    return False
                 if not validation_checks(line,line_num):
                     return False
+                else:
+                    all_transactions.add(line)
             elif current_code==Constants.ADD_CREDIT_CODE:
                 if not validation_checks(line,line_num):
                     return False

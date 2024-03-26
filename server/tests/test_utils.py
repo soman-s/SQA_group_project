@@ -330,6 +330,80 @@ def test_check_valid_transaction_file():
     result=check_valid_transaction_file(test_data)
     assert result==False
 
+    # Test for invalid username formatting merged daily transaction file(Create CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_14.etf"
+    test_data=read_file_contents(test_file)
+    print("test_data", test_data)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid balance formatting merged daily transaction file(Create CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_15.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid Account type formatting merged daily transaction file(Create CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_16.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid Account type name merged daily transaction file(Create CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_17.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+     # Test for invalid username formatting merged daily transaction file(Delete CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_18.etf"
+    test_data=read_file_contents(test_file)
+    print("test_data", test_data)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid balance formatting merged daily transaction file(Delete CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_19.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid Account type formatting merged daily transaction file(Delete CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_20.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid Account type name merged daily transaction file(Delete CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_21.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+     # Test for invalid username formatting merged daily transaction file(Add Credit CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_22.etf"
+    test_data=read_file_contents(test_file)
+    print("test_data", test_data)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid balance formatting merged daily transaction file(Add Credit CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_23.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid Account type formatting merged daily transaction file(Add Credit CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_24.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
+
+    # Test for invalid Account type name merged daily transaction file(Add Credit CODE)
+    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_25.etf"
+    test_data=read_file_contents(test_file)
+    result=check_valid_transaction_file(test_data)
+    assert result==False
 
 
 

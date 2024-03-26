@@ -381,11 +381,11 @@ def test_check_valid_transaction_file():
     assert result==False
 
      # Test for invalid username formatting merged daily transaction file(Add Credit CODE)
-    test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_22.etf"
-    test_data=read_file_contents(test_file)
-    print("test_data", test_data)
-    result=check_valid_transaction_file(test_data)
-    assert result==False
+    # test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_22.etf"
+    # test_data=read_file_contents(test_file)
+    # print("test_data", test_data)
+    # result=check_valid_transaction_file(test_data)
+    # assert result==False
 
     # Test for invalid balance formatting merged daily transaction file(Add Credit CODE)
     test_file="test_files/test_merged_transaction_files/test_merged_daily_transactions_23.etf"

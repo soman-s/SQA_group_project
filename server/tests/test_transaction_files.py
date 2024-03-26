@@ -12,6 +12,7 @@ from transactions import process_create
 from transactions import process_delete
 from transactions import process_credit
 from transactions import process_sell
+from transactions import process_refund
 
 
 def test_create():
@@ -55,5 +56,65 @@ def test_process_sell():
     process_sell(transaction_line, available_games, games_collection)
 
     # Get the captured output
+    captured_output_value = captured_output.getvalue()
+    sys.stdout = sys.__stdout__  # Restore stdout
+
+
+    # Test Sell transaction properly processes when new game is listed
+
+    available_games = ["admingame1                admin2          010.00\n"]
+    games_collection = ["admingame1                admin2         "]
+    transaction_line = "03 admingame18               admin1          045.00"
+
+    process_sell(transaction_line, available_games, games_collection)
+
+    # Check if the new game is added to available_games and games_collection
+    assert "admingame18               admin1          045.00" in available_games
+    assert "admingame18               admin1         " in games_collection
+
+def test_process_refund():
+
+    # Test prevents refund from occuring if it results in a negtuive balance for the user
+    current_users=["admin1          AA 000500.00","admin2          AA 000500.00"]
+    games_collection=["admingame1                admin2         ","admingame1                full1"]
+    transaction_line="05 admingame1                admin2          admin1          111110.00"
+
+
+    # Redirect stdout to a StringIO object
+    captured_output = StringIO()
+    sys.stdout = captured_output
+    process_refund(transaction_line,games_collection,current_users)
+
+    # Get the captured output
+    captured_output_value = captured_output.getvalue()
+    sys.stdout = sys.__stdout__  # Restore stdout
+
+    # Test process refund properly  processes the refund trensaction
+
+    # Test prevents refund from occuring if it results in a negtuive balance for the user
+    current_users=["admin1          AA 000500.00","admin2          AA 000500.00"]
+    games_collection=["admingame1                admin2         ","admingame1                full1"]
+    transaction_line="05 admingame1                admin2          admin1          000010.00"
+    process_refund(transaction_line,games_collection,current_users)
+
+    assert "admingame1                admin2" not in games_collection
+    assert "admin1          AA 000490.00" in current_users
+    assert "admin2          AA 000510.00" in current_users
+
+
+    # test that a refund won't happen twice
+
+    current_users=["admin1          AA 000500.00","admin2          AA 000500.00"]
+    games_collection=["admingame1                admin2         ","admingame1                full1"]
+    transaction_line="05 admingame1                admin2          admin1          000010.00"
+    process_refund(transaction_line,games_collection,current_users)
+
+
+    transaction_line="05 admingame1                admin2          admin1          000010.00"
+    # Redirect stdout to a StringIO object
+    captured_output = StringIO()
+    sys.stdout = captured_output
+    process_refund(transaction_line,games_collection,current_users)
+
     captured_output_value = captured_output.getvalue()
     sys.stdout = sys.__stdout__  # Restore stdout

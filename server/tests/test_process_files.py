@@ -16,7 +16,7 @@ def test_read_file_contents():
 
     #test can read file contents
     file_content = "Line 1\nLine 2\nLine 3\n"
-    file_path =  "test_files/test_file.txt"
+    file_path =  "test_files/test_read_file_contents_files/test_file.txt"
     with open(file_path, 'w') as file:
         file.write(file_content)
 
@@ -34,9 +34,9 @@ def test_update_and_write_file():
     # Define test data without adding padding
     data = ["line 1", "line 2"]
     end_length = 0
-    update_and_write_file("test_files/update_and_write_file_1.etf", data, end_length)
+    update_and_write_file("test_files/test_update_write_files/update_and_write_file_1.etf", data, end_length)
     # Read the file and check its contents
-    with open("test_files/update_and_write_file_1.etf", "r") as file:
+    with open("test_files/test_update_write_files/update_and_write_file_1.etf", "r") as file:
         file_contents = file.readlines()
 
     assert file_contents == ["line 1\n", "line 2\n","END\n"]
@@ -44,9 +44,9 @@ def test_update_and_write_file():
     # Define test data with non-zero  padding
     data = ["line 1", "line 2"]
     end_length = 5
-    update_and_write_file("test_files/update_and_write_file_2.etf", data, end_length)
+    update_and_write_file("test_files/test_update_write_files/update_and_write_file_2.etf", data, end_length)
     # Read the file and check its contents
-    with open("test_files/update_and_write_file_2.etf", "r") as file:
+    with open("test_files/test_update_write_files/update_and_write_file_2.etf", "r") as file:
         file_contents = file.readlines()
 
     assert file_contents == ["line 1\n", "line 2\n","END  \n"]
@@ -54,12 +54,12 @@ def test_update_and_write_file():
 
 def test_merge_daily_transaction_files():
 
-    merge_daily_transaction_files("test_files/test_transaction_files","test_files/test_merged_file.etf")
+    merge_daily_transaction_files("test_files/test_process_merge_transaction_files/test_transaction_files","test_files/test_process_merge_transaction_files/test_merged_file.etf")
 
-    with open("test_files/test_merged_file.etf", "r") as file:
+    with open("test_files/test_process_merge_transaction_files/test_merged_file.etf", "r") as file:
         test_file_contents = file.readlines()
 
-    with open("test_files/expected_merged_file.etf", "r") as file:
+    with open("test_files/test_process_merge_transaction_files/expected_merged_file.etf", "r") as file:
         expected_file_contents = file.readlines()
 
     assert test_file_contents==expected_file_contents

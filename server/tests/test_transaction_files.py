@@ -6,9 +6,12 @@ from io import StringIO
 import sys
 import utils
 
+
+
 from transactions import process_create
 from transactions import process_delete
 from transactions import process_credit
+from transactions import process_sell
 
 
 def test_create():
@@ -35,9 +38,22 @@ def test_credit():
     new_amount = current_users[0][19:]
     assert new_amount == "000600.00"
 
+def test_process_sell():
+
+    # Test that Error message is shown if game is already listed for sale
+    available_games = ["admingame1                admin2          010.00"]
+    games_collection = ["admingame1                admin2         "]
+    transaction_line = "03 admingame1                admin1          045.00"
+
+    process_sell(transaction_line, available_games, games_collection)
+
+    # Redirect stdout to a StringIO object
+    captured_output = StringIO()
+    sys.stdout = captured_output
 
 
+    process_sell(transaction_line, available_games, games_collection)
 
-
-
-
+    # Get the captured output
+    captured_output_value = captured_output.getvalue()
+    sys.stdout = sys.__stdout__  # Restore stdout

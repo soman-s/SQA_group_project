@@ -16,6 +16,10 @@ def process_create(transaction_line: string, current_users: list[str]):
     new_user = transaction_line[start_index:Constants.MAX_USER_NAME_LENGTH + start_index]
     new_user_code = transaction_line[19:21]
     new_user_amount = transaction_line[len(transaction_line) - Constants.MAX_USER_NAME_LENGTH + start_index + 3:len(transaction_line)]
+    
+    for user in current_users:
+        if new_user in user:
+            return
     current_users.append(new_user + " " + new_user_code + " " + new_user_amount)
 
 

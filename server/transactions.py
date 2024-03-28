@@ -88,7 +88,7 @@ def process_buy(transaction_line: string, current_users: list[str], games_collec
             if balance < 0:
                 utils.display_error_message("Cannot process Buy, Buyer will have negative balance")
                 return
-            
+
 
     game_to_add = game_name + " " + buyer_name
 
@@ -107,13 +107,13 @@ def process_buy(transaction_line: string, current_users: list[str], games_collec
 
             elif current_user_name == buyer_name:
                 current_users[i] = utils.update_balance(user, -game_price_available_games)
-            
+
         games_collection.append(game_name + " " + buyer_name)
-        utils.display__sucess_message("Buy")
+        utils.display_success_message("Buy")
     else:
         utils.display_error_message("Buy cannot be processed, buy already processed")
 
-            
+
 
 
 def process_sell(transaction_line: string, available_games: list[str], games_collection: list[str]):

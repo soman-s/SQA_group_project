@@ -76,8 +76,8 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
     Returns:
         bool: True if file is valid, False otherwise.
     """
-
-    if file_name == Constants.INPUT_ALL_USER_FILE:
+    # if file_name==INPUT_ALL_USER_FILE.:
+    if "current_users.etf"in file_name:
         print("Checking Validity of Current Users File")
 
         for line_num,line in enumerate(data[:],start=0):
@@ -104,7 +104,8 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
         print("CURRENT USER FILE is Valid")
         return True
 
-    elif file_name==Constants.INPUT_GAMES_COLLECTION:
+    #elif file_name==Constants.INPUT_GAMES_COLLECTION:
+    elif "game_collection.etf"in file_name:
         print("Checking Validity of GAMES COLLECTIONS FILE")
         for line_num,line in enumerate(data[:],start=0):
 
@@ -124,7 +125,8 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
         print("GAMES COLLECTION FILE is VALID")
         return True
 
-    elif file_name==Constants.INPUT_AVAILABLE_GAMES:
+    #elif file_name==Constants.INPUT_AVAILABLE_GAMES:
+    elif "available_games.etf" in file_name:
         print("Checking Validity of AVAILABLE GAMES FILE")
         for line_num,line in enumerate(data[:],start=0):
 
@@ -154,7 +156,7 @@ def check_valid_file(data: list[str], file_name: str) -> bool:
         print("AVAILABLE GAMES FILE is VALID")
         return True
 
-    
+
 
 def check_valid_username_formatting(line,line_num):
     check_format=line[Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH:Constants.MAX_ACCOUNT_TYPE_LENGTH+1+Constants.MAX_USER_NAME_LENGTH+1]

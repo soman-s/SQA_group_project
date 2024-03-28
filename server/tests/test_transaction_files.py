@@ -22,6 +22,10 @@ def test_create():
     process_create(transaction_line, current_users)
     assert current_users[0] == "admin4          AA 000500.00"
 
+    transaction_line = "01 admin4          AA 000300.00"
+    process_create(transaction_line, current_users)
+    assert len(current_users) == 1
+
 def test_delete():
     current_users = ["admin2          AA 000500.00"]
     available_games = ["PUBG                      admin2          030.00"]

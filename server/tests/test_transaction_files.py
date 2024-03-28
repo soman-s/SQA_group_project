@@ -87,7 +87,7 @@ def test_process_refund():
 
     # Get the captured output
     captured_output_value = captured_output.getvalue()
-    sys.stdout = sys.__stdout__  # Restore stdout
+    sys.stdout = sys.__stdout__  
 
     # Test process refund properly  processes the refund trensaction
 

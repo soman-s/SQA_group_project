@@ -50,7 +50,7 @@ def main(input_all_users,input_available_games,input_games_collection,
 
         # Process each transaction based on its code
         if current_code == Constants.SELL_GAME_CODE:
-            transactions.process_sell(transaction, available_games, games_collection)
+            transactions.process_sell(transaction, available_games, games_collection,all_users)
         elif current_code == Constants.REFUND_CODE:
             transactions.process_refund(transaction, games_collection, all_users)
         elif current_code == Constants.CREATE_CODE:

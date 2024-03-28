@@ -116,7 +116,7 @@ def process_buy(transaction_line: string, current_users: list[str], games_collec
 
 
 
-def process_sell(transaction_line: string, available_games: list[str], games_collection: list[str]):
+def process_sell(transaction_line: string, available_games: list[str], games_collection: list[str],current_users: list[str]):
     """
     Process a 'sell' transaction.
 
@@ -130,14 +130,25 @@ def process_sell(transaction_line: string, available_games: list[str], games_col
     seller_name = transaction_line[start_index + Constants.MAX_GAME_NAME_LENGTH + 1:start_index + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH]
     game_price = transaction_line[start_index + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1:]
 
-    for games in available_games:
-        current_game_name = games[:Constants.MAX_GAME_NAME_LENGTH]
-        if current_game_name.lower() == new_game_name.lower():
-            utils.display_error_message("Game is already listed for sale")
-            return
+    # prevents deleted users from selling games
+    user_exist=False
+    for i, user in enumerate(current_users):
+        current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]
+        if  current_user_name == seller_name:
+            user_exist=True
+            break
 
-    available_games.append(new_game_name + " " + seller_name + " " + game_price)
-    games_collection.append(new_game_name + " " + seller_name)
+    if user_exist:
+        for games in available_games:
+            current_game_name = games[:Constants.MAX_GAME_NAME_LENGTH]
+            if current_game_name.lower() == new_game_name.lower():
+                utils.display_error_message("Game is already listed for sale")
+                return
+
+        available_games.append(new_game_name + " " + seller_name + " " + game_price)
+        games_collection.append(new_game_name + " " + seller_name)
+        return    
+    print("Cannot list game for sale, Seller not in the system")
 
 
 def process_refund(transaction_line: string, games_collection: list[str], current_users: list[str]):
@@ -188,4 +199,4 @@ def process_refund(transaction_line: string, games_collection: list[str], curren
                 current_users[i] = utils.update_balance(user, -refund_price)
         utils.display_success_message("Refund")
     else:
-        utils.display_error_message("Refund cannot be processed, refund already processed")
+        utils.display_error_message("Refund cannot be processed, refund already processed or game does not exist")

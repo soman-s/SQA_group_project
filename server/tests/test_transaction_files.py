@@ -17,30 +17,45 @@ from transactions import process_buy
 
 
 def test_create():
+    # initilize the current users and the transactions to be processed
     current_users = []
     transaction_line = "01 admin4          AA 000500.00"
+
+    # process transaction
     process_create(transaction_line, current_users)
+
+    # Check if new user was sucessfully created
     assert current_users[0] == "admin4          AA 000500.00"
 
     transaction_line = "01 admin4          AA 000300.00"
     process_create(transaction_line, current_users)
+    # check that duplicate users was not created 
     assert len(current_users) == 1
 
 def test_delete():
+    # initilize user and associated games to be removed
     current_users = ["admin2          AA 000500.00"]
     available_games = ["PUBG                      admin2          030.00"]
     games_collection = ["PUBG                      admin2         "]
     transaction_line = "02 admin2          AA 000500.00"
+
+    # process transaction
     process_delete(transaction_line, current_users, available_games, games_collection)
 
+    # check user and all associated games have been removed
     assert len(current_users) == 0
     assert len(available_games) == 0
     assert len(games_collection) == 0
 
 def test_credit():
+    # initilize the current users and the transactions to be processed
     current_users = ["admin2          AA 000500.00"]
     transaction_line = "06 admin2          AA 000100.00"
+
+    # process transaction
     process_credit(transaction_line, current_users)
+
+    # validate that credit amount has been updated
     new_amount = current_users[0][19:]
     assert new_amount == "000600.00"
 

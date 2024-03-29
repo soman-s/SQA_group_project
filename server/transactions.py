@@ -16,7 +16,7 @@ def process_create(transaction_line: string, current_users: list[str]):
     new_user = transaction_line[start_index:Constants.MAX_USER_NAME_LENGTH + start_index]
     new_user_code = transaction_line[19:21]
     new_user_amount = transaction_line[len(transaction_line) - Constants.MAX_USER_NAME_LENGTH + start_index + 3:len(transaction_line)]
-    
+
     for user in current_users:
         if new_user in user:
             return
@@ -35,13 +35,13 @@ def process_delete(transaction_line: string, current_users: list[str], available
     """
     start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
     removed_user = transaction_line[start_index:Constants.MAX_USER_NAME_LENGTH + start_index]
-    
+
     for user in current_users:
         if removed_user in user:
             utils.remove_item(current_users, removed_user)
             utils.remove_item(available_games, removed_user)
             utils.remove_item(games_collection, removed_user)
-            return 
+            return
     return "User not found"
 
 
@@ -171,8 +171,9 @@ def process_sell(transaction_line: string, available_games: list[str], games_col
 
         available_games.append(new_game_name + " " + seller_name + " " + game_price)
         games_collection.append(new_game_name + " " + seller_name)
-        return    
-    print("Cannot list game for sale, Seller not in the system")
+        utils.display_success_message("Game listed for sale")
+        return
+    utils.display_error_message("Cannot list game for sale, Seller not in the system")
 
 
 def process_refund(transaction_line: string, games_collection: list[str], current_users: list[str]):

@@ -47,6 +47,19 @@ def test_delete():
     assert len(available_games) == 0
     assert len(games_collection) == 0
 
+    # initlizing a user to remove that doesn't exist
+    current_users = ["admin5          AA 000500.00"]
+    available_games = ["PUBG                      admin5          030.00"]
+    games_collection = ["PUBG                      admin5         "]
+    transaction_line = "02 admin9          AA 000500.00"
+
+    # process transaction
+    response = process_delete(transaction_line, current_users, available_games, games_collection)
+
+    # validate user does not exist
+    assert response == "User not found"
+
+
 def test_credit():
     # initilize the current users and the transactions to be processed
     current_users = ["admin2          AA 000500.00"]
@@ -58,6 +71,16 @@ def test_credit():
     # validate that credit amount has been updated
     new_amount = current_users[0][19:]
     assert new_amount == "000600.00"
+
+    # initilize the current users and the transactions to be processed
+    current_users = ["admin2          AA 000500.00"]
+    transaction_line = "06 admin4          AA 000100.00"
+
+    # process transaction
+    response = process_credit(transaction_line, current_users)
+
+    # validate user does not exist
+    assert response == "User not found"
 
 def test_process_sell():
 

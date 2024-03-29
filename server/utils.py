@@ -301,7 +301,8 @@ def check_valid_transaction_file(data: list[str])-> bool:
 
             #ADD CHECKS HERE
             elif current_code==Constants.BUY_CODE:
-               return
+                if not validation_checks(line, line_num):
+                    return False
             elif current_code==Constants.CREATE_CODE:
                 if not validation_checks(line,line_num):
                     return False

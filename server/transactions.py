@@ -86,42 +86,56 @@ def process_buy(transaction_line: string, current_users: list[str], games_collec
     game_price_available_games = game_price_current_users[3:]
     game_price_available_games = float(game_price_available_games)
 
-    # prevents buy from occuring if it results in a negative balance for the buyer
+
+    # prevents a deleted buyer from buying a game
+    user_exist = False
     for i, user in enumerate(current_users):
         current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]
         if  current_user_name == buyer_name:
-            balance_index: int = Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
+            user_exist=True
+            break
 
-            balance: float = float(user[balance_index:])
-            balance = balance - game_price_available_games
-
-            if balance < 0:
-                utils.display_error_message("Cannot process Buy, Buyer will have negative balance")
-                return
-
-
-    game_to_add = game_name + " " + buyer_name
-
-    game_added = False
-    for collection_entry in games_collection:
-        if game_to_add.lower() == collection_entry.lower():
-            game_added = True
-
-    if game_added == False:
+    if user_exist:
+        # prevents buy from occuring if it results in a negative balance for the buyer
         for i, user in enumerate(current_users):
-            # balance_index: int = Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
-            # user_balance: float = float(user[balance_index:])
             current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]
-            if current_user_name == seller_name:
-                current_users[i] = utils.update_balance(user, game_price_available_games)
+            if  current_user_name == buyer_name:
+                balance_index: int = Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
 
-            elif current_user_name == buyer_name:
-                current_users[i] = utils.update_balance(user, -game_price_available_games)
+                balance: float = float(user[balance_index:])
+                balance = balance - game_price_available_games
 
-        games_collection.append(game_name + " " + buyer_name)
-        utils.display_success_message("Buy")
-    else:
-        utils.display_error_message("Buy cannot be processed, buy already processed")
+                if balance < 0:
+                    utils.display_error_message("Cannot process Buy, Buyer will have negative balance")
+                    return
+
+
+        game_to_add = game_name + " " + buyer_name
+
+        game_added = False
+        for collection_entry in games_collection:
+            if game_to_add.lower() == collection_entry.lower():
+                game_added = True
+
+        if game_added == False:
+            for i, user in enumerate(current_users):
+                # balance_index: int = Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
+                # user_balance: float = float(user[balance_index:])
+                current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]
+                if current_user_name == seller_name:
+                    current_users[i] = utils.update_balance(user, game_price_available_games)
+
+                elif current_user_name == buyer_name:
+                    current_users[i] = utils.update_balance(user, -game_price_available_games)
+
+            games_collection.append(game_name + " " + buyer_name)
+            utils.display_success_message("Buy")
+            return
+        else:
+            utils.display_error_message("Buy cannot be processed, buy already processed")
+            return
+
+    print("Cannot process buy transaction, buyer not in the system")
 
 
 

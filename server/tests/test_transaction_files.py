@@ -188,34 +188,34 @@ def test_process_refund():
     sys.stdout = sys.__stdout__  # Restore stdout
 
 def test_process_buy():
-    # # test prevents buy from occuring if it results in a negative balance for the buyer
-    # transaction_line = "04 PUBG                      admin2          admin1          000030.00"
-    # current_users = ["admin1          AA 000020.00", "admin2          AA 000500.00"]
-    # games_collection = ["PUBG                      admin2         "]
-    #
-    # # Redirect stdout to a StringIO object
-    # captured_output = StringIO()
-    # sys.stdout = captured_output
-    #
-    # process_buy(transaction_line, current_users, games_collection)
-    #
-    # # Get the captured output
-    # captured_output_value = captured_output.getvalue()
-    # sys.stdout = sys.__stdout__
-    #
-    #
-    #
-    # # Test process_buy correctly processes the buy transaction
-    # transaction_line = "04 PUBG                      admin2          admin1          000030.00"
-    # current_users = ["admin1          AA 000500.00", "admin2          AA 000500.00"]
-    # games_collection = ["PUBG                      admin2         "]
-    #
-    # process_buy(transaction_line, current_users, games_collection)
-    #
-    # # check if admin1 balance is decreased by game amount, admin2 balance is increased by game amount, and admin1 owns PUBG in games collection
-    # assert "PUBG                      admin1" in games_collection
-    # assert "admin1          AA 000470.00" in current_users
-    # assert "admin2          AA 000530.00" in current_users
+    # test prevents buy from occuring if it results in a negative balance for the buyer
+    transaction_line = "04 PUBG                      admin2          admin1          000030.00"
+    current_users = ["admin1          AA 000020.00", "admin2          AA 000500.00"]
+    games_collection = ["PUBG                      admin2         "]
+    
+    # Redirect stdout to a StringIO object
+    captured_output = StringIO()
+    sys.stdout = captured_output
+    
+    process_buy(transaction_line, current_users, games_collection)
+    
+    # Get the captured output
+    captured_output_value = captured_output.getvalue()
+    sys.stdout = sys.__stdout__
+    
+    
+    
+    # Test process_buy correctly processes the buy transaction
+    transaction_line = "04 PUBG                      admin2          admin1          000030.00"
+    current_users = ["admin1          AA 000500.00", "admin2          AA 000500.00"]
+    games_collection = ["PUBG                      admin2         "]
+    
+    process_buy(transaction_line, current_users, games_collection)
+    
+    # check if admin1 balance is decreased by game amount, admin2 balance is increased by game amount, and admin1 owns PUBG in games collection
+    assert "PUBG                      admin1         " in games_collection
+    assert "admin1          AA 000470.00" in current_users
+    assert "admin2          AA 000530.00" in current_users
 
 
 
@@ -232,5 +232,21 @@ def test_process_buy():
 
     process_buy(transaction_line, current_users, games_collection)
 
+    captured_output_value = captured_output.getvalue()
+    sys.stdout = sys.__stdout__  # Restore stdout
+
+
+    # Test that error message is shown if a deleted user tries to buy a game
+    transaction_line = "04 PUBG                      admin2          admin1          000030.00"
+    current_users = ["admin2          AA 000500.00"]
+    games_collection = ["PUBG                      admin2         "]
+
+    # Redirect stdout to a StringIO object
+    captured_output = StringIO()
+    sys.stdout = captured_output
+
+    process_buy(transaction_line, current_users, games_collection)
+
+    # Get the captured output
     captured_output_value = captured_output.getvalue()
     sys.stdout = sys.__stdout__  # Restore stdout

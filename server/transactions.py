@@ -35,9 +35,14 @@ def process_delete(transaction_line: string, current_users: list[str], available
     """
     start_index = Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
     removed_user = transaction_line[start_index:Constants.MAX_USER_NAME_LENGTH + start_index]
-    utils.remove_item(current_users, removed_user)
-    utils.remove_item(available_games, removed_user)
-    utils.remove_item(games_collection, removed_user)
+    
+    for user in current_users:
+        if removed_user in user:
+            utils.remove_item(current_users, removed_user)
+            utils.remove_item(available_games, removed_user)
+            utils.remove_item(games_collection, removed_user)
+            return 
+    return "User not found"
 
 
 def process_credit(transaction_line: string, current_users: list[str]):
@@ -55,6 +60,7 @@ def process_credit(transaction_line: string, current_users: list[str]):
         if curr_user in user:
             current_users[i] = utils.update_balance(user, new_user_amount)
             return
+    return "User not found"
 
 
 def process_buy(transaction_line: string, current_users: list[str], games_collection: list[str]):

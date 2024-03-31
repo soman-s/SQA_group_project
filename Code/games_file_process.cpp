@@ -98,7 +98,15 @@ bool games_file_process:: check_user_owns_game(vector<string>& games_collection,
   {
 
     current_entry=utility.convert_to_lower(games_collection[i]);
-    current_entry = current_entry.substr(0, current_entry.length() - 1);
+    if (current_entry.length()==41)
+    {
+      current_entry = current_entry.substr(0, current_entry.length());
+    }
+    else
+    {
+      current_entry = current_entry.substr(0, current_entry.length()-1);
+    }
+
     //cout<<current_entry.length()<<endl;
 
     if(current_entry==test_entry)
@@ -109,6 +117,7 @@ bool games_file_process:: check_user_owns_game(vector<string>& games_collection,
   }
   return false;
 }
+
 
 
 // checks if seller actually sells the game name entered
@@ -147,39 +156,47 @@ bool games_file_process:: check_user_sells_game(vector<string>& all_games,string
 bool games_file_process::is_game_price(vector<string>& all_games,string& game_name,float& game_price)
 {
 
-  string test_text_game_price;
-  string current_game_name;
-  string test_game_name=utils().convert_to_lower(game_name);
+ string test_text_game_price;
+ string current_game_name;
+ string test_game_name=utils().convert_to_lower(game_name);
 
-  test_text_game_price=utils().pad_game_price(game_price);
-  // cout<<test_text_game_price<<endl;
-  // cout<<test_text_game_price.length()<<endl;
+ test_text_game_price=utils().pad_game_price(game_price);
+ // cout<<test_text_game_price<<endl;
+ // cout<<test_text_game_price.length()<<endl;
 
-  for(int i=0; i<all_games.size();i++)
-  {
-    current_game_name=all_games[i].substr(0,constants::MAX_GAME_NAME_LENGTH);
-    current_game_name=utility.convert_to_lower(current_game_name);
-    if(current_game_name==game_name)
-    {
-      string current_game_price = all_games[i].substr((constants::MAX_GAME_NAME_LENGTH + constants::MAX_USER_NAME_LENGTH + 2), all_games[i].length());
-      current_game_price=current_game_price.substr(0,current_game_price.length()-1);
-
-      if(current_game_price==test_text_game_price)
-      {
-        //cout<<"SAME GAME PRICE ENTERED"<<endl;
-        return true;
-      }
-      // cout<<current_game_price<<endl;
-      // cout<<current_game_price.length()<<endl;
-
-    }
-  }
+ for(int i=0; i<all_games.size();i++)
+ {
+   current_game_name=all_games[i].substr(0,constants::MAX_GAME_NAME_LENGTH);
+   current_game_name=utility.convert_to_lower(current_game_name);
+   if(current_game_name==game_name)
+   {
+     string current_game_price = all_games[i].substr((constants::MAX_GAME_NAME_LENGTH + constants::MAX_USER_NAME_LENGTH + 2), all_games[i].length());
+     if(current_game_price.length()==6)
+     {
+       current_game_price=current_game_price.substr(0,current_game_price.length());
+     }
+     else
+     {
+       current_game_price=current_game_price.substr(0,current_game_price.length()-1);
+     }
 
 
-  return false;
+     if(current_game_price==test_text_game_price)
+     {
+       //cout<<"SAME GAME PRICE ENTERED"<<endl;
+       return true;
+     }
+     // cout<<current_game_price<<endl;
+     // cout<<current_game_price.length()<<endl;
+
+   }
+ }
+
+
+ return false;
 }
 
-// removes removes enetry from games_colletion vector given game name and user name 
+// removes removes enetry from games_colletion vector given game name and user name
 void games_file_process::remove_game_from_user_collection(vector<string>& games_collection,string& game_name,string& user_name)
 {
   utils utility;
@@ -227,7 +244,7 @@ float games_file_process::get_game_price(vector<string>& all_games, string& game
       break;
     }
   }
-  
+
   return stof(current_game_price);
 }
 

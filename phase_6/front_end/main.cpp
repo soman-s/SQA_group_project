@@ -220,6 +220,7 @@ int main()
                 cout << "LOGGED OUT" << endl;
                 string log_entry;
                 log_entry= constants::LOGOUT_CODE+" "+current_user_name+" "+current_user_type+" "+user_file_process().get_user_credit(all_users,current_user_name);
+                //cout<<log_entry<<endl;
                 utils().update_transction_log(log_entry,transaction_log);
 
 

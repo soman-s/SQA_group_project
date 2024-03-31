@@ -5,27 +5,26 @@ custom_program="front_end.exe"
 
 day_inputs=()
 
-# Always coping back the original files for testing
+# # Always coping back the original files for testing
+#
+# echo "Copying back the Original Log Files"
+#
+# source_folder="original_files"
+# destination_folder="front_end/log_files"
+#
+#
+# # Copy all contents from source to destination
+# cp -rf "$source_folder"/* "$destination_folder"/
 
-echo "Copying back the Original Log Files"
-
-source_folder="original_files"
-destination_folder="front_end/log_files"
-
-
-
-# Copy all contents from source to destination
-cp -rf "$source_folder"/* "$destination_folder"/
-
-echo " Getting inputs from Day 1 Sessions"
+echo " Getting inputs from $1 Sessions"
 # Getting inputs from day 1 sessions
-cd daily_sessions/day_1
+cd daily_sessions/"$1"
 
 # Getting input path for day 1 session
 for file in *; do
   if [ -f "$file" ]; then  # Check if it's a regular file
     dos2unix "$file" >/dev/null 2>&1
-    input_path="../daily_sessions/day_1/$file"
+    input_path="../daily_sessions/$1/$file"
     day_inputs+=("$input_path")
   fi
 done
@@ -34,7 +33,7 @@ done
 cd ../..
 
 # Running Inputs with the front end
-echo "Running Day 1 Sessions: Front End"
+echo "Running $1  Sessions: Front End"
 cd front_end
 
 for input_file in "${day_inputs[@]}"; do
@@ -50,7 +49,6 @@ done
 
 # copy files to the backend for processing
 cd ..
-ls
 echo "Copying Files into back end for Processing"
 
 source_folder="front_end/log_files"
@@ -60,15 +58,22 @@ destination_folder="back_end/ori_log_files"
 rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
 
 
-echo "Processing Backend for Day 1"
+echo "Processing Backend for $1"
 cd back_end
 python main.py
 
 cd ..
 
 source_folder="back_end/mod_log_files"
+# Loop through all files in the directory
+for file in *; do
+  if [ -f "$file" ]; then  # Check if it's a regular file
+    dos2unix "$file" >/dev/null 2>&1  # Convert file to Unix format and suppress output
+  fi
+done
+
 destination_folder="front_end/log_files"
 
 rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
 
-echo "Done Processing Sessions: Day 1"
+echo "Done Processing Sessions: $1 "

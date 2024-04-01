@@ -20,10 +20,11 @@ Enter an option: 1
 Create
 Select type of account you want to create
 1)Admin
-2)Full-Standard
-3)Buy-Standard
-4)Sell-Standard
-Enter account type: 2
+2)Account-Manager
+3)Full-Standard
+4)Buy-Standard
+5)Sell-Standard
+Enter account type: 3
 Account type selected
 Enter Username: full1
 Username already exists please try again or -1 to exit

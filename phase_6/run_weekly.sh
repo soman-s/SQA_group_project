@@ -28,6 +28,6 @@ cd ..
 
 
 for session_folder in "${daily_sessions[@]}"; do
-  dos2unix run_daily.sh
+  dos2unix run_daily.sh >/dev/null 2>&1
   ./run_daily.sh $session_folder
 done

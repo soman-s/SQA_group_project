@@ -211,6 +211,7 @@ def process_refund(transaction_line: string, games_collection: list[str], curren
     for collection_entry in games_collection:
         if game_to_remove.lower() == collection_entry.lower():
             games_collection.remove(collection_entry)
+            print(collection_entry)
             game_removed = True
 
     if game_removed:

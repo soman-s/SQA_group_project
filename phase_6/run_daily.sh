@@ -5,16 +5,16 @@ custom_program="front_end.exe"
 
 day_inputs=()
 
-# # Always coping back the original files for testing
-#
+# Always coping back the original files for testing
+
 # echo "Copying back the Original Log Files"
 #
 # source_folder="original_files"
 # destination_folder="front_end/log_files"
-#
-#
-# # Copy all contents from source to destination
-# cp -rf "$source_folder"/* "$destination_folder"/
+
+
+# Copy all contents from source to destination
+cp -rf "$source_folder"/* "$destination_folder"/ >/dev/null 2>&1
 
 echo " Getting inputs from $1 Sessions"
 # Getting inputs from day 1 sessions
@@ -41,6 +41,7 @@ for input_file in "${day_inputs[@]}"; do
     echo "Running input file: $input_file"
 
     ./"$custom_program" < "$input_file" >/dev/null 2>&1
+    # ./"$custom_program" < "$input_file"
     sleep 0.75
   else
     echo "Input file not found: $input_file"
@@ -60,7 +61,7 @@ rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
 
 echo "Processing Backend for $1"
 cd back_end
-python main.py
+python main.py>/dev/null 2>&1
 
 cd ..
 

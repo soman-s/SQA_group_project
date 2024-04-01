@@ -478,6 +478,7 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
       string log_text_refund_price=utils().pad_credit_amount(num_refund_price);
 
       log_entry=constants::REFUND_CODE+" "+refund_game_name+" "+log_buyer_name+" "+log_seller_name+" "+log_text_refund_price;
+      cout<<log_entry<<endl;
       utils().update_transction_log(log_entry,transaction_log);
     }
 

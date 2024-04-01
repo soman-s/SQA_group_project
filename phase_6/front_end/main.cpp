@@ -7,6 +7,7 @@
 #include <vector>
 #include <algorithm>
 #include <typeinfo>
+#include <unordered_map>
 
 // custom classes
 #include "menus.h"
@@ -36,6 +37,9 @@ int main()
     all_users = user_file_process().get_all_users_info(constants::ALL_USER_FILE);
     all_games = games_file_process().get_all_game_info(constants::AVAILABLE_GAMES);
     all_games_collection = games_file_process().get_all_game_info(constants::GAMES_COLLECTION);
+
+    unordered_map <string, float> user_total_credits;
+    unordered_map <string, float> user_session_credits;
 
     // Main loop for user interaction
     while (menu_option != constants::EXIT)
@@ -187,7 +191,7 @@ int main()
 
                             else if (user_menu_option == constants::ADD_CREDIT)
                             {
-                              if(transactions().process_credit(user_input,all_users,current_user_name,transaction_log) == constants :: SUCESS_OPTION){
+                              if(transactions().process_credit(user_input,all_users,current_user_name,transaction_log, user_total_credits, user_session_credits) == constants :: SUCESS_OPTION){
                                 cout << "Sucessfully added credit amount to user" << endl;
                               }
 

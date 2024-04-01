@@ -609,7 +609,7 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
 }
 
 // process for updating a credit amount for a specific user
-string transactions::process_credit(string menu_option,vector<string>& all_users, string user,vector<string>& transaction_log){
+string transactions::process_credit(string menu_option,vector<string>& all_users, string user,vector<string>& transaction_log, unordered_map<string, float>& user_total_credits, unordered_map<string, float>& user_session_credits){
 
   cout << "Add Credit" << endl;
 
@@ -651,6 +651,14 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
   bool valid_credit_amount = false;
 
+  if(user_total_credits.find(user) == user_total_credits.end()){
+    user_total_credits[user] = user_balance;
+  }
+
+  if(user_session_credits.find(user) == user_session_credits.end()){
+    user_session_credits[user] = 0.0;
+  }
+
 
   while(!valid_credit_amount){
 
@@ -658,18 +666,20 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
       credit_amount = stof(text_credit_amount);
 
-      if(user_balance + credit_amount > constants::MAX_CREDIT_AMOUNT){
+      if(user_total_credits[user] + credit_amount > constants::MAX_CREDIT_AMOUNT){
         cout << "credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit " <<  endl;
         cout << "Enter credit amount to add: ";
 
       }
 
-      else if(credit_amount < constants::MIN_ADD_CREDITS || credit_amount  >= constants::MAX_ADD_CREDITS) {
+      else if(credit_amount < constants::MIN_ADD_CREDITS || user_session_credits[user] + credit_amount  >= constants::MAX_ADD_CREDITS) {
         cout << "Please enter a valid credit amount or -1 to go back to main menu " << endl;
         cout << "Enter credit amount to add: ";
       }
 
       else{
+        user_total_credits[user]+=credit_amount;
+        user_session_credits[user]+=credit_amount;
         break;
       }
 

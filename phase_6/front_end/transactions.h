@@ -96,7 +96,7 @@ public:
      * @param user user to add credit amount to.
      * @return A message indicating the result of the add credit transaction.
      */
-    string process_credit(string menu_option, vector<string>& all_users, string user,vector<string>& transaction_log);
+    string process_credit(string menu_option, vector<string>& all_users, string user,vector<string>& transaction_log,unordered_map<string, float>& user_total_credits, unordered_map<string, float>& user_session_credits);
 
 
     void process_logout(vector<string>& transaction_log);

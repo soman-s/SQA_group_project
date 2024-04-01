@@ -168,7 +168,7 @@ bool games_file_process::is_game_price(vector<string>& all_games,string& game_na
  {
    current_game_name=all_games[i].substr(0,constants::MAX_GAME_NAME_LENGTH);
    current_game_name=utility.convert_to_lower(current_game_name);
-   if(current_game_name==game_name)
+   if(current_game_name==test_game_name)
    {
      string current_game_price = all_games[i].substr((constants::MAX_GAME_NAME_LENGTH + constants::MAX_USER_NAME_LENGTH + 2), all_games[i].length());
      if(current_game_price.length()==6)

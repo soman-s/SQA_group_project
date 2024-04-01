@@ -197,7 +197,7 @@ def process_refund(transaction_line: string, games_collection: list[str], curren
     # prevents refund from occuring if it results in a negtuive balance for the user
     for i, user in enumerate(current_users):
         current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]
-        if  current_user_name == seller_name:
+        if  current_user_name.lower() == seller_name.lower():
             balance_index: int = Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_ACCOUNT_TYPE_LENGTH + 1
             balance: float = float(user[balance_index:])
             balance =balance- float(refund_price)
@@ -218,10 +218,11 @@ def process_refund(transaction_line: string, games_collection: list[str], curren
         refund_price = float(refund_price)
 
         for i, user in enumerate(current_users):
-            current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]
-            if current_user_name == buyer_name:
+            current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]   
+            if current_user_name.lower() == buyer_name.lower():
                 current_users[i] = utils.update_balance(user, refund_price)
-            elif current_user_name == seller_name:
+
+            elif current_user_name.lower() == seller_name.lower():
                 current_users[i] = utils.update_balance(user, -refund_price)
         utils.display_success_message("Refund")
     else:

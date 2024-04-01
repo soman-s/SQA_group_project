@@ -1,512 +1,381 @@
 Test: login1
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,24c1,24
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login10
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,24c1,24
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login11
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,20c1,20
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: full1
-< Logged IN
-< Full Standard Menu
-< 1)Sell
-< 2)Buy
-< 3)Add Credit
-< 4)View Available Games
-< 5)Logout
-< Enter an option: 5
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login12
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,19c1,19
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: sell1
-< Logged IN
-< Sell Standard Menu
-< 1)Sell
-< 2)Add Credit
-< 3)View Available Games
-< 4)Logout
-< Enter an option: 4
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: sell1
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login13
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,19c1,19
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: buy1
-< Logged IN
-< Buy Standard Menu
-< 1)Buy
-< 2)Add Credit
-< 3)View Available Games
-< 4)Logout
-< Enter an option: 4
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: buy1
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login2
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,20c1,20
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: full1
-< Logged IN
-< Full Standard Menu
-< 1)Sell
-< 2)Buy
-< 3)Add Credit
-< 4)View Available Games
-< 5)Logout
-< Enter an option: 5
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login3
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,19c1,19
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: sell1
-< Logged IN
-< Sell Standard Menu
-< 1)Sell
-< 2)Add Credit
-< 3)View Available Games
-< 4)Logout
-< Enter an option: 4
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: sell1
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login4
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,19c1,19
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: buy1
-< Logged IN
-< Buy Standard Menu
-< 1)Buy
-< 2)Add Credit
-< 3)View Available Games
-< 4)Logout
-< Enter an option: 4
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: buy1
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login5
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,14c1,14
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: Admin19
-< Invalid Login
-< Enter valid username or -1 to exit: -1
-< EXIT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: Admin19
-> Invalid Login
-> Enter valid username or -1 to exit: -1
-> EXIT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login6
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,14c1,14
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: full19
-< Invalid Login
-< Enter valid username or -1 to exit: -1
-< EXIT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full19
-> Invalid Login
-> Enter valid username or -1 to exit: -1
-> EXIT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login7
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,14c1,14
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: sell19
-< Invalid Login
-< Enter valid username or -1 to exit: -1
-< EXIT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: sell19
-> Invalid Login
-> Enter valid username or -1 to exit: -1
-> EXIT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
 ===================================
 Test: login8
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,14c1,14
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: buy19
-< Invalid Login
-< Enter valid username or -1 to exit: -1
-< EXIT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: buy19
-> Invalid Login
-> Enter valid username or -1 to exit: -1
-> EXIT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+Pass: Outputs match
+===================================
+Test: login9
+Pass: Outputs match
+===================================
+Test: logout1
+Pass: Outputs match
+===================================
+Test: logout2
+Pass: Outputs match
+===================================
+Test: logout3
+Pass: Outputs match
+===================================
+Test: logout4
+Pass: Outputs match
+===================================
+Test: logout5
+Pass: Outputs match
+===================================
+Test: logout6
+Pass: Outputs match
+===================================
+Test: logout7
+Pass: Outputs match
+===================================
+Test: logout8
+Pass: Outputs match
+===================================
+Test: logout9
+Pass: Outputs match
+===================================
+Test: sell1
+Pass: Outputs match
+===================================
+Test: sell10
+Pass: Outputs match
+===================================
+Test: sell11
+Pass: Outputs match
+===================================
+Test: sell12
+Pass: Outputs match
+===================================
+Test: sell13
+Pass: Outputs match
+===================================
+Test: sell14
+Pass: Outputs match
+===================================
+Test: sell15
+Pass: Outputs match
+===================================
+Test: sell16
+Pass: Outputs match
+===================================
+Test: sell17
+Pass: Outputs match
+===================================
+Test: sell18
+Pass: Outputs match
+===================================
+Test: sell19
+Pass: Outputs match
+===================================
+Test: sell2
+Pass: Outputs match
+===================================
+Test: sell20
+Pass: Outputs match
+===================================
+Test: sell21
+Pass: Outputs match
+===================================
+Test: sell22
+Pass: Outputs match
+===================================
+Test: sell23
+Pass: Outputs match
+===================================
+Test: sell3
+Pass: Outputs match
+===================================
+Test: sell4
+Pass: Outputs match
+===================================
+Test: sell5
+Pass: Outputs match
+===================================
+Test: sell6
+Pass: Outputs match
+===================================
+Test: sell7
+Pass: Outputs match
+===================================
+Test: sell8
+Pass: Outputs match
+===================================
+Test: sell9
+Pass: Outputs match
+===================================
+Test: refund1
+Pass: Outputs match
+===================================
+Test: refund10
+Pass: Outputs match
+===================================
+Test: refund11
+Pass: Outputs match
+===================================
+Test: refund12
+Pass: Outputs match
+===================================
+Test: refund13
+Pass: Outputs match
+===================================
+Test: refund14
+Pass: Outputs match
+===================================
+Test: refund15
+Pass: Outputs match
+===================================
+Test: refund16
+Pass: Outputs match
+===================================
+Test: refund17
+Pass: Outputs match
+===================================
+Test: refund18
+Pass: Outputs match
+===================================
+Test: refund19
+Pass: Outputs match
+===================================
+Test: refund2
+Pass: Outputs match
+===================================
+Test: refund20
+Pass: Outputs match
+===================================
+Test: refund21
+Pass: Outputs match
+===================================
+Test: refund22
+Pass: Outputs match
+===================================
+Test: refund23
+Pass: Outputs match
+===================================
+Test: refund24
+Pass: Outputs match
+===================================
+Test: refund25
+Pass: Outputs match
+===================================
+Test: refund26
+Pass: Outputs match
+===================================
+Test: refund27
+Pass: Outputs match
+===================================
+Test: refund28
+Pass: Outputs match
+===================================
+Test: refund29
+Pass: Outputs match
+===================================
+Test: refund3
+Pass: Outputs match
+===================================
+Test: refund30
+Pass: Outputs match
+===================================
+Test: refund31
+Pass: Outputs match
+===================================
+Test: refund32
+Pass: Outputs match
+===================================
+Test: refund33
+Pass: Outputs match
+===================================
+Test: refund34
+Pass: Outputs match
+===================================
+Test: refund35
+Pass: Outputs match
+===================================
+Test: refund36
+Pass: Outputs match
+===================================
+Test: refund37
+Pass: Outputs match
+===================================
+Test: refund38
+Pass: Outputs match
+===================================
+Test: refund39
+Pass: Outputs match
+===================================
+Test: refund4
+Pass: Outputs match
+===================================
+Test: refund40
+Pass: Outputs match
+===================================
+Test: refund41
+Pass: Outputs match
+===================================
+Test: refund42
+Pass: Outputs match
+===================================
+Test: refund43
+Pass: Outputs match
+===================================
+Test: refund44
+Pass: Outputs match
+===================================
+Test: refund45
+Pass: Outputs match
+===================================
+Test: refund46
+Pass: Outputs match
+===================================
+Test: refund47
+Pass: Outputs match
+===================================
+Test: refund48
+Pass: Outputs match
+===================================
+Test: refund49
+Pass: Outputs match
+===================================
+Test: refund5
+Pass: Outputs match
+===================================
+Test: refund50
+Pass: Outputs match
+===================================
+Test: refund51
+Pass: Outputs match
+===================================
+Test: refund52
+Pass: Outputs match
+===================================
+Test: refund53
+Pass: Outputs match
+===================================
+Test: refund54
+Pass: Outputs match
+===================================
+Test: refund55
+Pass: Outputs match
+===================================
+Test: refund56
+Pass: Outputs match
+===================================
+Test: refund57
+Pass: Outputs match
+===================================
+Test: refund58
+Pass: Outputs match
+===================================
+Test: refund59
+Pass: Outputs match
+===================================
+Test: refund6
+Pass: Outputs match
+===================================
+Test: refund60
+Pass: Outputs match
+===================================
+Test: refund61
+Pass: Outputs match
+===================================
+Test: refund62
+Pass: Outputs match
+===================================
+Test: refund63
+Pass: Outputs match
+===================================
+Test: refund64
+Pass: Outputs match
+===================================
+Test: refund65
+Pass: Outputs match
+===================================
+Test: refund66
+Pass: Outputs match
+===================================
+Test: refund67
+Pass: Outputs match
+===================================
+Test: refund68
+Pass: Outputs match
+===================================
+Test: refund69
+Pass: Outputs match
+===================================
+Test: refund7
+Pass: Outputs match
+===================================
+Test: refund70
+Pass: Outputs match
+===================================
+Test: refund71
+Pass: Outputs match
+===================================
+Test: refund72
+Pass: Outputs match
+===================================
+Test: refund73
+Pass: Outputs match
+===================================
+Test: refund74
+Pass: Outputs match
+===================================
+Test: refund75
+Pass: Outputs match
+===================================
+Test: refund76
+Pass: Outputs match
+===================================
+Test: refund77
+Pass: Outputs match
+===================================
+Test: refund78
+Pass: Outputs match
+===================================
+Test: refund79
+Pass: Outputs match
+===================================
+Test: refund8
+Pass: Outputs match
+===================================
+Test: refund80
+Pass: Outputs match
+===================================
+Test: refund81
+Pass: Outputs match
+===================================
+Test: refund82
+Pass: Outputs match
+===================================
+Test: refund9
+Pass: Outputs match
 ===================================

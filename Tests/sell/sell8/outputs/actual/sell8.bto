@@ -14,7 +14,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 3
 Sell
 Enter game name: admingame8
@@ -25,7 +26,7 @@ Invlaid Game Price
 Enter Game price: -1
 
 Invlaid Game Price
-Enter Game price: 9
+Enter Game price: 10
 
 Invlaid Game Price
 Enter Game price or -1 to exit: 2
@@ -39,7 +40,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 
 LOGGED OUT
 HOME MENU

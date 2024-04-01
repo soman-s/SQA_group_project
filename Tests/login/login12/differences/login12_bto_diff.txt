@@ -10,8 +10,9 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
@@ -30,8 +31,9 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
@@ -39,43 +41,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,19c1,19
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: sell1
-< Logged IN
-< Sell Standard Menu
-< 1)Sell
-< 2)Add Credit
-< 3)View Available Games
-< 4)Logout
-< Enter an option: 4
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: sell1
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS

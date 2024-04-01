@@ -14,7 +14,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 5
 Refund
 Enter Game name: fullgame2
@@ -26,7 +27,7 @@ Enter buyer name: full2
 Enter Refund Amount: 999.99
 
 Refund cannot not be issued
-Reasons refund Failed( 1 or more of the following): 9
+Reasons refund Failed( 1 or more of the following): 10
 
 Seller doesn't sell game
 Buyer doesn't own game
@@ -41,7 +42,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 2
 LOGGED OUT
 HOME MENU

@@ -27,7 +27,7 @@ echo "Running Tests"
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each test subdirectory in "Tests" excluding the summary folder
 # for subdir in login logout refund sell add_credit create delete buy all_user available_games;
-for subdir in login; do
+for subdir in login logout sell refund; do
     subdir="${subdir%/}"
     # Change into the subdirectory
     cd "$subdir" || { echo "Failed to enter subdirectory: $subdir"; continue; }
@@ -205,6 +205,10 @@ for index in "${!test_inputs[@]}"; do
         diff "$expected_bto" "$output_bto" >> "$summary_bto_differences_file"
         echo "===================================" >> "$summary_bto_differences_file"
         echo -e "\e[31mFail: Expected Output and Actual Output Do Not Match\e[0m"
+
+
+
+
     else
         # If there are no differences, indicate that in the summary file
         ((passed_output_tests++))
@@ -248,6 +252,8 @@ for index in "${!test_inputs[@]}"; do
             diff "$expected_transaction" "$actual_transaction" >> "$summary_daily_transaction_differences_file"
             echo "==================================" >> "$summary_daily_transaction_differences_file"
             echo -e "\e[31mFail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match\e[0m"
+
+
 
 
 

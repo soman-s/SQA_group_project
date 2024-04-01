@@ -1,381 +1,219 @@
-Test: login1
+Test: create1
 Pass: Outputs match
 ===================================
-Test: login10
+Test: create10
 Pass: Outputs match
 ===================================
-Test: login11
+Test: create11
 Pass: Outputs match
 ===================================
-Test: login12
+Test: create12
 Pass: Outputs match
 ===================================
-Test: login13
+Test: create13
 Pass: Outputs match
 ===================================
-Test: login2
+Test: create14
 Pass: Outputs match
 ===================================
-Test: login3
+Test: create15
 Pass: Outputs match
 ===================================
-Test: login4
+Test: create16
 Pass: Outputs match
 ===================================
-Test: login5
+Test: create17
 Pass: Outputs match
 ===================================
-Test: login6
+Test: create18
 Pass: Outputs match
 ===================================
-Test: login7
+Test: create19
 Pass: Outputs match
 ===================================
-Test: login8
+Test: create2
 Pass: Outputs match
 ===================================
-Test: login9
+Test: create20
 Pass: Outputs match
 ===================================
-Test: logout1
+Test: create21
 Pass: Outputs match
 ===================================
-Test: logout2
+Test: create22
 Pass: Outputs match
 ===================================
-Test: logout3
+Test: create23
 Pass: Outputs match
 ===================================
-Test: logout4
+Test: create24
 Pass: Outputs match
 ===================================
-Test: logout5
+Test: create3
 Pass: Outputs match
 ===================================
-Test: logout6
+Test: create4
 Pass: Outputs match
 ===================================
-Test: logout7
+Test: create5
 Pass: Outputs match
 ===================================
-Test: logout8
+Test: create6
 Pass: Outputs match
 ===================================
-Test: logout9
+Test: create7
 Pass: Outputs match
 ===================================
-Test: sell1
+Test: create8
 Pass: Outputs match
 ===================================
-Test: sell10
+Test: create9
 Pass: Outputs match
 ===================================
-Test: sell11
+Test: delete1
 Pass: Outputs match
 ===================================
-Test: sell12
+Test: delete10
 Pass: Outputs match
 ===================================
-Test: sell13
+Test: delete11
 Pass: Outputs match
 ===================================
-Test: sell14
+Test: delete12
 Pass: Outputs match
 ===================================
-Test: sell15
+Test: delete13
 Pass: Outputs match
 ===================================
-Test: sell16
+Test: delete14
 Pass: Outputs match
 ===================================
-Test: sell17
+Test: delete15
 Pass: Outputs match
 ===================================
-Test: sell18
+Test: delete16
 Pass: Outputs match
 ===================================
-Test: sell19
+Test: delete17
 Pass: Outputs match
 ===================================
-Test: sell2
+Test: delete18
 Pass: Outputs match
 ===================================
-Test: sell20
+Test: delete19
 Pass: Outputs match
 ===================================
-Test: sell21
+Test: delete2
 Pass: Outputs match
 ===================================
-Test: sell22
+Test: delete3
 Pass: Outputs match
 ===================================
-Test: sell23
+Test: delete4
 Pass: Outputs match
 ===================================
-Test: sell3
+Test: delete5
 Pass: Outputs match
 ===================================
-Test: sell4
+Test: delete6
 Pass: Outputs match
 ===================================
-Test: sell5
+Test: delete7
 Pass: Outputs match
 ===================================
-Test: sell6
+Test: delete8
 Pass: Outputs match
 ===================================
-Test: sell7
+Test: delete9
 Pass: Outputs match
 ===================================
-Test: sell8
+Test: add_credit1
 Pass: Outputs match
 ===================================
-Test: sell9
+Test: add_credit10
 Pass: Outputs match
 ===================================
-Test: refund1
+Test: add_credit11
 Pass: Outputs match
 ===================================
-Test: refund10
+Test: add_credit12
 Pass: Outputs match
 ===================================
-Test: refund11
+Test: add_credit13
 Pass: Outputs match
 ===================================
-Test: refund12
+Test: add_credit14
 Pass: Outputs match
 ===================================
-Test: refund13
+Test: add_credit15
 Pass: Outputs match
 ===================================
-Test: refund14
+Test: add_credit16
 Pass: Outputs match
 ===================================
-Test: refund15
+Test: add_credit17
 Pass: Outputs match
 ===================================
-Test: refund16
+Test: add_credit18
 Pass: Outputs match
 ===================================
-Test: refund17
+Test: add_credit19
 Pass: Outputs match
 ===================================
-Test: refund18
+Test: add_credit2
 Pass: Outputs match
 ===================================
-Test: refund19
+Test: add_credit20
 Pass: Outputs match
 ===================================
-Test: refund2
+Test: add_credit21
 Pass: Outputs match
 ===================================
-Test: refund20
+Test: add_credit22
 Pass: Outputs match
 ===================================
-Test: refund21
+Test: add_credit23
 Pass: Outputs match
 ===================================
-Test: refund22
+Test: add_credit24
 Pass: Outputs match
 ===================================
-Test: refund23
+Test: add_credit25
 Pass: Outputs match
 ===================================
-Test: refund24
+Test: add_credit26
 Pass: Outputs match
 ===================================
-Test: refund25
+Test: add_credit27
 Pass: Outputs match
 ===================================
-Test: refund26
+Test: add_credit28
 Pass: Outputs match
 ===================================
-Test: refund27
+Test: add_credit29
 Pass: Outputs match
 ===================================
-Test: refund28
+Test: add_credit3
 Pass: Outputs match
 ===================================
-Test: refund29
+Test: add_credit30
 Pass: Outputs match
 ===================================
-Test: refund3
+Test: add_credit4
 Pass: Outputs match
 ===================================
-Test: refund30
+Test: add_credit5
 Pass: Outputs match
 ===================================
-Test: refund31
+Test: add_credit6
 Pass: Outputs match
 ===================================
-Test: refund32
+Test: add_credit7
 Pass: Outputs match
 ===================================
-Test: refund33
+Test: add_credit8
 Pass: Outputs match
 ===================================
-Test: refund34
-Pass: Outputs match
-===================================
-Test: refund35
-Pass: Outputs match
-===================================
-Test: refund36
-Pass: Outputs match
-===================================
-Test: refund37
-Pass: Outputs match
-===================================
-Test: refund38
-Pass: Outputs match
-===================================
-Test: refund39
-Pass: Outputs match
-===================================
-Test: refund4
-Pass: Outputs match
-===================================
-Test: refund40
-Pass: Outputs match
-===================================
-Test: refund41
-Pass: Outputs match
-===================================
-Test: refund42
-Pass: Outputs match
-===================================
-Test: refund43
-Pass: Outputs match
-===================================
-Test: refund44
-Pass: Outputs match
-===================================
-Test: refund45
-Pass: Outputs match
-===================================
-Test: refund46
-Pass: Outputs match
-===================================
-Test: refund47
-Pass: Outputs match
-===================================
-Test: refund48
-Pass: Outputs match
-===================================
-Test: refund49
-Pass: Outputs match
-===================================
-Test: refund5
-Pass: Outputs match
-===================================
-Test: refund50
-Pass: Outputs match
-===================================
-Test: refund51
-Pass: Outputs match
-===================================
-Test: refund52
-Pass: Outputs match
-===================================
-Test: refund53
-Pass: Outputs match
-===================================
-Test: refund54
-Pass: Outputs match
-===================================
-Test: refund55
-Pass: Outputs match
-===================================
-Test: refund56
-Pass: Outputs match
-===================================
-Test: refund57
-Pass: Outputs match
-===================================
-Test: refund58
-Pass: Outputs match
-===================================
-Test: refund59
-Pass: Outputs match
-===================================
-Test: refund6
-Pass: Outputs match
-===================================
-Test: refund60
-Pass: Outputs match
-===================================
-Test: refund61
-Pass: Outputs match
-===================================
-Test: refund62
-Pass: Outputs match
-===================================
-Test: refund63
-Pass: Outputs match
-===================================
-Test: refund64
-Pass: Outputs match
-===================================
-Test: refund65
-Pass: Outputs match
-===================================
-Test: refund66
-Pass: Outputs match
-===================================
-Test: refund67
-Pass: Outputs match
-===================================
-Test: refund68
-Pass: Outputs match
-===================================
-Test: refund69
-Pass: Outputs match
-===================================
-Test: refund7
-Pass: Outputs match
-===================================
-Test: refund70
-Pass: Outputs match
-===================================
-Test: refund71
-Pass: Outputs match
-===================================
-Test: refund72
-Pass: Outputs match
-===================================
-Test: refund73
-Pass: Outputs match
-===================================
-Test: refund74
-Pass: Outputs match
-===================================
-Test: refund75
-Pass: Outputs match
-===================================
-Test: refund76
-Pass: Outputs match
-===================================
-Test: refund77
-Pass: Outputs match
-===================================
-Test: refund78
-Pass: Outputs match
-===================================
-Test: refund79
-Pass: Outputs match
-===================================
-Test: refund8
-Pass: Outputs match
-===================================
-Test: refund80
-Pass: Outputs match
-===================================
-Test: refund81
-Pass: Outputs match
-===================================
-Test: refund82
-Pass: Outputs match
-===================================
-Test: refund9
+Test: add_credit9
 Pass: Outputs match
 ===================================

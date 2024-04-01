@@ -1,9 +1,9 @@
 Expected:
-06 buy1            BS 001200.00
+06 buy1            BS 000300.00
 00 buy1            BS 000900.00
 
 Actual:
-06 buy1            BS 001200.00
+06 buy1            BS 000300.00
 00 buy1            BS 000900.00
 
 Differences:

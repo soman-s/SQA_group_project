@@ -124,7 +124,7 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
 // logic for create transaction
 string transactions::process_create(vector<string>& all_users, vector<string>& transaction_log){
 
-  unordered_map <string, string> user_type_codes = {{"1","AA"},{"2","FS"},{"3","BS"},{"4","SS"}};
+  unordered_map <string, string> user_type_codes = {{"1","AA"},{"3","FS"},{"4","BS"},{"5","SS"}};
 
   string new_account;
   cout << "Create" << endl;
@@ -144,7 +144,7 @@ string transactions::process_create(vector<string>& all_users, vector<string>& t
   while(!valid_account){
 
     try {
-      if(stoi(new_account) >= 1 && stoi(new_account) <= 4 ){
+      if(stoi(new_account) >= 1 && stoi(new_account) <= 5 ){
         break;
 
       }
@@ -694,9 +694,9 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
   user_balance+=credit_amount;
 
-  string user_balance_padded = utils().pad_credit_amount(user_balance);
+  string credit_amount_padded = utils().pad_credit_amount(credit_amount);
 
-  string log_entry = constants::ADD_CREDIT_CODE+" "+user+ " " + user_file_process().get_user_type(all_users, user) + " " + user_balance_padded;
+  string log_entry = constants::ADD_CREDIT_CODE+" "+user+ " " + user_file_process().get_user_type(all_users, user) + " " + credit_amount_padded;
   utils().update_transction_log(log_entry,transaction_log);
 
 

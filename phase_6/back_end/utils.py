@@ -296,17 +296,17 @@ def check_valid_transaction_file(data: list[str])-> bool:
                 if not re.match(pattern, check_format):
                     display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid refund amount format on line:  {line_num+1}")
                     return False
-                
+
             #ADD CHECKS HERE
             elif current_code==Constants.BUY_CODE:
 
                 check_format = line[Constants.MAX_ACCOUNT_TYPE_LENGTH + 1 + Constants.MAX_GAME_NAME_LENGTH:
                     Constants.MAX_ACCOUNT_TYPE_LENGTH + 1 + Constants.MAX_GAME_NAME_LENGTH + 1]
-                
+
                 if check_format != Constants.CHAR_BETWEEN_COMPONENTS:
                     display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid game name formatting on line: {line_num + 1}")
                     return False
-                
+
 
                 check_format = line[Constants.MAX_ACCOUNT_TYPE_LENGTH + 1 + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH:
                     Constants.MAX_ACCOUNT_TYPE_LENGTH + 1 + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1]
@@ -314,7 +314,7 @@ def check_valid_transaction_file(data: list[str])-> bool:
                 if check_format != Constants.CHAR_BETWEEN_COMPONENTS:
                     display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid username formatting on line: {line_num + 1}")
                     return False
-                
+
 
                 check_format = line[Constants.MAX_ACCOUNT_TYPE_LENGTH + 1 + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH:
                                      Constants.MAX_ACCOUNT_TYPE_LENGTH + 1 + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1]
@@ -324,15 +324,15 @@ def check_valid_transaction_file(data: list[str])-> bool:
                     display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid username formatting on line: {line_num}")
                     return False
 
-                
+
                 check_format = line[Constants.MAX_ACCOUNT_TYPE_LENGTH + 1 + Constants.MAX_GAME_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1 + Constants.MAX_USER_NAME_LENGTH + 1:]
                 pattern = r'^[\d.]{%d}$' % Constants.MAX_CREDIT_LENGTH
 
                 if not re.match(pattern, check_format.strip()):
                     display_error_message(f"INVALID MERGED DAILY TRANSACTION FILE, invalid game price format on line: {line_num + 1}")
                     return False
-                
-                
+
+
             elif current_code==Constants.CREATE_CODE:
                 if not validation_checks(line,line_num):
                     return False

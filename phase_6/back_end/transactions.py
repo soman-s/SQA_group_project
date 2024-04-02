@@ -211,14 +211,14 @@ def process_refund(transaction_line: string, games_collection: list[str], curren
     for collection_entry in games_collection:
         if game_to_remove.lower() == collection_entry.lower():
             games_collection.remove(collection_entry)
-            print(collection_entry)
+            #print(collection_entry)
             game_removed = True
 
     if game_removed:
         refund_price = float(refund_price)
 
         for i, user in enumerate(current_users):
-            current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]   
+            current_user_name = user[:Constants.MAX_USER_NAME_LENGTH]
             if current_user_name.lower() == buyer_name.lower():
                 current_users[i] = utils.update_balance(user, refund_price)
 

@@ -5,7 +5,7 @@ custom_program="front_end.exe"
 
 day_inputs=()
 
-# Always coping back the original files for testing
+#Always coping back the original files for testing
 
 # echo "Copying back the Original Log Files"
 #
@@ -62,6 +62,7 @@ rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
 echo "Processing Backend for $1"
 cd back_end
 python main.py>/dev/null 2>&1
+# python main.py
 
 cd ..
 

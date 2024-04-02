@@ -13,6 +13,13 @@ destination_folder="front_end/log_files"
 
 cp -rf "$source_folder"/* "$destination_folder"/
 
+# Compling the front end
+echo "Compling Front End"
+cd front_end
+g++ -o front_end.exe main.cpp menus.cpp user_file_process.cpp constants.cpp games_file_process.cpp utils.cpp transactions.cpp
+cd ..
+
+
 cd daily_sessions
 
 # Loop through each folder in the current directory

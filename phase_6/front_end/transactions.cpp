@@ -122,9 +122,9 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
 }
 
 // logic for create transaction
-string transactions::process_create(vector<string>& all_users, vector<string>& transaction_log){
+string transactions::process_create(vector<string>& all_users, vector<string>& transaction_log, string current_user_type){
 
-  unordered_map <string, string> user_type_codes = {{"1","AA"},{"3","FS"},{"4","BS"},{"5","SS"}};
+  unordered_map <string, string> user_type_codes = {{"1","AA"},{"2","AM"},{"3","FS"},{"4","BS"},{"5","SS"}};
 
   string new_account;
   cout << "Create" << endl;
@@ -135,6 +135,12 @@ string transactions::process_create(vector<string>& all_users, vector<string>& t
 
   cout << "Enter account type: ";
   cin >> new_account;
+
+  while(current_user_type == "AM" && new_account == "1"){
+    cout << "Account Manager cannot create admin accounts try again" << endl;
+    cout << "Enter account type: ";
+    cin >> new_account;
+  }
 
 
   bool valid_account = false;
@@ -251,7 +257,7 @@ string transactions::process_create(vector<string>& all_users, vector<string>& t
 }
 
 // logic for delete transactions
-string transactions:: process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log){
+string transactions:: process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log, string current_user_type){
 
   string user_to_remove;
 
@@ -262,27 +268,34 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
   cin >> user_to_remove;
 
   user_to_remove = utils().pad_username(user_to_remove);
+  
+  string user_to_remove_type = user_file_process().get_user_type(all_users, user_to_remove);
 
-
-  while(!user_file_process().check_user_names(all_users,user_to_remove) || user_to_remove==current_user){
+  while(!user_file_process().check_user_names(all_users,user_to_remove) || user_to_remove==current_user || (current_user_type == "AM" && user_to_remove_type=="AA")){
 
     if(user_to_remove == current_user){
       cout << "user cannot remove itself please try again or -1 to exit" << endl;
-      cout << "Enter username: ";
+    }
+
+    else if (current_user_type == "AM" && user_to_remove_type=="AA"){
+      cout << "Account Manager user cannot remove admin accounts " << endl;
     }
 
     else{
       cout << "Username does not exist please try again or -1 to exit " << endl;
-      cout << "Enter username: ";
     }
 
+    cout << "Enter username: ";
+
     cin >> user_to_remove;
+
+    user_to_remove = utils().pad_username(user_to_remove);
+
+    user_to_remove_type = user_file_process().get_user_type(all_users, user_to_remove);
 
     if (user_to_remove == constants::EXIT_MENU_OPTION){
       return constants::EXIT_MENU_OPTION;
     }
-
-    user_to_remove = utils().pad_username(user_to_remove);
 
   }
 
@@ -613,7 +626,7 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
   cout << "Add Credit" << endl;
 
-  if(menu_option == "6"){
+  if(menu_option == "6" || menu_option == "4"){
 
     cout << "Enter username: ";
 
@@ -621,19 +634,30 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
     user = utils().pad_username(user);
 
-    while(!user_file_process().check_user_names(all_users,user)){
+    string accout_type = user_file_process().get_user_type(all_users, user);
 
-      cout << "Username does not exist please try again or -1 to exit " << endl;
+    while(!user_file_process().check_user_names(all_users,user) || accout_type == constants::ACCOUNT_MANAGER){
+
+
+      if(accout_type == constants::ACCOUNT_MANAGER){
+        cout << "Can't add credit to account manager please pick another user" << endl;
+      }
+      else{
+        cout << "Username does not exist please try again or -1 to exit " << endl;
+      }
+    
       cout << "Enter username: ";
 
       cin >> user;
 
+      user = utils().pad_username(user);
+
+      accout_type = user_file_process().get_user_type(all_users, user);
 
       if (user == constants::EXIT_MENU_OPTION){
         return constants::EXIT_MENU_OPTION;
       }
 
-      user = utils().pad_username(user);
 
     }
   }

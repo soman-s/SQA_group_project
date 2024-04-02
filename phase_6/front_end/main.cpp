@@ -141,11 +141,11 @@ int main()
                             }
                             else if (user_menu_option == constants::CREATE)
                              {
-                                transactions().process_create(all_users,transaction_log);
+                                transactions().process_create(all_users,transaction_log,current_user_type);
                             }
                             else if (user_menu_option == constants::DELETE)
                              {
-                                transactions().process_delete(all_users, current_user_name, transaction_log);
+                                transactions().process_delete(all_users, current_user_name, transaction_log, current_user_type);
                             }
                             else if (user_menu_option == constants::LIST_ALL_USERS)
                              {

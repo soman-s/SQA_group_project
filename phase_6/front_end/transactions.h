@@ -40,7 +40,7 @@ public:
      * @param transaction_log Vector containg all transaction logs
      * @return A message indicating the result of the transaction.
      */
-    string process_create(vector<string>& all_users,vector<string>& transaction_log);
+    string process_create(vector<string>& all_users,vector<string>& transaction_log, string current_user_type);
 
     /**
      * @brief Process the deletion of a user.
@@ -50,7 +50,7 @@ public:
      * @param transaction_log Vector containg all transaction logs
      * @return A message indicating the result of the transaction.
      */
-    string process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log);
+    string process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log, string current_user_type);
 
     /**
      * @brief Show information about all users.

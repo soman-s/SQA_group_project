@@ -1,0 +1,11 @@
+Expected:
+02 buy1            BS 000900.00
+00 admin1          AA 000500.00
+00 buy1            BS 000900.00
+
+Actual:
+02 buy1            BS 000900.00
+00 admin1          AA 000500.00
+00 buy1            BS 000900.00
+
+Differences:

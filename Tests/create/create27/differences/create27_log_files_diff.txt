@@ -1,0 +1,9 @@
+Expected:
+01 full4           FS 000500.00
+00 am1             AM 999999.00
+
+Actual:
+01 full4           FS 000500.00
+00 am1             AM 999999.00
+
+Differences:

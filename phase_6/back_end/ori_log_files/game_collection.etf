@@ -4,11 +4,13 @@ Minecraft                 admin2
 Fortnite                  full1          
 Uncharted                 sell1          
 Fifa                      admin1         
+admingame1                admin2         
 admingame1                full1          
 admingame1                buy1           
 sellgame1                 admin1         
 sellgame1                 full1          
 sellgame1                 buy1           
+fullgame1                 admin1         
 fullgame1                 buy1           
 fullgame1                 full2          
 admingame2                admin2         
@@ -30,6 +32,4 @@ admingame3                admin1
 fullgame3                 full1          
 Sellgame3                 sell1          
 Dota                      admin2         
-admin game8               admin1         
-fullgame8                 full1          
 END                                      

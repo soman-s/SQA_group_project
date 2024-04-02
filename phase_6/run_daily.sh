@@ -66,16 +66,33 @@ python main.py>/dev/null 2>&1
 
 cd ..
 
+# Copying the modified files
 source_folder="back_end/mod_log_files"
 # Loop through all files in the directory
 for file in *; do
-  if [ -f "$file" ]; then  # Check if it's a regular file
-    dos2unix "$file" >/dev/null 2>&1  # Convert file to Unix format and suppress output
+  if [ -f "$file" ]; then
+    dos2unix "$file" >/dev/null 2>&1
   fi
 done
 
 destination_folder="front_end/log_files"
 
 rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
+
+
+# copying the data files to a directory
+source_folder="back_end/mod_log_files"
+destination_folder="daily_runs_output_files/$1"
+rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
+
+
+
+source_folder="back_end/ori_log_files/merged_daily_transactions.etf"
+destination_folder="daily_runs_output_files/$1"
+
+cp -rf "$source_folder" "$destination_folder" >/dev/null 2>&1
+
+
+
 
 echo "Done Processing Sessions: $1 "

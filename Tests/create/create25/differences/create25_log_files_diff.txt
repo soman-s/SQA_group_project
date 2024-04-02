@@ -1,4 +1,6 @@
 Expected:
+01 am3             AM 000500.00
+00 admin1          AA 000500.00
 
 Actual:
 01 am3             AM 000500.00

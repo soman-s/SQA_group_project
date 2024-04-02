@@ -1,20 +1,16 @@
 #!/bin/bash
 #!/bin/sh
 
+
+# Script to process 1 days worth of daily merged_daily_transactions
+# To run DAILY SCRIPT
+# chmod +x run_daily.sh
+# dos2unix run_daily.sh
+# ./run_daily.sh day_1(sub with the folder you want to test)
+
 custom_program="front_end.exe"
 
 day_inputs=()
-
-#Always coping back the original files for testing
-
-# echo "Copying back the Original Log Files"
-#
-# source_folder="original_files"
-# destination_folder="front_end/log_files"
-
-
-# Copy all contents from source to destination
-cp -rf "$source_folder"/* "$destination_folder"/ >/dev/null 2>&1
 
 echo " Getting inputs from $1 Sessions"
 # Getting inputs from day 1 sessions
@@ -79,18 +75,18 @@ destination_folder="front_end/log_files"
 
 rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
 
-
-# copying the data files to a directory
-source_folder="back_end/mod_log_files"
-destination_folder="daily_runs_output_files/$1"
-rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
-
-
-
-source_folder="back_end/ori_log_files/merged_daily_transactions.etf"
-destination_folder="daily_runs_output_files/$1"
-
-cp -rf "$source_folder" "$destination_folder" >/dev/null 2>&1
+#
+# # copying the data files to a directory
+# source_folder="back_end/mod_log_files"
+# destination_folder="daily_runs_output_files/$1"
+# rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
+#
+#
+#
+# source_folder="back_end/ori_log_files/merged_daily_transactions.etf"
+# destination_folder="daily_runs_output_files/$1"
+#
+# cp -rf "$source_folder" "$destination_folder" >/dev/null 2>&1
 
 
 

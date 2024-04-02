@@ -1,0 +1,7 @@
+Expected:
+00 am1             AM 999999.00
+
+Actual:
+00 am1             AM 999999.00
+
+Differences:

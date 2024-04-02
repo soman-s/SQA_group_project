@@ -140,6 +140,10 @@ string transactions::process_create(vector<string>& all_users, vector<string>& t
     cout << "Account Manager cannot create admin accounts try again" << endl;
     cout << "Enter account type: ";
     cin >> new_account;
+
+    if (new_account == constants::EXIT_MENU_OPTION){
+      return constants::EXIT_MENU_OPTION;
+    }
   }
 
 
@@ -271,8 +275,6 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
   string user_to_remove_type = user_file_process().get_user_type(all_users, user_to_remove);
 
-  cout << "user_to_remove_type " << user_to_remove_type << endl;
-
   while(!user_file_process().check_user_names(all_users,user_to_remove) || user_to_remove==current_user || (current_user_type == "AM" && user_to_remove_type=="AA")){
 
     if(user_to_remove == current_user){
@@ -280,7 +282,7 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
     }
 
     else if (current_user_type == "AM" && user_to_remove_type=="AA"){
-      cout << "Account Manager user cannot remove admin accounts " << endl;
+      cout << "Account Manager user cannot remove admin accounts or -1 to exit" << endl;
     }
 
     else{
@@ -290,13 +292,15 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
     cout << "Enter username: ";
     cin >> user_to_remove;
 
+    if (user_to_remove == constants::EXIT_MENU_OPTION){
+      return constants::EXIT_MENU_OPTION;
+    }
+
     user_to_remove = utils().pad_username(user_to_remove);
 
     user_to_remove_type = user_file_process().get_user_type(all_users, user_to_remove);
 
-    if (user_to_remove == constants::EXIT_MENU_OPTION){
-      return constants::EXIT_MENU_OPTION;
-    }
+   
 
   }
 
@@ -649,15 +653,17 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
       cin >> user;
 
-      user = utils().pad_username(user);
-
-      accout_type = user_file_process().get_user_type(all_users, user);
-
       if (user == constants::EXIT_MENU_OPTION){
         return constants::EXIT_MENU_OPTION;
       }
 
 
+
+      user = utils().pad_username(user);
+
+      accout_type = user_file_process().get_user_type(all_users, user);
+
+      
     }
   }
 

@@ -1,252 +1,117 @@
-Test: create1
+Test: buy1
 Pass: Outputs match
 ===================================
-Test: create10
+Test: buy10
 Pass: Outputs match
 ===================================
-Test: create11
+Test: buy11
 Pass: Outputs match
 ===================================
-Test: create12
+Test: buy12
 Pass: Outputs match
 ===================================
-Test: create13
+Test: buy13
 Pass: Outputs match
 ===================================
-Test: create14
+Test: buy14
 Pass: Outputs match
 ===================================
-Test: create15
+Test: buy15
 Pass: Outputs match
 ===================================
-Test: create16
+Test: buy16
 Pass: Outputs match
 ===================================
-Test: create17
+Test: buy17
 Pass: Outputs match
 ===================================
-Test: create18
+Test: buy18
 Pass: Outputs match
 ===================================
-Test: create19
+Test: buy19
 Pass: Outputs match
 ===================================
-Test: create2
+Test: buy2
 Pass: Outputs match
 ===================================
-Test: create20
+Test: buy20
 Pass: Outputs match
 ===================================
-Test: create21
+Test: buy21
 Pass: Outputs match
 ===================================
-Test: create22
+Test: buy22
 Pass: Outputs match
 ===================================
-Test: create23
+Test: buy23
 Pass: Outputs match
 ===================================
-Test: create24
+Test: buy24
 Pass: Outputs match
 ===================================
-Test: create25
+Test: buy25
 Pass: Outputs match
 ===================================
-Test: create26
+Test: buy26
 Pass: Outputs match
 ===================================
-Test: create27
+Test: buy27
 Pass: Outputs match
 ===================================
-Test: create28
+Test: buy28
 Pass: Outputs match
 ===================================
-Test: create29
+Test: buy29
 Pass: Outputs match
 ===================================
-Test: create3
+Test: buy3
 Pass: Outputs match
 ===================================
-Test: create30
+Test: buy30
 Pass: Outputs match
 ===================================
-Test: create4
+Test: buy31
 Pass: Outputs match
 ===================================
-Test: create5
+Test: buy32
 Pass: Outputs match
 ===================================
-Test: create6
+Test: buy33
 Pass: Outputs match
 ===================================
-Test: create7
+Test: buy34
 Pass: Outputs match
 ===================================
-Test: create8
+Test: buy35
 Pass: Outputs match
 ===================================
-Test: create9
+Test: buy36
 Pass: Outputs match
 ===================================
-Test: delete1
+Test: buy37
 Pass: Outputs match
 ===================================
-Test: delete10
+Test: buy38
 Pass: Outputs match
 ===================================
-Test: delete11
+Test: buy39
 Pass: Outputs match
 ===================================
-Test: delete12
+Test: buy4
 Pass: Outputs match
 ===================================
-Test: delete13
+Test: buy5
 Pass: Outputs match
 ===================================
-Test: delete14
+Test: buy6
 Pass: Outputs match
 ===================================
-Test: delete15
+Test: buy7
 Pass: Outputs match
 ===================================
-Test: delete16
+Test: buy8
 Pass: Outputs match
 ===================================
-Test: delete17
-Pass: Outputs match
-===================================
-Test: delete18
-Pass: Outputs match
-===================================
-Test: delete19
-Pass: Outputs match
-===================================
-Test: delete2
-Pass: Outputs match
-===================================
-Test: delete20
-Pass: Outputs match
-===================================
-Test: delete21
-Pass: Outputs match
-===================================
-Test: delete22
-Pass: Outputs match
-===================================
-Test: delete23
-Pass: Outputs match
-===================================
-Test: delete24
-Pass: Outputs match
-===================================
-Test: delete3
-Pass: Outputs match
-===================================
-Test: delete4
-Pass: Outputs match
-===================================
-Test: delete5
-Pass: Outputs match
-===================================
-Test: delete6
-Pass: Outputs match
-===================================
-Test: delete7
-Pass: Outputs match
-===================================
-Test: delete8
-Pass: Outputs match
-===================================
-Test: delete9
-Pass: Outputs match
-===================================
-Test: add_credit1
-Pass: Outputs match
-===================================
-Test: add_credit10
-Pass: Outputs match
-===================================
-Test: add_credit11
-Pass: Outputs match
-===================================
-Test: add_credit12
-Pass: Outputs match
-===================================
-Test: add_credit13
-Pass: Outputs match
-===================================
-Test: add_credit14
-Pass: Outputs match
-===================================
-Test: add_credit15
-Pass: Outputs match
-===================================
-Test: add_credit16
-Pass: Outputs match
-===================================
-Test: add_credit17
-Pass: Outputs match
-===================================
-Test: add_credit18
-Pass: Outputs match
-===================================
-Test: add_credit19
-Pass: Outputs match
-===================================
-Test: add_credit2
-Pass: Outputs match
-===================================
-Test: add_credit20
-Pass: Outputs match
-===================================
-Test: add_credit21
-Pass: Outputs match
-===================================
-Test: add_credit22
-Pass: Outputs match
-===================================
-Test: add_credit23
-Pass: Outputs match
-===================================
-Test: add_credit24
-Pass: Outputs match
-===================================
-Test: add_credit25
-Pass: Outputs match
-===================================
-Test: add_credit26
-Pass: Outputs match
-===================================
-Test: add_credit27
-Pass: Outputs match
-===================================
-Test: add_credit28
-Pass: Outputs match
-===================================
-Test: add_credit29
-Pass: Outputs match
-===================================
-Test: add_credit3
-Pass: Outputs match
-===================================
-Test: add_credit30
-Pass: Outputs match
-===================================
-Test: add_credit4
-Pass: Outputs match
-===================================
-Test: add_credit5
-Pass: Outputs match
-===================================
-Test: add_credit6
-Pass: Outputs match
-===================================
-Test: add_credit7
-Pass: Outputs match
-===================================
-Test: add_credit8
-Pass: Outputs match
-===================================
-Test: add_credit9
+Test: buy9
 Pass: Outputs match
 ===================================

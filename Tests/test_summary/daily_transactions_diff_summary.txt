@@ -1,252 +1,117 @@
-Test: create1
+Test: buy1
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create10
+Test: buy10
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create11
+Test: buy11
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create12
+Test: buy12
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create13
+Test: buy13
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create14
+Test: buy14
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create15
+Test: buy15
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create16
+Test: buy16
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create17
+Test: buy17
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create18
+Test: buy18
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create19
+Test: buy19
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create2
+Test: buy2
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create20
+Test: buy20
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create21
+Test: buy21
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create22
+Test: buy22
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create23
+Test: buy23
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create24
+Test: buy24
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create25
+Test: buy25
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create26
+Test: buy26
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create27
+Test: buy27
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create28
+Test: buy28
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create29
+Test: buy29
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create3
+Test: buy3
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create30
+Test: buy30
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create4
+Test: buy31
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create5
+Test: buy32
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create6
+Test: buy33
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create7
+Test: buy34
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create8
+Test: buy35
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: create9
+Test: buy36
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: delete1
+Test: buy37
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: delete10
+Test: buy38
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: delete11
+Test: buy39
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: delete12
+Test: buy4
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: delete13
+Test: buy5
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: delete14
+Test: buy6
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: delete15
+Test: buy7
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: delete16
+Test: buy8
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: delete17
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete18
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete19
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete2
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete20
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete21
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete22
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete23
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete24
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete3
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete4
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete5
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete6
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete7
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete8
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: delete9
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit1
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit10
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit11
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit12
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit13
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit14
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit15
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit16
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit17
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit18
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit19
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit2
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit20
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit21
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit22
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit23
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit24
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit25
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit26
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit27
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit28
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit29
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit3
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit30
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit4
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit5
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit6
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit7
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit8
-Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
-===================================
-Test: add_credit9
+Test: buy9
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================

@@ -80,11 +80,13 @@ rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
 source_folder=back_end/mod_log_files
 destination_folder=daily_runs_output_files/$1
 cp -rf "$source_folder" "$destination_folder" >/dev/null 2>&1
+sleep 0.5
 
 source_folder="back_end/ori_log_files/merged_daily_transactions.etf"
 destination_folder="daily_runs_output_files/$1"
 
 cp -rf "$source_folder" "$destination_folder" >/dev/null 2>&1
+sleep 0.5
 
 
 

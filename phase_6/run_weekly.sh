@@ -4,9 +4,9 @@
 
 # Always coping back the original files for testing
 
-# echo "Copying back the Original Log Files"
-# dos2unix copy_ori.sh
-# ./copy_ori.sh
+echo "Copying back the Original Log Files"
+dos2unix copy_ori.sh
+./copy_ori.sh
 
 
 
@@ -32,15 +32,18 @@ cd ..
 
 
 for session_folder in "${daily_sessions[@]}"; do
-  dos2unix run_daily.sh >/dev/null 2>&1
+  dos2unix run_daily.sh  >/dev/null 2>&1
   ./run_daily.sh $session_folder
 
-  # source_folder="back_end/mod_log_files"
-  # destination_folder="weekly_runs_output_files/$session_folder"
-  # cp -rf "$source_folder"/* "$destination_folder"/
-  #
+  source_folder="back_end/mod_log_files"
+  destination_folder="weekly_runs_output_files/$session_folder"
+  cp -rf "$source_folder"/* "$destination_folder"/
+  sleep 0.5
+
   source_folder=back_end/ori_log_files/merged_daily_transactions.etf
   destination_folder=weekly_runs_output_files/$session_folder
 
   cp -f "$source_folder" "$destination_folder" >/dev/null 2>&1
+  sleep 0.5
+
 done

@@ -198,8 +198,14 @@ int main()
                             }
                             else if (user_menu_option == constants::SEARCH)
                             {
-                              cout<<"ADD SEARCH LOGIC HERE"<<endl;
-
+                                //   cout<<"ADD SEARCH LOGIC HERE"<<endl;
+                                if (transactions().search(current_user_name, all_users, all_games) == constants :: FAIL_OPTION)
+                                {
+                                    cout << "Error searching" << endl;
+                                }
+                                else
+                                {
+                                }
                             }
                         }
                         else {

@@ -103,7 +103,7 @@ public:
 
     void process_logout(vector<string>& transaction_log);
 
-    void search();
+    string search(string user_name, vector<string>& all_users, vector<string>& all_games);
 };
 
 #endif

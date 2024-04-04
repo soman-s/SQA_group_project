@@ -777,7 +777,67 @@ void transactions::process_logout(vector<string>& transaction_log)
     return;
 }
 
-void transactions::search()
+string transactions::search(string user_name, vector<string>& all_users, vector<string>& all_games)
 {
-  return;
+  utils utility;
+
+  string user_type = user_file_process().get_user_type(all_users, user_name);
+  cout << user_type << endl;
+
+  string search_value;
+
+  cout << "Enter a search value: ";
+  cin.ignore();
+  getline(cin, search_value);
+  cout << endl;
+  search_value = utils().convert_to_lower(search_value);
+
+
+  vector<string> search_results;
+  
+  // search in current users
+  for (int i = 0; i < all_users.size(); i++)
+  {
+    string user_name = utility.convert_to_lower(all_users[i].substr(0,constants::MAX_USER_NAME_LENGTH));
+    // user_name = utility.convert_to_lower(user_name);
+
+    for (int j = 0; j < search_value.size(); j++)
+    {
+      char character = search_value[j];
+
+      if (user_name.find(character) != std::string::npos)
+      {
+        search_results.push_back(user_name);
+        break;
+      }
+    }
+  }
+
+  // search in available games
+  for (int i = 0; i < all_games.size(); i++)
+  {
+    string game_name = utility.convert_to_lower(all_games[i].substr(0, constants::MAX_GAME_NAME_LENGTH));
+
+    for (int j = 0; j < search_value.size(); j++)
+    {
+      char character = search_value[j];
+
+      if (game_name.find(character) != std::string::npos)
+      {
+        search_results.push_back(game_name);
+        break;
+      }
+    }
+  }
+  
+
+  // print search results
+  cout << "search results:" << endl;
+  for (int i = 0; i < search_results.size(); i++)
+  {
+    cout << search_results[i] << endl;
+  }
+  cout << endl;
+
+  return constants :: SUCESS_OPTION;
 }

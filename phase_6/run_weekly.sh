@@ -6,6 +6,7 @@
 
 echo "Copying back the Original Log Files"
 dos2unix copy_ori.sh
+sleep 0.25
 ./copy_ori.sh
 
 

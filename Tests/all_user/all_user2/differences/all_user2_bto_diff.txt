@@ -2,7 +2,7 @@ Expected:
 HOME MENU
 1)Login
 2)Exit
-Enter an option: 1 
+Enter an option: 1
 Login
 Enter Username: buy1
 Logged IN
@@ -10,15 +10,15 @@ Buy Standard Menu
 1)Buy
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
 Enter an option: 2
-EXITS
-Actual:
+EXITSActual:
 HOME MENU
 1)Login
 2)Exit
@@ -30,8 +30,9 @@ Buy Standard Menu
 1)Buy
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
@@ -39,3 +40,12 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
+4c4
+< Enter an option: 1
+---
+> Enter an option: 1 
+20c20
+< EXITS
+\ No newline at end of file
+---
+> EXITS

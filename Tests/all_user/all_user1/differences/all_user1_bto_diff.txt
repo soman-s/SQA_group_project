@@ -1,5 +1,5 @@
 Expected:
-HOME MENU
+OME MENU
 1)Login
 2)Exit
 Enter an option: 1 
@@ -15,7 +15,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 7
 All Users
 User          Type Balance
@@ -31,6 +32,7 @@ admin3          AA 999999.00
 full3           FS 999999.00
 sell3           SS 999999.00
 buy3            BS 999999.00
+am1             AM 999999.00
 Admin Menu
 1)Create
 2)Delete
@@ -40,8 +42,9 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
-Enter an option: 9
+9)Search
+10)Logout
+Enter an option: 10
 LOGGED OUT
 HOME MENU
 1)Login
@@ -65,7 +68,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 7
 All Users
 User          Type Balance
@@ -81,6 +85,7 @@ admin3          AA 999999.00
 full3           FS 999999.00
 sell3           SS 999999.00
 buy3            BS 999999.00
+am1             AM 999999.00
 Admin Menu
 1)Create
 2)Delete
@@ -90,8 +95,9 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
-Enter an option: 9
+9)Search
+10)Logout
+Enter an option: 10
 LOGGED OUT
 HOME MENU
 1)Login
@@ -99,3 +105,35 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
+1c1
+< OME MENU
+---
+> HOME MENU
+22,34c22,34
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00

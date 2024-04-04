@@ -1,76 +1,36 @@
-Test: login1
-Fail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: login10
-Fail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 admin1          AA 000500.00
----
-> 00 admin1          AA 000500.00
-==================================
-Test: login11
-Fail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
-Test: login12
-Fail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
-Test: login13
-Fail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 buy1            BS 000900.00
----
-> 00 buy1            BS 000900.00
-==================================
-Test: login2
-Fail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 full1           FS 000500.00
----
-> 00 full1           FS 000500.00
-==================================
-Test: login3
-Fail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 sell1           SS 000100.00
----
-> 00 sell1           SS 000100.00
-==================================
-Test: login4
-Fail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match
-Differences:
-1c1
-< 00 buy1            BS 000900.00
----
-> 00 buy1            BS 000900.00
-==================================
-Test: login5
+Test: all_user1
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login6
+Test: all_user10
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login7
+Test: all_user11
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================
-Test: login8
+Test: all_user12
+Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user2
+Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user3
+Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user4
+Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user5
+Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user6
+Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user7
+Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user8
+Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
+===================================
+Test: all_user9
 Pass: Expected Daily Transactions File and Actual Daily Transactions File Match
 ===================================

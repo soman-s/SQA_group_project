@@ -1,512 +1,407 @@
-Test: login1
+Test: all_user1
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,24c1,24
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
+1c1
+< OME MENU
+---
+> HOME MENU
+22,34c22,34
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00
+===================================
+Test: all_user10
+Fail: Expected Output and Actual Output Do Not Match
+Differences:
+17c17,18
 < 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
+> 9)Search
+> 10)Logout
+35d35
+< 
+39,51c39,51
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00
+63d62
+< 
 ===================================
-Test: login10
+Test: all_user11
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,24c1,24
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: admin1
-< Logged IN
-< Admin Menu
-< 1)Create
-< 2)Delete
-< 3)Sell
-< 4)Buy
-< 5)Refund
-< 6)Add Credit
-< 7)View All Users
-< 8)View Available Games
-< 9)Logout
-< Enter an option: 9
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: admin1
-> Logged IN
-> Admin Menu
-> 1)Create
-> 2)Delete
-> 3)Sell
-> 4)Buy
-> 5)Refund
-> 6)Add Credit
-> 7)View All Users
-> 8)View Available Games
-> 9)Logout
-> Enter an option: 9
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 1 
+39,51c39,51
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00
+69c69
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================
-Test: login11
+Test: all_user12
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,20c1,20
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: full1
-< Logged IN
-< Full Standard Menu
-< 1)Sell
-< 2)Buy
-< 3)Add Credit
-< 4)View Available Games
-< 5)Logout
-< Enter an option: 5
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 1 
+39,51c39,51
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00
+69c69
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================
-Test: login12
+Test: all_user2
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,19c1,19
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: sell1
-< Logged IN
-< Sell Standard Menu
-< 1)Sell
-< 2)Add Credit
-< 3)View Available Games
-< 4)Logout
-< Enter an option: 4
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: sell1
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 1 
+20c20
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================
-Test: login13
+Test: all_user3
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,19c1,19
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: buy1
-< Logged IN
-< Buy Standard Menu
-< 1)Buy
-< 2)Add Credit
-< 3)View Available Games
-< 4)Logout
-< Enter an option: 4
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: buy1
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 1 
+20c20
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================
-Test: login2
+Test: all_user4
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,20c1,20
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: full1
-< Logged IN
-< Full Standard Menu
-< 1)Sell
-< 2)Buy
-< 3)Add Credit
-< 4)View Available Games
-< 5)Logout
-< Enter an option: 5
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full1
-> Logged IN
-> Full Standard Menu
-> 1)Sell
-> 2)Buy
-> 3)Add Credit
-> 4)View Available Games
-> 5)Logout
-> Enter an option: 5
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 1 
+21c21
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================
-Test: login3
+Test: all_user5
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,19c1,19
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: sell1
-< Logged IN
-< Sell Standard Menu
-< 1)Sell
-< 2)Add Credit
-< 3)View Available Games
-< 4)Logout
-< Enter an option: 4
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: sell1
-> Logged IN
-> Sell Standard Menu
-> 1)Sell
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 1 
+39,51c39,51
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00
+69c69
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================
-Test: login4
+Test: all_user6
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,19c1,19
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: buy1
-< Logged IN
-< Buy Standard Menu
-< 1)Buy
-< 2)Add Credit
-< 3)View Available Games
-< 4)Logout
-< Enter an option: 4
-< LOGGED OUT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: buy1
-> Logged IN
-> Buy Standard Menu
-> 1)Buy
-> 2)Add Credit
-> 3)View Available Games
-> 4)Logout
-> Enter an option: 4
-> LOGGED OUT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 1 
+40,52c40,52
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00
+70c70
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================
-Test: login5
+Test: all_user7
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,14c1,14
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: Admin19
-< Invalid Login
-< Enter valid username or -1 to exit: -1
-< EXIT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: Admin19
-> Invalid Login
-> Enter valid username or -1 to exit: -1
-> EXIT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 1 
+40,52c40,52
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00
+70c70
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================
-Test: login6
+Test: all_user8
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,14c1,14
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: full19
-< Invalid Login
-< Enter valid username or -1 to exit: -1
-< EXIT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: full19
-> Invalid Login
-> Enter valid username or -1 to exit: -1
-> EXIT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 1 
+40,52c40,52
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00
+70c70
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================
-Test: login7
+Test: all_user9
 Fail: Expected Output and Actual Output Do Not Match
 Differences:
-1,14c1,14
-< HOME MENU
-< 1)Login
-< 2)Exit
+4c4
 < Enter an option: 1
-< Login
-< Enter Username: sell19
-< Invalid Login
-< Enter valid username or -1 to exit: -1
-< EXIT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: sell19
-> Invalid Login
-> Enter valid username or -1 to exit: -1
-> EXIT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS
-===================================
-Test: login8
-Fail: Expected Output and Actual Output Do Not Match
-Differences:
-1,14c1,14
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 1
-< Login
-< Enter Username: buy19
-< Invalid Login
-< Enter valid username or -1 to exit: -1
-< EXIT
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
+> Enter an option: 1 
+19c19
+< Enter an option: 6    
 ---
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 1
-> Login
-> Enter Username: buy19
-> Invalid Login
-> Enter valid username or -1 to exit: -1
-> EXIT
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
+> Enter an option: 6
+40,52c40,52
+< admin1          AA 000500.00
+< admin2          AA 000500.00
+< full1           FS 000500.00
+< sell1           SS 000100.00
+< buy1            BS 000900.00
+< buy2            BS 000500.00
+< full2           FS 000500.00
+< sell2           SS 000100.00
+< admin3          AA 999999.00
+< full3           FS 999999.00
+< sell3           SS 999999.00
+< buy3            BS 999999.00
+< am1             AM 999999.00
+---
+> admin1          AA 000500.00
+> admin2          AA 000500.00
+> full1           FS 000500.00
+> sell1           SS 000100.00
+> buy1            BS 000900.00
+> buy2            BS 000500.00
+> full2           FS 000500.00
+> sell2           SS 000100.00
+> admin3          AA 999999.00
+> full3           FS 999999.00
+> sell3           SS 999999.00
+> buy3            BS 999999.00
+> am1             AM 999999.00
+70c70
+< EXITS
+\ No newline at end of file
+---
 > EXITS
 ===================================

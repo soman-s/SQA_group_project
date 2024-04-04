@@ -27,7 +27,7 @@ echo "Running Tests"
 cd Tests || exit 1  # Exit if cd fails
 # Loop through each test subdirectory in "Tests" excluding the summary folder
 # for subdir in login logout refund sell add_credit create delete buy all_user available_games;
-for subdir in login logout refund sell add_credit create delete buy; do
+for subdir in login logout refund sell add_credit create delete buy all_user available_games; do
     subdir="${subdir%/}"
     # Change into the subdirectory
     cd "$subdir" || { echo "Failed to enter subdirectory: $subdir"; continue; }
@@ -190,11 +190,11 @@ for index in "${!test_inputs[@]}"; do
             echo "Actual:"
             cat "$output_bto"
             echo "Differences:"
-            diff "$expected_bto" "$output_bto"
+            diff -Z "$expected_bto" "$output_bto"
         } > "$bto_differences_file"
 
 
-        diff_output=$(diff "$expected_bto" "$output_bto")
+        diff_output=$(diff -Z  "$expected_bto" "$output_bto")
 
         if [ -n "$diff_output" ]; then
         # If there are differences, save them to the differences file

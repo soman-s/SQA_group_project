@@ -10,7 +10,8 @@ Buy Standard Menu
 1)Buy
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 1
 Buy
 Enter Game name: fifa
@@ -23,7 +24,8 @@ Buy Standard Menu
 1)Buy
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 3
 All Games Available
 Game Name                 Seller          Price
@@ -46,8 +48,9 @@ Buy Standard Menu
 1)Buy
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
@@ -66,7 +69,8 @@ Buy Standard Menu
 1)Buy
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 1
 Buy
 Enter Game name: fifa
@@ -79,7 +83,8 @@ Buy Standard Menu
 1)Buy
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 3
 All Games Available
 Game Name                 Seller          Price
@@ -102,8 +107,9 @@ Buy Standard Menu
 1)Buy
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login

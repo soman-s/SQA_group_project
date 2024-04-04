@@ -1,9 +1,9 @@
 Expected:
-06 admin1          AA 000100.00
+06 buy1            BS 000100.00
 00 am1             AM 999999.00
 
 Actual:
-06 admin1          AA 000100.00
+06 buy1            BS 000100.00
 00 am1             AM 999999.00
 
 Differences:

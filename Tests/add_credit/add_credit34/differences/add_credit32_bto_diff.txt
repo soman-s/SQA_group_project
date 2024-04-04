@@ -1,0 +1,79 @@
+Expected:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1 
+Login
+Enter Username: am1
+Logged IN
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: 4
+Add Credit
+Enter username: full1
+username selected
+Enter credit amount to add: 100.00
+Sucessfully added credit amount to user
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: 8
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1 
+Login
+Enter Username: am1
+Logged IN
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: 4
+Add Credit
+Enter username: full1
+username selected
+Enter credit amount to add: 100.00
+Sucessfully added credit amount to user
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: 8
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:

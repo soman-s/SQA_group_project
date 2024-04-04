@@ -19,10 +19,9 @@ Admin Menu
 10)Logout
 Enter an option: 6
 Add Credit
-Enter username: admin1
-username selected
-Enter credit amount to add: 100.00
-Sucessfully added credit amount to user
+Enter username: am1
+Can't add credit to account manager please pick another user
+Enter username: -1
 Admin Menu
 1)Create
 2)Delete
@@ -62,10 +61,9 @@ Admin Menu
 10)Logout
 Enter an option: 6
 Add Credit
-Enter username: admin1
-username selected
-Enter credit amount to add: 100.00
-Sucessfully added credit amount to user
+Enter username: am1
+Can't add credit to account manager please pick another user
+Enter username: -1
 Admin Menu
 1)Create
 2)Delete

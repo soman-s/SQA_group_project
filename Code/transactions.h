@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <unordered_map>
+
 
 #include "menus.h"
 #include "user_file_process.h"
@@ -40,7 +42,7 @@ public:
      * @param transaction_log Vector containg all transaction logs
      * @return A message indicating the result of the transaction.
      */
-    string process_create(vector<string>& all_users,vector<string>& transaction_log);
+    string process_create(vector<string>& all_users,vector<string>& transaction_log, string current_user_type);
 
     /**
      * @brief Process the deletion of a user.
@@ -50,7 +52,7 @@ public:
      * @param transaction_log Vector containg all transaction logs
      * @return A message indicating the result of the transaction.
      */
-    string process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log);
+    string process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log, string user_to_remove_type);
 
     /**
      * @brief Show information about all users.
@@ -96,12 +98,12 @@ public:
      * @param user user to add credit amount to.
      * @return A message indicating the result of the add credit transaction.
      */
-    string process_credit(string menu_option, vector<string>& all_users, string user,vector<string>& transaction_log);
+    string process_credit(string menu_option, vector<string>& all_users, string user,vector<string>& transaction_log, unordered_map<string, float>& user_total_credits, unordered_map<string, float>& user_session_credits);
 
 
     void process_logout(vector<string>& transaction_log);
 
-    void search();
+    string search(string user_name, vector<string>& all_users, vector<string>& all_games);
 };
 
 #endif

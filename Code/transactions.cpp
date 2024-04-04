@@ -122,9 +122,9 @@ string transactions::process_sell(vector<string>& all_games,vector<string>& game
 }
 
 // logic for create transaction
-string transactions::process_create(vector<string>& all_users, vector<string>& transaction_log){
+string transactions::process_create(vector<string>& all_users, vector<string>& transaction_log, string current_user_type){
 
-  unordered_map <string, string> user_type_codes = {{"1","AA"},{"2","FS"},{"3","BS"},{"4","SS"}};
+  unordered_map <string, string> user_type_codes = {{"1","AA"}, {"2","AM"},{"3","FS"},{"4","BS"},{"5","SS"}};
 
   string new_account;
   cout << "Create" << endl;
@@ -136,6 +136,16 @@ string transactions::process_create(vector<string>& all_users, vector<string>& t
   cout << "Enter account type: ";
   cin >> new_account;
 
+  while(current_user_type == "AM" && new_account == "1"){
+    cout << "Account Manager cannot create admin accounts try again" << endl;
+    cout << "Enter account type: ";
+    cin >> new_account;
+
+    if (new_account == constants::EXIT_MENU_OPTION){
+      return constants::EXIT_MENU_OPTION;
+    }
+  }
+
 
   bool valid_account = false;
 
@@ -144,7 +154,7 @@ string transactions::process_create(vector<string>& all_users, vector<string>& t
   while(!valid_account){
 
     try {
-      if(stoi(new_account) >= 1 && stoi(new_account) <= 4 ){
+      if(stoi(new_account) >= 1 && stoi(new_account) <= 5 ){
         break;
 
       }
@@ -251,7 +261,7 @@ string transactions::process_create(vector<string>& all_users, vector<string>& t
 }
 
 // logic for delete transactions
-string transactions:: process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log){
+string transactions:: process_delete(vector<string>& all_users, string current_user,vector<string>& transaction_log, string current_user_type){
 
   string user_to_remove;
 
@@ -263,19 +273,23 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
   user_to_remove = utils().pad_username(user_to_remove);
 
+  string user_to_remove_type = user_file_process().get_user_type(all_users, user_to_remove);
 
-  while(!user_file_process().check_user_names(all_users,user_to_remove) || user_to_remove==current_user){
+  while(!user_file_process().check_user_names(all_users,user_to_remove) || user_to_remove==current_user || (current_user_type == "AM" && user_to_remove_type=="AA")){
 
     if(user_to_remove == current_user){
       cout << "user cannot remove itself please try again or -1 to exit" << endl;
-      cout << "Enter username: ";
+    }
+
+    else if (current_user_type == "AM" && user_to_remove_type=="AA"){
+      cout << "Account Manager user cannot remove admin accounts or -1 to exit" << endl;
     }
 
     else{
       cout << "Username does not exist please try again or -1 to exit " << endl;
-      cout << "Enter username: ";
     }
 
+    cout << "Enter username: ";
     cin >> user_to_remove;
 
     if (user_to_remove == constants::EXIT_MENU_OPTION){
@@ -283,6 +297,10 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
     }
 
     user_to_remove = utils().pad_username(user_to_remove);
+
+    user_to_remove_type = user_file_process().get_user_type(all_users, user_to_remove);
+
+   
 
   }
 
@@ -608,11 +626,11 @@ string transactions::process_buy(string buyer_name, vector<string>& all_users, v
 }
 
 // process for updating a credit amount for a specific user
-string transactions::process_credit(string menu_option,vector<string>& all_users, string user,vector<string>& transaction_log){
+string transactions::process_credit(string menu_option,vector<string>& all_users, string user,vector<string>& transaction_log, unordered_map<string, float>& user_total_credits, unordered_map<string, float>& user_session_credits){
 
   cout << "Add Credit" << endl;
 
-  if(menu_option == "6"){
+  if(menu_option == "6" || menu_option == "4"){
 
     cout << "Enter username: ";
 
@@ -620,20 +638,32 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
     user = utils().pad_username(user);
 
-    while(!user_file_process().check_user_names(all_users,user)){
+    string accout_type = user_file_process().get_user_type(all_users, user);
 
-      cout << "Username does not exist please try again or -1 to exit " << endl;
+    while(!user_file_process().check_user_names(all_users,user) || accout_type == constants::ACCOUNT_MANAGER){
+
+      if(accout_type == constants::ACCOUNT_MANAGER){
+        cout << "Can't add credit to account manager please pick another user" << endl;
+      }
+      else{
+        cout << "Username does not exist please try again or -1 to exit " << endl;
+      }
+    
       cout << "Enter username: ";
 
       cin >> user;
-
 
       if (user == constants::EXIT_MENU_OPTION){
         return constants::EXIT_MENU_OPTION;
       }
 
+
+
       user = utils().pad_username(user);
 
+      accout_type = user_file_process().get_user_type(all_users, user);
+
+      
     }
   }
 
@@ -650,6 +680,13 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
   bool valid_credit_amount = false;
 
+  if(user_total_credits.find(user) == user_total_credits.end()){
+    user_total_credits[user] = user_balance;
+  }
+
+  if(user_session_credits.find(user) == user_session_credits.end()){
+    user_session_credits[user] = 0.0;
+  }
 
   while(!valid_credit_amount){
 
@@ -657,18 +694,20 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
       credit_amount = stof(text_credit_amount);
 
-      if(user_balance + credit_amount > constants::MAX_CREDIT_AMOUNT){
+      if(user_total_credits[user] + credit_amount > constants::MAX_CREDIT_AMOUNT){
         cout << "credit amount added wil exceed maximum limit of $999,999 please pick appropriate credit amount to add or -1 to exit " <<  endl;
         cout << "Enter credit amount to add: ";
 
       }
 
-      else if(credit_amount < constants::MIN_ADD_CREDITS || credit_amount  >= constants::MAX_ADD_CREDITS) {
+      else if(credit_amount < constants::MIN_ADD_CREDITS || user_session_credits[user] + credit_amount  >= constants::MAX_ADD_CREDITS) {
         cout << "Please enter a valid credit amount or -1 to go back to main menu " << endl;
         cout << "Enter credit amount to add: ";
       }
 
       else{
+        user_total_credits[user]+=credit_amount;
+        user_session_credits[user]+=credit_amount;
         break;
       }
 
@@ -694,9 +733,9 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
   user_balance+=credit_amount;
 
-  string user_balance_padded = utils().pad_credit_amount(user_balance);
+  string credit_amount_padded = utils().pad_credit_amount(credit_amount);
 
-  string log_entry = constants::ADD_CREDIT_CODE+" "+user+ " " + user_file_process().get_user_type(all_users, user) + " " + user_balance_padded;
+  string log_entry = constants::ADD_CREDIT_CODE+" "+user+ " " + user_file_process().get_user_type(all_users, user) + " " + credit_amount_padded;
   utils().update_transction_log(log_entry,transaction_log);
 
 
@@ -738,7 +777,67 @@ void transactions::process_logout(vector<string>& transaction_log)
     return;
 }
 
-void transactions::search()
+string transactions::search(string user_name, vector<string>& all_users, vector<string>& all_games)
 {
-  return;
+  utils utility;
+
+  string user_type = user_file_process().get_user_type(all_users, user_name);
+  cout << user_type << endl;
+
+  string search_value;
+
+  cout << "Enter a search value: ";
+  cin.ignore();
+  getline(cin, search_value);
+  cout << endl;
+  search_value = utils().convert_to_lower(search_value);
+
+
+  vector<string> search_results;
+  
+  // search in current users
+  for (int i = 0; i < all_users.size(); i++)
+  {
+    string user_name = utility.convert_to_lower(all_users[i].substr(0,constants::MAX_USER_NAME_LENGTH));
+    // user_name = utility.convert_to_lower(user_name);
+
+    for (int j = 0; j < search_value.size(); j++)
+    {
+      char character = search_value[j];
+
+      if (user_name.find(character) != std::string::npos)
+      {
+        search_results.push_back(user_name);
+        break;
+      }
+    }
+  }
+
+  // search in available games
+  for (int i = 0; i < all_games.size(); i++)
+  {
+    string game_name = utility.convert_to_lower(all_games[i].substr(0, constants::MAX_GAME_NAME_LENGTH));
+
+    for (int j = 0; j < search_value.size(); j++)
+    {
+      char character = search_value[j];
+
+      if (game_name.find(character) != std::string::npos)
+      {
+        search_results.push_back(game_name);
+        break;
+      }
+    }
+  }
+  
+
+  // print search results
+  cout << "search results:" << endl;
+  for (int i = 0; i < search_results.size(); i++)
+  {
+    cout << search_results[i] << endl;
+  }
+  cout << endl;
+
+  return constants :: SUCESS_OPTION;
 }

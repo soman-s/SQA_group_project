@@ -7,6 +7,7 @@
 #include <vector>
 #include <algorithm>
 #include <typeinfo>
+#include <unordered_map>
 
 // custom classes
 #include "menus.h"
@@ -36,6 +37,9 @@ int main()
     all_users = user_file_process().get_all_users_info(constants::ALL_USER_FILE);
     all_games = games_file_process().get_all_game_info(constants::AVAILABLE_GAMES);
     all_games_collection = games_file_process().get_all_game_info(constants::GAMES_COLLECTION);
+
+    unordered_map <string, float> user_total_credits;
+    unordered_map <string, float> user_session_credits;
 
     // Main loop for user interaction
     while (menu_option != constants::EXIT)
@@ -137,11 +141,11 @@ int main()
                             }
                             else if (user_menu_option == constants::CREATE)
                              {
-                                transactions().process_create(all_users,transaction_log);
+                                transactions().process_create(all_users,transaction_log,current_user_type);
                             }
                             else if (user_menu_option == constants::DELETE)
                              {
-                                transactions().process_delete(all_users, current_user_name, transaction_log);
+                                transactions().process_delete(all_users, current_user_name, transaction_log,current_user_type);
                             }
                             else if (user_menu_option == constants::LIST_ALL_USERS)
                              {
@@ -187,15 +191,21 @@ int main()
 
                             else if (user_menu_option == constants::ADD_CREDIT)
                             {
-                              if(transactions().process_credit(user_input,all_users,current_user_name,transaction_log) == constants :: SUCESS_OPTION){
+                              if(transactions().process_credit(user_input,all_users,current_user_name,transaction_log, user_total_credits,user_session_credits) == constants :: SUCESS_OPTION){
                                 cout << "Sucessfully added credit amount to user" << endl;
                               }
 
                             }
                             else if (user_menu_option == constants::SEARCH)
                             {
-                              cout<<"ADD SEARCH LOGIC HERE"<<endl;
-
+                                //   cout<<"ADD SEARCH LOGIC HERE"<<endl;
+                                if (transactions().search(current_user_name, all_users, all_games) == constants :: FAIL_OPTION)
+                                {
+                                    cout << "Error searching" << endl;
+                                }
+                                else
+                                {
+                                }
                             }
                         }
                         else {

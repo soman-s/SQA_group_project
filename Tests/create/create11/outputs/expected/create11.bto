@@ -14,15 +14,17 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 1
 Create
 Select type of account you want to create
 1)Admin
-2)Full-Standard
-3)Buy-Standard
-4)Sell-Standard
-Enter account type: 3
+2)Account-Manager
+3)Full-Standard
+4)Buy-Standard
+5)Sell-Standard
+Enter account type: 4
 Account type selected
 Enter Username: buy1
 Username already exists please try again or -1 to exit
@@ -36,8 +38,9 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
-Enter an option: 9
+9)Search
+10)Logout
+Enter an option: 10
 LOGGED OUT
 HOME MENU
 1)Login

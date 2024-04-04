@@ -14,13 +14,15 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 3
 Sell
 Enter game name: admingame8
 
 Enter Game price: 100
 
+ Game Listed for Sale
 Admin Menu
 1)Create
 2)Delete
@@ -30,7 +32,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 8
 All Games Available
 Game Name                 Seller          Price
@@ -58,8 +61,9 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
-Enter an option: 9
+9)Search
+10)Logout
+Enter an option: 10
 LOGGED OUT
 HOME MENU
 1)Login

@@ -1,9 +1,9 @@
 Expected:
-05 buy1            full1           000025.50
+05 fullgame1                 buy1            full1           000025.50
 00 admin1          AA 000500.00
 
 Actual:
-05 buy1            full1           000025.50
+05 fullgame1                 buy1            full1           000025.50
 00 admin1          AA 000500.00
 
 Differences:

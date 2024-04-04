@@ -11,8 +11,9 @@ Full Standard Menu
 2)Buy
 3)Add Credit
 4)View Available Games
-5)Logout
-Enter an option: 5
+5)Search
+6)Logout
+Enter an option: 6
 LOGGED OUT
 HOME MENU
 1)Login
@@ -37,8 +38,9 @@ Full Standard Menu
 2)Buy
 3)Add Credit
 4)View Available Games
-5)Logout
-Enter an option: 5
+5)Search
+6)Logout
+Enter an option: 6
 LOGGED OUT
 HOME MENU
 1)Login

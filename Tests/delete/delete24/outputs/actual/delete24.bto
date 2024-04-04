@@ -1,0 +1,37 @@
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: am1
+Logged IN
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: 2
+Delete
+Enter username: admin1
+Account Manager user cannot remove admin accounts or -1 to exit
+Enter username: -1
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: 8
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS

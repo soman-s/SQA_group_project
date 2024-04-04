@@ -14,7 +14,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 5
 Refund
 Enter Game name: admingame1
@@ -27,7 +28,7 @@ Enter Refund Amount: Ab
 
 Invalid argument: -1
 
-Enter Refund price or -1 to exit: 9
+Enter Refund price or -1 to exit: 10
 
 Enter Refund Amount: 2
 
@@ -47,7 +48,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 
 LOGGED OUT
 HOME MENU

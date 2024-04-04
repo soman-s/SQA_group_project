@@ -10,7 +10,8 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 1
 Sell
 Enter game name: sellgame8
@@ -20,7 +21,7 @@ Enter Game price: -500.65
 Invlaid Game Price
 Enter Game price or -1 to exit: -1
 
-Enter Game price: 4
+Enter Game price: 5
 
 Invlaid Game Price
 Enter Game price or -1 to exit: 2
@@ -29,7 +30,8 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 
 LOGGED OUT
 HOME MENU
@@ -49,7 +51,8 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 1
 Sell
 Enter game name: sellgame8
@@ -59,7 +62,7 @@ Enter Game price: -500.65
 Invlaid Game Price
 Enter Game price or -1 to exit: -1
 
-Enter Game price: 4
+Enter Game price: 5
 
 Invlaid Game Price
 Enter Game price or -1 to exit: 2
@@ -68,7 +71,8 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 
 LOGGED OUT
 HOME MENU

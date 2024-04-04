@@ -31,35 +31,3 @@ HOME MENU
 Enter an option: 2
 EXITS
 Differences:
-1,15c1,15
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 3
-< Invalid entry
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: -1
-< Invalid entry
-< HOME MENU
-< 1)Login
-< 2)Exit
-< Enter an option: 2
-< EXITS
----
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 3
-> Invalid entry
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: -1
-> Invalid entry
-> HOME MENU
-> 1)Login
-> 2)Exit
-> Enter an option: 2
-> EXITS

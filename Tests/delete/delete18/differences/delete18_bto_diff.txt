@@ -15,7 +15,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 2
 Delete
 Enter username: sell1
@@ -29,8 +30,9 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
-Enter an option: 9
+9)Search
+10)Logout
+Enter an option: 10
 LOGGED OUT
 HOME MENU
 1)Login
@@ -43,8 +45,9 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
@@ -68,7 +71,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 2
 Delete
 Enter username: sell1
@@ -82,8 +86,9 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
-Enter an option: 9
+9)Search
+10)Logout
+Enter an option: 10
 LOGGED OUT
 HOME MENU
 1)Login
@@ -96,8 +101,9 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login

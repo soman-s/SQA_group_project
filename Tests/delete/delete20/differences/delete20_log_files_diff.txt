@@ -1,0 +1,9 @@
+Expected:
+02 am2             AM 999999.00
+00 am1             AM 999999.00
+
+Actual:
+02 am2             AM 999999.00
+00 am1             AM 999999.00
+
+Differences:

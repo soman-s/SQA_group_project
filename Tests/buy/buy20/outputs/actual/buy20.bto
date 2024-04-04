@@ -14,7 +14,8 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
+9)Search
+10)Logout
 Enter an option: 4
 Buy
 Enter Game name: Halo
@@ -34,8 +35,9 @@ Admin Menu
 6)Add Credit
 7)View All Users
 8)View Available Games
-9)Logout
-Enter an option: 9
+9)Search
+10)Logout
+Enter an option: 10
 LOGGED OUT
 HOME MENU
 1)Login

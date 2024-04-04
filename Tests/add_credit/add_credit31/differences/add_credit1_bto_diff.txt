@@ -1,0 +1,87 @@
+Expected:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1 
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: 6
+Add Credit
+Enter username: admin1
+username selected
+Enter credit amount to add: 100.00
+Sucessfully added credit amount to user
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: 10
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1 
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: 6
+Add Credit
+Enter username: admin1
+username selected
+Enter credit amount to add: 100.00
+Sucessfully added credit amount to user
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: 10
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:

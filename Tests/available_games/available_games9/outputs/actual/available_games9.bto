@@ -10,19 +10,22 @@ Full Standard Menu
 2)Buy
 3)Add Credit
 4)View Available Games
-5)Logout
+5)Search
+6)Logout
 Enter an option: 1
 Sell
 Enter game name: fifa15
 
 Enter Game price: 200
 
+ Game Listed for Sale
 Full Standard Menu
 1)Sell
 2)Buy
 3)Add Credit
 4)View Available Games
-5)Logout
+5)Search
+6)Logout
 Enter an option: 4
 All Games Available
 Game Name                 Seller          Price
@@ -46,8 +49,9 @@ Full Standard Menu
 2)Buy
 3)Add Credit
 4)View Available Games
-5)Logout
-Enter an option: 5
+5)Search
+6)Logout
+Enter an option: 6
 LOGGED OUT
 HOME MENU
 1)Login

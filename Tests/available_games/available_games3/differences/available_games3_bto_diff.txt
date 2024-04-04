@@ -10,7 +10,8 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 3
 All Games Available
 Game Name                 Seller          Price
@@ -33,8 +34,9 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login
@@ -53,7 +55,8 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
+4)Search
+5)Logout
 Enter an option: 3
 All Games Available
 Game Name                 Seller          Price
@@ -76,8 +79,9 @@ Sell Standard Menu
 1)Sell
 2)Add Credit
 3)View Available Games
-4)Logout
-Enter an option: 4
+4)Search
+5)Logout
+Enter an option: 5
 LOGGED OUT
 HOME MENU
 1)Login

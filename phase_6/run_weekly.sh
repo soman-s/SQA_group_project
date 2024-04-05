@@ -26,6 +26,7 @@ for folder in *; do
     if [ -d "$folder" ]; then
         # Add the folder name to the array
         daily_sessions+=("$folder")
+        sleep 0.25
     fi
 done
 
@@ -35,6 +36,8 @@ cd ..
 for session_folder in "${daily_sessions[@]}"; do
   dos2unix run_daily.sh  >/dev/null 2>&1
   ./run_daily.sh $session_folder
+
+  sleep 0.75
 
   source_folder="back_end/mod_log_files"
   destination_folder="weekly_runs_output_files/$session_folder"

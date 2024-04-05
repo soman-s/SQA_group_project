@@ -272,7 +272,7 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
   cin >> user_to_remove;
 
   user_to_remove = utils().pad_username(user_to_remove);
-  
+
   string user_to_remove_type = user_file_process().get_user_type(all_users, user_to_remove);
 
   while(!user_file_process().check_user_names(all_users,user_to_remove) || user_to_remove==current_user || (current_user_type == "AM" && user_to_remove_type=="AA")){
@@ -301,7 +301,7 @@ string transactions:: process_delete(vector<string>& all_users, string current_u
 
     user_to_remove_type = user_file_process().get_user_type(all_users, user_to_remove);
 
-    
+
 
   }
 
@@ -497,7 +497,7 @@ string transactions:: refund(vector<string>& all_users,vector<string>& all_games
       string log_text_refund_price=utils().pad_credit_amount(num_refund_price);
 
       log_entry=constants::REFUND_CODE+" "+refund_game_name+" "+log_buyer_name+" "+log_seller_name+" "+log_text_refund_price;
-      cout<<log_entry<<endl;
+      //cout<<log_entry<<endl;
       utils().update_transction_log(log_entry,transaction_log);
     }
 
@@ -651,7 +651,7 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
       else{
         cout << "Username does not exist please try again or -1 to exit " << endl;
       }
-    
+
       cout << "Enter username: ";
 
       cin >> user;
@@ -664,7 +664,7 @@ string transactions::process_credit(string menu_option,vector<string>& all_users
 
       accout_type = user_file_process().get_user_type(all_users, user);
 
-     
+
 
 
     }

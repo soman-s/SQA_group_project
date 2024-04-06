@@ -1,0 +1,102 @@
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: Sell
+Enter game name:
+Enter Game price: 
+ Game Listed for Sale
+Sell Standard Menu
+1)Sell
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: Create
+Select type of account you want to create
+1)Admin
+2)Account-Manager
+3)Full-Standard
+4)Buy-Standard
+5)Sell-Standard
+Enter account type: Account type selected
+Enter Username: username selected
+Enter new credit amount: Succesfully created new user 
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: Refund
+Enter Game name: 
+Enter seller name: 
+Enter buyer name: 
+Enter Refund Amount: 
+Refund Successfully
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS

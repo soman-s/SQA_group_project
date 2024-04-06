@@ -1,0 +1,207 @@
+Expected:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: Sell
+Enter game name:
+Enter Game price: 
+ Game Listed for Sale
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: Refund
+Enter Game name: 
+Enter seller name: 
+Enter buyer name: 
+Enter Refund Amount: 
+Refund Successfully
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: Sell
+Enter game name:
+Enter Game price: 
+ Game Listed for Sale
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: Sell
+Enter game name:
+Enter Game price: 
+ Game Listed for Sale
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: Refund
+Enter Game name: 
+Enter seller name: 
+Enter buyer name: 
+Enter Refund Amount: 
+Refund Successfully
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: Sell
+Enter game name:
+Enter Game price: 
+ Game Listed for Sale
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+Differences:

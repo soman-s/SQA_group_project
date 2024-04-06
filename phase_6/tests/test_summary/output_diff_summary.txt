@@ -1,0 +1,15 @@
+Test: day_1
+Pass: Outputs match
+===================================
+Test: day_2
+Pass: Outputs match
+===================================
+Test: day_3
+Pass: Outputs match
+===================================
+Test: day_4
+Pass: Outputs match
+===================================
+Test: day_5
+Pass: Outputs match
+===================================

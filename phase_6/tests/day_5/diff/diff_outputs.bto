@@ -1,0 +1,27 @@
+Expected:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+Differences:

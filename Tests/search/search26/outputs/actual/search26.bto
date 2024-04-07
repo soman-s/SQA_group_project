@@ -3,31 +3,22 @@ HOME MENU
 2)Exit
 Enter an option: 1
 Login
-Enter Username: sell1
+Enter Username: buy1
 Logged IN
-Sell Standard Menu
-1)Sell
+Buy Standard Menu
+1)Buy
 2)Add Credit
 3)View Available Games
 4)Search
 5)Logout
 Enter an option: 4
-Search value: 23
-admin2
-full2
-sell2
-buy2
-admingame2         
-Sellgame2                 
-fullgame2
-full3
-sell3
-buy3
-admingame3         
-Sellgame3                 
-fullgame3
-Sell Standard Menu
-1)Sell
+BS
+Enter a search value: 5
+
+search results:
+
+Buy Standard Menu
+1)Buy
 2)Add Credit
 3)View Available Games
 4)Search

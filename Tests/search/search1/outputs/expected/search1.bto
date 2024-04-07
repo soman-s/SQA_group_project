@@ -17,14 +17,19 @@ Admin Menu
 9)Search
 10)Logout
 Enter an option: 9
-Search value: 1
-admin1
-full1
-sell1
-buy1
-admingame1         
-sellgame1                 
-fullgame1  
+AA
+Enter a search value: 1
+
+search results:
+admin1         
+full1          
+sell1          
+buy1           
+am1            
+admingame1               
+sellgame1                
+fullgame1                
+
 Admin Menu
 1)Create
 2)Delete

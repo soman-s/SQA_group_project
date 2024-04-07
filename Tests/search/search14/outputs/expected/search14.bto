@@ -3,7 +3,7 @@ HOME MENU
 2)Exit
 Enter an option: 1
 Login
-Enter Username: full1
+Enter Username: FULL1
 Logged IN
 Full Standard Menu
 1)Sell
@@ -13,21 +13,26 @@ Full Standard Menu
 5)Search
 6)Logout
 Enter an option: 5
-Search value: 13
-admin1
-full1
-sell1
-buy1
-admingame1         
-Sellgame1                
-fullgame1
-admin3
-full3
-sell3
-buy3
-admingame3         
-Sellgame3                
-fullgame3
+FS
+Enter a search value: 13
+
+search results:
+admin1         
+full1          
+sell1          
+buy1           
+admin3         
+full3          
+sell3          
+buy3           
+am1            
+admingame1               
+sellgame1                
+fullgame1                
+admingame3               
+fullgame3                
+sellgame3                
+
 Full Standard Menu
 1)Sell
 2)Buy
@@ -35,7 +40,7 @@ Full Standard Menu
 4)View Available Games
 5)Search
 6)Logout
-Enter an option: 5
+Enter an option: 6
 LOGGED OUT
 HOME MENU
 1)Login

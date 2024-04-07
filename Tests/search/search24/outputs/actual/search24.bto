@@ -12,20 +12,26 @@ Sell Standard Menu
 4)Search
 5)Logout
 Enter an option: 4
-Search value: 23
-admin2
-full2
-sell2
-buy2
-admingame2         
-Sellgame2                 
-fullgame2
-full3
-sell3
-buy3
-admingame3         
-Sellgame3                 
-fullgame3
+SS
+Enter a search value: 23
+
+search results:
+admin2         
+buy2           
+full2          
+sell2          
+admin3         
+full3          
+sell3          
+buy3           
+am2            
+admingame2               
+fullgame2                
+sellgame2                
+admingame3               
+fullgame3                
+sellgame3                
+
 Sell Standard Menu
 1)Sell
 2)Add Credit

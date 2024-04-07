@@ -3,7 +3,7 @@ HOME MENU
 2)Exit
 Enter an option: 1
 Login
-Enter Username: admin1
+Enter Username: ADMIN1
 Logged IN
 Admin Menu
 1)Create
@@ -17,14 +17,18 @@ Admin Menu
 9)Search
 10)Logout
 Enter an option: 9
-Search value: 3
-admin3
-full3
-sell3
-buy3
-admingame3         
-sellgame3                 
-fullgame3  
+AA
+Enter a search value: 3
+
+search results:
+admin3         
+full3          
+sell3          
+buy3           
+admingame3               
+fullgame3                
+sellgame3                
+
 Admin Menu
 1)Create
 2)Delete

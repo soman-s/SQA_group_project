@@ -256,6 +256,7 @@ for index in "${!test_inputs[@]}"; do
             diff "$expected_transaction" "$actual_transaction" >> "$summary_daily_transaction_differences_file"
             echo "==================================" >> "$summary_daily_transaction_differences_file"
             echo -e "\e[31mFail: Expected Daily Transactions File and Actual Daily Transactions File Do Not Match\e[0m"
+            
 
 
 

@@ -1,3 +1,834 @@
+Test: login1
+Pass: Outputs match
+===================================
+Test: login10
+Pass: Outputs match
+===================================
+Test: login11
+Pass: Outputs match
+===================================
+Test: login12
+Pass: Outputs match
+===================================
+Test: login13
+Pass: Outputs match
+===================================
+Test: login2
+Pass: Outputs match
+===================================
+Test: login3
+Pass: Outputs match
+===================================
+Test: login4
+Pass: Outputs match
+===================================
+Test: login5
+Pass: Outputs match
+===================================
+Test: login6
+Pass: Outputs match
+===================================
+Test: login7
+Pass: Outputs match
+===================================
+Test: login8
+Pass: Outputs match
+===================================
+Test: login9
+Pass: Outputs match
+===================================
+Test: logout1
+Pass: Outputs match
+===================================
+Test: logout2
+Pass: Outputs match
+===================================
+Test: logout3
+Pass: Outputs match
+===================================
+Test: logout4
+Pass: Outputs match
+===================================
+Test: logout5
+Pass: Outputs match
+===================================
+Test: logout6
+Pass: Outputs match
+===================================
+Test: logout7
+Pass: Outputs match
+===================================
+Test: logout8
+Pass: Outputs match
+===================================
+Test: logout9
+Pass: Outputs match
+===================================
+Test: refund1
+Pass: Outputs match
+===================================
+Test: refund10
+Pass: Outputs match
+===================================
+Test: refund11
+Pass: Outputs match
+===================================
+Test: refund12
+Pass: Outputs match
+===================================
+Test: refund13
+Pass: Outputs match
+===================================
+Test: refund14
+Pass: Outputs match
+===================================
+Test: refund15
+Pass: Outputs match
+===================================
+Test: refund16
+Pass: Outputs match
+===================================
+Test: refund17
+Pass: Outputs match
+===================================
+Test: refund18
+Pass: Outputs match
+===================================
+Test: refund19
+Pass: Outputs match
+===================================
+Test: refund2
+Pass: Outputs match
+===================================
+Test: refund20
+Pass: Outputs match
+===================================
+Test: refund21
+Pass: Outputs match
+===================================
+Test: refund22
+Pass: Outputs match
+===================================
+Test: refund23
+Pass: Outputs match
+===================================
+Test: refund24
+Pass: Outputs match
+===================================
+Test: refund25
+Pass: Outputs match
+===================================
+Test: refund26
+Pass: Outputs match
+===================================
+Test: refund27
+Pass: Outputs match
+===================================
+Test: refund28
+Pass: Outputs match
+===================================
+Test: refund29
+Pass: Outputs match
+===================================
+Test: refund3
+Pass: Outputs match
+===================================
+Test: refund30
+Pass: Outputs match
+===================================
+Test: refund31
+Pass: Outputs match
+===================================
+Test: refund32
+Pass: Outputs match
+===================================
+Test: refund33
+Pass: Outputs match
+===================================
+Test: refund34
+Pass: Outputs match
+===================================
+Test: refund35
+Pass: Outputs match
+===================================
+Test: refund36
+Pass: Outputs match
+===================================
+Test: refund37
+Pass: Outputs match
+===================================
+Test: refund38
+Pass: Outputs match
+===================================
+Test: refund39
+Pass: Outputs match
+===================================
+Test: refund4
+Pass: Outputs match
+===================================
+Test: refund40
+Pass: Outputs match
+===================================
+Test: refund41
+Pass: Outputs match
+===================================
+Test: refund42
+Pass: Outputs match
+===================================
+Test: refund43
+Pass: Outputs match
+===================================
+Test: refund44
+Pass: Outputs match
+===================================
+Test: refund45
+Pass: Outputs match
+===================================
+Test: refund46
+Pass: Outputs match
+===================================
+Test: refund47
+Pass: Outputs match
+===================================
+Test: refund48
+Pass: Outputs match
+===================================
+Test: refund49
+Pass: Outputs match
+===================================
+Test: refund5
+Pass: Outputs match
+===================================
+Test: refund50
+Pass: Outputs match
+===================================
+Test: refund51
+Pass: Outputs match
+===================================
+Test: refund52
+Pass: Outputs match
+===================================
+Test: refund53
+Pass: Outputs match
+===================================
+Test: refund54
+Pass: Outputs match
+===================================
+Test: refund55
+Pass: Outputs match
+===================================
+Test: refund56
+Pass: Outputs match
+===================================
+Test: refund57
+Pass: Outputs match
+===================================
+Test: refund58
+Pass: Outputs match
+===================================
+Test: refund59
+Pass: Outputs match
+===================================
+Test: refund6
+Pass: Outputs match
+===================================
+Test: refund60
+Pass: Outputs match
+===================================
+Test: refund61
+Pass: Outputs match
+===================================
+Test: refund62
+Pass: Outputs match
+===================================
+Test: refund63
+Pass: Outputs match
+===================================
+Test: refund64
+Pass: Outputs match
+===================================
+Test: refund65
+Pass: Outputs match
+===================================
+Test: refund66
+Pass: Outputs match
+===================================
+Test: refund67
+Pass: Outputs match
+===================================
+Test: refund68
+Pass: Outputs match
+===================================
+Test: refund69
+Pass: Outputs match
+===================================
+Test: refund7
+Pass: Outputs match
+===================================
+Test: refund70
+Pass: Outputs match
+===================================
+Test: refund71
+Pass: Outputs match
+===================================
+Test: refund72
+Pass: Outputs match
+===================================
+Test: refund73
+Pass: Outputs match
+===================================
+Test: refund74
+Pass: Outputs match
+===================================
+Test: refund75
+Pass: Outputs match
+===================================
+Test: refund76
+Pass: Outputs match
+===================================
+Test: refund77
+Pass: Outputs match
+===================================
+Test: refund78
+Pass: Outputs match
+===================================
+Test: refund79
+Pass: Outputs match
+===================================
+Test: refund8
+Pass: Outputs match
+===================================
+Test: refund80
+Pass: Outputs match
+===================================
+Test: refund81
+Pass: Outputs match
+===================================
+Test: refund82
+Pass: Outputs match
+===================================
+Test: refund9
+Pass: Outputs match
+===================================
+Test: sell1
+Pass: Outputs match
+===================================
+Test: sell10
+Pass: Outputs match
+===================================
+Test: sell11
+Pass: Outputs match
+===================================
+Test: sell12
+Pass: Outputs match
+===================================
+Test: sell13
+Pass: Outputs match
+===================================
+Test: sell14
+Pass: Outputs match
+===================================
+Test: sell15
+Pass: Outputs match
+===================================
+Test: sell16
+Pass: Outputs match
+===================================
+Test: sell17
+Pass: Outputs match
+===================================
+Test: sell18
+Pass: Outputs match
+===================================
+Test: sell19
+Pass: Outputs match
+===================================
+Test: sell2
+Pass: Outputs match
+===================================
+Test: sell20
+Pass: Outputs match
+===================================
+Test: sell21
+Pass: Outputs match
+===================================
+Test: sell22
+Pass: Outputs match
+===================================
+Test: sell23
+Pass: Outputs match
+===================================
+Test: sell3
+Pass: Outputs match
+===================================
+Test: sell4
+Pass: Outputs match
+===================================
+Test: sell5
+Pass: Outputs match
+===================================
+Test: sell6
+Pass: Outputs match
+===================================
+Test: sell7
+Pass: Outputs match
+===================================
+Test: sell8
+Pass: Outputs match
+===================================
+Test: sell9
+Pass: Outputs match
+===================================
+Test: add_credit1
+Pass: Outputs match
+===================================
+Test: add_credit10
+Pass: Outputs match
+===================================
+Test: add_credit11
+Pass: Outputs match
+===================================
+Test: add_credit12
+Pass: Outputs match
+===================================
+Test: add_credit13
+Pass: Outputs match
+===================================
+Test: add_credit14
+Pass: Outputs match
+===================================
+Test: add_credit15
+Pass: Outputs match
+===================================
+Test: add_credit16
+Pass: Outputs match
+===================================
+Test: add_credit17
+Pass: Outputs match
+===================================
+Test: add_credit18
+Pass: Outputs match
+===================================
+Test: add_credit19
+Pass: Outputs match
+===================================
+Test: add_credit2
+Pass: Outputs match
+===================================
+Test: add_credit20
+Pass: Outputs match
+===================================
+Test: add_credit21
+Pass: Outputs match
+===================================
+Test: add_credit22
+Pass: Outputs match
+===================================
+Test: add_credit23
+Pass: Outputs match
+===================================
+Test: add_credit24
+Pass: Outputs match
+===================================
+Test: add_credit25
+Pass: Outputs match
+===================================
+Test: add_credit26
+Pass: Outputs match
+===================================
+Test: add_credit27
+Pass: Outputs match
+===================================
+Test: add_credit28
+Pass: Outputs match
+===================================
+Test: add_credit29
+Pass: Outputs match
+===================================
+Test: add_credit3
+Pass: Outputs match
+===================================
+Test: add_credit30
+Pass: Outputs match
+===================================
+Test: add_credit31
+Pass: Outputs match
+===================================
+Test: add_credit32
+Pass: Outputs match
+===================================
+Test: add_credit33
+Pass: Outputs match
+===================================
+Test: add_credit34
+Pass: Outputs match
+===================================
+Test: add_credit35
+Pass: Outputs match
+===================================
+Test: add_credit4
+Pass: Outputs match
+===================================
+Test: add_credit5
+Pass: Outputs match
+===================================
+Test: add_credit6
+Pass: Outputs match
+===================================
+Test: add_credit7
+Pass: Outputs match
+===================================
+Test: add_credit8
+Pass: Outputs match
+===================================
+Test: add_credit9
+Pass: Outputs match
+===================================
+Test: create1
+Pass: Outputs match
+===================================
+Test: create10
+Pass: Outputs match
+===================================
+Test: create11
+Pass: Outputs match
+===================================
+Test: create12
+Pass: Outputs match
+===================================
+Test: create13
+Pass: Outputs match
+===================================
+Test: create14
+Pass: Outputs match
+===================================
+Test: create15
+Pass: Outputs match
+===================================
+Test: create16
+Pass: Outputs match
+===================================
+Test: create17
+Pass: Outputs match
+===================================
+Test: create18
+Pass: Outputs match
+===================================
+Test: create19
+Pass: Outputs match
+===================================
+Test: create2
+Pass: Outputs match
+===================================
+Test: create20
+Pass: Outputs match
+===================================
+Test: create21
+Pass: Outputs match
+===================================
+Test: create22
+Pass: Outputs match
+===================================
+Test: create23
+Pass: Outputs match
+===================================
+Test: create24
+Pass: Outputs match
+===================================
+Test: create25
+Pass: Outputs match
+===================================
+Test: create26
+Pass: Outputs match
+===================================
+Test: create27
+Pass: Outputs match
+===================================
+Test: create28
+Pass: Outputs match
+===================================
+Test: create29
+Pass: Outputs match
+===================================
+Test: create3
+Pass: Outputs match
+===================================
+Test: create30
+Pass: Outputs match
+===================================
+Test: create4
+Pass: Outputs match
+===================================
+Test: create5
+Pass: Outputs match
+===================================
+Test: create6
+Pass: Outputs match
+===================================
+Test: create7
+Pass: Outputs match
+===================================
+Test: create8
+Pass: Outputs match
+===================================
+Test: create9
+Pass: Outputs match
+===================================
+Test: delete1
+Pass: Outputs match
+===================================
+Test: delete10
+Pass: Outputs match
+===================================
+Test: delete11
+Pass: Outputs match
+===================================
+Test: delete12
+Pass: Outputs match
+===================================
+Test: delete13
+Pass: Outputs match
+===================================
+Test: delete14
+Pass: Outputs match
+===================================
+Test: delete15
+Pass: Outputs match
+===================================
+Test: delete16
+Pass: Outputs match
+===================================
+Test: delete17
+Pass: Outputs match
+===================================
+Test: delete18
+Pass: Outputs match
+===================================
+Test: delete19
+Pass: Outputs match
+===================================
+Test: delete2
+Pass: Outputs match
+===================================
+Test: delete20
+Pass: Outputs match
+===================================
+Test: delete21
+Pass: Outputs match
+===================================
+Test: delete22
+Pass: Outputs match
+===================================
+Test: delete23
+Pass: Outputs match
+===================================
+Test: delete24
+Pass: Outputs match
+===================================
+Test: delete3
+Pass: Outputs match
+===================================
+Test: delete4
+Pass: Outputs match
+===================================
+Test: delete5
+Pass: Outputs match
+===================================
+Test: delete6
+Pass: Outputs match
+===================================
+Test: delete7
+Pass: Outputs match
+===================================
+Test: delete8
+Pass: Outputs match
+===================================
+Test: delete9
+Pass: Outputs match
+===================================
+Test: buy1
+Pass: Outputs match
+===================================
+Test: buy10
+Pass: Outputs match
+===================================
+Test: buy11
+Pass: Outputs match
+===================================
+Test: buy12
+Pass: Outputs match
+===================================
+Test: buy13
+Pass: Outputs match
+===================================
+Test: buy14
+Pass: Outputs match
+===================================
+Test: buy15
+Pass: Outputs match
+===================================
+Test: buy16
+Pass: Outputs match
+===================================
+Test: buy17
+Pass: Outputs match
+===================================
+Test: buy18
+Pass: Outputs match
+===================================
+Test: buy19
+Pass: Outputs match
+===================================
+Test: buy2
+Pass: Outputs match
+===================================
+Test: buy20
+Pass: Outputs match
+===================================
+Test: buy21
+Pass: Outputs match
+===================================
+Test: buy22
+Pass: Outputs match
+===================================
+Test: buy23
+Pass: Outputs match
+===================================
+Test: buy24
+Pass: Outputs match
+===================================
+Test: buy25
+Pass: Outputs match
+===================================
+Test: buy26
+Pass: Outputs match
+===================================
+Test: buy27
+Pass: Outputs match
+===================================
+Test: buy28
+Pass: Outputs match
+===================================
+Test: buy29
+Pass: Outputs match
+===================================
+Test: buy3
+Pass: Outputs match
+===================================
+Test: buy30
+Pass: Outputs match
+===================================
+Test: buy31
+Pass: Outputs match
+===================================
+Test: buy32
+Pass: Outputs match
+===================================
+Test: buy33
+Pass: Outputs match
+===================================
+Test: buy34
+Pass: Outputs match
+===================================
+Test: buy35
+Pass: Outputs match
+===================================
+Test: buy36
+Pass: Outputs match
+===================================
+Test: buy37
+Pass: Outputs match
+===================================
+Test: buy38
+Pass: Outputs match
+===================================
+Test: buy39
+Pass: Outputs match
+===================================
+Test: buy4
+Pass: Outputs match
+===================================
+Test: buy5
+Pass: Outputs match
+===================================
+Test: buy6
+Pass: Outputs match
+===================================
+Test: buy7
+Pass: Outputs match
+===================================
+Test: buy8
+Pass: Outputs match
+===================================
+Test: buy9
+Pass: Outputs match
+===================================
+Test: all_user1
+Pass: Outputs match
+===================================
+Test: all_user10
+Pass: Outputs match
+===================================
+Test: all_user11
+Pass: Outputs match
+===================================
+Test: all_user12
+Pass: Outputs match
+===================================
+Test: all_user2
+Pass: Outputs match
+===================================
+Test: all_user3
+Pass: Outputs match
+===================================
+Test: all_user4
+Pass: Outputs match
+===================================
+Test: all_user5
+Pass: Outputs match
+===================================
+Test: all_user6
+Pass: Outputs match
+===================================
+Test: all_user7
+Pass: Outputs match
+===================================
+Test: all_user8
+Pass: Outputs match
+===================================
+Test: all_user9
+Pass: Outputs match
+===================================
+Test: available_games1
+Pass: Outputs match
+===================================
+Test: available_games10
+Pass: Outputs match
+===================================
+Test: available_games2
+Pass: Outputs match
+===================================
+Test: available_games3
+Pass: Outputs match
+===================================
+Test: available_games4
+Pass: Outputs match
+===================================
+Test: available_games5
+Pass: Outputs match
+===================================
+Test: available_games6
+Pass: Outputs match
+===================================
+Test: available_games7
+Pass: Outputs match
+===================================
+Test: available_games8
+Pass: Outputs match
+===================================
+Test: available_games9
+Pass: Outputs match
+===================================
 Test: search1
 Pass: Outputs match
 ===================================

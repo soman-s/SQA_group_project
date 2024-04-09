@@ -101,7 +101,16 @@ public:
 
     void process_logout(vector<string>& transaction_log);
 
-    void search();
+
+    /**
+     * @brief search users and games.
+     *
+     * @param user_name user name of logged in account to determine account type.
+     * @param all_users Vector containing all user information.
+     * @param all_games Vector containing all available games.
+     * @return Results of the search
+     */
+    string search(string user_name, vector<string>& all_users, vector<string>& all_games);
 };
 
 #endif

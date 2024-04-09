@@ -773,7 +773,114 @@ void transactions::process_logout(vector<string>& transaction_log)
 
 
 }
-void transactions::search()
+
+
+string transactions::search(string user_name, vector<string>& all_users, vector<string>& all_games)
 {
-  return;
+  utils utility;
+
+  string logged_in_user_type = user_file_process().get_user_type(all_users, user_name);
+
+  string search_value;
+
+  cout << endl;
+
+  cout << "Enter a search value: ";
+  cin.ignore();
+  getline(cin, search_value);
+  cout << endl;
+  search_value = utils().convert_to_lower(search_value);
+
+
+  vector<string> search_results;
+  
+  // search in current users
+  for (int i = 0; i < all_users.size(); i++)
+  {
+    string current_user_name = utility.convert_to_lower(all_users[i].substr(0,constants::MAX_USER_NAME_LENGTH));
+    string current_user_name_type = user_file_process().get_user_type(all_users, current_user_name);
+
+    // flag for preventing adding users multiple times to the search results
+    bool user_added = false;
+
+    for (int j = 0; j < search_value.size() && user_added == false; j++)
+    {
+      char character = search_value[j];
+
+      if (current_user_name.find(character) != std::string::npos)
+      {
+        // if logged in user is not an admin
+        if (logged_in_user_type != "AA")
+        {
+          // if there is an admin account found
+          if (current_user_name_type == "AA")
+          {
+            // check if the admin account found from the search result sells any games 
+            for (int k = 0; k < all_games.size(); k++)
+            {
+              string name = utility.convert_to_lower(all_games[k].substr(constants::MAX_GAME_NAME_LENGTH + 1, constants::MAX_USER_NAME_LENGTH));
+
+              // if the admin sells any games, add it to the search results
+              if (name == current_user_name)
+              {
+                search_results.push_back(name);
+                user_added = true;
+                break;
+              }
+            }
+          }
+          else
+          {
+            search_results.push_back(current_user_name);
+            user_added = true;
+          }
+        }
+        else
+        {
+          search_results.push_back(current_user_name);
+          user_added = true;
+        }
+      }
+    }
+  }
+
+
+
+  // search in available games
+  for (int i = 0; i < all_games.size(); i++)
+  {
+    string game_name = utility.convert_to_lower(all_games[i].substr(0, constants::MAX_GAME_NAME_LENGTH));
+
+    for (int j = 0; j < search_value.size(); j++)
+    {
+      char character = search_value[j];
+
+      if (game_name.find(character) != std::string::npos)
+      {
+        search_results.push_back(game_name);
+        break;
+      }
+    }
+  }
+  
+
+  // print search results
+  cout << "--search results--" << endl;
+  if (search_results.size() > 0)
+  {
+
+    for (int i = 0; i < search_results.size(); i++)
+    {
+      cout << search_results[i] << endl;
+    }
+
+    cout << endl;
+  }
+  else
+  {
+    cout << "No results" << endl;
+    cout << endl;
+  }
+
+  return constants :: SUCESS_OPTION;
 }

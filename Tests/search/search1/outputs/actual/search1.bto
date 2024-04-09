@@ -17,9 +17,10 @@ Admin Menu
 9)Search
 10)Logout
 Enter an option: 9
-Enter a search value: 
-search results: 1
 
+Enter a search value: 1
+
+--search results--
 admin1         
 full1          
 sell1          

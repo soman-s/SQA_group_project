@@ -785,6 +785,8 @@ string transactions::search(string user_name, vector<string>& all_users, vector<
 
   string search_value;
 
+  cout << endl;
+
   cout << "Enter a search value: ";
   cin.ignore();
   getline(cin, search_value);
@@ -865,7 +867,7 @@ string transactions::search(string user_name, vector<string>& all_users, vector<
   
 
   // print search results
-  cout << "search results:" << endl;
+  cout << "--search results--" << endl;
   if (search_results.size() > 0)
   {
 
@@ -879,6 +881,7 @@ string transactions::search(string user_name, vector<string>& all_users, vector<
   else
   {
     cout << "No results" << endl;
+    cout << endl;
   }
 
   return constants :: SUCESS_OPTION;

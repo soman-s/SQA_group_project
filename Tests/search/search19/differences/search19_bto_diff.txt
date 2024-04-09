@@ -1,0 +1,99 @@
+Expected:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: buy1
+Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: 4
+
+Enter a search value: 12
+
+--search results--
+admin1         
+admin2         
+full1          
+sell1          
+buy1           
+buy2           
+full2          
+sell2          
+am1            
+am2            
+admingame1               
+sellgame1                
+fullgame1                
+admingame2               
+fullgame2                
+sellgame2                
+
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: 5
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: buy1
+Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: 4
+
+Enter a search value: 12
+
+--search results--
+admin1         
+admin2         
+full1          
+sell1          
+buy1           
+buy2           
+full2          
+sell2          
+am1            
+am2            
+admingame1               
+sellgame1                
+fullgame1                
+admingame2               
+fullgame2                
+sellgame2                
+
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: 5
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:

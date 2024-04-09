@@ -1,0 +1,7 @@
+Expected:
+00 buy1            BS 000900.00
+
+Actual:
+00 buy1            BS 000900.00
+
+Differences:

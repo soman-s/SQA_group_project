@@ -1,0 +1,103 @@
+Expected:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: 9
+
+Enter a search value: 2
+
+--search results--
+admin2         
+buy2           
+full2          
+sell2          
+am2            
+admingame2               
+fullgame2                
+sellgame2                
+
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: 10
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Actual:
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 1
+Login
+Enter Username: admin1
+Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: 9
+
+Enter a search value: 2
+
+--search results--
+admin2         
+buy2           
+full2          
+sell2          
+am2            
+admingame2               
+fullgame2                
+sellgame2                
+
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: 10
+LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: 2
+EXITS
+Differences:

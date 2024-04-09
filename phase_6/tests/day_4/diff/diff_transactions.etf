@@ -1,5 +1,17 @@
 Expected:
+06 buy1            BS 000100.00
+00 am1             AM 999999.00
+04 PUBG                      admin2          full1           000030.00
+00 full1           FS 000474.50
+04 Halo                      full1           buy1            000040.00
+00 buy1            BS 000900.00
 00
 Actual:
+06 buy1            BS 000100.00
+00 am1             AM 999999.00
+04 PUBG                      admin2          full1           000030.00
+00 full1           FS 000474.50
+04 Halo                      full1           buy1            000040.00
+00 buy1            BS 000900.00
 00
 Differences:

@@ -2,11 +2,86 @@ Expected:
 HOME MENU
 1)Login
 2)Exit
-Enter an option: EXITS
+Enter an option: Login
+Enter Username: Logged IN
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: Add Credit
+Enter username: username selected
+Enter credit amount to add: Sucessfully added credit amount to user
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
 Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: Buy
+Enter Game name: 
+Enter seller name: 
+Game has been bought
+
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: Buy
+Enter Game name: 
+Enter seller name: 
+Game has been bought
+
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
@@ -15,11 +90,86 @@ Actual:
 HOME MENU
 1)Login
 2)Exit
-Enter an option: EXITS
+Enter an option: Login
+Enter Username: Logged IN
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: Add Credit
+Enter username: username selected
+Enter credit amount to add: Sucessfully added credit amount to user
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
 Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: Buy
+Enter Game name: 
+Enter seller name: 
+Game has been bought
+
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: Buy
+Enter Game name: 
+Enter seller name: 
+Game has been bought
+
+Buy Standard Menu
+1)Buy
+2)Add Credit
+3)View Available Games
+4)Search
+5)Logout
+Enter an option: LOGGED OUT
 HOME MENU
 1)Login
 2)Exit

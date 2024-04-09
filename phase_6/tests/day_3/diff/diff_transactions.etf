@@ -1,13 +1,17 @@
 Expected:
 06 admin1          AA 000100.00
-00 admin1          AA 000515.50
+00 admin1          AA 000490.00
 06 sell1           SS 000100.00
-00 admin1          AA 000515.50
+00 admin1          AA 000490.00
+05 fullgame1                 admin1          full1           000025.50
+00 admin1          AA 000490.00
 00
 Actual:
 06 admin1          AA 000100.00
-00 admin1          AA 000515.50
+00 admin1          AA 000490.00
 06 sell1           SS 000100.00
-00 admin1          AA 000515.50
+00 admin1          AA 000490.00
+05 fullgame1                 admin1          full1           000025.50
+00 admin1          AA 000490.00
 00
 Differences:

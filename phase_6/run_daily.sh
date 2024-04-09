@@ -27,8 +27,10 @@ cd daily_sessions/"$1"
 for file in *; do
   if [ -f "$file" ]; then  # Check if it's a regular file
     dos2unix "$file" >/dev/null 2>&1
+    sleep 0.5
     input_path="../daily_sessions/$1/$file"
     day_inputs+=("$input_path")
+    sleep 0.5
   fi
 done
 
@@ -46,6 +48,7 @@ cd front_end
 
 # Clear the output file before the loop
 > "$actual_output_file"
+sleep 0.5
 
 for input_file in "${day_inputs[@]}"; do
   if [ -f "$input_file" ]; then
@@ -53,7 +56,7 @@ for input_file in "${day_inputs[@]}"; do
 
     ./"$custom_program" < "$input_file">>"$actual_output_file"
     # ./"$custom_program" < "$input_file"
-    sleep 0.75
+    sleep 1.25
   else
     echo "Input file not found: $input_file"
   fi
@@ -68,14 +71,14 @@ destination_folder="back_end/ori_log_files"
 
 
 rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
-sleep 0.75
+sleep 1
 
 
 echo "Processing Backend for $1"
 cd back_end
 python main.py>/dev/null 2>&1
 # python main.py
-
+sleep 0.75
 # moving back to root directory
 cd ..
 
@@ -84,14 +87,16 @@ cd ..
 for file in *; do
   if [ -f "$file" ]; then
     dos2unix "$file" >/dev/null 2>&1
+    sleep 0.5
   fi
 done
 # Copying the modified files
 source_folder="back_end/mod_log_files"
 destination_folder="front_end/log_files"
 
+
 rsync -av --delete "$source_folder/" "$destination_folder/">/dev/null 2>&1
-sleep 0.75
+sleep 1
 
 
 # copying the data files to a  daily runs directoy
@@ -142,6 +147,8 @@ if [ -n "$diff_output" ]; then
 
 
 
+
+
 else
 
     echo "Test: $1" >> "$summary_output_file"
@@ -149,6 +156,7 @@ else
     echo "===================================" >> "$summary_output_file"
     echo -e "\e[32mPass: Expected and Actual Output match\e[0m"
 fi
+
 
 
 # Testing merged transaction files
@@ -177,6 +185,8 @@ if [ -n "$diff_output" ]; then
   diff "$expected_transaction_file" "$actual_transaction_file" >> "$summary_transaction_file"
   echo "===================================" >> "$summary_transaction_file"
   echo -e "\e[31mFail: Expected Merged Transaction File and Actual Merged Transaction File Do Not Match\e[0m"
+
+
 
 
 

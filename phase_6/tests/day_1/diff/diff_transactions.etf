@@ -1,16 +1,16 @@
 Expected:
 03 admin game8               admin1          100.00
 00 admin1          AA 000500.00
-05 fullgame1                 admin1          full1           000025.50
-00 admin1          AA 000500.00
+01 buy18           BS 000200.00
+00 am1             AM 999999.00
 03 fullgame8                 full1           050.00
 00 full1           FS 000500.00
 00
 Actual:
 03 admin game8               admin1          100.00
 00 admin1          AA 000500.00
-05 fullgame1                 admin1          full1           000025.50
-00 admin1          AA 000500.00
+01 buy18           BS 000200.00
+00 am1             AM 999999.00
 03 fullgame8                 full1           050.00
 00 full1           FS 000500.00
 00

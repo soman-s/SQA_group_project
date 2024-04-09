@@ -1,11 +1,92 @@
 HOME MENU
 1)Login
 2)Exit
-Enter an option: EXITS
+Enter an option: Login
+Enter Username: Logged IN
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: Delete
+Enter username: User sucessfully removed
+Admin Menu
+1)Create
+2)Delete
+3)Sell
+4)Buy
+5)Refund
+6)Add Credit
+7)View All Users
+8)View Available Games
+9)Search
+10)Logout
+Enter an option: LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
 Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: Delete
+Enter username: User sucessfully removed
+Account Manager Menu
+1)Create
+2)Delete
+3)Refund
+4)Add Credit
+5)View All Users
+6)View Available Games
+7)Search
+8)Logout
+Enter an option: LOGGED OUT
+HOME MENU
+1)Login
+2)Exit
+Enter an option: EXITS
+HOME MENU
+1)Login
+2)Exit
+Enter an option: Login
+Enter Username: Logged IN
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: Buy
+Enter Game name: 
+Enter seller name: 
+Game has been bought
+
+Full Standard Menu
+1)Sell
+2)Buy
+3)Add Credit
+4)View Available Games
+5)Search
+6)Logout
+Enter an option: LOGGED OUT
 HOME MENU
 1)Login
 2)Exit
